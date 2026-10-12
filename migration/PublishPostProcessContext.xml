@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishpostprocesscontext compare="no" combinelanguages="no">
+  <ishref>GUID-28583781-F7EB-4F72-A734-AC8FA94C9D9C</ishref>
+  <ishtype>ISHPublication</ishtype>
+  <ishlevel>Language</ishlevel>
+  <version>6</version>
+  <ishlngref>14794424</ishlngref>
+  <languages>en-US</languages>
+  <resources></resources>
+  <rootdocumentobjectfile>E:\InfoShare\Data\Publish\Data\qon1gduvx4k\work\6\en-US\GUID-D5D73A49-67A2-40F8-B78E-CC18D4D8CD2F.ditamap</rootdocumentobjectfile>
+  <rootworkdirectory>E:\InfoShare\Data\Publish\Data\qon1gduvx4k\work</rootworkdirectory>
+  <progressid>3435905</progressid>
+  <eventid>PUBLISH PRDIPIXAPP02 20261011080604124 650319524</eventid>
+  <publishparameters>
+    <FMAPID>GUID-28583781-F7EB-4F72-A734-AC8FA94C9D9C</FMAPID>
+    <FPUBINCLUDECOMMENTS></FPUBINCLUDECOMMENTS>
+    <FPUBINCLUDEMETADATA></FPUBINCLUDEMETADATA>
+    <FPUBWATERMARK></FPUBWATERMARK>
+    <MODIFIED-ON>11/10/2026 08:06:04</MODIFIED-ON>
+    <FISHPUBREVIEWENDDATE>27/07/2025 11:30:00</FISHPUBREVIEWENDDATE>
+    <FISHPUBLNGCOMBINATION>en-US</FISHPUBLNGCOMBINATION>
+    <FISHOUTPUTFORMATREF>PDF - Base</FISHOUTPUTFORMATREF>
+    <FISHPUBSTATUS>Pending</FISHPUBSTATUS>
+    <FISHPUBLISHER>sys_pti_jobusr</FISHPUBLISHER>
+    <FISHEMAIL>patrick.j.grogg@intel.com</FISHEMAIL>
+  </publishparameters>
+  <commonparameters>
+    <CatalogFolder>E:\InfoShare\Web\Author\ASP\DocTypes</CatalogFolder>
+    <CatalogFile>catalog.xml</CatalogFile>
+    <DraftWhenFallbackLanguageUsed>yes</DraftWhenFallbackLanguageUsed>
+    <DraftWhenFallbackLanguageUsedForIllustration>no</DraftWhenFallbackLanguageUsedForIllustration>
+    <DraftWhenFallbackLanguageUsedForResource>yes</DraftWhenFallbackLanguageUsedForResource>
+    <CombineLanguageHeaderIshRef>ISHPUBLMODULECOMBINELANGUAGES</CombineLanguageHeaderIshRef>
+    <UseDitaMapExtensionForMaps>Yes</UseDitaMapExtensionForMaps>
+    <SkipPersistFixedAttributesList>ishlabelxpath, ishlinkxpath, ishhyperlinkxpath, ishvarinusexpath, ishvarassignedxpath, ishtype, ishpreviewversion</SkipPersistFixedAttributesList>
+    <VariableAssignedXPath>//*[@varid][not(ancestor-or-self::*[@varref])][not(ancestor::*[@conref])]</VariableAssignedXPath>
+    <VariableInUseXPath>//*[@varref][not(ancestor::*[@varref])][not(ancestor::*[@conref])]</VariableInUseXPath>
+    <ExtractTargetIds>&lt;configuration&gt;&lt;elementxpath&gt;//*[@id!=''][not(ancestor::*[@conref])]&lt;/elementxpath&gt;&lt;perelementxpaths&gt;&lt;perelementxpath propertyname="id"&gt;@id&lt;/perelementxpath&gt;&lt;perelementxpath propertyname="class"&gt;@class&lt;/perelementxpath&gt;&lt;/perelementxpaths&gt;&lt;/configuration&gt;</ExtractTargetIds>
+    <ExtractLinks>&lt;configuration&gt;&lt;elementxpath&gt;(//*[(@href and (@href!='-dita-use-conref-target' or not(@conref))) or (@keyref)][contains(@class,' map/topicref ')][not(contains(@class,' mapgroup-d/anchorref '))][not(ancestor::*[@conref])][not(ancestor-or-self::*[@varref])][not(ancestor::*[contains(@class,' map/reltable ')])]) | (//*[(@href and (@href!='-dita-use-conref-target' or not(@conref))) or (@keyref)][contains(@class,' topic/longdescref ')][not(ancestor::*[@conref])][not(ancestor-or-self::*[@varref])][not(ancestor::*[contains(@class,' map/reltable ')])]) | (//*[(@href and (@href!='-dita-use-conref-target' or not(@conref))) or (@keyref)][contains(@class,' topic/longquoteref ')][not(ancestor::*[@conref])][not(ancestor-or-self::*[@varref])][not(ancestor::*[contains(@class,' map/reltable ')])])&lt;/elementxpath&gt;&lt;perelementxpaths&gt;&lt;perelementxpath propertyname="ref"&gt;@href&lt;/perelementxpath&gt;&lt;perelementxpath propertyname="keyref"&gt;@keyref&lt;/perelementxpath&gt;&lt;perelementxpath propertyname="scope"&gt;ancestor-or-self::*[@scope][position()=1]/@scope&lt;/perelementxpath&gt;&lt;perelementxpath propertyname="class"&gt;@class&lt;/perelementxpath&gt;&lt;/perelementxpaths&gt;&lt;/configuration&gt;</ExtractLinks>
+    <ExtractImagelinks>&lt;configuration&gt;&lt;elementxpath&gt;(//*[(@href and (@href!='-dita-use-conref-target' or not(@conref))) or (@keyref)][contains(@class,' topic/image ')][not(ancestor::*[@conref])][not(ancestor-or-self::*[@varref])]) | (//*[@data and not(contains(@data,':'))][contains(@class,' topic/object ')][not(ancestor::*[@conref])][not(ancestor-or-self::*[@varref])]) | (//*[@value and not(contains(@value,':'))][contains(@class,' topic/param ') and (@name='movie' or @name='src' or @name='URL')][not(ancestor::*[@conref])][not(ancestor-or-self::*[@varref])])&lt;/elementxpath&gt;&lt;perelementxpaths&gt;&lt;perelementxpath propertyname="ref"&gt;@href | @data | @value&lt;/perelementxpath&gt;&lt;perelementxpath propertyname="keyref"&gt;@keyref&lt;/perelementxpath&gt;&lt;perelementxpath propertyname="scope"&gt;ancestor-or-self::*[@scope][position()=1]/@scope&lt;/perelementxpath&gt;&lt;perelementxpath propertyname="class"&gt;@class&lt;/perelementxpath&gt;&lt;/perelementxpaths&gt;&lt;/configuration&gt;</ExtractImagelinks>
+    <ExtractHyperlinks>&lt;configuration&gt;&lt;elementxpath&gt;(//*[(@href and (@href!='-dita-use-conref-target' or not(@conref))) or (@keyref)][contains(@class,' topic/xref ')][not(ancestor::*[@conref])][not(ancestor-or-self::*[@varref])]) | (//*[(@href and (@href!='-dita-use-conref-target' or not(@conref))) or (@keyref)][contains(@class,' topic/link ')][not(ancestor::*[@conref])][not(ancestor-or-self::*[@varref])])  | (//*[contains(@class,' map/reltable ')]//*[(@href and (@href!='-dita-use-conref-target' or not(@conref))) or (@keyref)][contains(@class,' map/topicref ')][not(ancestor::*[@conref])][not(ancestor-or-self::*[@varref])]) | (//*[contains(@class,' map/reltable ')]//*[(@mapref and (@mapref!='-dita-use-conref-target' or not(@conref))) or (@keyref)][contains(@class,' map/navref ')])&lt;/elementxpath&gt;&lt;perelementxpaths&gt;&lt;perelementxpath propertyname="ref"&gt;@href | @mapref&lt;/perelementxpath&gt;&lt;perelementxpath propertyname="keyref"&gt;@keyref&lt;/perelementxpath&gt;&lt;perelementxpath propertyname="scope"&gt;ancestor-or-self::*[@scope][position()=1]/@scope&lt;/perelementxpath&gt;&lt;perelementxpath propertyname="class"&gt;@class&lt;/perelementxpath&gt;&lt;/perelementxpaths&gt;&lt;/configuration&gt;</ExtractHyperlinks>
+    <ExtractConrefs>&lt;configuration&gt;&lt;elementxpath&gt;(//*[@conref or @conrefend or @conkeyref][not(ancestor-or-self::*[@varref])][not(ancestor::*[@conref])])&lt;/elementxpath&gt;&lt;perelementxpaths&gt;&lt;perelementxpath propertyname="conref"&gt;@conref&lt;/perelementxpath&gt;&lt;perelementxpath propertyname="conkeyref"&gt;@conkeyref&lt;/perelementxpath&gt;&lt;perelementxpath propertyname="conrefend"&gt;@conrefend&lt;/perelementxpath&gt;&lt;perelementxpath propertyname="class"&gt;@class&lt;/perelementxpath&gt;&lt;/perelementxpaths&gt;&lt;/configuration&gt;</ExtractConrefs>
+    <ExtractKeyDefinitions>&lt;configuration&gt;&lt;elementxpath&gt;(//*[@keys][contains(@class,' map/topicref ')][not(ancestor::*[@conref])][not(ancestor-or-self::*[@varref])])&lt;/elementxpath&gt;&lt;perelementxpaths&gt;&lt;perelementxpath propertyname="keys"&gt;@keys&lt;/perelementxpath&gt;&lt;perelementxpath propertyname="ref"&gt;@href&lt;/perelementxpath&gt;&lt;perelementxpath propertyname="keyref"&gt;@keyref&lt;/perelementxpath&gt;&lt;perelementxpath propertyname="class"&gt;@class&lt;/perelementxpath&gt;&lt;perelementxpath propertyname="scope"&gt;ancestor-or-self::*[@scope][position()=1]/@scope&lt;/perelementxpath&gt;&lt;/perelementxpaths&gt;&lt;/configuration&gt;</ExtractKeyDefinitions>
+  </commonparameters>
+  <publishstarttime>20261011080616983</publishstarttime>
+  <multivalueseparator>, </multivalueseparator>
+  <datetimeformat>dd/MM/yyyy HH:mm:ss</datetimeformat>
+  <publishpluginconfigurationfile>E:\InfoShare\Data\Publish\Data\qon1gduvx4k\export\PublishPluginConfiguration.xml</publishpluginconfigurationfile>
+  <conditionsfile>E:\InfoShare\Data\Publish\Data\qon1gduvx4k\export\6\ProductDefinition.xml</conditionsfile>
+  <publicationoutputmetadatafile>E:\InfoShare\Data\Publish\Data\qon1gduvx4k\export\publicationoutput.met</publicationoutputmetadatafile>
+  <releasecandidate>yes</releasecandidate>
+  <compareconditionsfile></compareconditionsfile>
+  <comparereportfile></comparereportfile>
+  <outputformatfile>E:\InfoShare\Data\Publish\Data\qon1gduvx4k\export\outputformat.met</outputformatfile>
+</publishpostprocesscontext>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN">
+<topic id="GUID-529CA6B9-9C59-4CAF-8D2C-8FF41DE1292A" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic intc-trackChanges-d)                            (topic equation-d)                            (topic mathml-d)   " class="- topic/topic ">
+  <title class="- topic/title ">Processor Identification</title>
+  <body class="- topic/body ">
+    <draft-comment translate="no" class="- topic/draft-comment ">Converted using FMHtml2Dita version: 2.1.0
+    </draft-comment>
+    <p class="- topic/p "> Refer to the Processor EDS Stepping and IDs documentation.
+    </p>
+  </body>
+</topic>

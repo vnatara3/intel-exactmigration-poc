@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN">
+<topic id="GUID-D18B93B8-24ED-468C-B437-D76A544A5270" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic intc-trackChanges-d)                            (topic equation-d)                            (topic mathml-d)   " class="- topic/topic "> 
+  <title class="- topic/title ">Boot Strap Processor</title> 
+  <body class="- topic/body "> 
+    <p class="- topic/p "> The platform can have three possible BSPs: 
+    </p> 
+    <ol id="GUID-914E3A07-9F37-4AA2-91E2-65FE830A135E" class="- topic/ol "> 
+      <li id="LI_E0D759EB66DC4EC3912A1F2900EC7933" class="- topic/li ">CPU Die P-cores 
+      </li> 
+      <li id="LI_9CBB7651B67E4F24A2B31AC866BFC4E1" class="- topic/li ">CPU Die Little 
+      </li> 
+      <li id="LI_B87B1B03A548417EBBAC9E18B411B0F1" class="- topic/li ">SoC Cores
+      </li> 
+    </ol> 
+    <p class="- topic/p "> It is an SoC design choice to choose which combinations are supported. Different product segments require different BSP support. BSP in this regard refers to the hardware selected boot processor selected via the WHOAMI register, software/pcode can always change the BSP by writing to APIC Base MSR and following the Multi-Processor Initialization protocol to enable other BSPs. 
+    </p> 
+    <p class="- topic/p "> APIC ID is changed from 8bits to 9bits and APIC ID with lowest ID will be the BSP. RWC supports 2T and CRT supports 1. The lowest core APICID number will be set as the BSP. APICID numbering starts with lowest number on P-core in CPU die then increments through all CPU cores and then to SoC cores. CPU and SoC cores can be disabled via BIOS and pCode resolves which cores are disabled based on straps and fuses. 
+    </p> 
+  </body> 
+</topic> 

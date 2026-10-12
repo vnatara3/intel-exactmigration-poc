@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN">
+<topic id="GUID-D550E81B-3CAA-4B4E-944E-710E2C66E757" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic intc-trackChanges-d)                            (topic equation-d)                            (topic mathml-d)   " class="- topic/topic "> 
+  <title class="- topic/title ">Early Power Management Configuration</title> 
+  <body class="- topic/body "> 
+    <p class="- topic/p "> Prior to this platform, power management BIOS configurations did not take effect until BIOS_RST_CPL is set. Before this phase, the SOC runs at safe voltages/FIVR's and does not have efficient power delivery configuration, which might require BIOS workaround for thermal issues during Intel® MRC. In this platform, we are now adding new BIOS-PCODE sync (Early VR Done) where PM flows starts. 
+    </p> 
+    <p class="- topic/p "> BIOS shall program Early VR done to message PCODE via Mailbox for indicating Pre-MRC VR/PM configuration settings. 
+    </p> 
+    <section id="SECTION_F9C217E64A57459A934D6226130F4F72" class="- topic/section "> 
+      <title class="- topic/title ">Protocol</title> 
+      <p class="- topic/p "> 
+      <ol id="OL_30393DFC67C9421C9686D59FEE1FCC73" class="- topic/ol "> 
+        <li id="LI_CEEC5405914141E58706CA99F417A4A5" class="- topic/li "> BIOS configures early PD/PM configuration 
+        </li> 
+        <li id="LI_342B4EEE38E2456989580B8961971980" class="- topic/li "> BIOS notifies punit through a mailbox that configuration is done 
+          <ol id="OL_D23B59FBE7CC4F8EA4207AC350921662" class="- topic/ol "> 
+            <li id="LI_5288162F2E3642669610CDD5FE6500A9" class="- topic/li "> Write BIOS-&gt;punit mailbox command EARLY_PM_CONFIG (param1=0, Param2=0, data = 0, run/busy=1) 
+            </li> 
+            <li id="LI_3E9914CF59464A519B0F623061FDB0E5" class="- topic/li "> BIOS will poll and wait for MAILBOX_INTERFACE.RUN_BUSY = 0 
+            </li> 
+            <li id="LI_66D96B4B4CC4477AB7832D6737CB3868" class="- topic/li "> If return data = 1 - request is granted - pcode has acked the request. 
+            </li> 
+            <li id="LI_920BAA0CAA054CA69900359BE312E5C6" class="- topic/li "> If return data = 0 - request in progress. BIOS needs to re-issue the mailbox command to check if pcode is done. 
+            </li> 
+          </ol> 
+        </li> 
+        <li id="LI_79B48E2CBFD4439EAE0F57D346F0B669" class="- topic/li "> PCODE will perform necessary actions to ack the BIOS request, for example - enable early power management once done, pcode will indicate it by replying to the mailbox command with 'Request granted'. 
+        </li> 
+      </ol> 
+      </p> 
+      <table id="TABLE_F78DDB57EEC0489999D6EC4E631F2547" class="- topic/table "> 
+      <title class="- topic/title "> New BIOS Pcode Mailbox Command for EARLY_PM_CONFIG</title> 
+      <tgroup cols="2" class="- topic/tgroup "> 
+        <colspec colnum="1" colname="col1" colwidth="*" class="- topic/colspec " /> 
+        <colspec colnum="2" colname="col2" colwidth="*" class="- topic/colspec " /> 
+        <thead class="- topic/thead "> 
+          <row class="- topic/row "> 
+            <entry class="- topic/entry "> Field 
+            </entry> 
+            <entry class="- topic/entry "> Value 
+            </entry> 
+          </row></thead> 
+        <tbody class="- topic/tbody "> 
+          <row class="- topic/row "> 
+            <entry class="- topic/entry "> MAILBOX_INTERFACE.Command 
+            </entry> 
+            <entry class="- topic/entry "> EARLY_PM_CONFIG (opcode 0x46) 
+            </entry> 
+          </row> 
+          <row class="- topic/row "> 
+            <entry class="- topic/entry "> MAILBOX_INTERFACE.Param1 
+            </entry> 
+            <entry class="- topic/entry "> 0 (reserved for future) 
+            </entry> 
+          </row> 
+          <row class="- topic/row "> 
+            <entry class="- topic/entry "> MAILBOX_INTERFACE.Param2 
+            </entry> 
+            <entry class="- topic/entry "> 0 (reserved for future) 
+            </entry> 
+          </row> 
+          <row class="- topic/row "> 
+            <entry class="- topic/entry "> MAILBOX_INTERFACE.RUN_BUSY 
+            </entry> 
+            <entry class="- topic/entry "> run/busy value 
+            </entry> 
+          </row> 
+          <row class="- topic/row "> 
+            <entry class="- topic/entry "> MAILBOX_DATA 
+            </entry> 
+            <entry class="- topic/entry "> 0 (reserved for future) 
+            </entry> 
+          </row> 
+        </tbody> 
+      </tgroup> 
+      </table> 
+      <table id="TABLE_F7ED19BA586745419E009CC7319C76DD" class="- topic/table "> 
+      <title class="- topic/title ">Response</title> 
+      <tgroup cols="2" class="- topic/tgroup "> 
+        <colspec colnum="1" colname="col1" colwidth="*" class="- topic/colspec " /> 
+        <colspec colnum="2" colname="col2" colwidth="*" class="- topic/colspec " /> 
+        <thead class="- topic/thead "> 
+          <row class="- topic/row "> 
+            <entry class="- topic/entry "> Field 
+            </entry> 
+            <entry class="- topic/entry "> Value 
+            </entry> 
+          </row></thead> 
+        <tbody class="- topic/tbody "> 
+          <row class="- topic/row "> 
+            <entry class="- topic/entry "> MAILBOX_INTERFACE.RESPONSE 
+            </entry> 
+            <entry class="- topic/entry "> 0 
+            </entry> 
+          </row> 
+          <row class="- topic/row "> 
+            <entry class="- topic/entry "> MAILBOX_DATA 
+            </entry> 
+            <entry class="- topic/entry "> 1: Request granted. 0: Request in progress (need to retry until request is granted) 
+            </entry> 
+          </row> 
+        </tbody> 
+      </tgroup> 
+      </table> 
+    </section> 
+    <section id="SECTION_444B15B776A24D7A972ACDAA3D0E6BEE" class="- topic/section "> 
+      <title class="- topic/title "> BIOS Configuration Before Handshake</title> 
+      <p class="- topic/p "><b class="+ topic/ph hi-d/b ">All VR Configuration</b> 
+      <ol id="OL_0FD6895347604FDB96593BD20476B299" class="- topic/ol "> 
+        <li id="LI_B0534D84E5FF487B9A81C6ACF4C4F9A4" class="- topic/li ">Programs the VR parameters for the external VR's which support SVID communication: 
+          <ol id="OL_5632D5F81A4D4755B83B77E7A7FA7609" class="- topic/ol "> 
+            <li id="LI_0F67BD27BC574EE58726DCA55ED2E9D5" class="- topic/li "> Platform Level controls PSYS Config 
+            </li> 
+            <li id="LI_CCD86D7A5B164803857BEF39E911964C" class="- topic/li "> PSYS Pmax 
+            </li> 
+            <li id="LI_2CAE0D42E3954F2BB038728122A881B6" class="- topic/li "> VCCIN Min Voltage override 
+            </li> 
+            <li id="LI_D12D20AA4E8C4D0BB65CAD05090348C9" class="- topic/li "> VccIn Aux IMON IccMax 
+            </li> 
+            <li id="LI_5F5A39C07BC74CAB87AA15769C28B89E" class="- topic/li "> Vsys Crit (Set Vsys Critical Threshold, Vsys Assertion Deglitch, Vsys De- Assertion Deglitch) 
+            </li> 
+            <li id="LI_DA239D37C2504ECCA4D54BC8AE682449" class="- topic/li "> VccInAux IMON 
+            </li> 
+            <li id="LI_5FFDC8259AB54DF68A8CF2F508E2CE97" class="- topic/li "> Set VR configuration parameters for all VR domains(SA, IA Core, Ring and FIVR) 
+              <ol id="OL_6920F9E943DC4F039EF8181A393B3397" class="- topic/ol "> 
+                <li id="LI_C11C0D059A864C35953C00AEA9BB622D" class="- topic/li "> AC/DC Loadline 
+                </li> 
+                <li id="LI_2546FFE2548B40089556BEAC7AC73975" class="- topic/li "> PS Cutoff Current 
+                </li> 
+                <li id="LI_E0D874FB8AF54F4399EC653207FB3FB4" class="- topic/li "> IMON 
+                </li> 
+                <li id="LI_092B49E450A741F9BFEBC635882863C8" class="- topic/li "> Icc Max 
+                </li> 
+                <li id="LI_17B3739592E44ECBBB83418D0A0360AA" class="- topic/li "> Fast V Mode IccLimit 
+                </li> 
+                <li id="LI_7820A92EC5E54CF48692AFC893D7A7D3" class="- topic/li "> VR Voltage Limit 
+                </li> 
+                <li id="LI_AAF18B8E8A904AA7ACFF734DBF703C68" class="- topic/li "> VR TDC Settings 
+                </li> 
+                <li id="LI_4DC5CCC61F4D4D609B162D024DD3E6AD" class="- topic/li "> PS1 to PS0 Dynamic Cutoff 
+                </li> 
+                <li id="LI_EB961512E9964FE196B3E50D933CED7C" class="- topic/li "> PS2 to PS1 Dynamic Cutoff 
+                </li> 
+                <li id="LI_6ECB9B1462334D429621CA99FB3C75CC" class="- topic/li "> VccIn Demotion 
+                </li> 
+                <li id="LI_A6CB048742C74BF4A1A3D8CEDB66DD92" class="- topic/li "> Acoustic Noise Mitigation 
+                </li> 
+              </ol> 
+            </li> 
+          </ol> 
+        </li> 
+        <li id="LI_913F3A9B079C4A9894B8687955F795B1" class="- topic/li "> If return data = 1 - request is granted - pcode has acked the request. 
+          <ol id="OL_33B6B4CBA2664934B272E71FD798B478" class="- topic/ol "> 
+            <li id="LI_FEBCFA08F2EE467A91594A13C1F930B6" class="- topic/li "> FIVR RFI settings based on XTAL clock frequency. 
+            </li> 
+          </ol> 
+        </li> 
+        <li id="LI_DC3B9C4198F9449990337831417A1E59" class="- topic/li ">Phase Modulation 
+        </li> 
+      </ol> 
+      </p> 
+      <p class="- topic/p "> 
+        <b class="+ topic/ph hi-d/b ">Misc Power Management Features</b> 
+      <ol id="OL_EEA55D0AB4374673A8B28C04024CBBF3" class="- topic/ol "> 
+        <li id="LI_5DF5EDED833C467FA5FBAC4C0F5E0517" class="- topic/li ">Package Turbo Power Limits ( PL1/PL2) including config TDP (CONFIG_TDP_CONTROL MSR) 
+        </li> 
+        <li id="LI_2EA9536CF30941A5B65D7C994930A104" class="- topic/li ">PL3 limits 
+        </li> 
+        <li id="LI_E861962A38EA4918ABA09704C3D42027" class="- topic/li ">PL4 limits 
+        </li> 
+        <li id="LI_1E99C71372D047B8B74ABAE86087506D" class="- topic/li ">RATL 
+        </li> 
+        <li id="LI_CFE31168A9294B62B16FF159AADCA824" class="- topic/li "> TjOffset/TccOffset/EmTtm 
+        </li> 
+      </ol> 
+      </p> 
+      <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Thermal Features</b> 
+      <ol id="OL_FA3A90F71D604AB6933DA2BCB06B8296" class="- topic/ol "> 
+        <li id="LI_75EA0FF2AAC04362BA067945FEAB766C" class="- topic/li "> Enable Proc Hot 
+        </li> 
+      </ol> 
+      </p> 
+    </section> 
+  </body> 
+</topic> 

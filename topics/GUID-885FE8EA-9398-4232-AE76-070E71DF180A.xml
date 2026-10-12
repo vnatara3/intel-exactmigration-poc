@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN">
+<topic id="GUID-885FE8EA-9398-4232-AE76-070E71DF180A" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic intc-trackChanges-d)                            (topic equation-d)                            (topic mathml-d)   " class="- topic/topic "> 
+  <title class="- topic/title ">Acoustic Noise Mitigation</title> 
+  <body class="- topic/body "> 
+    <p class="- topic/p ">In document 575216, Acoustic Noise Mitigation Guidance refers to an option of setting "AP threads Idle Manner" to "RUN Loop" in BIOS setup menu. 
+    </p> 
+    <p class="- topic/p ">Per 
+      <xref scope="local" format="dita" href="GUID-E7A500C7-F18E-41EF-BBD3-AD332D264380.xml#GUID-E7A500C7-F18E-41EF-BBD3-AD332D264380" class="- topic/xref ">Section 2.2</xref> in this document, EDKII update has the "AP threads Idle Manner" PCD in the code for AP wait loop state selection. 
+    </p> 
+    <p class="- topic/p ">To select :"Run Loop", configure the PCD value to '2' as example shown below: 
+    </p> 
+    <p class="- topic/p ">## Specifies the AP wait loop state during POST phase. 
+    </p> 
+    <p class="- topic/p "># The value is defined as below. 
+    </p> 
+    <p class="- topic/p "># 1: Place AP in the Hlt-Loop state. 
+    </p> 
+    <p class="- topic/p "># 2: Place AP in the Mwait-Loop state. 
+    </p> 
+    <p class="- topic/p "># 3: Place AP in the Run-Loop state. 
+    </p> 
+    <p class="- topic/p "># @Prompt The AP wait loop state. 
+    </p> 
+    <p class="- topic/p ">gUefiCpuPkgTokenSpaceGuid.PcdCpuApLoopMode|2 
+    </p> 
+  </body> 
+</topic> 

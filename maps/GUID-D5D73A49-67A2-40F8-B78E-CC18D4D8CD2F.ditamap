@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN">
+
+<bookmap id="GUID-D5D73A49-67A2-40F8-B78E-CC18D4D8CD2F" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(map bookmap)                          (topic delay-d)                          (map mapgroup-d)                          (topic indexing-d)                           (topic xnal-d)                          (topic hi-d)                           (topic ut-d)                           (topic hazard-d)                          (topic abbrev-d)                          (topic pr-d)                           (topic sw-d)                          (topic ui-d)                          (topic intc-trackChanges-d)                         " class="- map/map bookmap/bookmap "> 
+  <booktitle class="- topic/title bookmap/booktitle "> 
+	 <mainbooktitle class="- topic/ph bookmap/mainbooktitle ">Nova Lake and Razor Lake Processor Family </mainbooktitle> 
+	 <booktitlealt class="- topic/ph bookmap/booktitlealt ">BIOS Specifications</booktitlealt></booktitle> 
+  <bookmeta class="- map/topicmeta bookmap/bookmeta "> 
+	 <publisherinformation class="- topic/publisher bookmap/publisherinformation "> 
+		<organization class="- topic/data bookmap/organization "></organization><published class="- topic/data bookmap/published "> 
+		  <revisionid class="- topic/ph bookmap/revisionid ">1.0</revisionid> 
+		</published> 
+	 </publisherinformation> 
+	 <prodinfo class="- topic/prodinfo "> 
+		<prodname class="- topic/prodname ">Nova Lake and Razor Lake Processor Family </prodname> 
+		<vrmlist class="- topic/vrmlist "><vrm version="ProductVersionNumber" class="- topic/vrm " /></vrmlist> 
+	 </prodinfo> 
+	 <bookrights class="- topic/data bookmap/bookrights "> 
+		<copyrfirst class="- topic/data bookmap/copyrfirst "><year class="- topic/ph bookmap/year ">2025</year></copyrfirst> 
+		<copyrlast class="- topic/data bookmap/copyrlast "><year class="- topic/ph bookmap/year ">2026</year></copyrlast> 
+		<bookowner class="- topic/data bookmap/bookowner "><organization class="- topic/data bookmap/organization ">Intel Corporation</organization></bookowner> 
+	 </bookrights> 
+  </bookmeta> 
+  <frontmatter class="- map/topicref bookmap/frontmatter "> 
+	 <notices href="GUID-3F587BDE-570D-4792-A471-2B071DD44C0E.xml" format="dita" scope="local" class="- map/topicref bookmap/notices "> 
+      <topicmeta class="- map/topicmeta "><!--Navtitle attribute converted into element by SDL Trisoft "Dita11ToDita12.xsl".--> 
+      </topicmeta>
+    </notices> 
+	 <booklists class="- map/topicref bookmap/booklists "> 
+		<toc class="- map/topicref bookmap/toc " /> 
+		<figurelist class="- map/topicref bookmap/figurelist " /> 
+		<tablelist class="- map/topicref bookmap/tablelist " /> 
+	 </booklists> 
+  <topicref href="GUID-DF3B9701-FF24-4C79-AFA2-F81FD94D2C2F.xml" format="dita" scope="local" class="- map/topicref "> 
+      <topicmeta class="- map/topicmeta "> 
+      </topicmeta> 
+    </topicref></frontmatter> 
+  <chapter scope="local" format="ditamap" type="map" href="GUID-31833390-06CF-4CE0-A9E9-210336FF9EE9.ditamap" class="- map/topicref bookmap/chapter "> 
+    <topicmeta class="- map/topicmeta "> 
+    </topicmeta> 
+  </chapter><backmatter class="- map/topicref bookmap/backmatter "> 
+	 <booklists class="- map/topicref bookmap/booklists "> 
+		<glossarylist class="- map/topicref bookmap/glossarylist ">
+<!--<mapref href="GUID-55773233-2720-433C-9CBD-4201A0BD6EE8" scope="local" navtitle="Glossary Map"/>-->
+		</glossarylist> 
+		<indexlist class="- map/topicref bookmap/indexlist " /> 
+	 </booklists> 
+  </backmatter> 
+</bookmap>

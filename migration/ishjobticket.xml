@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<job-specification combinelanguages="no" comparewitholderversion="no">
+  <parameter name="FMAPID">GUID-28583781-F7EB-4F72-A734-AC8FA94C9D9C</parameter>
+  <parameter name="FPUBINCLUDECOMMENTS"></parameter>
+  <parameter name="FPUBINCLUDEMETADATA"></parameter>
+  <parameter name="FPUBWATERMARK"></parameter>
+  <parameter name="MODIFIED-ON">11/10/2026 08:06:04</parameter>
+  <parameter name="FISHPUBREVIEWENDDATE">27/07/2025 11:30:00</parameter>
+  <parameter name="FISHPUBLNGCOMBINATION">en-US</parameter>
+  <parameter name="FISHOUTPUTFORMATREF">PDF - Base</parameter>
+  <parameter name="FISHPUBSTATUS">Pending</parameter>
+  <parameter name="FISHPUBLISHER">sys_pti_jobusr</parameter>
+  <parameter name="FISHEMAIL">patrick.j.grogg@intel.com</parameter>
+  <parameter name="outputformat">PDF - Base</parameter>
+  <parameter name="required-resolution">High, Low</parameter>
+  <parameter name="output-fileextension">pdf</parameter>
+  <parameter name="export-document-type">ISHPublication</parameter>
+  <parameter name="export-document-level">lng</parameter>
+  <parameter name="export-document">GUID-28583781-F7EB-4F72-A734-AC8FA94C9D9C</parameter>
+  <parameter name="event-identifier">PUBLISH PRDIPIXAPP02 20261011080604124 650319524</parameter>
+  <parameter name="event-name">PUBLISH</parameter>
+  <parameter name="start-date">20261011080616</parameter>
+  <parameter name="publisher">sys_pti_jobusr</parameter>
+  <parameter name="email-address">patrick.j.grogg@intel.com</parameter>
+  <parameter name="export-report">GUID-28583781-F7EB-4F72-A734-AC8FA94C9D9C.report.xml</parameter>
+  <parameter name="export-ishlngref">14794424</parameter>
+  <parameter name="releasecandidate">yes</parameter>
+  <parameter name="autocomplete-versions-using-language">en-US</parameter>
+  <parameter name="export-start-document">GUID-D5D73A49-67A2-40F8-B78E-CC18D4D8CD2F</parameter>
+  <parameter name="export-resources"></parameter>
+  <parameter name="baseline-name">Nova Lake Processor Family BIOS Specifications-v6-GUID-28583781-F7EB-4F72-A734-AC8FA94C9D9C-2026/08/27 06:02:46</parameter>
+  <parameter name="export-path">E:\InfoShare\Data\Publish\Data\qon1gduvx4k\work\6\en-US</parameter>
+  <parameter name="resourcelanguage">en-US</parameter>
+  <parameter name="language">en-US</parameter>
+  <parameter name="hyperlink-separator">#</parameter>
+  <parameter name="documenttitle">Nova Lake and Razor Lake Processor Family BIOS Specifications</parameter>
+</job-specification>

@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN">
+<topic id="GUID-7041174D-7922-49BD-A885-574D27488CF1" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic intc-trackChanges-d)                            (topic equation-d)                            (topic mathml-d)   " class="- topic/topic "> 
+  <title class="- topic/title ">Intel® Total Storage Encryption Reporting Structure</title> 
+  <body class="- topic/body "> 
+    <p class="- topic/p "> This section defines the Intel® Total Storage Encryption reporting structures that are published by the BIOS for OS consumption. The nested structures within the TSE reporting structures must be allocated as a contiguous memory block. 
+    </p> 
+    <p class="- topic/p "> There is only one instance of this TSE Description Table since there is only one TSE feature. 
+    </p> 
+    <table id="GUID-CE42BBE0-54B2-49D4-A391-8198FFB7C3C6" class="- topic/table "> 
+  <title class="- topic/title ">Intel ® Total Storage Encryption Description </title> 
+  <tgroup cols="5" class="- topic/tgroup "> 
+    <colspec colnum="1" colname="col1" colwidth="1.32*" class="- topic/colspec " /> 
+    <colspec colnum="2" colname="col2" colwidth="1.00*" class="- topic/colspec " /> 
+    <colspec colnum="3" colname="col3" colwidth="1.01*" class="- topic/colspec " /> 
+    <colspec colnum="4" colname="col4" colwidth="1.15*" class="- topic/colspec " /> 
+    <colspec colnum="5" colname="col5" colwidth="2.22*" class="- topic/colspec " /> 
+    <thead class="- topic/thead "> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> 
+          <b class="+ topic/ph hi-d/b "> Field</b> 
+        </entry> 
+        <entry class="- topic/entry "> 
+          <b class="+ topic/ph hi-d/b "> Byte Length</b> 
+        </entry> 
+        <entry class="- topic/entry "> 
+          <b class="+ topic/ph hi-d/b "> Byte Offset</b> 
+        </entry> 
+        <entry class="- topic/entry "> 
+          <b class="+ topic/ph hi-d/b "> BIOS Value</b> 
+        </entry> 
+        <entry class="- topic/entry "> 
+          <b class="+ topic/ph hi-d/b "> Description</b> 
+        </entry> 
+      </row></thead> 
+    <tbody class="- topic/tbody "> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> Signature 
+        </entry> 
+        <entry class="- topic/entry "> 4 
+        </entry> 
+        <entry class="- topic/entry "> 0 
+        </entry> 
+        <entry class="- topic/entry "> "IERS" 
+        </entry> 
+        <entry class="- topic/entry "> Signature for Inline Encryption Reporting Structure 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> Length 
+        </entry> 
+        <entry class="- topic/entry "> 4 
+        </entry> 
+        <entry class="- topic/entry "> 4 
+        </entry> 
+        <entry class="- topic/entry "> N 
+        </entry> 
+        <entry class="- topic/entry "> Length, in bytes of the description table including the length of the nested structures. 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> Revision 
+        </entry> 
+        <entry class="- topic/entry "> 1 
+        </entry> 
+        <entry class="- topic/entry "> 8 
+        </entry> 
+        <entry class="- topic/entry "> 01h 
+        </entry> 
+        <entry class="- topic/entry "> This is the revision of this table. Each structure will have its own version number. 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> Reserved 
+        </entry> 
+        <entry class="- topic/entry "> 1 
+        </entry> 
+        <entry class="- topic/entry "> 9 
+        </entry> 
+        <entry class="- topic/entry "> 00h 
+        </entry> 
+        <entry class="- topic/entry "> Reserved 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> OEM ID 
+        </entry> 
+        <entry class="- topic/entry "> 6 
+        </entry> 
+        <entry class="- topic/entry "> 10 
+        </entry> 
+        <entry class="- topic/entry "> "INTEL " 
+        </entry> 
+        <entry class="- topic/entry "> OEM ID - This field is not expected to be used but is a standard field in the ACPI structures. 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> OEM Table ID 
+        </entry> 
+        <entry class="- topic/entry "> 8 
+        </entry> 
+        <entry class="- topic/entry "> 16 
+        </entry> 
+        <entry class="- topic/entry "> "Platform specific value" 
+        </entry> 
+        <entry class="- topic/entry "> OEM Revision of TRR table. 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> OEM Revision 
+        </entry> 
+        <entry class="- topic/entry "> 4 
+        </entry> 
+        <entry class="- topic/entry "> 24 
+        </entry> 
+        <entry class="- topic/entry "> &lt;&lt;OEM BIOS value&gt;&gt;
+        </entry> 
+        <entry class="- topic/entry "> OEM Revision of TRR table for OEM Table ID. 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> Creator ID 
+        </entry> 
+        <entry class="- topic/entry "> 4 
+        </entry> 
+        <entry class="- topic/entry "> 28 
+        </entry> 
+        <entry class="- topic/entry "> &lt;&lt;OEM BIOS value&gt;&gt;
+        </entry> 
+        <entry class="- topic/entry "> Revision of the utility that created this table 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> Creator Revision 
+        </entry> 
+        <entry class="- topic/entry "> 4 
+        </entry> 
+        <entry class="- topic/entry "> 32 
+        </entry> 
+        <entry class="- topic/entry "> &lt;&lt;OEM BIOS value&gt;&gt;
+        </entry> 
+        <entry class="- topic/entry "> Revision of the utility that created the table 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> No of TSE Engines 
+        </entry> 
+        <entry class="- topic/entry "> 1 
+        </entry> 
+        <entry class="- topic/entry "> 36 
+        </entry> 
+        <entry class="- topic/entry "> 01h 
+        </entry> 
+        <entry class="- topic/entry "> Number of TSE engines in the SoC. The details of each engine will be in the next level structure 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> Flags 
+        </entry> 
+        <entry class="- topic/entry "> 1 
+        </entry> 
+        <entry class="- topic/entry "> 37 
+        </entry> 
+        <entry class="- topic/entry "> 00h 
+        </entry> 
+        <entry class="- topic/entry "> Reserved 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> Reserved 
+        </entry> 
+        <entry class="- topic/entry "> 10 
+        </entry> 
+        <entry class="- topic/entry "> 38 
+        </entry> 
+        <entry class="- topic/entry "> 0 
+        </entry> 
+        <entry class="- topic/entry "> Reserved 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> TSE Structures [] 
+        </entry> 
+        <entry class="- topic/entry "> - 
+        </entry> 
+        <entry class="- topic/entry "> 48 
+        </entry> 
+        <entry class="- topic/entry "> Start of next structure 
+        </entry> 
+        <entry class="- topic/entry "> A list of structures. This list contains one of more TSE capability reporting structures (one per TSE engine). 
+        </entry> 
+      </row> 
+    </tbody> 
+  </tgroup> 
+  </table> 
+  <p class="- topic/p "> There can be N number of instances of this Intel® Total Storage Encryption Capability Reporting Structure. Each instance is associated with a number of TSE Engines. 
+  </p> 
+  <table id="GUID-4525E467-8D9E-43A6-983A-1F15B3354D8B" class="- topic/table "> 
+  <title class="- topic/title "> Intel ® Total Storage Encryption Capability Reporting Structure</title> 
+  <tgroup cols="5" class="- topic/tgroup "> 
+    <colspec colnum="1" colname="col1" colwidth="1.00*" class="- topic/colspec " /> 
+    <colspec colnum="2" colname="col2" colwidth="1.02*" class="- topic/colspec " /> 
+    <colspec colnum="3" colname="col3" colwidth="1.00*" class="- topic/colspec " /> 
+    <colspec colnum="4" colname="col4" colwidth="2.25*" class="- topic/colspec " /> 
+    <colspec colnum="5" colname="col5" colwidth="2.24*" class="- topic/colspec " /> 
+    <thead class="- topic/thead "> 
+      <row valign="middle" class="- topic/row "> 
+        <entry class="- topic/entry "> 
+          <b class="+ topic/ph hi-d/b "> Field</b> 
+        </entry> 
+        <entry class="- topic/entry "> 
+          <b class="+ topic/ph hi-d/b "> Byte Length</b> 
+        </entry> 
+        <entry class="- topic/entry "> 
+          <b class="+ topic/ph hi-d/b "> Byte Offset</b> 
+        </entry> 
+        <entry class="- topic/entry "> 
+          <b class="+ topic/ph hi-d/b "> BIOS Value</b> 
+        </entry> 
+        <entry class="- topic/entry "> 
+          <b class="+ topic/ph hi-d/b "> Description</b> 
+        </entry> 
+      </row></thead> 
+    <tbody class="- topic/tbody "> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> Type 
+        </entry> 
+        <entry class="- topic/entry "> 2 
+        </entry> 
+        <entry class="- topic/entry "> 0 
+        </entry> 
+        <entry class="- topic/entry "> 0 
+        </entry> 
+        <entry class="- topic/entry "> TSE Hardware Unit Capability structure 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry colname="col1" class="- topic/entry "> Length 
+        </entry> 
+        <entry colname="col2" class="- topic/entry "> 2 
+        </entry> 
+        <entry class="- topic/entry "> 2 
+        </entry> 
+        <entry class="- topic/entry "> N 
+        </entry> 
+        <entry class="- topic/entry "> Varies (16 + Size of device Scope structure) 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry morerows="2" class="- topic/entry "> Flags 
+        </entry> 
+        <entry morerows="2" class="- topic/entry "> 1 
+        </entry> 
+        <entry morerows="2" class="- topic/entry "> 4 
+        </entry> 
+        <entry morerows="2" class="- topic/entry "> 01h 
+        </entry> 
+        <entry colname="col5" class="- topic/entry "> Bit 0: Include_PCI_ALL If set the TSE engine includes all the PCIe devices in the specified segment. When there is multiple TSE capability reporting structures, this flag should only be set by the last TSCRS. Two TSCRS should not be setting this flag. If clear, this TSE only includes the ports in the specified segment as defined by the 'device scope' field. The device can be of any type as described by the 'Type' field. There can be more than 1 TCRS reported by BIOS with this flag set. BIOS needs to make sure that the devices in the device scope structure should not be linked to multiple TCRS. 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry colname="col5" class="- topic/entry "> Bit 2: Virtualizable: Supports SRIOV or SIOV 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> Bit 3: If Bit 2 is set, 0 = SRIOV, 1 = SIOV. if BIT2 is not set, Bit 3 should be 0 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> Reserved 
+        </entry> 
+        <entry class="- topic/entry "> 1 
+        </entry> 
+        <entry class="- topic/entry "> 5 
+        </entry> 
+        <entry class="- topic/entry "> 00h 
+        </entry> 
+        <entry class="- topic/entry "> Reserved 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> Segment Number 
+        </entry> 
+        <entry class="- topic/entry "> 2 
+        </entry> 
+        <entry class="- topic/entry "> 6 
+        </entry> 
+        <entry class="- topic/entry "> 0000h 
+        </entry> 
+        <entry class="- topic/entry "> The PCI Segment associated with this unit 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry morerows="2" class="- topic/entry "> TSE Key Sources Supported 
+        </entry> 
+        <entry morerows="2" class="- topic/entry "> 1 
+        </entry> 
+        <entry morerows="2" class="- topic/entry "> 8 
+        </entry> 
+        <entry morerows="2" class="- topic/entry "> IA32_TSE_CAPABILITY. TSESSSS_ENGINE_KEY_SOURCE_SUPPORTED 
+        </entry> 
+        <entry colname="col5" class="- topic/entry "> Bit 0: CPU ISA 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry colname="col5" class="- topic/entry "> Bit 1: Security Controller 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> Bit 2: Key engine inside TSE Engine 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> TSE Encryption Algorithm Supported 
+        </entry> 
+        <entry class="- topic/entry "> 2 
+        </entry> 
+        <entry class="- topic/entry "> 9 
+        </entry> 
+        <entry class="- topic/entry "> IA32_TSE_CAPABILITY. AES_XTS_256 
+        </entry> 
+        <entry class="- topic/entry "> BIT0: AES_XTS_256 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> TSE MAX Keys Supported 
+        </entry> 
+        <entry class="- topic/entry "> 2 
+        </entry> 
+        <entry class="- topic/entry "> 11 
+        </entry> 
+        <entry class="- topic/entry "> IA32_TSE _CAPABILITY. TSE_MAX_KEYS 
+        </entry> 
+        <entry class="- topic/entry "> Indicates the maximum number of keys which are available. 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> TSE MAX BDFs supported 
+        </entry> 
+        <entry class="- topic/entry "> 1 
+        </entry> 
+        <entry class="- topic/entry "> 13 
+        </entry> 
+        <entry class="- topic/entry "> 
+          <u class="+ topic/ph hi-d/u "> TSE_</u> IOCCE_Capability. MaxBdfSupported 
+        </entry> 
+        <entry class="- topic/entry "> Maximum number of devices this engine can support. This is the maximum number of NVMe drives that can be configured in the TSE engine to enable encryption. 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry morerows="1" class="- topic/entry "> TSE Page Sizes Supported 
+        </entry> 
+        <entry morerows="1" class="- topic/entry "> 1 
+        </entry> 
+        <entry morerows="1" class="- topic/entry "> 14 
+        </entry> 
+        <entry morerows="1" class="- topic/entry "> 
+          <u class="+ topic/ph hi-d/u "> TSE_</u> IOCCE_Capability. PageSizeSupported 
+        </entry> 
+        <entry colname="col5" class="- topic/entry "> Bit 0: 4K 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry ">Bit 1: 2M 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry morerows="1" class="- topic/entry "> Granularity of LBA 
+        </entry> 
+        <entry morerows="1" colname="col2" class="- topic/entry "> 1 
+        </entry> 
+        <entry morerows="1" colname="col3" class="- topic/entry "> 15 
+        </entry> 
+        <entry morerows="1" colname="col4" class="- topic/entry "> 
+          <u class="+ topic/ph hi-d/u "> TSE_</u> IOCCE_Capability. LBA_Granularity 
+        </entry> 
+        <entry colname="col5" class="- topic/entry "> Bit 0: 512 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry ">Bit 1: 4K 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry morerows="2" class="- topic/entry "> Data Transfer Alignment 
+        </entry> 
+        <entry morerows="2" class="- topic/entry "> 1 
+        </entry> 
+        <entry morerows="2" class="- topic/entry "> 16 
+        </entry> 
+        <entry morerows="2" class="- topic/entry "> 
+          <u class="+ topic/ph hi-d/u "> TSE_</u> IOCCE_Capability. DataTransferAlignment 
+        </entry> 
+        <entry colname="col5" class="- topic/entry "> BIT0: 4B alignment 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry colname="col5" class="- topic/entry "> BIT1: 8B alignment 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> BIT2: 16B alignment 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> CryptoTweakSize 
+        </entry> 
+        <entry class="- topic/entry "> 1 
+        </entry> 
+        <entry class="- topic/entry "> 17 
+        </entry> 
+        <entry class="- topic/entry "> 2Ch 
+        </entry> 
+        <entry class="- topic/entry "> Bit size limit of the BASE_LBA field of the TSE Table. 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> IOCCE MMIO Base 
+        </entry> 
+        <entry class="- topic/entry "> 8 
+        </entry> 
+        <entry class="- topic/entry "> 18 
+        </entry> 
+        <entry class="- topic/entry "> Dynamic 
+        </entry> 
+        <entry class="- topic/entry "> Base Address of the IOCCE MMIO range. 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> IOCCE MMIO Limit 
+        </entry> 
+        <entry class="- topic/entry "> 8 
+        </entry> 
+        <entry class="- topic/entry "> 26 
+        </entry> 
+        <entry class="- topic/entry "> IOCCE Base + 3FFh 
+        </entry> 
+        <entry class="- topic/entry "> Address Limit of the IOCCE MMIO range. 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> IOC MMIO Base 
+        </entry> 
+        <entry class="- topic/entry "> 8 
+        </entry> 
+        <entry class="- topic/entry "> 34 
+        </entry> 
+        <entry class="- topic/entry "> Dynamic 
+        </entry> 
+        <entry class="- topic/entry "> Base Address of the IOC MMIO range. 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> IOC MMIO Limit 
+        </entry> 
+        <entry class="- topic/entry "> 8 
+        </entry> 
+        <entry class="- topic/entry "> 42 
+        </entry> 
+        <entry class="- topic/entry "> IOC MMIO Base + 2Ch
+        </entry> 
+        <entry class="- topic/entry "> Address Limit of the IOC MMIO range. 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> Device Scope [] 
+        </entry> 
+        <entry class="- topic/entry "> ‐ 
+        </entry> 
+        <entry class="- topic/entry "> 50 
+        </entry> 
+        <entry class="- topic/entry "> NULL 
+        </entry> 
+        <entry class="- topic/entry "> The device scope structure contains zero or more device scope entries that identify devices in the specified segment that are covered by the given TSE engine. The device scope structure is defined below 
+        </entry> 
+      </row> 
+    </tbody> 
+  </tgroup> 
+  </table> 
+  </body> 
+</topic> 

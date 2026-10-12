@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN">
+<topic id="GUID-D8665F31-FD76-4445-8C95-130CF47B918F" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic intc-trackChanges-d)                            (topic equation-d)                            (topic mathml-d)   " class="- topic/topic "> 
+  <title class="- topic/title ">SoC Cores</title> 
+  <body class="- topic/body "> 
+    <p class="- topic/p "> The SoC cores are added to the SoC die to improve battery life workloads by allowing the CPU die to turn off when low compute performance is sufficient and efficiency is most critical. High level features are:
+    </p> 
+    <ul id="GUID-1F04A17B-3480-4950-A5D7-F25127C43D6C" class="- topic/ul "> 
+      <li class="- topic/li "> SoC cores are 2xCMT Soft-IP with 2MB L2
+        <ul id="GUID-8B190A15-7FC6-456B-94EF-67E9F50204D8" class="- topic/ul ">
+          <li class="- topic/li ">This same configuration is used for all products
+          </li>
+        </ul>
+      </li>
+      <li class="- topic/li ">SoC cores must support being fused out for SKUing and debug
+      </li>
+      <li class="- topic/li ">SoC cores have same ISA as CPU die cores
+        <ul id="GUID-B5D6B809-4861-4D49-8A7F-8D4A00419AD1" class="- topic/ul ">
+          <li class="- topic/li ">Core and Atom are fused to common ISA
+          </li>
+          <li class="- topic/li ">Asymmetric ISA is not supported
+          </li>
+        </ul>
+      </li>
+      <li class="- topic/li ">The SoC cores have the same view of the system address map and is fully cache coherent with the CPU cores
+        <ul id="GUID-60FCF829-232C-4F7B-AAD0-6EE11B304386" class="- topic/ul ">
+          <li class="- topic/li ">SoC Cores appear to software the same as CPU die cores, but have lower performance
+          </li>
+          <li class="- topic/li ">SoC Cores do not allocate into the LLC and only snoop the LLC
+          </li>
+        </ul>
+      </li>
+      <li class="- topic/li ">There is a power state in which the SoC cores are active in C0 and CPU die will be in a powered down state
+      </li>
+      <li class="- topic/li ">The SoC cores will also be up when CPU die is up, but may be parked to optimize performance
+      </li>
+    </ul>
+  </body> 
+</topic>

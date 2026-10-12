@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN">
+<topic id="GUID-0B205507-EA56-4492-8B07-3DB9F6594844" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic intc-trackChanges-d)                            (topic equation-d)                            (topic mathml-d)   " class="- topic/topic "> 
+  <title class="- topic/title ">Next Generation Uncore (NGU)</title> 
+  <body class="- topic/body "> 
+	 <p class="- topic/p "> Next Generation Uncore (NGU) is the start of a revolution in the client uncore fabric architecture. The legacy architecture started on Sandybridge and has carried forward to ADL, with various changes along the way. 
+	 </p> 
+	 <p class="- topic/p "> Legacy Uncore (until ADL) has different components IOP, PSF0, CMF, DIP, CCF and IOP creates bottle neck for PCIE ordered traffic since entire PCIe hierarchy behind IOP (SOC north IP's under IOP). In TGL, Display BW requirement required adding adhoc path i.e. DIP which allows DE to send requests to memory directly (refer figure below highlight). 
+	 </p> 
+	  
+	 <ul id="GUID-49DF7174-EE7C-4EE5-A615-DC5775B125A3" class="- topic/ul "> 
+		<li id="LI_9A75A5FE6893473D8A1C21B3B4874DA2" class="- topic/li "> NGU the uncore fabric based on Netspeed transport layer built of multiple subcomponents NoC, UFI bridge, IOC (highlighted red in below figure) and this new fabric helps provide required BW and solves architectural issue related to legacy uncore. 
+		</li> 
+		<li id="LI_8294920D2F864D4B9EEDC8CB73EBED72" class="- topic/li ">IOC (I/O cache) which replaces IOP acts root-bus and SOC can scale to multiple IOC's (root - buses) based on SOC BW requirement. 
+		</li> 
+		<li id="LI_55A5BD81C7FF47529AA2AC8E0307B9A3" class="- topic/li ">PCIe hierarchy connected to IOC below PSF and high BW IP's connects directly to NoC (Network on Chip) for traffic routing (like NPU, IPU, Display) via UFI bridge interface. 
+		</li> 
+		<li id="LI_2D252F401FE740658A546A60C6E23590" class="- topic/li ">Each IOC represents unique PCI root bus and can have PCIe bus hierarchy under it. 
+		</li> 
+	 </ul> 
+	 <p class="- topic/p "> NOC is the fabric which connects Cores, GT, NPU, IPU, Display, Media, IOC with memory. It is like a message channel which interconnects IPs trough a system of routers and bridges. IPs hook up to NOC through UFI/CMI bridges and the bridges in turn are hooked up through routers. 
+	 </p> 
+  </body> 
+</topic> 

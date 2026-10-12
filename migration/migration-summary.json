@@ -1,0 +1,16 @@
+﻿{
+    "converterVersion":  "2.0.0",
+    "publicationGuid":  "GUID-28583781-F7EB-4F72-A734-AC8FA94C9D9C",
+    "rootMap":  "GUID-D5D73A49-67A2-40F8-B78E-CC18D4D8CD2F.ditamap",
+    "sourceRoot":  "C:\\temp\\IntelPluginExport\\en-US\\en-US",
+    "targetRoot":  "C:\\temp\\ExactMigrationPOC\\PublicationConverterV2",
+    "generatedUtc":  "2026-10-12T04:27:25.2337681Z",
+    "maps":  10,
+    "topics":  85,
+    "media":  16,
+    "conditionsConverted":  35,
+    "unsupportedConditions":  0,
+    "processingInstructionsRemoved":  125,
+    "remainingRwsFindings":  0,
+    "status":  "READY_FOR_DITA_VALIDATION"
+}

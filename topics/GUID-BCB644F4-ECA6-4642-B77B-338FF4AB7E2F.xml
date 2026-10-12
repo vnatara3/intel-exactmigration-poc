@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN">
+<topic id="GUID-BCB644F4-ECA6-4642-B77B-338FF4AB7E2F" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic intc-trackChanges-d)                            (topic equation-d)                            (topic mathml-d)   " class="- topic/topic "> 
+  <title class="- topic/title ">BIOS Requirements</title> 
+  <body class="- topic/body "> 
+    <ul id="GUID-845F3FC6-F166-477F-BEDE-95E283791EED" class="- topic/ul ">
+      <li class="- topic/li "> Register: PSF_2_PSF_PORT_CONFIG_PG1_PORT0
+        <ul id="GUID-0FA111D3-3FDD-4819-BB95-CA3CFD6BC7E6" class="- topic/ul ">
+          <li class="- topic/li "> Field: Egress Force Relax Ordering (EgressFRO)
+          </li>
+          <li class="- topic/li ">Bit index: 2
+          </li>
+          <li class="- topic/li ">Value: 1'b1
+          </li>
+        </ul>
+      </li> 
+    </ul> 
+  </body> 
+</topic>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN">
+<topic id="GUID-F54A2E49-8318-4B79-AFD9-3ADCEC6E0AED" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic intc-trackChanges-d)                            (topic equation-d)                            (topic mathml-d)   " class="- topic/topic "> 
+  <title class="- topic/title ">Internal Graphics Disabling</title> 
+  <body class="- topic/body "> 
+	 <p class="- topic/p ">If internal Graphics is to be disabled, the BIOS must perform the following steps: 
+	 <ul id="UL_A463CDB446454D49B75E738F8237FFFA" class="- topic/ul "> 
+		<li id="LI_EF28A6D11023435DB5B0D72EEFCBE166" class="- topic/li ">Set the GMS field of the GMCH Graphics Control Register D0.F0.R050h [15:8] =‘00000b’. This prevents UMA memory from being pre-allocated to the internal Graphics Device. 
+		</li> 
+		<li id="LI_9664F4F2C57643528C71687E4E4260D4" class="- topic/li ">Set the GGMS field of the GMCH Graphics Control Register D0.F0.R050h [7:6] =‘00000000b’. 
+		</li> 
+		<li id="LI_5AEFAC36313C4936A98361654CE2FBC8" class="- topic/li ">Set the internal Graphics Device VGA Disable (IVD) field of the GMCH Graphics Control Register D0.F0.R050h [1] = ‘1b’. This will prevent the internal Graphics Device from claiming VGA cycles. 
+		</li> 
+		<li id="LI_5AF9F93C07084827A39582EE4FA10592" class="- topic/li ">Program D0.F0.R054h [4] = 0b to disable internal graphics device. 
+		</li> 
+		 
+	 </ul> 
+	 </p> 
+  </body> 
+</topic> 

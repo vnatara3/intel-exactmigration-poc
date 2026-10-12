@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN">
+<topic id="GUID-446CF6C9-338E-4746-B4ED-3FF3621F103D" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic intc-trackChanges-d)                            (topic equation-d)                            (topic mathml-d)   " class="- topic/topic "> 
+  <title class="- topic/title ">Hybrid CPU Architecture</title> 
+  <body class="- topic/body "> 
+    <draft-comment translate="no" class="- topic/draft-comment ">Converted using FMHtml2Dita version: 2.1.0 
+    </draft-comment> 
+    <p class="- topic/p ">The processor is built on hybrid core architecture, which includes both P-cores and E-cores in a single package for optimizing different workload requirements. All P-cores and E-cores within in the package will share the same last level cache and have identical CPUID signature, therefore, single microcode update will apply. 
+    </p> 
+  </body> 
+</topic> 

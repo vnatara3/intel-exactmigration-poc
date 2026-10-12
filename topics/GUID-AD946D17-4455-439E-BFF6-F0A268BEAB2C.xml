@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN">
+<topic id="GUID-AD946D17-4455-439E-BFF6-F0A268BEAB2C" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic intc-trackChanges-d)                            (topic equation-d)                            (topic mathml-d)   " class="- topic/topic "> 
+  <title class="- topic/title ">Compute (CPU) Die</title> 
+  <body class="- topic/body "> 
+    <p class="- topic/p "> CPU Die contains the central compute cores and supporting infrastructure. 
+    </p> 
+    <ul id="GUID-161C3516-B786-4A59-9FFF-D0BC9945610F" class="- topic/ul "> 
+      <li id="LI_842E9367B3524390B93ACDDAE423A62D" class="- topic/li ">CPU Die separate from the SoC die is "time to performance" - iterating CPU die is quicker than a monolithic SoC 
+      </li> 
+      <li id="LI_4A832A92979A4121AC3D6ED89C1B17B8" class="- topic/li ">Development is faster since IO's, Display, Graphics, etc. don't have to be debugged and tuned every time there's a new core and process. 
+      </li> 
+      <li id="LI_5BE27D74726E454A8E76B858BA53B616" class="- topic/li ">CPU die process is tuned for the core. 
+      </li> 
+    </ul> 
+    <p class="- topic/p "> Compute die is used in all SKU with difference in atom and P-cores numbers. 
+    </p> 
+    <p class="- topic/p "> Refer to the EDS for SKUs planned number of Atom and P-cores. All other IPs remains same. 
+    </p> 
+  </body> 
+</topic> 

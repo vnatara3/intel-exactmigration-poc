@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN">
+<topic id="GUID-A9BCD654-592A-49DE-84F5-E45CEA23E13C" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic intc-trackChanges-d)                            (topic equation-d)                            (topic mathml-d)   " class="- topic/topic "> 
+  <title class="- topic/title ">Intel® Total Storage Encryption BIOS Blocks</title> 
+  <body class="- topic/body "> 
+    <p class="- topic/p "> The BIOS components for Intel® Total Storage Encryption feature are as such: 
+    </p> 
+    <fig id="GUID-A779A8E2-EBE4-44E1-B4A7-6A2FF57232CC" class="- topic/fig "> 
+      <title class="- topic/title "> BIOS Building Blocks for Intel® Total Storage Encryption Support</title><image href="GUID-BB5C9A16-B189-4ED1-BFD5-EAE18C162B32-high.pdf" scalefit="yes" placement="inline" class="- topic/image "> 
+        <alt class="- topic/alt "> 
+        </alt></image> 
+    </fig> 
+    <p class="- topic/p "> Above figure shows BIOS Building Blocks for Intel® Total Storage Encryption Support 
+    </p> 
+    <p class="- topic/p "> 
+    <ol id="GUID-A28E81D6-DA02-4F9B-B8CD-1B4D56DC7B17" class="- topic/ol "> 
+      <li class="- topic/li "> The Intel® Total Storage Encryption hardware detection is responsible for detecting the TSE hardware presence and BIOS Policy to enable TSE support in the BIOS. 
+      </li> 
+      <li class="- topic/li "> The Intel® Total Storage Encryption BIOS initialization is responsible for initializing the IOCCE IP, IOC IP, IMR programming and allocating TSE DRAM Table in memory. 
+      </li> 
+      <li class="- topic/li "> The Intel® Total Storage Encryption ACPI reporting is responsible for publishing TSE ACPI device object with TSE _CRS resource methods. In addition, it is responsible for publishing TSE ACPI table with TSE capabilities reporting. 
+      </li> 
+      <li class="- topic/li "> The UEFI Block IO Crypto Protocol for Intel Inline Encryption provides inline cryptographic interfaces that allows hardware based inline encryption/decryption crypto capabilities of the NVMe device data. This protocol is installed per NVMe Drive Namespace. At high level, the data is encrypted by the IOCCE IP during the write to NVMe drive operation. Similarly, the data is decrypted by the IOCCE IP during the read from NVMe drive operation. 
+      </li> 
+    </ol> 
+    </p> 
+  </body> 
+</topic> 

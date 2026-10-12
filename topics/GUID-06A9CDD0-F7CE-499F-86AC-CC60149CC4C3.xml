@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN">
+<topic id="GUID-06A9CDD0-F7CE-499F-86AC-CC60149CC4C3" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic intc-trackChanges-d)                            (topic equation-d)                            (topic mathml-d)   " class="- topic/topic "> 
+  <title class="- topic/title ">VR Features</title> 
+  <body class="- topic/body "> 
+    <p class="- topic/p "> The processors support additional VRs than older CPUs. BIOS shall update the VR Topology structure to support new VR rails and exposes each VR features per its domain. 
+    </p> 
+    <table id="TABLE_78E509405BA34CAF8306F31D115DB4F5" class="- topic/table "> 
+  <title class="- topic/title ">SVID Address Table</title> 
+  <tgroup cols="2" class="- topic/tgroup "><colspec colnum="1" colname="col1" colwidth="*" class="- topic/colspec " /><colspec colnum="2" colname="col2" colwidth="*" class="- topic/colspec " /><thead class="- topic/thead "> 
+      <row class="- topic/row "> 
+        <entry colname="col1" class="- topic/entry ">Rail /name 
+        </entry> 
+        <entry colname="col2" class="- topic/entry "> Address 
+        </entry> 
+      </row></thead> 
+    <tbody class="- topic/tbody "> 
+      <row class="- topic/row "> 
+        <entry colname="col1" class="- topic/entry ">VCCIA 
+        </entry> 
+        <entry colname="col2" class="- topic/entry ">00h 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry colname="col1" class="- topic/entry ">VCCGT 
+        </entry> 
+        <entry colname="col2" class="- topic/entry ">01h 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry colname="col1" class="- topic/entry ">VCCSA 
+        </entry> 
+        <entry colname="col2" class="- topic/entry ">02h 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry colname="col1" class="- topic/entry ">VCCAtom 
+        </entry> 
+        <entry colname="col2" class="- topic/entry ">03h 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry colname="col1" class="- topic/entry ">VCCL2 
+        </entry> 
+        <entry colname="col2" class="- topic/entry ">04h 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry colname="col1" class="- topic/entry ">VDDQ 
+        </entry> 
+        <entry colname="col2" class="- topic/entry ">05h 
+        </entry> 
+      </row> 
+    </tbody> 
+  </tgroup> 
+  </table> 
+  </body> 
+</topic> 

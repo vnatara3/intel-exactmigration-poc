@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN">
+<topic id="GUID-FD760FB9-0687-4D5B-91D9-61A308571C4F" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic intc-trackChanges-d)                            (topic equation-d)                            (topic mathml-d)   " class="- topic/topic "> 
+  <title class="- topic/title ">DLVR and SSC Control</title> 
+  <body class="- topic/body "> 
+    <p class="- topic/p "> 
+    </p> 
+    <p class="- topic/p "> BIOS must create a configuration knob to enable/disable option for DLVR Phase Modulation SSC. The recommended settings as below: 
+    <table id="TABLE_EB66595154C3454A8E4D898BD1FB41D4" class="- topic/table "> 
+      <tgroup cols="5" class="- topic/tgroup "> 
+        <colspec colnum="1" colname="col1" colwidth="3.05*" class="- topic/colspec " /> 
+        <colspec colnum="2" colname="col2" colwidth="1.00*" class="- topic/colspec " /> 
+        <colspec colnum="3" colname="col3" colwidth="3.20*" class="- topic/colspec " /> 
+        <colspec colnum="4" colname="col4" colwidth="1.52*" class="- topic/colspec " /> 
+        <colspec colnum="5" colname="col5" colwidth="6.63*" class="- topic/colspec " /> 
+        <thead class="- topic/thead "> 
+          <row class="- topic/row "> 
+            <entry class="- topic/entry "> 
+            </entry> 
+            <entry class="- topic/entry "> Offset 
+            </entry> 
+            <entry class="- topic/entry "> 
+            </entry> 
+            <entry class="- topic/entry "> 
+            </entry> 
+            <entry class="- topic/entry "> 
+              <b class="+ topic/ph hi-d/b "> Recommendation</b> 
+            </entry> 
+          </row></thead> 
+        <tbody class="- topic/tbody "> 
+          <row class="- topic/row "> 
+            <entry class="- topic/entry "> Global DLVR RFI Mitigation enable/disable 
+            </entry> 
+            <entry class="- topic/entry "> 
+            </entry> 
+            <entry class="- topic/entry "> 
+            </entry> 
+            <entry class="- topic/entry "> 
+            </entry> 
+            <entry class="- topic/entry "> Enable 
+            </entry> 
+          </row> 
+          <row class="- topic/row "> 
+            <entry class="- topic/entry "> RFI_EMI_CONTROL_0_0_0_MCHBAR 
+            </entry> 
+            <entry class="- topic/entry "> 0x5A08 
+            </entry> 
+            <entry class="- topic/entry "> SSC_FREQ_SPRD 
+            </entry> 
+            <entry class="- topic/entry "> 4:0 
+            </entry> 
+            <entry class="- topic/entry "> Default - 0.5% Options for customers to choose: 0%, 0.5%, 1%, 2%, 4% 
+            </entry> 
+          </row> 
+          <row class="- topic/row "> 
+            <entry class="- topic/entry "> 
+            </entry> 
+            <entry class="- topic/entry "> 
+            </entry> 
+            <entry class="- topic/entry "> SSC_MODE 
+            </entry> 
+            <entry class="- topic/entry "> 5:5 
+            </entry> 
+            <entry class="- topic/entry "> This platform does not use this field 
+            </entry> 
+          </row> 
+          <row class="- topic/row "> 
+            <entry class="- topic/entry "> 
+            </entry> 
+            <entry class="- topic/entry "> 
+            </entry> 
+            <entry class="- topic/entry "> SPREAD_SPEC_CONTROL_LOCK 
+            </entry> 
+            <entry class="- topic/entry "> 6:6 
+            </entry> 
+            <entry class="- topic/entry "> This platform does not use this field 
+            </entry> 
+          </row> 
+          <row class="- topic/row "> 
+            <entry class="- topic/entry "> 
+            </entry> 
+            <entry class="- topic/entry "> 
+            </entry> 
+            <entry class="- topic/entry "> RFI_ENABLE 
+            </entry> 
+            <entry class="- topic/entry "> 7:7 
+            </entry> 
+            <entry class="- topic/entry "> This platform does not use this field 
+            </entry> 
+          </row> 
+          <row class="- topic/row "> 
+            <entry class="- topic/entry "> 
+            </entry> 
+            <entry class="- topic/entry "> 
+            </entry> 
+            <entry class="- topic/entry "> RFI_FREQ_SELECT 
+            </entry> 
+            <entry class="- topic/entry "> 9:8 
+            </entry> 
+            <entry class="- topic/entry "> Boot frequency is set 2227.2MHz Options for customers to choose: 2227.2MHz, 2140MHz 
+            </entry> 
+          </row> 
+        </tbody> 
+      </tgroup> 
+    </table> 
+    </p> 
+  </body> 
+</topic> 

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN">
+<topic id="GUID-B63AE990-1BF5-4280-AD3D-64B9EAF516E2" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic intc-trackChanges-d)                            (topic equation-d)                            (topic mathml-d)   " class="- topic/topic "> 
+  <title class="- topic/title ">Intel® Total Storage Encryption Device Scope Structure</title> 
+  <body class="- topic/body "> 
+    <p class="- topic/p "> There can be N number of instances of this Device Scope Structure. Each instance is associated with the number PCI Express Root Ports that supports TSE. In Lunar Lake, Panther Lake, Wildcat Lake, and Wildcat Lake Refresh platforms, the OS will NOT consume the Device Scope Structure. Therefore, BIOS does NOT need to publish this structure. The structure remains defined for future. 
+    </p> 
+    <table id="GUID-C4E1C86C-B8DB-47AF-A523-C3176F7B80DE" class="- topic/table "> 
+  <title class="- topic/title ">Device Scope Structure</title> 
+  <tgroup cols="5" class="- topic/tgroup "> 
+    <colspec colnum="1" colname="col1" colwidth="1.12*" class="- topic/colspec " /> 
+    <colspec colnum="2" colname="col2" colwidth="1.03*" class="- topic/colspec " /> 
+    <colspec colnum="3" colname="col3" colwidth="1.00*" class="- topic/colspec " /> 
+    <colspec colnum="4" colname="col4" colwidth="1.00*" class="- topic/colspec " /> 
+    <colspec colnum="5" colname="col5" colwidth="3.59*" class="- topic/colspec " /> 
+    <thead class="- topic/thead "> 
+      <row valign="middle" class="- topic/row "> 
+        <entry class="- topic/entry "> 
+          <b class="+ topic/ph hi-d/b "> Field</b> 
+        </entry> 
+        <entry class="- topic/entry "> 
+          <b class="+ topic/ph hi-d/b "> Byte Length</b> 
+        </entry> 
+        <entry class="- topic/entry "> 
+          <b class="+ topic/ph hi-d/b "> Byte Offset</b> 
+        </entry> 
+        <entry class="- topic/entry "> 
+          <b class="+ topic/ph hi-d/b "> BIOS Value</b> 
+        </entry> 
+        <entry class="- topic/entry "> 
+          <b class="+ topic/ph hi-d/b "> Description</b> 
+        </entry> 
+      </row></thead> 
+    <tbody class="- topic/tbody "> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> Type 
+        </entry> 
+        <entry class="- topic/entry "> 1 
+        </entry> 
+        <entry class="- topic/entry "> 0 
+        </entry> 
+        <entry class="- topic/entry "> 02h 
+        </entry> 
+        <entry class="- topic/entry "> 0x01: Specific PCIe Root Port - The root port identified by the 'Path' field is a PCI endpoint PCI root port. This type must not be used in Device Scope of DRHD structures with INCLUDE_PCI_ALL flag Set. 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry morerows="2" class="- topic/entry "> 
+        </entry> 
+        <entry morerows="2" class="- topic/entry "> 
+        </entry> 
+        <entry morerows="2" class="- topic/entry "> 
+        </entry> 
+        <entry morerows="2" class="- topic/entry "> 
+        </entry> 
+        <entry colname="col5" class="- topic/entry "> 0x02: PCI Sub-hierarchy - The device identified by the 'Path' field is a PCI-PCI bridge. In this case, the specified bridge device and all its downstream devices are included in the scope. This type must not be in Device Scope of DRHD structures with INCLUDE_PCI_ALL flag Set. 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry colname="col5" class="- topic/entry "> 0x03: Reserved 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> Other values for this field are reserved for future use. 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> Length 
+        </entry> 
+        <entry class="- topic/entry "> 1 
+        </entry> 
+        <entry class="- topic/entry "> 1 
+        </entry> 
+        <entry class="- topic/entry "> N 
+        </entry> 
+        <entry class="- topic/entry "> Length of this Entry in Bytes. (6 + X), where X is the size in bytes of the "Path" field. 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> Reserved 
+        </entry> 
+        <entry class="- topic/entry "> 2 
+        </entry> 
+        <entry class="- topic/entry "> 2 
+        </entry> 
+        <entry class="- topic/entry "> 0000h 
+        </entry> 
+        <entry class="- topic/entry "> Reserved 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> Reserved 
+        </entry> 
+        <entry class="- topic/entry "> 2 
+        </entry> 
+        <entry class="- topic/entry "> 4 
+        </entry> 
+        <entry class="- topic/entry "> 0000h 
+        </entry> 
+        <entry class="- topic/entry "> Reserved 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> Start Bus Number 
+        </entry> 
+        <entry class="- topic/entry "> 1 
+        </entry> 
+        <entry class="- topic/entry "> 6 
+        </entry> 
+        <entry class="- topic/entry "> 0 
+        </entry> 
+        <entry class="- topic/entry "> This field describes the bus number (bus number of the first PCI Bus produced by the PCI Host Bridge) under which the device identified by this Device Scope resides. 
+        </entry> 
+      </row> 
+      <row class="- topic/row "> 
+        <entry class="- topic/entry "> Path 
+        </entry> 
+        <entry class="- topic/entry "> 2*N 
+        </entry> 
+        <entry class="- topic/entry "> 7 
+        </entry> 
+        <entry class="- topic/entry "> 0 
+        </entry> 
+        <entry class="- topic/entry "> For Device Scope Entries with Type value of 0x1, 0x2 or 0x3 this field describes the hierarchical path from the Host Bridge to the device specified by the Device Scope Entry. For example, a device in a N-deep hierarchy is identified by N {PCI Device Number, PCI Function Number} pairs, where N is a positive integer. Even offsets contain the Device numbers, and odd offsets contain the Function numbers. The first {Device, Function} pair resides on the bus identified by the 'Start Bus Number' field. Each subsequent pair resides on the bus directly behind the bus of the device identified by the previous pair. The identity (Bus, Device, Function) of the target device is obtained by recursively walking down these N {Device, Function} pairs. If the 'Path' field length is 2 bytes (N=1), the Device Scope Entry identifies a 'Root-Complex Integrated Device'. The requester-id of 'Root-Complex Integrated Devices' are static and not impacted by system software bus rebalancing actions. 
+        </entry> 
+      </row> 
+    </tbody> 
+  </tgroup> 
+  </table> 
+  </body> 
+</topic> 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN">
+<topic id="GUID-EF62AA6B-F93D-4429-9E33-42C118F7041F" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic intc-trackChanges-d)                            (topic equation-d)                            (topic mathml-d)   " class="- topic/topic "> 
+  <title class="- topic/title ">I/O Cache (IOC)</title> 
+  <body class="- topic/body "> 
+	 <p class="- topic/p "> NGU solves the single bottleneck issue by moving away from the notion of a single Root complex. The IOC (IO-Cache) is one of the key components in Next Generation Uncore (NGU) based SoCs and each IOC can support a PCIe Hierarchy below it and is exposed as a Root-Bus to the software. Multiple IOCs and other coherent agents in the system and Memory Subsystem is all connected to a protocol agnostic NOC. The first version of IOC is built from existing client SoC components IOP and WRC. 
+	 </p> 
+	  
+	  
+  </body> 
+</topic> 
