@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-6D02833A-D2B3-40D3-84D8-4389958F1DC3" xml:lang="en-US"> 
+  <title>BIOS Requirements</title> 
+  <body> 
+	 <p> BIOS does not have direct interface to change clock setting, usually there is intermediate agent that translate BIOS request to clock setting. The following shows the clock setting that may be changed by BIOS. 
+	 </p> 
+	 <ul id="GUID-8951F214-16C7-4645-8A50-E7A21D56A474"> 
+		<li id="LI_DC1F5232D100454A98089F5ED53F7D32"><b>BCLK config mode: 
+		  </b>BCLK config mode set the source of bclk for SoC-north (gfx and base use the same bclk as what SoC-north use) and compute. The source of bclk can be changed for overclocking or RFI/SSC purpose. BIOS need to write into RTC backed register in SoC-south and trigger warm reset whenever there is change in bclk config mode. PMC will send the bclk config mode to SoC-north through EPOC2. Then SoC-north will forward the bclk config mode to compute through PMSB. 
+		</li> 
+		<li id="LI_34A08A1784B24E9182BDF3BC47D6E95C"><b>BCLKPLL frequency/SSC in SoC-n:</b> PCODE receive the mailbox from BIOS for the frequency/SSC change request on bclk. For frequency change pcode will calculate the ratio required. Ratio must be overwritten in fuse register for bclkpll to make sure the ratio value can be retain through warm reset or PKGC exit. 
+		</li> 
+		<li id="LI_F41457379CDC4502AE6EC6F1EB63A594"><b>BCLKPLL frequency/SSC in compute: 
+		  </b> MTL/ARL may require new mailbox command from BIOS to separate the request to change frequency/SSC in compute vs bclk changes in SoC-north. This give flexibility to overclock compute die in larger scale compared to SoC/gfx/base. 
+		</li> 
+		<li id="LI_266892AB73ED499EBD16687B88CA4378"><b>QCLK frequency point:</b> BIOS is responsible to write the number of QCLK frequencies that it wants to support. MRC will handshake with BIOS and set the required ratio to bring up cmipll that generate QCLK. 
+		</li> 
+		<li id="LI_3F1218A3167543F7B452C436368162CB"><b>DLVR SSC in compute: 
+		  </b>BIOS shall have setup option for DLVR SSC 0-6%, 16 different DLVR SSC frequency configuration and display the same. 
+		</li> 
+	 </ul> 
+  </body> 
+</topic> 

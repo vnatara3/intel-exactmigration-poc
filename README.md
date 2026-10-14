@@ -1,25 +1,19 @@
-﻿# Nova Lake Migration POC
+# Nova Lake Migrated Publication
 
-Publication GUID
+- **Publication GUID:** $publicationGuid
+- **Condition profile:** NVL
+- **Root map:** maps/GUID-D5D73A49-67A2-40F8-B78E-CC18D4D8CD2F.ditamap
+- **Migration result:** RWS dependencies removed, conditions resolved, and DITA validation passed
+- **Validation runtime:** DITA-OT 4.2.4
 
-GUID-28583781-F7EB-4F72-A734-AC8FA94C9D9C
+## Repository structure
 
-Publishing Stack
+- maps/ publication maps
+- 	opics/ DITA topics
+- images/ image assets
+- esources/ other publication resources
+- metadata/ migration metadata
+- eports/ migration audit reports
+- migration/validation/ final Step 4 evidence
 
-DITA-OT 1.7.5
-intelBasePDF
-AH Formatter 6.6
-
-Repository Structure
-
-maps/
-topics/
-media/
-metadata/
-conditions/
-publishing/
-migration/
-
-Status
-
-Ready for Oxygen onboarding.
+Publishing is intentionally outside the current migration scope.

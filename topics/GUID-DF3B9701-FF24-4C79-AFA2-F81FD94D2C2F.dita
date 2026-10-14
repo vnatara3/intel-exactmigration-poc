@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-DF3B9701-FF24-4C79-AFA2-F81FD94D2C2F" xml:lang="en-US"> 
+  <title>Revision History</title> 
+  <body> 
+	  
+	  
+	 <table id="TABLE_4FCCDCFC53454A75BACA94FBD79A0881"> 
+		<tgroup cols="4"><colspec colnum="1" colname="col1" colwidth="1.00*" /><colspec colnum="2" colname="col2" colwidth="1.20*" /><colspec colnum="3" colname="col3" colwidth="3.55*" /><colspec colnum="4" colname="col4" colwidth="1.99*" /><thead> 
+			 <row> 
+				<entry colname="col1" align="center">Document Number 
+				</entry> 
+				<entry colname="col2" align="center">Revision Number
+				</entry> 
+				<entry colname="col3" align="center">Description 
+				</entry> 
+				<entry colname="col4" align="center">Revision Date 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1" align="center"> 861572 
+				</entry> 
+				<entry colname="col2" align="center">0.4 
+				</entry> 
+				<entry colname="col3" align="left">Initial release 
+				</entry> 
+				<entry colname="col4" align="center">August 2025 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" align="center"> 861572 
+				</entry> 
+				<entry colname="col2" align="center">0.5 
+				</entry> 
+				<entry colname="col3" align="left">Revision Update Only. No Content Changes. 
+				</entry> 
+				<entry colname="col4" align="center">August 2025 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" align="center">861572 
+				</entry> 
+				<entry colname="col2" align="center">0.55 
+				</entry> 
+				<entry colname="col3" align="left"> 
+				  <ul id="GUID-FDC6E052-0050-4968-B03E-DD80C312A001"> 
+					 <li id="LI_25C7177274F943F1AEF63EAABF768DCB">Updated 
+						<xref scope="local" format="dita" href="GUID-BE76259D-D7DD-4D82-9E1E-3D5C788610B8.dita#GUID-BE76259D-D7DD-4D82-9E1E-3D5C788610B8"><?xm-replace_text TME BIOS Programming Steps?></xref> 
+					 </li> 
+				  </ul> 
+				</entry> 
+				<entry colname="col4" align="center">September 2025 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" align="center">861572 
+				</entry> 
+				<entry colname="col2" align="center">0.7 
+				</entry> 
+				<entry colname="col3" align="left"> 
+				  <p> 
+				  <ul id="GUID-C8EA05BA-43DE-4518-A3E0-F6D4040D7E57"> 
+					 <li id="LI_10DCA050B7A44F3FA9A292F8B1D76407">Updated 
+						<xref scope="local" format="dita" href="GUID-E7A500C7-F18E-41EF-BBD3-AD332D264380.dita#GUID-E7A500C7-F18E-41EF-BBD3-AD332D264380"><?xm-replace_text New Feature and Update?></xref>. 
+					 </li> 
+					 <li id="LI_6413174B33004AADA1BC791783C6BB30">Updated 
+						<xref scope="local" format="dita" href="GUID-8A9082BB-35CE-46E1-9260-F5408CD5658C.dita#GUID-8A9082BB-35CE-46E1-9260-F5408CD5658C"><?xm-replace_text Logical Processor Programming?></xref>. 
+					 </li> 
+					 <li id="LI_9AFDA91F69C24010A4E2109FCAA8295F">Updated 
+						<xref scope="local" format="dita" href="GUID-D1F7343D-33AB-43AA-A0D0-34D239A9B825.dita#GUID-D1F7343D-33AB-43AA-A0D0-34D239A9B825"><?xm-replace_text Boot From Hub-die E-Core?></xref>. 
+					 </li> 
+					 <li id="LI_75FA61449AC04724A4E71BD20D8000AD">Added 
+						<xref scope="local" format="dita" href="GUID-3E593CDB-C1C0-40DA-A86E-2E2DDED9966A.dita#GUID-3E593CDB-C1C0-40DA-A86E-2E2DDED9966A"><?xm-replace_text Reset Requirements?></xref>. 
+					 </li> 
+					 <li id="LI_87DA303CF67C48C89011EA059F8252CD">Added 
+						<xref scope="local" format="dita" href="GUID-885FE8EA-9398-4232-AE76-070E71DF180A.dita#GUID-885FE8EA-9398-4232-AE76-070E71DF180A"><?xm-replace_text Acoustic Noise Mitigation?></xref>. 
+					 </li> 
+					 <li id="LI_3D2AEFC31BFD4D09A9A2DD56FD44B42E">Updated 
+						<xref scope="local" format="dita" href="GUID-61F29C2F-AFEA-4E7E-848C-074B27E6405F.dita#GUID-61F29C2F-AFEA-4E7E-848C-074B27E6405F"><?xm-replace_text BIOS Mailbox Command?></xref>. 
+					 </li> 
+				  </ul> 
+				  </p> 
+				</entry> 
+				<entry colname="col4" align="center">June 2026 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" align="center">861572 
+				</entry> 
+				<entry colname="col2" align="center">0.9 
+				</entry> 
+				<entry colname="col3" align="left"> 
+				  <p> 
+				  <ul id="GUID-5430415A-2318-4B6F-94C2-9A0B778015BC"> 
+					 <li id="LI_34D2CBBF394E471AB03EA0B9675DF2DE">Updated 
+						<xref scope="local" format="dita" href="GUID-EE3180E3-2741-4024-95A5-E070B520274F.dita#GUID-EE3180E3-2741-4024-95A5-E070B520274F"><?xm-replace_text CPU Core Identification?></xref>. 
+					 </li> 
+					 <li id="LI_C97B9C24015C47D6A6818A1F66AA774B">Added 
+						<xref scope="local" format="dita" href="GUID-A8728EBB-9B4E-4D54-B61B-AE6C1DA7282A.dita#GUID-A8728EBB-9B4E-4D54-B61B-AE6C1DA7282A"><?xm-replace_text Platform Readiness Considerations?></xref>. 
+					 </li> 
+				  </ul> 
+				  </p> 
+				</entry> 
+				<entry colname="col4" align="center">August 2026 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" align="center">861572 
+				</entry> 
+				<entry colname="col2" align="center">1.0 
+				</entry> 
+				<entry colname="col3" align="left"> 
+				  <p> 
+				  <ul id="UL_3988A585A4B641B8B900A473EDCFA091"> 
+					 <li id="LI_D9175BC4139B478AB251552E038BABEC">Updated 
+						<xref scope="local" format="dita" href="GUID-A8728EBB-9B4E-4D54-B61B-AE6C1DA7282A.dita#GUID-A8728EBB-9B4E-4D54-B61B-AE6C1DA7282A"><?xm-replace_text Platform Readiness Considerations?></xref>. 
+					 </li> 
+				  </ul> 
+				  </p> 
+				</entry> 
+				<entry colname="col4" align="center">October 2026 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </body> 
+</topic> 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-59490F52-716F-4F48-BE28-31D581D57E2F" xml:lang="en-US"> 
+  <title>NCU</title> 
+  <body> 
+    <p> The NCU functions (address decode, interrupt routing, register access routing, WHOAMI registers, etc) need to be split between SoC and CPU die i.e. sNCU and cNCU to provide an architecture that scales and to support die disaggregation. 
+    </p> 
+  </body> 
+</topic> 

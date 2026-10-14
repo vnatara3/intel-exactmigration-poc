@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-D8665F31-FD76-4445-8C95-130CF47B918F" xml:lang="en-US"> 
+  <title>SoC Cores</title> 
+  <body> 
+    <p> The SoC cores are added to the SoC die to improve battery life workloads by allowing the CPU die to turn off when low compute performance is sufficient and efficiency is most critical. High level features are:
+    </p> 
+    <ul id="GUID-1F04A17B-3480-4950-A5D7-F25127C43D6C"> 
+      <li> SoC cores are 2xCMT Soft-IP with 2MB L2
+        <ul id="GUID-8B190A15-7FC6-456B-94EF-67E9F50204D8">
+          <li>This same configuration is used for all products
+          </li>
+        </ul>
+      </li>
+      <li>SoC cores must support being fused out for SKUing and debug
+      </li>
+      <li>SoC cores have same ISA as CPU die cores
+        <ul id="GUID-B5D6B809-4861-4D49-8A7F-8D4A00419AD1">
+          <li>Core and Atom are fused to common ISA
+          </li>
+          <li>Asymmetric ISA is not supported
+          </li>
+        </ul>
+      </li>
+      <li>The SoC cores have the same view of the system address map and is fully cache coherent with the CPU cores
+        <ul id="GUID-60FCF829-232C-4F7B-AAD0-6EE11B304386">
+          <li>SoC Cores appear to software the same as CPU die cores, but have lower performance
+          </li>
+          <li>SoC Cores do not allocate into the LLC and only snoop the LLC
+          </li>
+        </ul>
+      </li>
+      <li>There is a power state in which the SoC cores are active in C0 and CPU die will be in a powered down state
+      </li>
+      <li>The SoC cores will also be up when CPU die is up, but may be parked to optimize performance
+      </li>
+    </ul>
+  </body> 
+</topic>

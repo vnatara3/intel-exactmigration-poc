@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-A606C40D-E6C0-4993-8F5F-576414653BCE" xml:lang="en-US"> 
+  <title>BIOS Requirement for NGU/NOC</title> 
+  <body> 
+    <p>BIOS is required to program UFI and CMI range register. There are mainly two categories of register programming. 
+    </p> 
+    <ol id="GUID-2B88C9EA-915F-4F2F-8E25-248C2F127BE5"> 
+      <li id="LI_050F2E1CA70642289CBF2093AE0DA2B1"> UFI security range register which includes two types of IMRs (covered under 
+        <xref scope="local" format="dita" href="GUID-64B73CBF-EE16-4E49-8AEF-EB595AA49284.dita#GUID-64B73CBF-EE16-4E49-8AEF-EB595AA49284"><?xm-replace_text Isolated Memory Regions (IMRs)?></xref> in detail) 
+        <ol id="GUID-EDF389B0-F0C9-44DA-943B-5047F461DCD2"> 
+          <li id="LI_4A1B6B7C4B1549B0A9C587AD63E6B7D6">IMR with power of two base and Mask 
+          </li> 
+          <li id="LI_81797EE159F149BB87A0309038DA691E">IMR with 1 MB incremental space. 
+          </li> 
+        </ol> 
+      </li> 
+      <li id="LI_83A27D9C6B99457DB399AE36A4B56095"> CMI memory range registers for routing and specifying memory DIMM configuration 
+      </li> 
+    </ol> 
+    <p> BIOS need to program the Memory population configuration for CCE and MC controller, for MC controller BIOS need to populate how Memory is distributed/shared b/w MC0 and MC1 on SOC and CCE range register need to be programmed with total Memory ( 0 to TOUUD). All these registers are exposed via MCHBAR range and BIOS need to configure them before MEM_CONFIG_DONE. Register details are captured in NGU HAS. 
+    </p> 
+    <p> Below Example shows CCE/MC ranges need to program for 24GB memory ( MC0 16GB , 8GB MC1) 
+    </p> 
+    <fig id="GUID-6DB972DE-B180-4534-AD49-7A48F90B57BE"> 
+      <title>24GB Memory CCE MC Ranges </title><image href="../images/GUID-72417BEA-C736-4FBD-BF18-F79DE661EBB3.png" id="IMAGE_D78EB73AB84B4C04B122D2470E35E0BF" scalefit="yes"> 
+        <alt> 
+        </alt></image> 
+    </fig> 
+    <table id="TABLE_2B47A8DD3F40497B9773F3F50E3F2BAB"> 
+  <title>CMI Range Details Found</title> 
+  <tgroup cols="5"><colspec colname="col1" colnum="1" colwidth="1*" /><colspec colname="col2" colnum="2" colwidth="2.00*" /><colspec colname="col3" colnum="3" colwidth="2.00*" /><colspec colname="col4" colnum="4" colwidth="2.00*" /><colspec colname="col5" colnum="5" colwidth="2.00*" /><thead> 
+      <row> 
+        <entry valign="middle">CMI Range 
+        </entry> 
+        <entry> Register Name 
+        </entry> 
+        <entry colname="col3"> Address Offset 
+        </entry> 
+        <entry colname="col4"> Programmed Value 
+        </entry> 
+        <entry colname="col5">Description 
+        </entry> 
+      </row></thead> 
+    <tbody> 
+      <row> 
+        <entry morerows="1">CCE VC0 Range 
+        </entry> 
+        <entry> cmim_addr_base_mem_cce_group_vc0_cce_range_0 
+        </entry> 
+        <entry colname="col3"> 0x1780 
+        </entry> 
+        <entry colname="col4"> IF TME ON then enable 
+        </entry> 
+        <entry colname="col5" morerows="1">Fixed range only. No range programming needed, base register bit[4] enable/disable programming needed, limit register is Read only 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col2"> cmim_addr_mask_mem_cce_group_vc0_cce_range_0 
+        </entry> 
+        <entry colname="col3"> 0x1788 
+        </entry> 
+        <entry colname="col4"> NA 
+        </entry> 
+      </row> 
+      <row> 
+        <entry morerows="1">CCE VC1 Range 
+        </entry> 
+        <entry> cmim_addr_base_mem_cce_group_vc1_cce_range_0 
+        </entry> 
+        <entry colname="col3"> 0x17b0 
+        </entry> 
+        <entry colname="col4"> IF TME ON then enable 
+        </entry> 
+        <entry colname="col5" morerows="1">fixed range only , No range programming needed, base register bit[4] enable/disable programming needed, limit register is Read only 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col2"> cmim_addr_mask_mem_cce_group_vc1_cce_range_0 
+        </entry> 
+        <entry colname="col3"> 0x17b8 
+        </entry> 
+        <entry colname="col4"> NA 
+        </entry> 
+      </row> 
+      <row> 
+        <entry morerows="1">MC VC0 Range 1 
+        </entry> 
+        <entry> cmim_addr_base_mem_mem_group01_vc0_mem_range1_0 
+        </entry> 
+        <entry colname="col3"> 0x1810 
+        </entry> 
+        <entry colname="col4"> 0 
+        </entry> 
+        <entry colname="col5" morerows="1">use for 0 to TOLUD, use for shared memory population 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col2"> cmim_addr_mask_mem_mem_group01_vc0_mem_range1_0 
+        </entry> 
+        <entry colname="col3"> 0x1818 
+        </entry> 
+        <entry colname="col4"> 3G-1 
+        </entry> 
+      </row> 
+      <row> 
+        <entry morerows="1">MC VC1 Range 1 
+        </entry> 
+        <entry> cmim_addr_base_mem_mem_group01_vc1_mem_range1_0 
+        </entry> 
+        <entry colname="col3"> 0x1840 
+        </entry> 
+        <entry colname="col4"> 0 
+        </entry> 
+        <entry colname="col5" morerows="1">use for 0 to TOLUD, use for shared memory population 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col2"> cmim_addr_mask_mem_mem_group01_vc1_mem_range1_0 
+        </entry> 
+        <entry colname="col3"> 0x1848 
+        </entry> 
+        <entry colname="col4"> 3G-1 
+        </entry> 
+      </row> 
+      <row> 
+        <entry morerows="2">MC VC0 Range 2 
+        </entry> 
+        <entry> cmim_addr_base_mem_mem_group01_vc0_mem_range2_0 
+        </entry> 
+        <entry colname="col3"> 0x1870 
+        </entry> 
+        <entry colname="col4"> 24G 
+        </entry> 
+        <entry colname="col5" morerows="2">use for system remap base and limit, use for shared memory population 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col2"> cmim_addr_mask_mem_mem_group01_vc0_mem_range2_0 
+        </entry> 
+        <entry colname="col3"> 0x1878 
+        </entry> 
+        <entry colname="col4"> 25G-1 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col2"> cmim_slave_addr_relocation_mem_mem_group01_vc0_mem_range2_0 
+        </entry> 
+        <entry colname="col3"> 0x1880 
+        </entry> 
+        <entry colname="col4"> 3G 
+        </entry> 
+      </row> 
+      <row> 
+        <entry morerows="2">MC VC1 Range 2 
+        </entry> 
+        <entry> cmim_addr_base_mem_mem_group01_vc1_mem_range2_0 
+        </entry> 
+        <entry colname="col3"> 0x18a0 
+        </entry> 
+        <entry colname="col4"> 24G 
+        </entry> 
+        <entry colname="col5" morerows="2">use for system remap base and limit, use for shared memory population 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col2"> cmim_addr_mask_mem_mem_group01_vc1_mem_range2_0 
+        </entry> 
+        <entry colname="col3"> 0x18a8 
+        </entry> 
+        <entry colname="col4"> 25G-1 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col2"> cmim_slave_addr_relocation_mem_mem_group01_vc1_mem_range2_0 
+        </entry> 
+        <entry colname="col3"> 0x18b0 
+        </entry> 
+        <entry colname="col4"> 3G 
+        </entry> 
+      </row> 
+      <row> 
+        <entry morerows="1">MC VC0 Range 3 
+        </entry> 
+        <entry> cmim_addr_base_mem_mem_group345_vc0_mem_range3_0 
+        </entry> 
+        <entry colname="col3"> 0x18d0 
+        </entry> 
+        <entry colname="col4"> 4G 
+        </entry> 
+        <entry colname="col5" morerows="1">use for shared memory population 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col2"> cmim_addr_mask_mem_mem_group345_vc0_mem_range3_0 
+        </entry> 
+        <entry colname="col3"> 0x18d8 
+        </entry> 
+        <entry colname="col4"> 16G-1 
+        </entry> 
+      </row> 
+      <row> 
+        <entry morerows="1">MC VC1 Range 3 
+        </entry> 
+        <entry> cmim_addr_base_mem_mem_group345_vc1_mem_range3_0 
+        </entry> 
+        <entry colname="col3"> 0x1900 
+        </entry> 
+        <entry colname="col4"> 4G 
+        </entry> 
+        <entry colname="col5" morerows="1">use for shared memory population 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col2"> cmim_addr_mask_mem_mem_group345_vc1_mem_range3_0 
+        </entry> 
+        <entry colname="col3"> 0x1908 
+        </entry> 
+        <entry colname="col4"> 16G-1 
+        </entry> 
+      </row> 
+      <row> 
+        <entry morerows="1">MC VC0 Range 4 
+        </entry> 
+        <entry> cmim_addr_base_mem_mem_group345_vc0_mem_range4_0 
+        </entry> 
+        <entry colname="col3"> 0x1930 
+        </entry> 
+        <entry colname="col4"> 16G 
+        </entry> 
+        <entry colname="col5" morerows="1">use for non shared memory population 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col2"> cmim_addr_mask_mem_mem_group345_vc0_mem_range4_0 
+        </entry> 
+        <entry colname="col3"> 0x1938 
+        </entry> 
+        <entry colname="col4"> 24G 
+        </entry> 
+      </row> 
+      <row> 
+        <entry morerows="1">MC VC1 Range 4 
+        </entry> 
+        <entry> cmim_addr_base_mem_mem_group345_vc1_mem_range4_0 
+        </entry> 
+        <entry colname="col3"> 0x1960 
+        </entry> 
+        <entry colname="col4"> 16G 
+        </entry> 
+        <entry colname="col5" morerows="1">use for non shared memory population 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col2"> cmim_addr_mask_mem_mem_group345_vc1_mem_range4_0 
+        </entry> 
+        <entry colname="col3"> 0x1968 
+        </entry> 
+        <entry colname="col4"> 24G 
+        </entry> 
+      </row> 
+      <row> 
+        <entry morerows="1">MC VC0 Range 5 
+        </entry> 
+        <entry> cmim_addr_base_mem_mem_group345_vc0_mem_range5_0 
+        </entry> 
+        <entry colname="col3"> 0x1990 
+        </entry> 
+        <entry colname="col4"> not used 
+        </entry> 
+        <entry colname="col5" morerows="1">use for non shared memory population 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col2"> cmim_addr_mask_mem_mem_group345_vc0_mem_range5_0 
+        </entry> 
+        <entry colname="col3"> 0x1998 
+        </entry> 
+        <entry colname="col4"> not used 
+        </entry> 
+      </row> 
+      <row> 
+        <entry morerows="1">MC VC1 Range 5 
+        </entry> 
+        <entry> cmim_addr_base_mem_mem_group345_vc1_mem_range5_0 
+        </entry> 
+        <entry colname="col3"> 0x19c0 
+        </entry> 
+        <entry colname="col4"> not used 
+        </entry> 
+        <entry colname="col5" morerows="1">use for non shared memory population 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col2"> cmim_addr_mask_mem_mem_group345_vc1_mem_range5_0 
+        </entry> 
+        <entry colname="col3"> 0x19c8 
+        </entry> 
+        <entry colname="col4"> not used 
+        </entry> 
+      </row> 
+      <row> 
+        <entry> CCE Range HASH 
+        </entry> 
+        <entry> cmim_addr_hash_function_cce_adm_hash_6_19 
+        </entry> 
+        <entry colname="col3"> 0x2008 
+        </entry> 
+        <entry colname="col4"> 
+        </entry> 
+        <entry colname="col5">Hash registers decides which CCE ports to go (two ports). 
+        </entry> 
+      </row> 
+      <row> 
+        <entry> MC VCx Range 1/2/3 Hash 
+        </entry> 
+        <entry> cmim_addr_hash_function_mc_hash_range_1_2_3 
+        </entry> 
+        <entry colname="col3"> 0x2010 
+        </entry> 
+        <entry colname="col4"> Hash function 
+        </entry> 
+        <entry colname="col5">Hash registers decides which MC ports to go. There are two MCs with one port 
+        </entry> 
+      </row> 
+      <row> 
+        <entry> MC VCx Range 4/5 Hash 
+        </entry> 
+        <entry> cmim_addr_hash_function_mc_hash_range_4_5 
+        </entry> 
+        <entry colname="col3"> 0x2018 
+        </entry> 
+        <entry colname="col4"> Hash function 
+        </entry> 
+        <entry colname="col5">Hash registers decides which MC ports to go. There are two MCs with one port 
+        </entry> 
+      </row> 
+    </tbody> 
+  </tgroup> 
+  </table> 
+  </body> 
+</topic> 

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-809C5B4B-0298-4779-8016-B7707A72AC1C" xml:lang="en-US"> 
+  <title>BIOS Requirements</title> 
+  <body> 
+    <ul id="GUID-D79833FD-934E-4A91-8AE1-813A1FE004FA"> 
+      <li> DL1 Flush (Applies for SKUs where there is no LLC.): 
+        <ul id="GUID-EC48364E-FB81-4CB2-A032-DA20F7C4D320"> 
+          <li>An explicit DL1 flush is NOT needed if data is pulled through code fetches. 
+          </li> 
+          <li>DL1 flush is needed, if the BIOS decides to copy data into CAR region. 
+          </li> 
+          <li>DL1 flush can be achieved by programming MSR 0x10B[0] 
+            <ul id="GUID-D3C4D7D6-0B73-40B0-A2CA-8E7B3CE2B48C"> 
+              <li>BIT0 = 0 //DL1 is not flushed. 
+              </li> 
+              <li>BIT0 = 1 //DL1 is flushed. 
+              </li> 
+            </ul> 
+          </li> 
+        </ul> 
+      </li> 
+      <li>SoC cores can be disabled via BIOS based on the same core disable straps that exist today. Additional bits are added to handle disabling the SoC cores. Implementation of the SoC core BIOS disable in the set strap message is being tracked in 
+      </li> 
+      <li>Boot from SoC Core - Debug: 
+        <ul id="GUID-E81957E4-F7E9-453A-8717-26A849B64F35"> 
+          <li>No ACM support 
+          </li> 
+        </ul> 
+      </li> 
+      <li>MPInit for SoC cores 
+      </li> 
+      <li>APIC ID modification 
+      </li> 
+      <li>Support for CPUID leaf #4. 
+      </li> 
+      <li>APIC support for SoC cores - CPPT, P, T, C state table. 
+      </li> 
+      <li>PPM support for SoC cores. 
+      </li> 
+    </ul> 
+  </body> 
+</topic> 
