@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-D1F7343D-33AB-43AA-A0D0-34D239A9B825" xml:lang="en-US"> 
+  <title>Boot From Hub-die E-Core</title> 
+  <body> 
+    <p>Nova Lake processor family is the start of a new desktop socket compatibility. The forward compatibility feature enables fallback boot path with E-cores in the GMH (Graphics and Memory Hub) die when a new compatible CPU is plugged-in. 
+    </p> 
+    <p> To boot from a Hub-die E-core, all C-dies need to be disabled through 
+      <b>Early Power On Configuration (EPOC) 2</b> interface. Refer to Processor EDS vol2 for EPOC/EPOC2 register definitions.
+    </p> 
+  </body> 
+</topic> 

@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-BE76259D-D7DD-4D82-9E1E-3D5C788610B8" xml:lang="en-US"> 
+  <title>TME BIOS Programming Steps </title> 
+  <body> 
+    <p> BIOS enables the memory encryption capability very early stage of the BIOS boot process after MRC is complete and before MRC_DONE event. 
+    <ol id="OL_7446F597D5474FC9AB6AE690C8FBBD9D"> 
+      <li id="LI_2DB9EB7FD4BB486CBC96ADB74C54A7A1"> BIOS must detect VT-d is enabled. If VT-d is disabled than BIOS must skip MKTME initialization. VT-d must be enabled in BIOS for TME to work seamlessly. 
+      </li> 
+      <li id="LI_80794A999C334F4082261058F4EEBD30"> BIOS shall detect TME existence of TME MSRs (981h - 984h) when CPUID.7.0.ECX.13 = 1. 
+      </li> 
+      <li id="LI_906A7FBA45AD440CB67279983C3936BA"> BIOS shall detect PCONFIG existence when CPUID.7.0.EDX.18 =1 &amp; CPUID.1B.0.EAX = 1. 
+      </li> 
+      <li id="LI_91FBE94E2FCE46FDAD3A16FA5C79CD76"> BIOS must skip TME flow either above step#1 or #2 or #3 are not satisfied. BIOS should not access any TME MSRs otherwise GP# will occur. 
+      </li> 
+      <li id="LI_8F112AE2817B4E329DD8DB8777F36C99"> 
+        <p>The CCE0/CCE1 enablement must occur before memory training (BIOS MRC). The CCE is enabled/disabled as per the following rules: 
+        </p> 
+        <table id="TABLE_E0BFDF42FFB24F1394EDEE9C36DD78DF"> 
+          <tgroup cols="4"> 
+            <colspec colnum="1" colname="col1" colwidth="1.44*" /> 
+            <colspec colnum="2" colname="col2" colwidth="1.96*" /> 
+            <colspec colnum="3" colname="col3" colwidth="1.40*" /> 
+            <colspec colnum="4" colname="col4" colwidth="1.00*" /> 
+            <thead> 
+              <row> 
+                <entry> Functions Enabled 
+                </entry> 
+                <entry> BIOS_PARAM_INFO.FEATURES 
+                </entry> 
+                <entry> Memory Population 
+                </entry> 
+                <entry> CCEs Enabled 
+                </entry> 
+              </row></thead> 
+            <tbody> 
+              <row> 
+                <entry> TME on, PRMRR on/off 
+                </entry> 
+                <entry> Don't Care 
+                </entry> 
+                <entry> MC0 only 
+                </entry> 
+                <entry> CCE0 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> TME on, PRMRR on/off 
+                </entry> 
+                <entry> Don't Care 
+                </entry> 
+                <entry> MC1 only 
+                </entry> 
+                <entry> CCE1 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> TME on, PRMRR on/off 
+                </entry> 
+                <entry> Don't Care 
+                </entry> 
+                <entry> MC0+MC1 
+                </entry> 
+                <entry> CCE0+CCE1 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> TME off, PRMRR on 
+                </entry> 
+                <entry> Platform Features 
+                  <sup><b>NOTE</b></sup> 
+                </entry> 
+                <entry> MC0 or MC0+MC1 
+                </entry> 
+                <entry> CCE0 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> TME off, PRMRR on 
+                </entry> 
+                <entry>Platform Features 
+                  <sup><b>NOTE</b></sup> 
+                </entry> 
+                <entry> MC1 
+                </entry> 
+                <entry> CCE1 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> TME off, PRMRR on 
+                </entry> 
+                <entry> Zero 
+                </entry> 
+                <entry> Any 
+                </entry> 
+                <entry> None 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> TME off, PRMRR off 
+                </entry> 
+                <entry> Don't Care 
+                </entry> 
+                <entry> Any 
+                </entry> 
+                <entry> None 
+                </entry> 
+              </row> 
+            </tbody> 
+          </tgroup> 
+        </table> 
+        <p> 
+          <note id="GUID-F8B4A720-3D89-48F9-8351-0923FC5D0D92">The PRMRR on/off is based upon platform features that utilizes PRMRR. In PTL, WCL, and WCL-R, when the KeyLocker or TDX feature is enabled, the BIOS will require the CCE enabled. 
+            <ol id="GUID-A593B547-B1E3-45CB-8D7A-D50CDAE78549"> 
+              <li>BIOS shall program MEMSS_PMA_CR_BIOS_MEM_CONFIG BIT[5:4] in the Memory Subsystem PMA IP to enable CCE0/CCE1 IP out of reset. 
+              </li> 
+              <li>BIOS shall program MEMSS_PMA_CR_BIOS_MEM_CONFIG Bit[9] in the Memory Subsystem PMA IP to route all traffic to CCE. 
+              </li> 
+            </ol> 
+          </note> 
+        </p> 
+      </li> 
+      <li id="LI_0F06054BF39B470F8AC80E7CADE08904"> BIOS shall detect MKTME capability when MSR 981h IA32_TME_CAPABILITY[BIT2] =1 BIOS shall skip to step#14 below if MSR 981h IA32_TME_CAPABILITY[BIT2] = 0. 
+      </li> 
+      <li id="LI_DEDB4870FB214E3382A0BC7C571F6629"> BIOS shall detect max keys are not zero when MSR 981h IA32_TME_CAPABILITY[BIT50:36, BIT35:32] != 0. BIOS shall skip to step#14 below if MSR 981h IA32_TME_CAPABILITY[BIT50:36, BIT35:32] = 0. 
+      </li> 
+      <li id="LI_7BDB149E133147408A7D3E817992F531"> BIOS shall configure all of memory to be encrypted by programming MSR 983h IA32_​TME_​EXCLUDE_​MASK = 0 and MSR 984h IA32_​TME_​EXCLUDE_​BASE = 0. Excluding a memory range (keep a memory range unencrypted) is possible for special cases but not required. The single exclusion range applies to the KeyID=0 only. This specification does not define special cases for exclusion range usages. It is up to the designer to define special cases. 
+        <note id="GUID-0A7876D5-D99E-48CF-8137-F0C8377B28AA"> The address range specified in this MSR must be the physical memory address under TOM (Top of Memory). 
+        </note> 
+      </li> 
+      <li id="LI_04ADC48731074993A87F53431F1E2DE7"> BIOS shall determine TME Bypass support MSR 981h IA32_TME_CAPABILITY[BIT31] == 1. If supported than BIOS shall program MSR 982h IA32_TME_ACTIVATE[BIT31] based upon BIOS TME Bypass Policy. 
+      </li> 
+      <li id="LI_2836151BEE0048B1920430D43F470CBA"> BIOS shall detect TDX is enabled. BIOS shall split MK_TME_KEYID_BITS between MKTME and TDX KEY ID bits. The BIOS shall configure MSR 982h IA32_TME_ACTIVATE[39:16] = 1'b to allocate 7 Key ID bits for MKTME &amp; 8 Key ID bits for TDX keys for TDX as such: 
+        <ul id="GUID-DFF78191-74A1-4050-9740-F6CEB143B489"> 
+          <li>MK_TME_MAX_KEYID_BITS is 4 therefore PA Address is Bit[45:42]. 
+          </li> 
+          <li>PA address bits[44:42] are for MKTME with KEY IDs. 
+          </li> 
+          <li>PA address bits[45:42] are for TDX with KEY IDs. 
+          </li> 
+        </ul> 
+        <table id="GUID-22521D22-A99C-45FF-82A8-FA14BB139B55"> 
+          <tgroup cols="7" align="left"> 
+            <colspec colnum="1" colname="col1" colwidth="2.49*" /> 
+            <colspec colnum="2" colname="col2" colwidth="2.95*" /> 
+            <colspec colnum="3" colname="col3" colwidth="2.53*" /> 
+            <colspec colnum="4" colname="col4" colwidth="2.56*" /> 
+            <colspec colnum="5" colname="col5" colwidth="1.00*" /> 
+            <colspec colnum="6" colname="col6" colwidth="3.04*" /> 
+            <colspec colnum="7" colname="col7" colwidth="3.20*" /> 
+            <tbody> 
+              <row> 
+                <entry morerows="7"><b> MKTME 
+                  </b> 
+                </entry> 
+                <entry><b> Key Index 
+                  </b> 
+                </entry> 
+                <entry valign="middle"><b> BIT45 
+                  </b> 
+                </entry> 
+                <entry valign="middle"><b> BIT44 
+                  </b> 
+                </entry> 
+                <entry valign="middle"> 
+                </entry> 
+                <entry valign="middle"><b> BIT43 
+                  </b> 
+                </entry> 
+                <entry valign="middle"><b> BIT42 
+                  </b> 
+                </entry> 
+              </row> 
+              <row> 
+                <entry colname="col2"> 1 
+                </entry> 
+                <entry> 0 
+                </entry> 
+                <entry> 0 
+                </entry> 
+                <entry> 
+                </entry> 
+                <entry> 0 
+                </entry> 
+                <entry> 1 
+                </entry> 
+              </row> 
+              <row> 
+                <entry colname="col2"> 2 
+                </entry> 
+                <entry> 0 
+                </entry> 
+                <entry> 0 
+                </entry> 
+                <entry> 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 0 
+                </entry> 
+              </row> 
+              <row> 
+                <entry colname="col2"> 3 
+                </entry> 
+                <entry> 0 
+                </entry> 
+                <entry> 0 
+                </entry> 
+                <entry> 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 1 
+                </entry> 
+              </row> 
+              <row> 
+                <entry colname="col2"> 4 
+                </entry> 
+                <entry> 0 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 
+                </entry> 
+                <entry> 0 
+                </entry> 
+                <entry> 0 
+                </entry> 
+              </row> 
+              <row> 
+                <entry colname="col2"> 5 
+                </entry> 
+                <entry> 0 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 
+                </entry> 
+                <entry> 0 
+                </entry> 
+                <entry> 1 
+                </entry> 
+              </row> 
+              <row> 
+                <entry colname="col2"> 6 
+                </entry> 
+                <entry> 0 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 0 
+                </entry> 
+              </row> 
+              <row> 
+                <entry colname="col2"> 7 
+                </entry> 
+                <entry> 0 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 1 
+                </entry> 
+              </row> 
+              <row> 
+                <entry morerows="7"><b> TDX 
+                  </b> 
+                </entry> 
+                <entry> 8 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 0 
+                </entry> 
+                <entry> 
+                </entry> 
+                <entry> 0 
+                </entry> 
+                <entry> 0 
+                </entry> 
+              </row> 
+              <row> 
+                <entry colname="col2"> 9 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 0 
+                </entry> 
+                <entry> 
+                </entry> 
+                <entry> 0 
+                </entry> 
+                <entry> 1 
+                </entry> 
+              </row> 
+              <row> 
+                <entry colname="col2"> 10 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 0 
+                </entry> 
+                <entry> 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 0 
+                </entry> 
+              </row> 
+              <row> 
+                <entry colname="col2"> 11 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 0 
+                </entry> 
+                <entry> 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 1 
+                </entry> 
+              </row> 
+              <row> 
+                <entry colname="col2"> 12 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 
+                </entry> 
+                <entry> 0 
+                </entry> 
+                <entry> 0 
+                </entry> 
+              </row> 
+              <row> 
+                <entry colname="col2"> 13 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 
+                </entry> 
+                <entry> 0 
+                </entry> 
+                <entry> 1 
+                </entry> 
+              </row> 
+              <row> 
+                <entry colname="col2"> 14 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 0 
+                </entry> 
+              </row> 
+              <row> 
+                <entry colname="col2"> 15 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 
+                </entry> 
+                <entry> 1 
+                </entry> 
+                <entry> 1 
+                </entry> 
+              </row> 
+            </tbody> 
+          </tgroup> 
+        </table> 
+      </li> 
+      <li id="LI_A2034D22F4B74D309E3D3CA4E549B653"> BIOS shall program MSR 982h IA32_TME_ACTIVATE as one atomic operation because the MSR is Read-Write-Lock (RWL). 
+      </li> 
+      <li id="LI_5D14BB21A6BA41D3B5AF564D62607B43"> In Normal boot (S5/S4) the BIOS shall program MSR 982h IA32_TME_ACTIVATE as such: 
+        <table id="GUID-DCCAA420-D63B-45AE-848B-4338122912AD"> 
+          <tgroup cols="3"> 
+            <colspec colnum="1" colname="col1" colwidth="1.00*" /> 
+            <colspec colnum="2" colname="col2" colwidth="1.50*" /> 
+            <colspec colnum="3" colname="col3" colwidth="1.53*" /> 
+            <thead> 
+              <row> 
+                <entry> IA32_TME_ACTIVATE MSR 
+                </entry> 
+                <entry> BIOS Value 
+                </entry> 
+                <entry> Description 
+                </entry> 
+              </row></thead> 
+            <tbody> 
+              <row> 
+                <entry> BIT[1] 
+                </entry> 
+                <entry> 1'b 
+                </entry> 
+                <entry> Enable TME 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> BIT[3:2] 
+                </entry> 
+                <entry> 10'b 
+                </entry> 
+                <entry> TME IP to generate new key 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> BIT[7:4] 
+                </entry> 
+                <entry> 0010'b 
+                </entry> 
+                <entry> AES-XTS-256 encryption algorithm to be used 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> BIT[31] 
+                </entry> 
+                <entry> Any 
+                </entry> 
+                <entry> *Based upon BIOS Policy 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> BIT[35:32] 
+                </entry> 
+                <entry> MSR 982h IA32_TME_CAPABILITY [BIT35:32] 
+                </entry> 
+                <entry> MAX Keys supported 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> BIT[39:16] 
+                </entry> 
+                <entry> 1'b 
+                </entry> 
+                <entry> *When TDX is enabled in BIOS. Otherwise default 0'b. 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> BIT[50] 
+                </entry> 
+                <entry> 1'b 
+                </entry> 
+                <entry> AES-XTS-256 encryption algorithm to be used 
+                </entry> 
+              </row> 
+            </tbody> 
+          </tgroup> 
+        </table> 
+      </li> 
+      <li id="LI_B46C7906FC604EF09A235446BB082ACF"> In Warm Reset, S3 Resume, Capsule Update, where memory is preserved, the BIOS shall program MSR 982h IA32_TME_ACTIVATE as such: 
+        <table id="GUID-613FE33A-F0CF-4193-AB2A-E19E6EF3294B"> 
+          <tgroup cols="3"> 
+            <colspec colnum="1" colname="col1" colwidth="1.00*" /> 
+            <colspec colnum="2" colname="col2" colwidth="1.42*" /> 
+            <colspec colnum="3" colname="col3" colwidth="1.46*" /> 
+            <thead> 
+              <row> 
+                <entry> IA32_TME_ACTIVATE MSR 
+                </entry> 
+                <entry> BIOS Value 
+                </entry> 
+                <entry> Description 
+                </entry> 
+              </row></thead> 
+            <tbody> 
+              <row> 
+                <entry> BIT[1] 
+                </entry> 
+                <entry> 1'b 
+                </entry> 
+                <entry> Enable TME 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> BIT[3:2] 
+                </entry> 
+                <entry> 01'b 
+                </entry> 
+                <entry> TME IP to generate new key 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> BIT[7:4] 
+                </entry> 
+                <entry> 0010'b 
+                </entry> 
+                <entry> AES-XTS-256 encryption algorithm to be used 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> BIT[31] 
+                </entry> 
+                <entry> Any 
+                </entry> 
+                <entry> *Based upon BIOS Policy 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> BIT[35:32] 
+                </entry> 
+                <entry> MSR 982h IA32_TME_CAPABILITY [BIT35:32] 
+                </entry> 
+                <entry> MAX Keys supported 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> BIT[39:16] 
+                </entry> 
+                <entry> 1'b 
+                </entry> 
+                <entry> *When TDX is enabled in BIOS. Otherwise default 0'b. 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> BIT[50] 
+                </entry> 
+                <entry> 1'b 
+                </entry> 
+                <entry> AES-XTS-256 encryption algorithm to be used 
+                </entry> 
+              </row> 
+            </tbody> 
+          </tgroup> 
+        </table> 
+      </li> 
+      <li id="LI_B0C55235E44C4CD79115903917F43DD4"> BIOS shall program all zeroes to MK_TME_CORE_ACTIVATE (0x9FF) MSR register on each CPU Core. 
+      </li> 
+      <li id="LI_ADAA225EBC1E4E919F9FB3E9E6AE6D51"> BIOS shall program two CCE_CONTROL_0_0_0_MCHBAR registers in the CCE IP with same values as MEMORY_SLICE_HASH register in the HBO IP. 
+      </li> 
+      <li> BIOS shall program two REMAP_BASE and REMAP_LIMIT registers in the CCE IP with same values as REMAP_BASE &amp; REMAP_LIMIT registers in the HBO IP. 
+      </li> 
+      <li> BIOS shall disable MKTME if the MSR indicate no support in steps# 4 above. 
+        <ol id="GUID-0D71E83B-FE2F-4DE9-9092-FD9C1120C71C"> 
+          <li>MSR 982h IA32_TME_ACTIVATE[BIT1] = 0 
+          </li> 
+        </ol> 
+      </li> 
+      <li> BIOS shall complete MRC_DONE. This step is done outside of MKTME initialization. 
+      </li> 
+      <li> BIOS shall hard code BIOS_MAX_PA to 42. BIOS will not allocate MMIO above 41 bits. 
+      </li> 
+    </ol> 
+    <note id="GUID-58E14D98-C582-4BFA-98C9-E755702A62A8"> 
+      <ul id="UL_EE17653F9B3B40B596EEB3306AF0981B"> 
+        <li id="LI_8A06CF5B932547909354A629C2CB50C0"> TME key#0 is hardware managed that is no accessible to the software. 
+        </li> 
+        <li id="LI_45E06724C0A94CBEA28B729A938C9E03"> For Multiple keys related use case, software needs to provide the keys. These keys can be key#1 onwards. 
+        </li> 
+      </ul> 
+    </note> 
+    </p> 
+  </body> 
+</topic> 

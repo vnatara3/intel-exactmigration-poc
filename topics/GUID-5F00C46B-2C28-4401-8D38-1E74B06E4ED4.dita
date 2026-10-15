@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-5F00C46B-2C28-4401-8D38-1E74B06E4ED4" xml:lang="en-US"> 
+  <title>Power Delivery Configuration</title> 
+  <body> 
+    <p> BIOS added support to detect Board ID and set the correct Power Delivery capabilities.. 
+    </p> 
+  </body> 
+</topic> 

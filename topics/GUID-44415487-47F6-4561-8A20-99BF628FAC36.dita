@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-44415487-47F6-4561-8A20-99BF628FAC36" xml:lang="en-US"> 
+  <title>Discrete Clock for SoC-North and Compute</title> 
+  <body> 
+	 <p> By default bclk is coming from SoC-south Fabric PLL. There is also option to have discrete bclk for SoC-north and compute which is generated from local bclkpll respectively. Bclk for GFX/Base will follow whichever used by SoC-north. All dielets D2DPLL refclk also used the same bclk which follow whichever used by SoC-north. 
+	 </p> 
+	 <p> BCLKPLL (either SoC-north or compute) can be enabled for two purposes: 
+	 <ul id="GUID-F0251635-6960-4A86-9D6C-E05C28A64C49"> 
+		<li id="LI_AB5162639C914AA99188B31AB2A0634A">Overclocking 
+		</li> 
+		<li id="LI_5FB537F00C6441DEBC1A07E6D13E38FC">SSC Mitigation 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p> Bclk config mode can be selected through: 
+	 <ul id="GUID-5DDB188B-D2C9-42C6-A97A-04F86B27108B"> 
+		<li id="LI_0BBA3FE8F82F4BFD98CDCACA0024D39C">PMC soft strap (pulled by Intel<sup>®</sup> CSME) 
+		</li> 
+		<li id="LI_F5FD7EC360A34959A914D1E503C92487">User configure through BIOS (write to RTC backed register in SoC-south) 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p> PMC receive both above during reset, user configuration take precedence, send the value to SoC-north through EPOC2. Soc-north will send to compute through PMSB. 
+	 </p> 
+  </body> 
+</topic> 

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-CDBAC753-F939-44AD-AA2D-389ED313045D" xml:lang="en-US"> 
+  <title>Arrow Lake-S IOC Enhancements</title> 
+  <body> 
+	 <ul id="GUID-950B1783-DDBD-46C6-B064-C3E80B21E789"> 
+		<li id="LI_FC1EAA95AF6F4B0194C0056FE6FE4FCF"> Support for bigger payload - 128B on IOSF 
+		  <ul id="GUID-52023BE8-DBA2-4026-93A5-1FEBC83F00CF"> 
+			 <li id="LI_DAF7ED295E1241D3B4AA6CBF40E501B3">MTL-UH/ARL-S IOC is only capable of supporting upto 64B payloads on IOSF interface. Because of this limitation, PCIe Rootports would need to split the incoming read requests and write transactions into 64B chunks on IOSF interface This 64B payloads creates the following bottlenecks in terms of I/O BW realized: 
+				<ul id="GUID-B2F24AE0-93C5-414E-ACBF-1725F3DC91BA"> 
+				  <li id="LI_A12764A547BE4FDDBD6542461DBFF43A">Limitation on full-duplex BW on IOSF 
+				  </li> 
+				  <li id="LI_7EB667F2537A4E13B767DE3EB00EFB5D">Redundant VTd lookups and increased VTd latency 
+				  </li> 
+				  <li id="LI_402B9D20060041BA95223A3CE84D04E3">Reduced PCIe link efficiency 
+				  </li> 
+				</ul> 
+			 </li> 
+			 <li id="LI_E8083DABE3234DD3851C195A297C21A0">To overcome above bottlenecks, IOC has following changes. 
+				<ul id="GUID-F21B566A-F494-42D8-89E6-8898777D8171"> 
+				  <li id="LI_5F79002EE379446DB7E6CF0EA4DFBA50">Upstream posted transactions from PCIe RP: IOC would support upto 128B payloads on posted write transactions.IOC would support Posted messages with upto 128B payloads. (no know usage on ARL-S for messages with &gt;64B payloads) 
+				  </li> 
+				  <li id="LI_4F582B52257746C6AF72A06080750BA2">Upstream read requests from PCIe RP: IOC would support upto 256B length for NP read requests. PCIe RP is expected to split transaction if the starting address is in the middle of a cache line. 
+				  </li> 
+				  <li id="LI_1EE34A9317514FE59EA41B09D9AC92A2">Downstream completions: Read completion boundary (RCB) is 64B. IOC would send split completions for &gt;64B read request. (Maximum of 4 64B read completion packets.) 
+				  </li> 
+				</ul> 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li id="LI_C7B762762E0948FFB8DA88DA1A9F5700">VMD Enhancements: Described in VMD Chapter 
+		</li> 
+		<li id="LI_872B773F06084E1EBF906C354A27B2CE">DMI BAR and DMI source decode - details in below BIOS requirements section 
+		</li> 
+		<li id="LI_BDE99EAF7F854CD0B5C00277DE3E2D9F">IOMMU(VTd) MMIO size increase for GFX and non-Gfx VTd - 128KB 
+		</li> 
+		<li id="LI_F1EE5896EED9478D9BD8F40E0050EA15">South IOE enable/disable for IOE PCIe root ports 
+		</li> 
+	 </ul> 
+  </body> 
+</topic> 
