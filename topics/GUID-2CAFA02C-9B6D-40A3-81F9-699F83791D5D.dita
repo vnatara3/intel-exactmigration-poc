@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-2CAFA02C-9B6D-40A3-81F9-699F83791D5D" xml:lang="en-US"> 
+  <title>VT-d/IOMMU (ATS)</title> 
+  <body> 
+	 <p> VTd support is using one IOMMU in the IOC. Any agents that require VTd not making memory requests through the PSF and IOC have a path to make translation requests through PSF. These agents have their own DevTLB to track virtual address and must make Address Translation Requests (ATS) using the PCIe specified protocol to the IOMMU. Agents that has DecTLB are IPU, NPU, Media and Display, GCD Die. 
+	 </p> 
+	 <p> On-die accelerators need to get Virtual to Physical address mapping by sending translation requests to the single IOMMU present in IOC. For this, the accelerators that are connected directly to NoC will need to implement PCIe spec defined optional capability of Address Translation Services (ATS). ATS enablement in integrated devices requires OS/System software enabling. It is expected that all new operating systems available during timeframe will implement the support for ATS. However, to enable running legacy OS which doesn't support ATS on this platform, SoC is also implementing Hardware Managed ATS (HM-ATS). 
+	 </p> 
+	 <p> IOC will integrate two IOMMUs: 
+	 <ul id="GUID-08C48F58-2EB3-4EAD-B074-F5728F29EFE5"> 
+		<li id="LI_C5034B463EDA43D6ACF969E2EC8EF734">Gfx IOMMU will be used to provide VT-d services for Graphics device (B.D.F 0/2/x) which includes GT, Media and Display. 
+		</li> 
+		<li id="LI_22D6D5F0D8C84FDBA811868BD358B6D7">Non-Gfx IOMMU will be used to provide VT-d services for all other devices in the system. 
+		</li> 
+	 </ul> 
+	 </p> 
+  </body> 
+</topic> 

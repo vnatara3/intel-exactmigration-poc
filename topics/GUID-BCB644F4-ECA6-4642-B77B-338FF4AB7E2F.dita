@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-BCB644F4-ECA6-4642-B77B-338FF4AB7E2F" xml:lang="en-US"> 
+  <title>BIOS Requirements</title> 
+  <body> 
+    <ul id="GUID-845F3FC6-F166-477F-BEDE-95E283791EED">
+      <li> Register: PSF_2_PSF_PORT_CONFIG_PG1_PORT0
+        <ul id="GUID-0FA111D3-3FDD-4819-BB95-CA3CFD6BC7E6">
+          <li> Field: Egress Force Relax Ordering (EgressFRO)
+          </li>
+          <li>Bit index: 2
+          </li>
+          <li>Value: 1'b1
+          </li>
+        </ul>
+      </li> 
+    </ul> 
+  </body> 
+</topic>

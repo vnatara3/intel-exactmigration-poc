@@ -1,0 +1,2 @@
+﻿"File","RootElement","IshCondition","Platform","Reason"
+"topics/GUID-68E315BA-24A4-4014-9DF0-5D98FB2B4E86.dita","topic","(platform=NVL) and (platform=PTL) and (platform=WCL)",,"ishcondition=(platform=NVL) and (platform=PTL) and (platform=WCL) => False"
