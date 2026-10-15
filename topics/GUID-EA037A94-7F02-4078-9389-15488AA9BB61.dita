@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<!-- Original file name: AE828CCF-6306-490A-8FE6-ADB8A562588D.dita -->
+<topic id="GUID-EA037A94-7F02-4078-9389-15488AA9BB61" xml:lang="en-US"> 
+  <title>LPDDR5/x CAMM x32 Type 3 PCB Design Guidelines</title> 
+  <body> 
+	 <section id="SECTION_AE828CCF-6306-490A-8FE6-ADB8A562588D"> 
+		<ul id="GUID-110FF153-E5DB-4DD2-9FC4-C608F43A5C1D"> 
+		  <li id="LI_4BAE82D66C67400A8E9E78AF2968EB8A"> 
+			 <p>Avoid exposed power planes under the CAMM connector region. 
+			 </p> 
+		  </li> 
+		</ul> 
+		<p>It is recommended to route ground (GND) planes in the CAMM connector area on the motherboard on both top and bottom layers. Avoid routing any power shapes in this region to reduce any power plane noise coupling to the CAMM backplate/module. Distribute GND stitching vias across the GND plane. 
+		</p> 
+		<fig id="FIG_AVOID_EXPOSED_POWER_PLANES_UNDER_CAMM_CONNECTOR_REGION_ON_BOTH_TOP_AND_BOTTOM_LAYERS_1"> 
+		  <title>Avoid exposed power planes under CAMM connector region on both top and bottom layers</title><image href="../images/GUID-AB360559-CF6A-46C1-A747-5F3EAEBB17BC.png" scalefit="yes" id="IMG_AVOID_EXPOSED_POWER_PLANES_UNDER_CAMM_CONNECTOR_REGION_ON_BOTH_TOP_AND_BOTTOM_LAYERS_1_PNG" /> 
+		</fig> 
+		<fig id="FIG_DISTRIBUTE_GND_STITCHING_VIAS_ACROSS_GND_PLANE_1"> 
+		  <title>Distribute GND stitching vias across GND plane</title><image href="../images/GUID-1DFA4CDA-CCB6-4EA5-A92A-DCD033F9E4F4.png" scalefit="yes" id="IMG_DISTRIBUTE_GND_STITCHING_VIAS_ACROSS_GND_PLANE_1_PNG" /> 
+		</fig> 
+		<ul id="GUID-4F071B26-8BF6-43BF-9AB1-5F015C17091E"> 
+		  <li id="LI_5B19462F56C04DBCBAFA6EDE57FCAC2B"> 
+			 <p>Mounting Hole Grounding Pads 
+			 </p> 
+		  </li> 
+		</ul> 
+		<p>Exposed ground pads with multiple ground stitching vias are required around mechanical mounting/screw holes on the bottom side of the motherboard (to allow ground contact with the backplate). 
+		</p> 
+		<fig id="FIG_MOUNTING_HOLE_GROUNDING_PAD_ON_MOTHERBOARD_BOTTOM_LAYER_1"> 
+		  <title>Mounting hole grounding pad on motherboard bottom layer</title><image href="../images/GUID-C0A05E8E-6EFF-4282-8C42-7E5A439AECB2.png" scalefit="yes" id="IMG_MOUNTING_HOLE_GROUNDING_PAD_ON_MOTHERBOARD_BOTTOM_LAYER_1_PNG" /> 
+		</fig> 
+		<ul id="GUID-E9877202-B18E-4FA1-845A-84D71B11949C"> 
+		  <li id="LI_33FA324A1C8C4FAE947314F3834770DB"> 
+			 <p>Conductive Screws 
+			 </p> 
+		  </li> 
+		</ul> 
+		<p>Conductive screws without any coating/paint are recommended to secure the module to the motherboard. 
+		</p> 
+		<ul id="GUID-39543153-9F4F-4720-8A25-34B6EA76656F"> 
+		  <li id="LI_7EFA325976F54BBABEDAF2C6253EEABD"> 
+			 <p>LPCAMM Module-level Shield 
+			 </p> 
+		  </li> 
+		</ul> 
+		<p>A module-level EMI shield can be installed on the CAMM module as illustrated in the pictures below. The shield must make ground contact with the ground ring on the periphery of the module. 
+		</p> 
+		<fig id="FIG_LPCAMM_MODULE-LEVEL_EMI_SHIELD_1"> 
+		  <title>LPDDR5/x CAMM x32 Type 3 Module-level EMI shield</title><image href="../images/GUID-FEE4E2BF-6982-4AB0-80A1-5F2B0004B0C9.png" scalefit="yes" id="IMG_LPCAMM_MODULE-LEVEL_EMI_SHIELD_1_PNG" /> 
+		</fig> 
+	 </section> 
+  </body> 
+</topic> 

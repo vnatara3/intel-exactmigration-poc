@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-1D4401E1-FF3E-4D9B-811F-C634500F45AC" xml:lang="en-US"> 
+  <title>POR Memory Configurations</title> 
+  <body> 
+	 <draft-comment>Go to Tools menu and click Track Changes, before you to start making any edits. 
+	 </draft-comment> 
+	 <draft-comment>Go to Tools menu and click 
+		<b>Accept or Reject Changes</b>. Select 
+		<b>Accept All</b> in the pop-up window, before you start making edits for next revision. If the changes is common between SKUs or other platforms keep it as is to indicate it other SKU revision. 
+	 </draft-comment> 
+	  
+   
+  <table id="TABLE_893F9A88C5FB46EBAF393FCE6A2645E3" pgwide="1"> 
+  <title>POR Memory Configurations</title> 
+  <tgroup cols="8"><colspec colnum="1" colname="col2" colwidth="1.34*" /><colspec colnum="2" colname="col3" colwidth="1.15*" /><colspec colnum="3" colname="col4" colwidth="1.56*" /><colspec colname="col04" colnum="4" colwidth="1.32*" /><colspec colnum="5" colname="col5" colwidth="1.25*" /><colspec colnum="6" colname="col6" colwidth="1.00*" /><colspec colnum="7" colname="col8" colwidth="1.20*" /><colspec colnum="8" colname="col9" colwidth="1.00*" /><thead> 
+		<row> 
+		  <entry colname="col2"> 
+			 <p>Config# 
+			 </p> 
+		  </entry> 
+		  <entry colname="col3"> 
+			 <p>Technology 
+			 </p> 
+		  </entry> 
+		  <entry colname="col4"> 
+			 <p>Topology 
+			 </p> 
+		  </entry> 
+		  <entry colname="col04"> 
+			 <p>Transfer 
+			 </p> 
+			 <p>Rate 
+			 </p> 
+			 <p> (MT/s) 
+			 </p> 
+		  </entry> 
+		  <entry colname="col5"> 
+			 <p>Memory 
+			 </p> 
+			 <p>Device 
+			 </p> 
+		  </entry> 
+		  <entry colname="col6"> 
+			 <p>Device Ballout 
+			 </p> 
+		  </entry> 
+		  <entry colname="col8"> 
+			 <p>PCB Stack-up 
+			 </p> 
+		  </entry> 
+		  <entry colname="col9"> 
+			 <p>IL/NIL 
+			 </p> 
+		  </entry> 
+		</row></thead> 
+	 <tbody> 
+		<row valign="top"> 
+		  <entry colname="col2" valign="middle"><xref scope="local" format="dita" href="GUID-849B78DE-BB07-435F-BF98-2B0BB7B2C8E6.dita#GUID-849B78DE-BB07-435F-BF98-2B0BB7B2C8E6"><?xm-replace_text DDR5 SODIMM/CSODIMM 1DPC?></xref> 
+		  </entry> 
+		  <entry colname="col3" valign="middle"> 
+			 <p>DDR5 
+			 </p> 
+		  </entry> 
+		  <entry colname="col4" valign="middle"> 
+			 <p>CSODIMM<sup>7,8</sup> 
+			 </p> 
+			 <p> 1DPC B2B/SBS 
+			 </p> 
+		  </entry> 
+		  <entry colname="col04" valign="middle"> 
+			 <p>8000 (nECC) 
+			 </p> 
+			 <p>7200 (ECC) 
+			 </p> 
+		  </entry> 
+		  <entry colname="col5" valign="middle"> 
+			 <p>Non-ECC SODIMM/CSODIMM: A(1Rx8), B(2Rx8), C(1Rx16) 
+			 </p> 
+			 <p>ECC SODIMM/CSODIMM: D(1Rx8), E(2Rx8) 
+			 </p> 
+		  </entry> 
+		  <entry colname="col6" valign="middle"> 
+			 <p>SODIMM/CSODIMM:262 
+			 </p> 
+		  </entry> 
+		  <entry colname="col8" valign="middle"> 
+			 <p>T3/10L 
+			 </p> 
+		  </entry> 
+		  <entry colname="col9" valign="middle"> 
+			 <p>NIL 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row valign="top"> 
+		  <entry colname="col2" valign="middle"><xref scope="local" format="dita" href="GUID-C7D1B96C-CB09-41AF-B01C-6034B60BD4CB.dita#GUID-C7D1B96C-CB09-41AF-B01C-6034B60BD4CB"><?xm-replace_text DDR5 SODIMM/CSODIMM 2DPC?></xref> 
+		  </entry> 
+		  <entry colname="col3" valign="middle"> 
+			 <p>DDR5 
+			 </p> 
+		  </entry> 
+		  <entry colname="col4" valign="middle"> 
+			 <p>CSODIMM 
+			 </p> 
+			 <p>2DPC Tee ClamShell (B2B) 
+			 </p> 
+			 <p>Dual-sided 
+			 </p> 
+		  </entry> 
+		  <entry colname="col04" valign="middle"> 
+			 <p>1DIMM: 
+			 </p> 
+			 <p>1R/2R 5600 
+			 </p> 
+			 <p>2DIMMs: 
+			 </p> 
+			 <p>1R 5200 
+			 </p> 
+			 <p>2R 4800 
+			 </p> 
+		  </entry> 
+		  <entry colname="col5" valign="middle"> 
+			 <p>Non-ECC SODIMM/CSODIMM: A(1Rx8), B(2Rx8), C(1Rx16) 
+			 </p> 
+			 <p>ECC SODIMM/CSODIMM: D(1Rx8), E(2Rx8) 
+			 </p> 
+		  </entry> 
+		  <entry colname="col6" valign="middle"> 
+			 <p>SODIMM/CSODIMM:262 
+			 </p> 
+		  </entry> 
+		  <entry colname="col8" valign="middle"> 
+			 <p>T3/10L 
+			 </p> 
+		  </entry> 
+		  <entry colname="col9" valign="middle"> 
+			 <p>NIL 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row valign="top"> 
+		  <entry colname="col2" valign="middle"><xref scope="local" format="dita" href="GUID-C7D1B96C-CB09-41AF-B01C-6034B60BD4CB.dita#GUID-C7D1B96C-CB09-41AF-B01C-6034B60BD4CB"><?xm-replace_text DDR5 SODIMM/CSODIMM 2DPC?></xref> 
+		  </entry> 
+		  <entry colname="col3" valign="middle"> 
+			 <p>DDR5 
+			 </p> 
+		  </entry> 
+		  <entry colname="col4" valign="middle"> 
+			 <p>CSODIMM 
+			 </p> 
+			 <p>2DPC Daisy Chain (B2B) 
+			 </p> 
+			 <p>Single-sided 
+			 </p> 
+		  </entry> 
+		  <entry colname="col04" valign="middle"> 
+			 <p>1DIMM: 
+			 </p> 
+			 <p>1R/2R 5200 
+			 </p> 
+			 <p>2DIMMs: 
+			 </p> 
+			 <p>1R/2R 4800 
+			 </p> 
+		  </entry> 
+		  <entry colname="col5" valign="middle"> 
+			 <p>Non-ECC SODIMM/CSODIMM: A(1Rx8), B(2Rx8), C(1Rx16) 
+			 </p> 
+			 <p>ECC SODIMM/CSODIMM: D(1Rx8), E(2Rx8) 
+			 </p> 
+		  </entry> 
+		  <entry colname="col6" valign="middle"> 
+			 <p>SODIMM/CSODIMM:262 
+			 </p> 
+		  </entry> 
+		  <entry colname="col8" valign="middle"> 
+			 <p>T3/10L 
+			 </p> 
+		  </entry> 
+		  <entry colname="col9" valign="middle"> 
+			 <p>NIL 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row valign="top"> 
+		  <entry colname="col2" valign="middle"><xref scope="local" format="dita" href="GUID-C19F3E3A-3F9C-4FF2-A498-3A43CB7EC8C2.dita#GUID-C19F3E3A-3F9C-4FF2-A498-3A43CB7EC8C2"><?xm-replace_text LPDDR5/x CAMM Type 3?></xref> 
+		  </entry> 
+		  <entry colname="col3" valign="middle"> 
+			 <p> LPDDR5x 
+			 </p> 
+		  </entry> 
+		  <entry colname="col4" valign="middle"> 
+			 <p>LPCAMM2 
+			 </p> 
+		  </entry> 
+		  <entry colname="col04" valign="middle"> 
+			 <p> 1R/2R 8533 
+			 </p> 
+		  </entry> 
+		  <entry colname="col5" valign="middle"> 
+			 <p>DDP, QDP ODP 
+			 </p> 
+		  </entry> 
+		  <entry colname="col6" valign="middle"> 
+			 <p>666 
+			 </p> 
+		  </entry> 
+		  <entry colname="col8" valign="middle"> T3/10L 
+		  </entry> 
+		  <entry colname="col9" valign="middle"> 
+			 <p>NIL 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row valign="top"> 
+		  <entry colname="col2" valign="middle"><xref scope="local" format="dita" href="GUID-BA11170A-F9AD-4749-8540-7BA0E8160ADE.dita#GUID-BA11170A-F9AD-4749-8540-7BA0E8160ADE"><?xm-replace_text LPDDR5/x Memory Down x32x64 Type 4?></xref> 
+		  </entry> 
+		  <entry colname="col3" valign="middle"> 
+			 <p> LPDDR5x 
+			 </p> 
+		  </entry> 
+		  <entry colname="col4" valign="middle"> 
+			 <p>MD 4 x32 
+			 </p> 
+		  </entry> 
+		  <entry colname="col04" valign="middle"> 
+			 <p> 1R/2R 9600 
+			 </p> 
+		  </entry> 
+		  <entry colname="col5" valign="middle"> 
+			 <p>DDP QDP ODP 
+			 </p> 
+		  </entry> 
+		  <entry colname="col6" valign="middle"> 
+			 <p>315 
+			 </p> 
+		  </entry> 
+		  <entry colname="col8" valign="middle"> 
+			 <p>T4/10L 
+			 </p> 
+		  </entry> 
+		  <entry colname="col9" valign="middle"> 
+			 <p>NIL 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row valign="top"> 
+		  <entry namest="col2" nameend="col9"> 
+			 <note id="NOTE_E08A327C533944F49C29F75351F4DA7A"> 
+				<ol id="OL_2E5964BA09354A17B1D76AD764146848"> 
+				  <li id="LI_6083E2D2E5F7411B8ACFECC60DE99818">SBS - Side-by-side, DIMMs placed is side-by-side, in line placement. 
+				  </li> 
+				  <li id="LI_32B6A9C9C1B840C9A46B49CB067556B3">B2B - Back-to-Back, DIMMs placed in parallel one to other. 
+				  </li> 
+				  <li id="LI_151127AA73BD4BCF982D3B3AE5BCF907">SDP: Single Die Package, DDP: Dual Die Package , QDP: Quad Die Package, ODP: Octal Die Package 
+				  </li> 
+				  <li id="LI_6E97CABEB5C445A59695D1884F1BF737">To avoid excessive latency due to ZQ topology, Intel specifies that each ZQ pin must have an unique ZQ resistor. 
+				  </li> 
+				  <li id="LI_1DEB89EE65E345B2B29C77EF9328DB56">DDR5 SODIMM maximum speed is 5600. CSODIMM should be used above 5600. 
+				  </li> 
+				  <li id="LI_09CFFC58452541FCAA67264EDD77C068">DDR5 &gt;6400 requires to define a main clock out of 2 clock differential pairs for each 32-bit channel. DDR5 6400 and above requires to define a main clock out of 2 clock deferential pairs for each 32-bit channel. DDR5 6400 and above CKD Technical Advisory (# 
+					 <xref>845985</xref>) that provides guidance how to set the new BIOS policies for DDR5 6400 CLK connectivity that is a different than RVP design. 
+				  </li> 
+				  <li> DDR5 SODIMM maximum speed is 5600. CSODIMM should be used above 5600. 
+				  </li> 
+				  <li>For Memory updates, refer to the Nova Lake Platform Memory Enablement Guide (# 
+					 <xref href="https://cdrdv2.intel.com/v1/dl/getContent/858687" format="https" scope="external">858687</xref>). 
+				  </li> 
+				</ol> 
+			 </note> 
+		  </entry> 
+		</row> 
+	 </tbody> 
+  </tgroup> 
+  </table> 
+   
+  <?xm-insertion_mark_start author="dbobocel" time="20241108T215917+0530"?>
+  <?xm-insertion_mark_end?>
+   
+   
+  <table id="TABLE_E4B23C70BB244E6BB74BC38EC3DA24EC" pgwide="1" scale="60"> 
+  <title>POR Memory Signal List</title> 
+  <tgroup cols="4"><colspec colnum="1" colname="col1" colwidth="1.00*" align="left" /><colspec colname="col03" colnum="2" colwidth="1.46*" align="left" /><colspec colname="col4" colnum="3" colwidth="1.38*" align="left" /><colspec colname="col5" colnum="4" colwidth="1.46*" /><thead> 
+		<row> 
+		  <entry colname="col1" valign="middle"> 
+			 <p> Processor and Memory Type 
+			 </p> 
+		  </entry> 
+		  <entry valign="middle" align="center" colname="col03"> 
+			 <p>DDR5 CSODIMM 
+			 </p> 
+			 <p>Signal Name 
+			 </p> 
+		  </entry> 
+		  <entry valign="middle" align="center" colname="col4"> 
+			 <p>LPDDR5/x 
+			 </p> 
+			 <p>Signal Name 
+			 </p> 
+		  </entry> 
+		  <entry valign="middle" align="center" colname="col5"> 
+			 <p> LPCAMM2 
+			 </p> 
+			 <p>Signal Name 
+			 </p> 
+		  </entry> 
+		</row> 
+	 </thead> 
+	 <tbody> 
+		<row> 
+		  <entry colname="col1"> 
+			 <p>Clock (CLK) 
+			 </p> 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="left"> 
+			 <p>DDR[3:0]_CLK[3:0]_P 
+			 </p> 
+			 <p>DDR[3:0]_CLK[3:0]_N 
+			 </p> 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="left"> 
+			 <p>DDR[7:0]_CLK_P 
+			 </p> 
+			 <p>DDR[7:0]_CLK_N 
+			 </p> 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="left"> 
+			 <p>DDR[7:0]_CLK_P 
+			 </p> 
+			 <p>DDR[7:0]_CLK_N 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry colname="col1"> 
+			 <p>WCK 
+			 </p> 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="left"> 
+			 <p>NA 
+			 </p> 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="left"> 
+			 <p>DDR[7:0]_WCK_[1:0]_P 
+			 </p> 
+			 <p>DDR[7:0]_WCK_[1:0]_N 
+			 </p> 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="left"> 
+			 <p>DDR[7:0]_WCK_[1:0]_P 
+			 </p> 
+			 <p>DDR[7:0]_WCK_[1:0]_N 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry colname="col1"> 
+			 <p>Control (CTRL) 
+			 </p> 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="left"> DDR[3:0]_CS_[3:0] 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="left"> 
+			 <p>DDR_[7:0]_CS_[1:0] 
+			 </p> 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="left"> 
+			 <p>DDR_[7:0]_CS_[1:0] 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry colname="col1"> 
+			 <p>Command (CMD) 
+			 </p> 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="left"> 
+			 <p>DDR[3:0]_CA_[12:0] 
+			 </p> 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="left"> 
+			 <p>DDR_[7:0]_CA_[6:0] 
+			 </p> 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="left"> 
+			 <p>DDR_[7:0]_CA_[6:0] 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry colname="col1"> 
+			 <p>Strobe 
+			 </p> 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="left"> 
+			 <p>DDR[3:0]_DQSP_[3:0] 
+			 </p> 
+			 <p>DDR[3:0]_DQSN_[3:0] 
+			 </p> 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="left"> 
+			 <p>DDR[3:0]_DQSP_[1:0] 
+			 </p> 
+			 <p>DDR[3:0]_DQSN_[1:0] 
+			 </p> 
+			 <p>DDR[7:4]_DQSP_[1:0] 
+			 </p> 
+			 <p>DDR[7:4]_DQSN_[1:0] 
+			 </p> 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="left"> 
+			 <p>DDR[3:0]_DQSP_[1:0] 
+			 </p> 
+			 <p>DDR[3:0]_DQSN_[1:0] 
+			 </p> 
+			 <p>DDR[7:4]_DQSP_[1:0] 
+			 </p> 
+			 <p>DDR[7:4]_DQSN_[1:0] 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry colname="col1"> 
+			 <p>Data 
+			 </p> 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="left"> 
+			 <p>DDR[1:0]_DQ_[3:0]_[7:0] 
+			 </p> 
+			 <p>DDR[3:2]_DQ_[3:0]_[7:0] 
+			 </p> 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="left"> 
+			 <p>DDR[3:0]_DQ[1:0]_[7:0] 
+			 </p> 
+			 <p>DDR[7:4]_DQ[1:0]_[7:0] 
+			 </p> 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="left"> 
+			 <p>DDR[3:0]_DQ[1:0]_[7:0] 
+			 </p> 
+			 <p>DDR[7:4]_DQ[1:0]_[7:0] 
+			 </p> 
+			 <p>LPDDR[7:0]_OOBECC[1:0] 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry colname="col1"> 
+			 <p>Reset 
+			 </p> 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="left"> 
+			 <p>DRAM_RESET# 
+			 </p> 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="left"> 
+			 <p>DRAM_RESET# 
+			 </p> 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="left"> 
+			 <p>DRAM_RESET# 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry colname="col1"> 
+			 <p>RCOMP 
+			 </p> 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="left"> 
+			 <p>DDR_RCOMP 
+			 </p> 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="left"> 
+			 <p>DDR_RCOMP 
+			 </p> 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="left"> 
+			 <p>DDR_RCOMP 
+			 </p> 
+		  </entry> 
+		</row> 
+	 </tbody> 
+  </tgroup> 
+  </table> 
+   
+  <note id="NOTE_0467C748665F4BAAB367FF1A8F207C78"> DDR memory signals should be routed the same as the RVP design. For more details, refer to the 854352_NVL_HX_SCHCHK PDF in the zip file. 
+  </note> 
+   
+  <?xm-insertion_mark_start author="dbobocel" time="20241108T220539+0530"?>
+  <?xm-insertion_mark_end?>
+   
+   
+   
+  </body> 
+</topic> 

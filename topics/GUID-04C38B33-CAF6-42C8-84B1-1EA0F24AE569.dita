@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic xml:lang="en-US" id="GUID-04C38B33-CAF6-42C8-84B1-1EA0F24AE569"> 
+  <title>Via Placement at 
+	 <ph>SODIMM/CSODIMM/LPCAMM2 and 
+	 </ph> DRAM Device Side</title> 
+  <body> 
+	 <draft-comment>Go to Tools menu and click Track Changes, before you to start making any edits. 
+	 </draft-comment> 
+	 <draft-comment>Go to Tools menu and click 
+		<b>Accept or Reject Changes</b>. Select 
+		<b>Accept All</b> in the pop-up window, before you start making edits for next revision. If the changes is common between SKUs or other platforms keep it as is to indicate it other SKU revision. 
+	 </draft-comment> 
+	 <p>Similar to the via placement guidelines on the CPU-side, the following via placement guidelines on the DRAM-side ensure design robustness at high memory frequencies. 
+	 </p> 
+	 <ul id="UL_9F1FE05C41ED4C0282BDAB3E649C9BA0"> 
+		<li id="LI_803FF371A7F14D1CA3557BC7E8078A7D">Follow the Reference Validation Platform (RVP) via placement at 
+		  <ph>SODIMM and 
+		  </ph> Memory DRAM Down side as much as possible for all Signal Groups. 
+		</li> 
+		<li id="LI_B091F96364B249F093F29E5167C11C96">For HDI or Type-4 memory down system designs use GND Micro Vias from surface pin/pad (Top/Bottom) layer to connect to respective signal routing reference plane layers. 
+		</li> 
+		<li id="LI_08AA80BAFC8945AC8AACF989FB7210DE">GND vias must be placed between signals from different signal groups and channels. 
+		</li> 
+		<li id="LI_A6F0141BE3D349768FEE0B4A0836E033">Data and Strobe vias from different byte lanes must be separated by GND vias. 
+		  <note id="GUID-14306D5D-D36D-4935-969B-9C0DD2E5EE89"> PTH(Plated Through Hole) via placement on the DRAM side is primarily driven by pin pitch. Follow the RVP design for optimum placement of vias. 
+		  </note> 
+		</li> 
+		<li id="LI_BD4EE70AD9F04EECBB1E31F223DBDE1C">A good example of DRAM-side ground via stitching has sufficient ground coverage for every signal in a byte lane a shown in the figure below. 
+		</li> 
+		<li id="LI_06F1212B80D346E89238BE07F59DD569">Follow the via spacing guidelines covered in table below. At least one ground stitching via must be placed within every signal transition (DQ/DQS/DQS#/CLK/CTRL/CKE/CMD) whenever they change signal layers. 
+		</li> 
+		<li id="LI_2913CF87FA8C46AB8C9B5B290D77187D">Remove via pads from layers that are not connected to traces (<xref scope="local" format="dita" href="GUID-04C38B33-CAF6-42C8-84B1-1EA0F24AE569.dita#GUID-04C38B33-CAF6-42C8-84B1-1EA0F24AE569/FIG_482370A3113240EC928C51F8F9639D54"><?xm-replace_text Remove PADs from Layers that Do Not Connect to Trace...?></xref> ). 
+		</li> 
+	 </ul> 
+	 <fig id="FIG_D31689D8C00B49DE9587E5D8A61FA3CC"> 
+		<title>DRAM-side GND via Stitching Examples (GND vias in Green)</title><image href="../images/GUID-BBA32736-EE6C-4545-B036-E1709FBDE792.png" id="IMAGE_4C94BC9159A7482D9CCE34E5C48E45BE" scalefit="yes" /> 
+	 </fig> 
+	 <fig id="FIG_482370A3113240EC928C51F8F9639D54"> 
+		<title>Remove PADs from Layers that Do Not Connect to Trace</title> 
+	 </fig> 
+	 <image href="../images/GUID-D289DD8C-B84B-4CCE-AAEA-ABA03D2329CD.png" id="IMAGE_A18D32B9521844709EA9FA4ACDC2F135" scalefit="yes"></image> 
+	  
+   
+   
+   
+  <table id="TABLE_37B255F9A86E47E6A4395805A7CD9DC0"> 
+  <title>Vias Separation Guidelines</title> 
+  <tgroup cols="4"><colspec colnum="1" colname="col1" colwidth="*" /><colspec colnum="2" colname="col2" colwidth="*" /><colspec colname="col3" colnum="3" colwidth="1.50*" /><colspec colname="col4" colnum="4" colwidth="1.50*" /><thead> 
+		<row> 
+		  <entry colname="col1" valign="middle"> 
+			 <p>CPU 
+			 </p> 
+		  </entry> 
+		  <entry colname="col2" valign="middle"> 
+			 <p>Memory Type 
+			 </p> 
+		  </entry> 
+		  <entry colname="col3" valign="middle"> 
+			 <p>Signal Group 
+			 </p> 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="left"> 
+			 <p>Signal:GND Rule 
+			 </p> 
+		  </entry> 
+		</row></thead> 
+	 <tbody> 
+		<row> 
+		  <entry colname="col1" morerows="6" valign="middle" align="center"> NVL HX 
+		  </entry> 
+		  <entry colname="col2" morerows="3" valign="middle" align="center"><b>SODIMM/CSODIMM/LPCAMM2</b> 
+		  </entry> 
+		  <entry colname="col3" valign="middle" align="left"> 
+			 <p>DQ/DQS/DQS# 
+			 </p> 
+		  </entry> 
+		  <entry colname="col4" align="left"> 
+			 <p> 1:1 (microvia) 
+			 </p> 
+			 <p>1:1-2:1 (PTH/Buried via) 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry colname="col3" valign="middle" align="left"> 
+			 <p>CLK/CTRL/CKE/CMD 
+			 </p> 
+		  </entry> 
+		  <entry colname="col4" align="left"> 
+			 <p>1:1 (microvia) 
+			 </p> 
+			 <p>1:1-2:1 (PTH/Buried via) 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry colname="col3" valign="middle" align="left" morerows="1"> 
+			 <p>1 DIMM Per Channel 
+			 </p> 
+		  </entry> 
+		  <entry colname="col4"> 
+			 <p>Pitch between DQ vias from different byte lanes 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry colname="col4"> 
+			 <p>Pitch between CMD to CTRL vias 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry colname="col2" morerows="2" valign="middle" align="center"><b>Memory Down</b> 
+		  </entry> 
+		  <entry colname="col3" valign="middle" align="left"> 
+			 <p>DQ/DQS/DQS# 
+			 </p> 
+		  </entry> 
+		  <entry colname="col4" align="left"> 
+			 <p>1:1 (microvia) 
+			 </p> 
+			 <p>1:1-2:1 (PTH/Buried via) 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry colname="col3" valign="middle" align="left"> 
+			 <p>CLK/CTRL/CKE/CMD 
+			 </p> 
+		  </entry> 
+		  <entry colname="col4" align="left"> 
+			 <p>1:1 (microvia) 
+			 </p> 
+			 <p>1:1-2:1 (PTH/Buried via) 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry colname="col3" valign="middle" align="left"> 
+			 <p>DQ to DQ from different byte lanes 
+			 </p> 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="left"> 
+			 <p>Pitch between DQ vias from different byte lanes 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="col1" nameend="col4"> 
+			 <note id="NOTE_4C6748DF105240279534CED17BCDA94C"> 
+				<ol id="OL_2A0AA753BE46430B9FF279451624E19C"> 
+				  <li id="LI_FEEDB11AFE7C4FD5913634A97B9D2038">Via-to-via pitch is measures between via centers. 
+				  </li> 
+				  <li id="LI_152F633A8DD84B1D8C49FD64C71CE3D6">Signal GND via stitching pattern to be copy exact from RVP/Clip files. 
+				  </li> 
+				</ol> 
+			 </note> 
+		  </entry> 
+		</row> 
+	 </tbody> 
+  </tgroup> 
+  </table> 
+   
+  </body> 
+</topic> 

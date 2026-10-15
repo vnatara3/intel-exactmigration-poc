@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-D2C9C3AB-4A5C-44E8-885A-06216E2EF679" xml:lang="en-US"> 
+  <title>DDR Byte Swapping</title> 
+  <body> 
+	 <ul id="UL_C14BE2A2AF57433C81F6C1E71FF1AD30"> 
+		<li id="LI_52EE311492E848A6981A416E31A264E7">Bit swapping is allowed within each Byte 
+		  <ph> for all memory technologies</ph>. 
+		</li> 
+		 
+		<li id="LI_E86AC5B900614C10BE13E8A88EF669DF"> DDR5 x32 sub-channels can be swizzle within their x64 MC. 
+		</li> 
+		<li id="LI_6601F7F5D5D14511A481A045D6686EC2">DDR5: Byte Swapping is allowed within each x32 channel. 
+		</li> 
+		 
+		<li id="LI_3DC33461351E444EB1DC594BF9728593"><ph>LPDDR5</ph>: Byte swapping is allowed within a 16-bit channel. 
+		</li> 
+		<li id="LI_CCDB8BF1284D452A89310866E1ACEDC3"><ph>LPDDR5</ph>: x16 sub-channels can be swizzled within their x64 MC. 
+		</li> 
+		 
+		<li id="LI_D7ADDBACA15B40478B2DB903E5DB6C47">When swapping channel DQ, the CA/CS signals must be swapped as well. 
+		</li> 
+		<li id="LI_3C5FCB289D694558888ACF85E9807C7D"> DDR5 x32 sub-channels can be swizzle within their x64 MC. 
+		</li> 
+	 </ul> 
+	  
+  </body> 
+</topic> 

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "file:///E:/InfoShare/Web/Author/ASP/DocTypes/dita-oasis/1.2/technicalContent/dtd/topic.dtd"[]>
+<!-- Original file name: Teardrop Structure Requirement at Junction of Via and Trace_NVL_H_HX_S=GUID-94E47656-9A17-4A54-8719-19823149C274=1=en-US=.xml --><topic id="GUID-94E47656-9A17-4A54-8719-19823149C274" xml:lang="en-US"> 
+  <title>Teardrop Structure Requirement at Junction of Via and Trace</title> 
+  <body> 
+	 <p> A Teardrop is a small copper fillet added at the junction where a narrow trace meets a via pad. Teardrops are used to: 
+	 <ul id="GUID-DDD164F2-1D89-4B15-8199-DDC2092059BE"> 
+		<li> Reduce stress concentration at the narrow‑trace/large‑pad junction, making the copper less likely to crack from drill wander, vibration, flexing, or thermal cycling. 
+		</li> 
+		<li> Increase manufacturing yield by giving more copper "capture" area if the drilled hole is slightly off‑center, helping prevent open circuits or weak joints. 
+		</li> 
+		<li> In fine‑pitch, HDI, or very thin trace designs, they add mechanical robustness with negligible extra area, which is especially useful on vias in BGA fan‑out. 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p> Electrically, teardrops can affect performance due to impedance mismatch, and this is critical for high-speed signals viz., memory in speeds &gt; 8533 MT/s and HSIO &gt; 10 Gbps. 
+	 </p> 
+	 <p> To mitigate the impact of impedance mismatch, Intel recommends following guidelines for teardrop: 
+	 <ul id="GUID-927102F7-1DAE-4383-AB65-46E5372D9705"> 
+		<li> Teardrop metal should be implemented fully within the antipad of via as shown in the figure below. 
+		</li> 
+		<li> Teardrop max length from via pad edge should be less than or equal to 100 um (~4 mils). Incase, teardrop shape is encroaching the metal outside the antipad area then voiding should be done in layers above and below the teardrop shape. However, make sure that teardrop void does not lead to Route over void (RoV) for other traces. 
+		</li> 
+		<li> If Teardrop is not implemented in layout, then this guidance should be provided to PCB supplier as part of Fab-notes in gerber release. 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <fig expanse="page" id="FIG_FCA87A2286D74A6A959B8B7FCB8AB697"> 
+		<title> Recommended Teardrop Dimensions </title> 
+		<image href="../images/GUID-4FB6EC5B-9D6F-4A3A-AA1F-E8C0E1D07B15.png" id="IMAGE_BE036A5488474C3FBD0BB748E230896B" scalefit="yes" /> 
+		<image href="../images/GUID-42FB857D-8EEB-4F68-AFA1-759A1CCC760C.png" scalefit="yes" />
+	 </fig> 
+  </body> 
+</topic> 

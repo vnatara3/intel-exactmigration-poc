@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-C7D1B96C-CB09-41AF-B01C-6034B60BD4CB" xml:lang="en-US"> 
+  <title>DDR5 SODIMM/CSODIMM 2DPC</title> 
+  <body> 
+	 <table pgwide="1" id="RTF31373537313A2030335F4C65"> 
+  <title>DDR5 SODIMM/CSODIMM 2DPC Tee ClamShell (B2B) Dual-Sided Topology Guidelines</title> 
+  <tgroup cols="3"> 
+	 <colspec colname="c1" colwidth="13*" colnum="1" /> 
+	 <colspec colname="c2" colwidth="21*" colnum="2" /> 
+	 <colspec colname="c3" colwidth="52*" colnum="3" /> 
+	 <thead> 
+		<row> 
+		  <entry namest="c1" nameend="c2" valign="middle"> 
+			 <p>Parameter 
+			 </p> 
+		  </entry> 
+		  <entry valign="middle"> 
+			 <p>Details 
+			 </p> 
+		  </entry> 
+		</row></thead> 
+	 <tbody valign="top"> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>Processor 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>NVL-HX 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>Memory Type 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>DDR5 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>Configuration 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>Channel A (x64) = One SODIMM/CSODIMM 
+			 </p> 
+			 <p>Channel B (x64) = One SODIMM/CSODIMM 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>Speed (MT/s) 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>1DIMM: 
+			 </p> 
+			 <p>1R/2R 5600 
+			 </p> 
+			 <p>2DIMMs: 
+			 </p> 
+			 <p>1R 5200 
+			 </p> 
+			 <p>2R 4800 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>Channels 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>1 and 2 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>System Memory Voltage 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>DDR5 SODIMM/CSODIMM V_bulk is 5V 
+			 </p> 
+			 <p>SOC VDD2/VDDQ is 1.1V 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>Max Ranks Per Channel 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>2 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>DRAM Die Density (Gb) 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>16, 24 , 32 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>Max Capacity (GB) 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>256 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>Memory Types 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>Non-ECC SODIMM/CSODIMM: A(1Rx8), B(2Rx8), C(1Rx16)
+			 </p>
+			 <p>ECC SODIMM/CSODIMM: D(1Rx8), E(2Rx8)
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>PCB Layers/Type 
+				<sup> 1 
+				</sup> 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>10L/Type-3 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>DRAM Device Placement 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>Dual-sided 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>Processor Memory Ball Map 
+				<sup> 2</sup> 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>Non-Interleaved 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>DRAM Device ODT Capability 
+				<sup> 3</sup> 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>Enabled 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c3"> 
+			 <note id="GUID-5FC72FCF-3523-4016-946D-05FD056375BC"> 
+				<ol id="OL_4A8EC580B4BC4826A283597BE99E2605"> 
+				  <li id="LI_AD55B2DE40A9419C9A5FB7D16DB40E19">Type-3 (T3)= PCB with zero build-up layers using Plated Through-hole (PTH) Vias with no Micro-vias. 
+				  </li> 
+				  <li id="LI_254C3F90902A471DADB0B85AAE556DCD">Non-Interleave = The processor is optimized for a side-by-side ball map and placement of the DRAM memory down devices placement. Each memory channel’s signals are grouped together on one side of the processor packages. 
+				  </li> 
+				  <li id="LI_B106AF76DAA24C548F9EA6B16B8A048C">The DRAM Device ODT Capability can be enabled or disabled for reads and writes depending on the system memory interface margins. Enabling the DRAM device ODT increases the memory interface power and improves signal integrity/margins while disabling the DRAM device ODT decreases the memory interface power but degrades signal integrity/margins. 
+				  </li> 
+				  <li id="LI_0D57DB9147FD4919A233D20E6475A088">DDR5 SODIMM maximum speed is 5600. CSODIMM should be used above 5600. 
+				  </li> 
+				</ol> 
+			 </note> 
+		  </entry> 
+		</row> 
+	 </tbody> 
+  </tgroup> 
+  </table> 
+  <table pgwide="1" id="GUID-836E2D3A-599D-4D7B-92A0-B0E92723A04C"> 
+  <title>DDR5 SODIMM/CSODIMM 2DPC Daisy Chain (B2B) Single-Sided Topology Guidelines</title> 
+  <tgroup cols="3"> 
+	 <colspec colname="c1" colwidth="13*" colnum="1" /> 
+	 <colspec colname="c2" colwidth="21*" colnum="2" /> 
+	 <colspec colname="c3" colwidth="52*" colnum="3" /> 
+	 <thead> 
+		<row> 
+		  <entry namest="c1" nameend="c2" valign="middle"> 
+			 <p>Parameter 
+			 </p> 
+		  </entry> 
+		  <entry valign="middle"> 
+			 <p>Details 
+			 </p> 
+		  </entry> 
+		</row></thead> 
+	 <tbody valign="top"> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>Processor 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>NVL-HX 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>Memory Type 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>DDR5 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>Configuration 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>Channel A (x64) = One SODIMM/CSODIMM 
+			 </p> 
+			 <p>Channel B (x64) = One SODIMM/CSODIMM 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>Speed (MT/s) 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>1DIMM: 
+			 </p> 
+			 <p>1R/2R 5200 
+			 </p> 
+			 <p>2DIMMs: 
+			 </p> 
+			 <p>1R/2R 4800 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>Channels 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>1 and 2 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>System Memory Voltage 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>DDR5 SODIMM/CSODIMM V_bulk is 5V 
+			 </p> 
+			 <p>SOC VDD2/VDDQ is 1.1V 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>Max Ranks Per Channel 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>2 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>DRAM Die Density (Gb) 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>16, 24 , 32 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>Max Capacity (GB) 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>256 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>Memory Types 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>SODIMM/CSODIMM 262 Balls 
+			 </p> 
+			 <p>RC-A(1RX8), B(2RX8), and C(1RX16) 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>PCB Layers/Type 
+				<sup> 1 
+				</sup> 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>10L/Type-3 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>DRAM Device Placement 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>Single-sided 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>Processor Memory Ball Map 
+				<sup> 2</sup> 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>Non-Interleaved 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <p>DRAM Device ODT Capability 
+				<sup> 3</sup> 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>Enabled 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c3"> 
+			 <note id="GUID-81D12271-0E7E-461C-BA74-2B772AB64F25"> 
+				<ol id="GUID-520BC4A1-CD22-450B-AAC4-A9FD68706117"> 
+				  <li>Type-3 (T3)= PCB with zero build-up layers using Plated Through-hole (PTH) Vias with no Micro-vias. 
+				  </li> 
+				  <li>Non-Interleave = The processor is optimized for a side-by-side ball map and placement of the DRAM memory down devices placement. Each memory channel’s signals are grouped together on one side of the processor packages. 
+				  </li> 
+				  <li>The DRAM Device ODT Capability can be enabled or disabled for reads and writes depending on the system memory interface margins. Enabling the DRAM device ODT increases the memory interface power and improves signal integrity/margins while disabling the DRAM device ODT decreases the memory interface power but degrades signal integrity/margins. 
+				  </li> 
+				  <li>DDR5 SODIMM maximum speed is 5600. CSODIMM should be used above 5600. 
+				  </li> 
+				</ol> 
+			 </note> 
+		  </entry> 
+		</row> 
+	 </tbody> 
+  </tgroup> 
+  </table> 
+  </body> 
+</topic> 

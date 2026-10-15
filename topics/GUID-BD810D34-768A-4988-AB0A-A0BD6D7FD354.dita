@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic xml:lang="en-US" id="GUID-BD810D34-768A-4988-AB0A-A0BD6D7FD354"> 
+  <title>Via Placement and Pad Optimization</title> 
+  <body> 
+	 <draft-comment>Go to Tools menu and click Track Changes, before you to start making any edits. 
+	 </draft-comment> 
+	 <draft-comment>Go to Tools menu and click 
+		<b>Accept or Reject Changes</b>. Select 
+		<b>Accept All</b> in the pop-up window, before you start making edits for next revision. If the changes is common between SKUs or other platforms keep it as is to indicate it other SKU revision. 
+	 </draft-comment> 
+	 <p>This section describes the following: 
+	 <ul id="UL_6C3A910CF7F94178963487FE3368D66A"> 
+		<li id="LI_E973181D931C4079893CD5076A63A9C1"> Via Placement at CPU Side 
+		</li> 
+		<li id="LI_A5A8D66C4BB2426BA8B3EB399E08D686">Via Placement at 
+		  <ph>CSODIMM and 
+		  </ph> DRAM Device Side 
+		</li> 
+		<li>Teardrop for via guidelines should be followed from 
+		  <xref scope="local" format="dita" href="GUID-94E47656-9A17-4A54-8719-19823149C274.dita"><?xm-replace_text Teardrop Structure Requirement at Junction of Via and Trace?></xref>. 
+		</li> 
+	 </ul> 
+	 </p> 
+  </body> 
+</topic> 

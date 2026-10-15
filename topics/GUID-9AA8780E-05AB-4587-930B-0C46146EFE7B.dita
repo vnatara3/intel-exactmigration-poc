@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-9AA8780E-05AB-4587-930B-0C46146EFE7B" xml:lang="en-US"> 
+  <title>DDR Power Delivery Memory Side</title> 
+  <body> 
+	 <draft-comment>Go to Tools menu and click Track Changes, before you to start making any edits. 
+	 </draft-comment> 
+	 <draft-comment>Go to Tools menu and click 
+		<b>Accept or Reject Changes</b>. Select 
+		<b>Accept All</b> in the pop-up window, before you start making edits for next revision. If the changes is common between SKUs or other platforms keep it as is to indicate it other SKU revision. 
+	 </draft-comment> 
+	 <p>The guidelines here are to support a 
+		<b> 
+		  <ph>dual</ph> sided component</b> assembly. 
+	 </p> 
+	 <p>The expectation is that the DRAM decoupling caps will be placed as close as possible to the DRAM devices to minimize the loop inductance of the caps. 
+	 </p> 
+	 <p> The decoupling capacitor to DRAM device inductance loop can be improved by following common power integrity recommendations described in Power Integrity Recommendations. 
+	 </p> 
+  </body> 
+</topic> 

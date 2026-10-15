@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-BA11170A-F9AD-4749-8540-7BA0E8160ADE" xml:lang="en-US"> 
+  <title><ph>LPDDR5x</ph> Memory Down 
+	 <ph>x32</ph> Type 4 </title> 
+  <body> 
+	 <draft-comment>Go to Tools menu and click Track Changes, before you to start making any edits. 
+	 </draft-comment> 
+	 <draft-comment>Go to Tools menu and click 
+		<b>Accept or Reject Changes</b>. Select 
+		<b>Accept All</b> in the pop-up window, before you start making edits for next revision. If the changes is common between SKUs or other platforms keep it as is to indicate it other SKU revision. 
+	 </draft-comment> 
+	 <p> 
+	 </p> 
+	 <table id="TABLE_8D42CE9E542140118D48632F563A71A2"> 
+  <title>System Memory Configuration Details Covered in this Section</title> 
+  <tgroup cols="2"> 
+	 <colspec colname="c1" colwidth="42*" /> 
+	 <colspec colname="c2" colwidth="58*" /> 
+	 <thead> 
+		<row> 
+		  <entry valign="middle"> 
+			 <p>Parameter 
+			 </p> 
+		  </entry> 
+		  <entry valign="middle"> 
+			 <p>Details 
+			 </p> 
+		  </entry> 
+		</row></thead> 
+	 <tbody valign="top"> 
+		<row> 
+		  <entry> 
+			 <p>Processor 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p> 
+				<ph>NVL-HX</ph><?xm-insertion_mark_start author="dbobocel" time="20241108T223505+0530"?><?xm-insertion_mark_end?>
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>Memory Type 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p><ph>LPDDR5x</ph> 
+				 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>Speed (MT/s) 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			  
+			  
+			  
+			  
+			  
+			 <p> NVL-HX: 1R/2R 9600 
+			 </p> 
+			 <?xm-insertion_mark_start author="dbobocel" time="20241108T223545+0530"?>
+			 <?xm-insertion_mark_end?>
+			  
+			  
+			 <p><ph>DDP, 
+				</ph> QDP, ODP 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>Channels 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>Channels: 0-7 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>Population Rules 
+			 </p> 
+			 <draft-comment>ARL-H, MTL_P, PTL_UH, FCL, NVL_HX, NVL_H 
+			 </draft-comment> 
+		  </entry> 
+		  <entry> 
+			 <p>2 DRAMs: 
+			 <ul id="GUID-240489B8-8097-4A1D-8F0C-1827A26AA5EA"> 
+				<li id="LI_6D149E4459CD4C02A4F6B9DEAC6173EE">Use either channels 0 to 3 or 4 to 7 
+				</li> 
+				<li id="LI_B70563BA8FC84B48825BC439696FE286">From the above, connect any x16 channel to any DRAM 
+				</li> 
+			 </ul> 
+			 </p> 
+			 <p>3 DRAMs: N/A 
+			 </p> 
+			 <p>4 DRAMs: 
+			 <ul id="GUID-51E9D796-B932-430A-A4A4-2C3D564F177F"> 
+				<li id="LI_C4167AD9437D4765A54A1E59934A61B8"> Connect any x16 channel to any DRAM 
+				</li> 
+			 </ul> 
+			 </p> 
+		  </entry> 
+		</row> 
+		 
+		<row> 
+		  <entry> 
+			 <p>System Memory Voltage 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p><ph>LPDDR5x</ph> DRAM VDDQ voltage is 
+				<ph>0.52V</ph>, VDD2 is 
+				<ph>1.065 V</ph> 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>Max Ranks Per Channel 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>2 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>DRAM Die Density (Gb) 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			  
+			  
+			 <p>12, 16, 24, 32 
+			 </p>
+			  
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>Max Capacity (GB) 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			  
+			  
+			  
+			 <p> 96GB 
+			 </p> 
+			  
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>Memory Down Types 
+				<sup> 1,2</sup> 
+			 </p> 
+			 <p>(Pkg Ranks - Die Bits - Pkg bits) 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			  
+			 <p>315 BGA 
+			 </p> 
+			  
+			  
+			  
+			 <p> DDP:1-16-32 
+			 </p> 
+			  
+			  
+			 <p> QDP:2-16-32 
+			 </p> 
+			  
+			  
+			  
+			  
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>PCB Layers/Type<sup> 3</sup> 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			  
+			 <p>Type-4/10L (2x2+) 
+			 </p> 
+			  
+			  
+			  
+			  
+			  
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>DRAM Device Placement 
+			 </p> 
+		  </entry> 
+		  <entry valign="middle"> 
+			 <p>Top Motherboard Layer, Single Sided<ph translate="-dita-use-conref-target">, Side by Side Placement</ph> 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>Processor Memory Ball Map 
+				<sup> 4</sup> 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>Non Interleaved 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>DRAM Device ODT Capability 
+				<sup> 5,6</sup> 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>MRC trained 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <note id="GUID-763F86AB-4DDF-43A1-8F43-36E441D306E5"> 
+				<ol id="OL_F66AE2DEC84249E69EA9960FBDA812B6"> 
+				  <li id="LI_ADD2FFAA286B456D97C3AEA06F1B42F5"><ph>DDP: Dual Die Package,</ph> QDP: Quad Die Package, ODP: Octal Die Package 
+				  </li> 
+				  <li id="LI_1E5E81252D304141915A06DF8C1B9B4A"> No mixed vendor support within a channel or channel to channel and No mixed memory DRAM down type support (SDP, DDP, QDP) within a channel or channel to channel 
+				  </li> 
+				  <li id="LI_B2596A4299A94A8B9B476BA04D83FC3D"> Type-4 (T4) 
+					 <ph> (2-x-2+) = PCB with 2 build-up layers</ph> Refer to 
+					 <b>Stack-Up and PCB Considerations</b> chapter for more details in this document. 
+				  </li> 
+				  <li id="LI_0057376DE4FA4422A88EDEDCD8B56A7D"> Non-Interleave = The processor is optimized for a side-by-side ball map and placement of the DRAM memory down devices placement. Each memory channel’s signals are grouped together on one side of the processor packages. 
+				  </li> 
+				  <li id="LI_9AECB128C22541CD9E5D7B59532C01C0">The DRAM Device ODT will be trained by the MRC. 
+				  </li> 
+				  <li id="LI_9286F2382D16451DAEC23CC069AF5B55">For 
+					 , to avoid excessive latency due to ZQ topology, Intel specifies that each ZQ pin must have a unique ZQ resistor. 
+				  </li> 
+				   
+				   
+				  <li id="LI_3BA197F05EA846F2A0E711BAD29C78DD"><ph>LPDDR5x</ph> x16 sub-channels can be swizzle within their x64 Memory controller. When swapping channel DQ the CMD/CRTL signals must be swapper as well. 
+				  </li> 
+				   
+				  <li id="LI_ECA4B55EDB654ED7B9EA1DADE7D23F82">To avoid excessive latency due to ZQ topology, Intel specifies that each ZQ pin must have an unique ZQ resistor. 
+				  </li> 
+				   
+				   
+				  <li>LP5x 32Gb die density DRAMs supported by NVL and pending eco-system readiness and validation
+				  </li>
+				   
+				</ol> 
+			 </note> 
+		  </entry> 
+		</row> 
+	 </tbody> 
+  </tgroup> 
+  </table> 
+  </body> 
+</topic> 
