@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic xml:lang="en-US" id="GUID-5F85A5F4-A3DD-4DAA-8220-DB2CDEEB37E5"> 
+  <title>Via Placement at CPU Side</title> 
+  <body> 
+	 <p>The following via stitching guidelines on the CPU-side are critical to follow to meet memory performance 
+	 </p> 
+	 <ul id="UL_C60E0C62A6A84E05969FEF0C601437CF"> 
+		<li id="LI_EF434E66D3384501AEE834D0BE7DABCC"> Improper or insufficient ground vias for any given signal can cause a significant impact at higher data rates. For single-ended signaling, if a properly stitched return path via is not placed in close proximity to every signal via, a non-ideal return path is created. 
+		</li> 
+		<li id="LI_A964815B58C344F6B6760E761BB19025"> In a symmetrical stripline, the return current is shared equally between both reference planes. So, ensuring a ground stitching via which connects to both the reference planes of a signal layer is important. 
+		</li> 
+		<li id="LI_36FF0022CA844F26BF330E1A13EF3A73">Follow the Reference Validation Platform (RVP) via placement at Processor side as much as possible for all Signal Groups. 
+		</li> 
+		<li id="LI_6074F14114B248E88577D25323D58580"> When a signal transitions to another routing layer, but the referencing plane is still kept the same, no stitching via is required. 
+		</li> 
+		<li id="LI_AAF7A02521C145008213EA91C5CA7E7B">GND vias must be placed between signals from different signal groups and channels. 
+		</li> 
+		<li id="LI_9C6775A9F04D4DA9A55AE67380B7BA4E">Intel recommends to follow up GND stitching via and spacing rules to prevent return path and Cross-talk issues. 
+		</li> 
+		<li id="LI_8188AD1904314CF3A093DAC7325C9869">Data and Strobe vias from different byte lanes must be separated by GND vias. 
+		</li> 
+		<li id="LI_69F6384DA2514453849DA16D7D0ED04F">A good example of CPU-side ground via stitching has sufficient ground coverage for every signal in a byte lane Figure below. 
+		</li> 
+		<li id="LI_FCB0D2D4476648DE896134400B597CCD">Remove via pads from layers that are not connected to traces in 
+		  <xref scope="local" format="dita" href="GUID-04C38B33-CAF6-42C8-84B1-1EA0F24AE569.dita#GUID-04C38B33-CAF6-42C8-84B1-1EA0F24AE569/FIG_482370A3113240EC928C51F8F9639D54"><?xm-replace_text Remove PADs from Layers that Do Not Connect to Trace...?></xref> 
+		</li> 
+	 </ul> 
+	 <note id="GUID-66CD7200-E729-4A08-ACEC-0F6200E9BE0F">PTH via placement on the CPU side is primarily driven by pin pitch. Follow the RVP design for optimum placement of vias. 
+	 </note> 
+	 <ul id="GUID-91929535-0E88-4116-85FA-3C85EBFA4FEB"> 
+		<li id="LI_9685D3E86E61454C850F95A249864517">A good example of CPU-side ground via stitching has sufficient ground coverage for every signal in a byte lane (Figure below). 
+		</li> 
+		<li id="LI_4F2DBBEF68C441769651588555B755EF">Remove via pads from layers that are not connected to traces (<xref scope="local" format="dita" href="GUID-04C38B33-CAF6-42C8-84B1-1EA0F24AE569.dita#GUID-04C38B33-CAF6-42C8-84B1-1EA0F24AE569/FIG_482370A3113240EC928C51F8F9639D54"><?xm-replace_text Remove PADs from Layers that Do Not Connect to Trace...?></xref>). 
+		</li> 
+		<li id="LI_30F52359C72E409C98CE5E01FC56CAA7">For Via separation Guidelines refer to 
+		  <xref scope="local" format="dita" href="GUID-04C38B33-CAF6-42C8-84B1-1EA0F24AE569.dita#GUID-04C38B33-CAF6-42C8-84B1-1EA0F24AE569"><?xm-replace_text Via Placement at SoDIMM and DRAM Device Side?></xref>. 
+		</li> 
+	 </ul> 
+	  
+	 <fig id="FIG_619AFEB9A33F4A24B815AE6B3106E4E9"> 
+		<title>CPU-side GND via Stitching Examples (GND vias in Green)</title><image href="../images/GUID-1F926E9B-2054-4D21-8575-D1089554D2F5.png" scalefit="yes" id="IMAGE_97B1053ED49244C2925BEFA4D094D968" /> 
+	 </fig> 
+  </body> 
+</topic> 

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-19B9AE77-1B3B-424A-95D0-D1CC65EB9308" xml:lang="en-US"> 
+  <title>DDR5 1Rx16 Memory Down Type3 10 Layer</title> 
+  <body> 
+	 <table id="GUID-66F1FD9E-49F4-47F4-8348-4391EA533E0B"> 
+  <title> System Memory Configuration Details Covered in this Section </title> 
+  <tgroup cols="2"> 
+	 <colspec colnum="1" colname="col1" colwidth="1.00*" /> 
+	 <colspec colnum="2" colname="col2" colwidth="1.05*" /> 
+	 <thead> 
+		<row> 
+		  <entry> Parameter 
+		  </entry> 
+		  <entry> Details 
+		  </entry> 
+		</row></thead> 
+	 <tbody> 
+		<row> 
+		  <entry> Processor 
+		  </entry> 
+		  <entry> 
+			  
+			  
+			  
+			  
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> Memory Type 
+		  </entry> 
+		  <entry> DDR5 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> Configuration 
+		  </entry> 
+		  <entry> 
+			  
+			  
+			  
+			  
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> Speed (MT/s) 
+		  </entry> 
+		  <entry> 
+			  
+			  
+			  
+			  
+			  
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> Channel 
+		  </entry> 
+		  <entry> 1, 2 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> System Memory Voltage 
+		  </entry> 
+		  <entry> VDD2/VDDQ 
+			  
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> Maximum Ranks Per Channel 
+		  </entry> 
+		  <entry> 1 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> DRAM Die Density (Gb) 
+		  </entry> 
+		  <entry> 
+			  
+			  
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> Maximum Capacity (GB) 
+		  </entry> 
+		  <entry> 
+			  
+			  
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> Memory Types 1,2 (Pkg Ranks - Die Bits - Pkg Bits) 
+		  </entry> 
+		  <entry> 102 Balls BGA 
+			 <p>SDP 1-16-16 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> PCB Layers/Type 
+			 <sup>3</sup> 
+		  </entry> 
+		  <entry> T3/10L 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> DRAM Device placement 
+		  </entry> 
+		  <entry> Single Sided 
+			  
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> Processor Memory Ball Map 
+			 <sup>4</sup> 
+		  </entry> 
+		  <entry> Non-Interleaved 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> DRAM Device ODT Capability 
+			 <sup>5</sup> 
+		  </entry> 
+		  <entry> Enabled 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="col1" nameend="col2"> 
+			 <note id="GUID-BC757217-AD0E-4A67-879B-7BABBE5055A3"> 
+				<ol id="GUID-A56D58B9-60E1-4766-94B4-70DC373CEB35"> 
+				  <li id="LI_1A089A8FC976479CBC0CC9D3B49879A8"> SDP: Single Die Package 
+				  </li> 
+				  <li id="LI_E1EED6E8ECC64CFB98A8B346FEBD9AA4"> No mixed vendor support within a channel or channel to channel. 
+				  </li> 
+				  <li id="LI_5791AA9A2E954B15BEBBD00F339BEAB5"> Type 3 (T3)= PCB with zero build-up layers using Plated Through-hole (PTH) Vias with no Micro-vias. 
+				  </li> 
+				  <li id="LI_CEB6551C0BD94C3484FB22DF60A25A45"> Non-Interleave = The processor is optimized for a side-by-side ball map and placement of the DRAM memory down devices placement. Each memory channel's signals are grouped together on one side of the processor packages. 
+				  </li> 
+				  <li id="LI_24DD01BCB2C144E699F541A7CBC38FBB"> The DRAM Device ODT capability can be enabled or disabled for reads and writes depending on the system memory interface margin. Enable DRAM device ODT increased the memory interface margins. Enabling the DRAM device ODT increases the memory interface power and improves signal integrity/ margins while disabling the DRAM device decreases the memory interface power but degrades signal integrity/margins. 
+				  </li> 
+				   
+				</ol> 
+			 </note> 
+		  </entry> 
+		</row> 
+	 </tbody> 
+  </tgroup> 
+  </table> 
+   
+  </body> 
+</topic> 

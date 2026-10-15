@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-2894C66A-1381-438C-8687-C9BD5D122FF3" xml:lang="en-US"> 
+  <title> Memory Down x32 Type 3</title> 
+  <body> 
+	 <draft-comment>Go to Tools menu and click Track Changes, before you to start making any edits. 
+	 </draft-comment> 
+	 <draft-comment>Go to Tools menu and click 
+		<b>Accept or Reject Changes</b>. Select 
+		<b>Accept All</b> in the pop-up window, before you start making edits for next revision. If the changes is common between SKUs or other platforms keep it as is to indicate it other SKU revision. 
+	 </draft-comment> 
+	 <table id="TABLE_8D42CE9E542140118D48632F563A71A2"> 
+  <title>System Memory Configuration Details Covered in this Section</title> 
+  <tgroup cols="2"> 
+	 <colspec colname="c1" colwidth="1.00*" /> 
+	 <colspec colname="c2" colwidth="2.02*" /> 
+	 <thead> 
+		<row> 
+		  <entry valign="middle"> 
+			 <p>Parameter 
+			 </p> 
+		  </entry> 
+		  <entry valign="middle"> 
+			 <p>Details 
+			 </p> 
+		  </entry> 
+		</row></thead> 
+	 <tbody valign="top"> 
+		<row> 
+		  <entry> 
+			 <p>Processor 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			  
+			  
+			  
+			  
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>Memory Type 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p> x32 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>Speed (MT/s) 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			  
+			  
+			  
+			  
+			 <p>DDP, QDP, ODP (byte mode) 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>Channels 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			  
+			  
+		  </entry> 
+		</row> 
+		 
+		<row> 
+		  <entry> 
+			 <p>System Memory Voltage 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			  
+			  
+			  
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>Max Ranks Per Channel 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>2 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>DRAM Die Density (Gb) 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			  
+			  
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>Max Capacity (GB) 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			  
+			  
+			  
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>Memory Down Types 
+				<sup> 1,2</sup> 
+			 </p> 
+			 <p>(Pkg Ranks - Die Bits - Pkg bits) 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>315 BGA 
+			 </p> 
+			 <p> DDP:1-16-32 
+			 </p> 
+			 <p> QDP:2-16-32 
+			 </p> 
+			  
+			  
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>PCB Layers/Type 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			  
+			  
+			  
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>DRAM Device Placement 
+			 </p> 
+		  </entry> 
+		  <entry valign="middle"> 
+			 <p>Top Motherboard Layer, Single Sided 
+				, Side-by-Side Placement 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>Processor Memory Ball Map 
+				<sup>3</sup> 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>Non-Interleaved 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>DRAM Device ODT Capability 
+				<sup>4</sup> 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>MRC trained 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <note id="GUID-763F86AB-4DDF-43A1-8F43-36E441D306E5"> 
+				<ol id="OL_F66AE2DEC84249E69EA9960FBDA812B6"> 
+				  <li id="LI_ADD2FFAA286B456D97C3AEA06F1B42F5">DDP: Dual Die Package, QDP: Quad Die Package, ODP: Octal Die Package 
+				  </li> 
+				  <li id="LI_1E5E81252D304141915A06DF8C1B9B4A"> No mixed vendor support within a channel or channel to channel and No mixed memory DRAM down type support (SDP, DDP, QDP) within a channel or channel to channel 
+				  </li> 
+				  <li id="LI_0057376DE4FA4422A88EDEDCD8B56A7D"> Non-Interleave = The processor is optimized for a side-by-side ball map and placement of the DRAM memory down devices placement. Each memory channel’s signals are grouped together on one side of the processor packages. 
+				  </li> 
+				  <li id="LI_9AECB128C22541CD9E5D7B59532C01C0">The DRAM Device ODT will be trained by the MRC. 
+				  </li> 
+				   
+				  <li id="LI_00039B217929445FAA66F1EB7F397626">For 
+					 , to avoid excessive latency due to ZQ topology, Intel specifies that each ZQ pin must have a unique ZQ resistor. 
+				  </li> 
+				  <li id="LI_65580326A04748B4BD89CC5D259E1CF9"> x16 sub-channels can be swizzle within their x64 Memory controller. When swapping channel DQ the CMD/CRTL signals must be swapper as well. 
+				  </li> 
+				   
+				   
+				</ol> 
+			 </note> 
+		  </entry> 
+		</row> 
+	 </tbody> 
+  </tgroup> 
+  </table> 
+   
+  </body> 
+</topic> 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-0671BC37-1980-4750-A8C1-E04B8DF699B2" xml:lang="en-US"> 
+  <title>System Memory Interface Design Guidelines</title> 
+  <body> 
+	 <p>Nova Lake HX platform supports DDR5 and LPDDR5x memory technology. This chapter covers the guidelines to design a Nova Lake HX platform with the following Plan of Record (POR) supported system memory interface configurations and features. 
+	 </p> 
+	 <note id="GUID-AB3A3BAC-4007-4182-AA95-048FA6A68C38">For complete Nova Lake HX processor system memory interface POR feature support details refer the latest release of the Nova Lake Mobile Processor External Design Specification, Volume 1 of 2 (# 
+		<xref href="https://cdrdv2.intel.com/v1/dl/getContent/844316" format="https" scope="external">844316</xref>). 
+	 </note> 
+  </body> 
+</topic> 

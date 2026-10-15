@@ -1,0 +1,13 @@
+﻿# Local and generated artifacts
+validation-output/
+validation/
+*.backup-*
+*.bak
+*.tmp
+*.log
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

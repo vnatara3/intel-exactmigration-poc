@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-C19F3E3A-3F9C-4FF2-A498-3A43CB7EC8C2" xml:lang="en-US"> 
+  <title>LPCAMM2 Type 3</title> 
+  <body> 
+	 <table id="TABLE_8D42CE9E542140118D48632F563A71A2"> 
+  <title>System Memory Configuration Details Covered in this Section</title> 
+  <tgroup cols="2"> 
+	 <colspec colname="c1" colwidth="42*" /> 
+	 <colspec colname="c2" colwidth="58*" /> 
+	 <thead> 
+		<row> 
+		  <entry valign="middle"> 
+			 <p>Parameter 
+			 </p> 
+		  </entry> 
+		  <entry valign="middle"> 
+			 <p>Details 
+			 </p> 
+		  </entry> 
+		</row></thead> 
+	 <tbody valign="top"> 
+		<row> 
+		  <entry> 
+			 <p>Processor 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			  
+			 <ph>NVL-HX</ph> 
+			  
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>Memory Type 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>LPCAMM2 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>Speed (MT/s) 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			  
+			  
+			  
+			 <p> 1R/2R 8533 
+			 </p> 
+			  DDP, QDP, ODP (byte mode) 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>Channels 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>Channels: 0-7 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>System Memory Voltage 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			  
+			  
+			  
+			 <p>5V input to LPCAMM2 Module 
+			 </p> 
+			 <p>SoC VDDQ is 0.52V and VDD2 is 1.065V 
+			 </p> 
+			  
+			  
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>Max Ranks Per Channel 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>2 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>DRAM Die Density (Gb) 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			  
+			  
+			 <p> 16, 24 
+			 </p> 
+			  
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>Max Capacity (GB) 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			  
+			  
+			 <p>96GB 
+			 </p> 
+			  
+		  </entry> 
+		</row> 
+		 
+		<row> 
+		  <entry> 
+			 <p>PCB Layers/Type 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			  
+			  
+			 <p> 10L/Type-3 
+			 </p> 
+			  
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>DRAM Device Placement 
+			 </p> 
+		  </entry> 
+		  <entry valign="middle"> 
+			 <p>Top Motherboard Layer, 
+				<ph>Dual Sided</ph> Placement 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>Processor Memory Ball Map 
+				<sup>3</sup> 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>Non-Interleaved 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>DRAM Device ODT Capability 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>MRC trained 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="c1" nameend="c2"> 
+			 <note id="GUID-763F86AB-4DDF-43A1-8F43-36E441D306E5"> 
+				<ol id="OL_F66AE2DEC84249E69EA9960FBDA812B6"> 
+				  <li id="LI_ADD2FFAA286B456D97C3AEA06F1B42F5">DDP: Dual Die Package, QDP: Quad Die Package, ODP: Octal Die Package 
+				  </li> 
+				  <li id="LI_1E5E81252D304141915A06DF8C1B9B4A"> No mixed vendor support within a channel or channel to channel and No mixed memory DRAM down type support (SDP, DDP, QDP) within a channel or channel to channel 
+				  </li> 
+				  <li id="LI_0057376DE4FA4422A88EDEDCD8B56A7D"> Non-Interleave = The processor is optimized for a side-by-side ball map and placement of the DRAM memory down devices placement. Each memory channel’s signals are grouped together on one side of the processor packages. 
+				  </li> 
+				   
+				  <li id="LI_1B0108EE72C54E68838E9FBDD173C374">To avoid excessive latency due to ZQ topology, Intel specifies that each ZQ pin must have an unique ZQ resistor. 
+				  </li> 
+				  <li id="LI_13D554BB77814CCDA97DD4874DAA9DBA">Intel recommends to follow the latest version LPCAMM2 connector CAD symbol from JEDEC Spec. 
+				  </li> 
+				   
+				   
+				  <li id="LI_79D3CAA34B3B4F3BBAE86BEBB271258C">Pending LPCAMM2 availability modules and eco system readiness. 
+				  </li> 
+				  <li> LPCAMM2 High Cap is not supported in NVL. 
+				  </li> 
+				  <li> LPCAMM2 ECC is pending eco-system readiness. 
+				  </li> 
+				  <li> Refer to the LPCAMM validation strategy Nova Lake Platform Memory Enablement Guide (# 
+					 <xref href="https://cdrdv2.intel.com/v1/dl/getContent/858687" format="https" scope="external">858687</xref>). 
+				  </li> 
+				</ol> 
+			 </note> 
+		  </entry> 
+		</row> 
+	 </tbody> 
+  </tgroup> 
+  </table> 
+  <section id="GUID-3AE5D96E-6AF3-4C59-8E1C-46B1656413A2"> 
+	 <title>NVL-HX LPCAMM2 T3 RVP – LPCAMM Connectivity Update</title> 
+	 <ul id="GUID-876D7E99-B6AF-48E4-B4C3-A2E694EBFE39"> 
+		<li>LPCAMM2 connector CS_2,3 signals to be terminated with pull up resistor 10Kohm to VDD2H_CPU. 
+		</li> 
+		<li>LPCAMM2 connector Pin P12 to be connected to GND. 
+		</li> 
+		<li>LPCAMM2 connector Pin A28 to be terminated with pull up resistor 22Kohm instead 10Khom to 1.8V. 
+		</li> 
+	 </ul> 
+  </section> 
+   
+  </body> 
+</topic> 

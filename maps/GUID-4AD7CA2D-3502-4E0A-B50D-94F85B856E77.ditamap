@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"[
+]>
+
+<map id="GUID-4AD7CA2D-3502-4E0A-B50D-94F85B856E77" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+	<title>Stack-Up and PCB Considerations_SysMem</title>
+<topicref href="../topics/GUID-2B331A91-4E24-41EA-B834-6D8CC61E1035.dita" format="dita"><topicmeta><navtitle>Stack-Up and PCB Considerations_SysMem</navtitle></topicmeta><topicref href="../topics/GUID-5C9D967E-A43A-41F7-BAC1-948D66DB20D8.dita" format="dita"><topicmeta><navtitle>Generalized 10-Layer Motherboard Examples_SysMem</navtitle></topicmeta><topicref href="../topics/GUID-FEC13DEC-E368-490C-8AF7-A00DDB0A9BEF.dita" format="dita"><topicmeta><navtitle>Type-3, 0.9mm, 10L, Mainstream, Premium Mid Loss (PML), For DDR5 SODIMM and LPDDR5/x CAMM2</navtitle></topicmeta><topicref href="../topics/GUID-E9914620-4965-47CE-B05E-DE3857BD7815.dita" format="dita" /></topicref><topicref href="../topics/GUID-630977B5-DE17-490E-9465-E620C275CD08.dita" format="dita"><topicmeta><navtitle>Type-4 2-x-2+, 0.8mm, 10L, Mainstream, Premium Mid Loss (PML), For LPDDR5/x Memory Down</navtitle></topicmeta><topicref href="../topics/GUID-1DB3FC12-317A-45B0-AF69-EA44AEC5B75B.dita" format="dita" /></topicref></topicref></topicref></map>
