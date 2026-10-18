@@ -1,0 +1,18 @@
+﻿{
+    "ProcessedAt":  "2026-10-18T15:26:54.9613534+05:30",
+    "Stage":  "ProcessConditions",
+    "Status":  "Completed",
+    "SelectedPlatform":  [
+                             "NVL"
+                         ],
+    "FilesProcessed":  113,
+    "ElementsIncluded":  38,
+    "ElementsExcluded":  94,
+    "RootFilesExcluded":  0,
+    "ReferencesToExcludedFilesRemoved":  0,
+    "IshConditionAttributesRemoved":  38,
+    "StandardPlatformAttributesResolved":  0,
+    "RemainingIshConditions":  0,
+    "Errors":  0,
+    "Note":  "This is a profile-resolved publication. Conditions were evaluated for the selected platform values."
+}

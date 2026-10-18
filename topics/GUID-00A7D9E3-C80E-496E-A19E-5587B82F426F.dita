@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-00A7D9E3-C80E-496E-A19E-5587B82F426F" xml:lang="en-US"> 
+  <title>BIOS Requirements</title> 
+  <body> 
+    <p> 
+    <ol id="GUID-4F04E612-9171-4903-83BE-30311DB09D5E"> 
+      <li>SAMedia/SGUnit Memory Map in LNL/PTL (refer red/yellow highlight/arrow): 
+        <ul id="GUID-2FF58DE9-F2B4-4CDB-BB82-4EE99C5EB486">
+          <li>
+            <ul id="GUID-00BB7371-A4C2-474F-A275-F9CA7DE4F3C5"> 
+              <li>GMADR (BAR1 - offset 0x18) replaced by LMEMBAR and deprecate the MSAC register (0:2:0:0x60)/Aperture size setup.
+              </li> 
+              <li>LMEMBAR size: Resize-able BAR controlled by PF Resizable BAR Control register 0x428 (LNL/PTL has fixed PF size of 256 MB, no need of BIOS to configure)
+              </li> 
+              <li>GTTMMADR size: 16MB.
+              </li> 
+              <li>GSM/DSM/WOPCM should be 1 MB aligned and would be accessed controlled via SOC IMR (details in IMR section) apart from legacy DSM/GSM/WOPCM register.
+              </li> 
+              <li>Stolen memory DSM + GSM would be mapped to LMEMBAR for IA access. (direct IA access to DSM/GSM not allowed)
+              </li> 
+              <li>Max DSM allowed would be 128 MB only (GGC register encoding changed)
+              </li> 
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>SAMedia Stolen Memory Requirements:
+        <ul id="GUID-0133FD52-9DB9-418E-9BE9-3B3CE6C817E5">
+          <li>DSM size limited to 128 MB
+          </li>
+          <li>WOPCM allocation:
+            <ol id="GUID-EFA9B613-9C57-44BD-BCD4-391BD349AE90">
+              <li>8MB for iGFX (2MB GCD + 6MB SAMedia)
+              </li> 
+              <li>16MB for iGFX (10MB GCD + 6MB SAMedia) on NVL P B0 (Xe3p.v2 and greater)
+              </li> 
+            </ol>
+          </li>
+          <li>64KB SAMedia RC6 Context Base reservation in SAMedia WOPCM.
+          </li> 
+        </ul>
+      </li>
+      <li><b> GFX Memory Map (</b> 
+        <xref href="HTTPS://DOCS.INTEL.COM/DOCUMENTS/CLIENTSILICON/NVL/BIOS/ASSETS/NOVALAKE%20PLATFORM%20FIRMWARE%20ARCHITECTURE%20SPECIFICATION.XLSX"> 
+          <b> source</b> 
+        </xref> 
+        <b> )</b>
+        <table id="GUID-3AE193D7-A9CA-4DCD-9BC8-3B137A91CD06"> 
+          <tgroup cols="3"> 
+            <colspec colnum="1" colname="col1" colwidth="*" /> 
+            <colspec colnum="2" colname="col2" colwidth="*" /> 
+            <colspec colnum="3" colname="col3" colwidth="*" /> 
+            <thead>
+              <row> 
+                <entry> Memory Region 
+                </entry> 
+                <entry> Size/Location 
+                </entry> 
+                <entry> Comments 
+                </entry> 
+              </row></thead>
+            <tbody> 
+              <row> 
+                <entry> GSM/GTT 
+                </entry> 
+                <entry> 8 MB 
+                </entry> 
+                <entry> Fixed at 8MB 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> GMS (DSM size) 
+                </entry> 
+                <entry> 64 MB 
+                </entry> 
+                <entry> Max can be 128MB, OEM/BWG change, since LMEM is hardwired to 256MB 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> PAVPC/WOPCM Size (total) 
+                </entry> 
+                <entry> 8 MB 16 MB (Xe3p.v2+ / NVL-P B0) 
+                </entry> 
+                <entry> Total for iGfx device 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> PAVPC/SA-Media WOPCM Size 
+                </entry> 
+                <entry> 6 MB 
+                </entry> 
+                <entry> 6MB for SA-Media and 5MB for GCD 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> GSMBASE 
+                </entry> 
+                <entry> DSMBASE-8MB 
+                </entry> 
+                <entry> Must be contiguous with DSM thus it's just below DSM 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> GCD RC6 context size 
+                </entry> 
+                <entry> 64KB 
+                </entry> 
+                <entry> Actual size is 32KB GPM PM Context image + 16KB KCR Slave Context Image rounding up to 64K to be consistent with SA Media 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> GCD RC6CTXBASE 
+                </entry> 
+                <entry> PAVPC/WOPCM_BASE + PAVPC/WOPCM Size (total) - GCD RC6 context size 
+                </entry> 
+                <entry> 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> SA Media RC6 Context Size 
+                </entry> 
+                <entry> 64KB 
+                </entry> 
+                <entry> 
+                </entry> 
+              </row> 
+              <row> 
+                <entry> SA media RC6CTXBASE 
+                </entry> 
+                <entry> PAVPC/WOPCM_BASE + PAVPC/SA-Media WOPCM Size - SA Media RC6 Context Size 
+                </entry> 
+                <entry> 
+                </entry> 
+              </row> 
+            </tbody> 
+          </tgroup> 
+        </table>
+      </li> 
+    </ol> 
+    </p> 
+  </body> 
+</topic>

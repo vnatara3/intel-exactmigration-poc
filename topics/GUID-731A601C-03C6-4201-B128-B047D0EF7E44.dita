@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-731A601C-03C6-4201-B128-B047D0EF7E44" xml:lang="en-US"> 
+  <title>Display</title> 
+  <body> 
+    <p>Display behavior depends on several factors such as whether or not External graphics card is connected, Primary display option selected, if IGD is force enabled and more. Below table captures the expected behavior in different scenarios.
+    <ol id="GUID-3136BFB9-40F2-41D4-BDBB-CE76D02A83AA">
+      <li> 
+        <b> Behavior when External Graphics card is not connected</b> 
+        <table id="GUID-DE0A3BAF-6334-4C20-8C12-47076F21E0DA">
+  <title>Display with No dGFX</title>
+  <tgroup cols="6" align="center"><colspec colnum="1" colname="col1" colwidth="*" /><colspec colnum="2" colname="col2" colwidth="*" /><colspec colnum="3" colname="col3" colwidth="*" /><colspec colnum="4" colname="col4" colwidth="*" /><colspec colnum="5" colname="col5" colwidth="*" /><colspec colnum="6" colname="col6" colwidth="*" /><thead>
+      <row>
+        <entry colname="col1"> 
+          <b>Primary Display (Setup option)</b> 
+        </entry>
+        <entry colname="col2"> 
+          <b>Internal Graphics (setup option)</b> 
+        </entry>
+        <entry namest="col3" nameend="col4"> 
+          <b>IGFX Display Behavior ( System with no external GFX card )</b> 
+        </entry>
+        <entry colname="col5"> 
+          <b>TianoCore PEI Display &amp; SOL Display</b> 
+        </entry>
+        <entry colname="col6"> 
+          <b>Comments</b> 
+        </entry>
+      </row></thead>
+    <tbody>
+      <row>
+        <entry colname="col1">
+        </entry>
+        <entry colname="col2">
+        </entry>
+        <entry colname="col3"><b> BIOS Phase 
+          </b>
+        </entry>
+        <entry colname="col4"><b> OS Phase 
+          </b>
+        </entry>
+        <entry colname="col5">
+        </entry>
+        <entry colname="col6">
+        </entry>
+      </row>
+      <row>
+        <entry colname="col1" morerows="2">Auto
+        </entry>
+        <entry colname="col2"> Auto 
+        </entry>
+        <entry colname="col3"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col4"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col5">Enabled 
+        </entry>
+        <entry colname="col6">
+        </entry>
+      </row>
+      <row>
+        <entry colname="col2"> Enable 
+        </entry>
+        <entry colname="col3"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col4"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col5"> Enabled 
+        </entry>
+        <entry colname="col6">
+        </entry>
+      </row>
+      <row>
+        <entry colname="col2"> Disable 
+        </entry>
+        <entry colname="col3"> No Display 
+        </entry>
+        <entry colname="col4"> No Display 
+        </entry>
+        <entry colname="col5"> Disabled 
+        </entry>
+        <entry colname="col6">Invalid Config 
+        </entry>
+      </row>
+      <row>
+        <entry colname="col1" morerows="2">iGFX
+        </entry>
+        <entry colname="col2"> Auto 
+        </entry>
+        <entry colname="col3"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col4"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col5">Enabled 
+        </entry>
+        <entry colname="col6">
+        </entry>
+      </row>
+      <row>
+        <entry colname="col2"> Enable 
+        </entry>
+        <entry colname="col3"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col4"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col5"> Enabled 
+        </entry>
+        <entry colname="col6">
+        </entry>
+      </row>
+      <row>
+        <entry colname="col2"> Disable 
+        </entry>
+        <entry colname="col3"> No Display 
+        </entry>
+        <entry colname="col4"> No Display 
+        </entry>
+        <entry colname="col5"> Disabled 
+        </entry>
+        <entry colname="col6">Invalid Config 
+        </entry>
+      </row>
+      <row>
+        <entry colname="col1" morerows="2">HG
+        </entry>
+        <entry colname="col2">Auto 
+        </entry>
+        <entry colname="col3"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col4"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col5">Enabled 
+        </entry>
+        <entry colname="col6">
+        </entry>
+      </row>
+      <row>
+        <entry colname="col2"> Enable 
+        </entry>
+        <entry colname="col3"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col4"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col5"> Enabled 
+        </entry>
+        <entry colname="col6">
+        </entry>
+      </row>
+      <row>
+        <entry colname="col2"> Disable 
+        </entry>
+        <entry colname="col3"> No Display 
+        </entry>
+        <entry colname="col4"> No Display 
+        </entry>
+        <entry colname="col5"> Disabled 
+        </entry>
+        <entry colname="col6">Invalid Config 
+        </entry>
+      </row>
+    </tbody>
+  </tgroup>
+  </table>
+  <note id="GUID-A8713353-9B19-4841-B695-8D9A7313C33C"><xref href="HTTPS://DOCS.INTEL.COM/DOCUMENTS/CLIENTSILICON/NVL/BIOS/ASSETS/NOVALAKE%20PLATFORM%20FIRMWARE%20ARCHITECTURE%20SPECIFICATION.XLSX"> 
+      <b>Source</b> 
+    </xref> 
+  </note>
+  </li>
+  <li> 
+    <b>Behavior when External Graphics card is connected</b>
+    <table id="GUID-402C98C3-CFA9-4E7F-A641-CADDD1BEC0B9">
+  <title>Display with dGFX Connected</title>
+  <tgroup cols="8" align="center"><colspec colnum="1" colname="col1" colwidth="1.12*" /><colspec colnum="2" colname="col2" colwidth="1.12*" /><colspec colnum="3" colname="col3" colwidth="1.12*" /><colspec colname="col04" colnum="4" colwidth="1.40*" /><colspec colname="col05" colnum="5" colwidth="1.40*" /><colspec colnum="6" colname="col4" colwidth="1.24*" /><colspec colnum="7" colname="col5" colwidth="1.00*" /><colspec colnum="8" colname="col6" colwidth="1.12*" /><thead>
+      <row>
+        <entry colname="col1"> 
+          <b> Primary Display (Setup option)</b> 
+        </entry>
+        <entry colname="col2"> 
+          <b> Internal Graphics (setup option)</b> 
+        </entry>
+        <entry colname="col3"> 
+          <b> Display behavior (System with External Gfx card connected)</b> 
+        </entry>
+        <entry colname="col04">
+        </entry>
+        <entry colname="col05">
+        </entry>
+        <entry colname="col4">
+        </entry>
+        <entry colname="col5"> 
+          <b> TianoCore PEI Display &amp; SOL Display</b> 
+        </entry>
+        <entry colname="col6"> 
+          <b> Comments</b> 
+        </entry>
+      </row></thead>
+    <tbody>
+      <row>
+        <entry colname="col1" morerows="1">
+        </entry>
+        <entry colname="col2" morerows="1">
+        </entry>
+        <entry namest="col3" nameend="col04"><b> iGfx Behavior 
+          </b>
+        </entry>
+        <entry namest="col05" nameend="col4"><b> External Card Behavior 
+          </b>
+        </entry>
+        <entry colname="col5" morerows="1">
+        </entry>
+        <entry colname="col6" morerows="1">
+        </entry>
+      </row>
+      <row>
+        <entry colname="col3"><b> BIOS Phase 
+          </b>
+        </entry>
+        <entry colname="col04"><b>OS Phase 
+          </b>
+        </entry>
+        <entry colname="col05"><b>BIOS Phase 
+          </b>
+        </entry>
+        <entry colname="col4"><b> OS Phase 
+          </b>
+        </entry>
+      </row>
+      <row>
+        <entry colname="col1" morerows="2"> Auto 
+        </entry>
+        <entry colname="col2"> Auto 
+        </entry>
+        <entry colname="col3"> No Display 
+        </entry>
+        <entry colname="col04"> No Display 
+        </entry>
+        <entry colname="col05"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col4"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col5"> Disabled 
+        </entry>
+        <entry colname="col6">
+        </entry>
+      </row>
+      <row>
+        <entry colname="col2"> Enable 
+        </entry>
+        <entry colname="col3"> No display 
+        </entry>
+        <entry colname="col04"> Driver enables as secondary display 
+        </entry>
+        <entry colname="col05"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col4"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col5"> Disabled 
+        </entry>
+        <entry colname="col6">
+        </entry>
+      </row>
+      <row>
+        <entry colname="col2"> Disable 
+        </entry>
+        <entry colname="col3"> No Display 
+        </entry>
+        <entry colname="col04"> No Display 
+        </entry>
+        <entry colname="col05"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col4"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col5"> Disabled 
+        </entry>
+        <entry colname="col6">
+        </entry>
+      </row>
+      <row>
+        <entry colname="col1">iGFX
+        </entry>
+        <entry colname="col2"> Auto 
+        </entry>
+        <entry colname="col3"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col04"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col05"> Driver enables as secondary display 
+        </entry>
+        <entry colname="col4"> Driver enables as secondary display 
+        </entry>
+        <entry colname="col5"> Enabled 
+        </entry>
+        <entry colname="col6">
+        </entry>
+      </row>
+      <row>
+        <entry colname="col1">
+        </entry>
+        <entry colname="col2"> Enable 
+        </entry>
+        <entry colname="col3"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col04"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col05"> Driver enables as secondary display 
+        </entry>
+        <entry colname="col4"> Driver enables as secondary display 
+        </entry>
+        <entry colname="col5"> Enabled 
+        </entry>
+        <entry colname="col6">
+        </entry>
+      </row>
+      <row>
+        <entry colname="col1">
+        </entry>
+        <entry colname="col2"> Disable 
+        </entry>
+        <entry colname="col3"> No Display 
+        </entry>
+        <entry colname="col04"> No Display 
+        </entry>
+        <entry colname="col05"> Driver enables as secondary display 
+        </entry>
+        <entry colname="col4"> Driver enables as secondary display 
+        </entry>
+        <entry colname="col5"> Disabled 
+        </entry>
+        <entry colname="col6">Invalid Config
+        </entry>
+      </row>
+      <row>
+        <entry colname="col1">HG
+        </entry>
+        <entry colname="col2"> Auto 
+        </entry>
+        <entry colname="col3"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col04"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col05"> Driver enables as secondary display 
+        </entry>
+        <entry colname="col4"> Driver enables as secondary display 
+        </entry>
+        <entry colname="col5"> Enabled 
+        </entry>
+        <entry colname="col6">
+        </entry>
+      </row>
+      <row>
+        <entry colname="col1">
+        </entry>
+        <entry colname="col2"> Enable 
+        </entry>
+        <entry colname="col3"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col04"> Enabled &amp; Primary Display 
+        </entry>
+        <entry colname="col05"> Driver enables as secondary display 
+        </entry>
+        <entry colname="col4"> Driver enables as secondary display 
+        </entry>
+        <entry colname="col5"> Enabled 
+        </entry>
+        <entry colname="col6">
+        </entry>
+      </row>
+      <row>
+        <entry colname="col1">
+        </entry>
+        <entry colname="col2"> Disable 
+        </entry>
+        <entry colname="col3"> No Display 
+        </entry>
+        <entry colname="col04"> No Display 
+        </entry>
+        <entry colname="col05"> Driver enables as secondary display 
+        </entry>
+        <entry colname="col4"> Driver enables as secondary display 
+        </entry>
+        <entry colname="col5"> Disabled 
+        </entry>
+        <entry colname="col6">Invalid Config
+        </entry>
+      </row>
+    </tbody>
+  </tgroup>
+  </table> 
+  <note id="GUID-C60509FA-681D-41F2-B089-FB6DA3A5E6B2"><xref href="HTTPS://DOCS.INTEL.COM/DOCUMENTS/CLIENTSILICON/NVL/BIOS/ASSETS/NOVALAKE%20PLATFORM%20FIRMWARE%20ARCHITECTURE%20SPECIFICATION.XLSX"> 
+      <b>Source</b> 
+    </xref> 
+  </note>
+  </li>
+  </ol>
+  </p>
+  </body> 
+</topic>

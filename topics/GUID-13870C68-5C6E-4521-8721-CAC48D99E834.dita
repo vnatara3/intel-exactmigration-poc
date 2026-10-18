@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-13870C68-5C6E-4521-8721-CAC48D99E834" xml:lang="en-US"> 
+  <title>Meteor Lake and Arrow Lake System Memory Map</title> 
+  <body> 
+	  
+	  
+	  
+	  
+	 <p>GSM size is fixed at 8GB in HW, DSM size is fixed to 128MB in BIOS as a workaround to configure DSM/GSM as ‘WC’ cache type. This workaround is enabled by default and a policy is implemented to disable the workaround. OEMs can choose to disable the workaround. 
+	 </p>
+	 <p>For ARLS Refresh, HW Fix Available, so workaround is not needed.
+	 </p>
+	 <note id="GUID-D26A7585-0107-4D8F-A44A-48D026B8D2F0">TXT SINIT and HSTI had hardcoded assumptions about TSEG, GSM/DSM and TOLUD being adjacent to each other. This assumption is now removed in SINIT, HSTI and Chipsec.
+	 </note>
+  </body> 
+</topic> 

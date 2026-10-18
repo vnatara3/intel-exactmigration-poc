@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-BC816C0F-3977-4D39-A6F7-B58E2D4678CA" xml:lang="en-US"> 
+  <title>BIOS Requirements</title> 
+  <body> 
+    <ol id="GUID-5C46D1AF-044A-4807-8FB6-0CB43FACB0F9">
+      <li> BIOS need to program the Stolen memory region ( DSM, GSM, PAVP, GGC) and BDF register in DE.
+      </li>
+      <li>BIOS should initialize the supported CDCLK and Power well flow:
+        <ul id="GUID-6DD17CD0-7E2E-4651-ADCF-BBFF864982A3">
+          <li>PG Flow
+          </li>
+          <li> CDCLK
+          </li>
+        </ul>
+      </li> 
+    </ol>
+  </body> 
+</topic>
