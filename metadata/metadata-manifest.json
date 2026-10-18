@@ -1,0 +1,16 @@
+﻿{
+    "ExtractedAt":  "2026-10-18T15:58:30.5443239+05:30",
+    "PublicationGuid":  "GUID-28583781-F7EB-4F72-A734-AC8FA94C9D9C",
+    "BookmapGuid":  "GUID-D5D73A49-67A2-40F8-B78E-CC18D4D8CD2F",
+    "Language":  "en-US",
+    "Files":  [
+                  "publicationoutput.met",
+                  "GUID-28583781-F7EB-4F72-A734-AC8FA94C9D9C.met",
+                  "ishjobticket.xml"
+              ],
+    "RequiredFields":  {
+                           "FINTELDOCNUMBER":  true,
+                           "FINTELSECCLASSIFICATION":  true,
+                           "FINTELPUBLISHEDDATE":  true
+                       }
+}

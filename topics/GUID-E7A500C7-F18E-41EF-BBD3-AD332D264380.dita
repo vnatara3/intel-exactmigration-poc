@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-E7A500C7-F18E-41EF-BBD3-AD332D264380" xml:lang="en-US"> 
+  <title>New Feature and Update</title> 
+  <body> 
+	 <draft-comment>Converted using FMHtml2Dita version: 2.1.0 
+	 </draft-comment> 
+	 <p> Below is a list of features that have BIOS impact or BIOS requirements: 
+	 </p> 
+	  
+	  
+	  
+	  
+	 <p> 
+	 <ul id="UL_467D7085E7DB474AB7ED9290A9D117F8"> 
+		<li id="LI_B9DBAA3E7905433F9BE185B7DC0AF5E7"> Logical Processor Programming. For more details, refer to 
+		  <xref scope="local" format="dita" href="GUID-8A9082BB-35CE-46E1-9260-F5408CD5658C.dita#GUID-8A9082BB-35CE-46E1-9260-F5408CD5658C"><?xm-replace_text Logical Processor Programming?></xref> and 
+		  <xref scope="local" format="dita" href="GUID-D1F7343D-33AB-43AA-A0D0-34D239A9B825.dita#GUID-D1F7343D-33AB-43AA-A0D0-34D239A9B825"><?xm-replace_text Boot From C-die E-Core?></xref>. 
+		</li> 
+		<li id="LI_1DC713FCDBC9434E9FDE2525DE3CF3E0"> MTRR Configurations for 1 TB Memory. For more details, refer to 
+		  <xref scope="local" format="dita" href="GUID-2A5D671C-9660-41C7-9F68-B8047FEDC052.dita#GUID-2A5D671C-9660-41C7-9F68-B8047FEDC052"><?xm-replace_text MTRR Configurations for 1TB Memory?></xref>. 
+		</li> 
+		<li id="LI_5E8963E8BCE14B2CBEBDAE5B660F6537"> VR and Power Delivery. For more details, refer to 
+		  <xref scope="local" format="dita" href="GUID-2A5D671C-9660-41C7-9F68-B8047FEDC052.dita#GUID-2A5D671C-9660-41C7-9F68-B8047FEDC052"><?xm-replace_text MTRR Configurations for 1TB Memory?></xref>. 
+		</li> 
+		<li id="LI_D0B014A24653460B9E3EE08887D2C6D4">EDKII provide an Dynamic PCD to modify BIOS default. Some options rarely changed by user in the Setup Menu will be moved to PCDs. 
+		  <ul id="GUID-EB09C631-F5BD-48E3-9AF8-2A291EB1C3C3"> 
+			 <li id="LI_88925AB91CFE42408F2F6A31C12A3FF6">AP Idle Manner --&gt; gUefiCpuPkgTokenSpaceGuid.PcdCpuApLoopMode 
+			 </li> 
+		  </ul> 
+		</li>
+		<li id="LI_016D444B2576496E842D36B7B11F9898">For Razor Lake specific changes, refer to 
+		  <xref scope="local" format="dita" href="GUID-14094841-6D14-4270-B56E-5142CA8A79A4.dita">Razor Lake Updates</xref>.
+		</li> 
+	 </ul> 
+	 </p> 
+  </body> 
+</topic> 

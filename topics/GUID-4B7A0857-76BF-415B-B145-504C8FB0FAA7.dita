@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-4B7A0857-76BF-415B-B145-504C8FB0FAA7" xml:lang="en-US"> 
+  <title>Extended Processor Signature Table Verification</title> 
+  <body> 
+    <p> The extended processor signature table (MCU extended header) is a structure that may be appended to the end of the encoded data when the encoded data only supports a single processor signature (optional case). The extended signature table will always be present when the encoded data supports multiple processor steppings and/or models (required case). 
+    </p> 
+    <p> Legacy BIOS might opt-out the verification due to the MCU content was meant to support a single processor signature. For this platform, BIOS is required to verify the extended processor signature table for multiple processor signatures support. 
+    </p> 
+  </body> 
+</topic> 

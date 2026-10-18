@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ishobject ishref="GUID-28583781-F7EB-4F72-A734-AC8FA94C9D9C" ishtype="ISHPublication">
+  <ishfields>
+    <ishfield name="FTITLE" level="logical" xml:space="preserve">Nova Lake and Razor Lake Processor Family BIOS Specifications</ishfield>
+    <ishfield name="FISHPUBLICATIONTYPE" level="logical" xml:space="preserve" />
+    <ishfield name="FINTELPROGRAMNAME" level="logical" xml:space="preserve">NA</ishfield>
+    <ishfield name="VERSION" level="version" xml:space="preserve">6</ishfield>
+    <ishfield name="FISHMASTERREF" level="version" xml:space="preserve">GUID-D5D73A49-67A2-40F8-B78E-CC18D4D8CD2F</ishfield>
+    <ishfield name="FINTELSECCLASSIFICATION" level="version" xml:space="preserve">Intel Confidential</ishfield>
+    <ishfield name="FINTELCTRLTECHNOLOGY" level="version" xml:space="preserve">No</ishfield>
+    <ishfield name="FINTELDOCNUMBER" level="version" xml:space="preserve">861572</ishfield>
+    <ishfield name="FINTELPUBLISHEDDATE" level="version" xml:space="preserve">01/10/2026 00:00:00</ishfield>
+    <ishfield name="FMAPID" level="lng" xml:space="preserve">GUID-28583781-F7EB-4F72-A734-AC8FA94C9D9C</ishfield>
+    <ishfield name="FISHPUBLNGCOMBINATION" level="lng" xml:space="preserve">en-US</ishfield>
+    <ishfield name="FISHOUTPUTFORMATREF" level="lng" xml:space="preserve">Intel SDL to DITA</ishfield>
+    <ishfield name="FPUBINCLUDECOMMENTS" level="lng" xml:space="preserve" />
+    <ishfield name="FPUBINCLUDEMETADATA" level="lng" xml:space="preserve" />
+    <ishfield name="FPUBWATERMARK" level="lng" xml:space="preserve" />
+  </ishfields>
+</ishobject>

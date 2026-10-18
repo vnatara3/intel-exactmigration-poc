@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-594E34F5-7873-4ED8-A576-C5B23B6774C4" xml:lang="en-US"> 
+  <title>Input ONLY PRCOHOT</title> 
+  <body> 
+    <p> Bi-directional PRCOHOT is no longer supported on the processors. BIOS should NOT inherit any PRCOHOT configurations from previous platform projects. 
+    </p> 
+    <p> The PRCOHOT pin is default to be INPUT ONLY and should remain unprogrammed. 
+    </p> 
+  </body> 
+</topic> 
