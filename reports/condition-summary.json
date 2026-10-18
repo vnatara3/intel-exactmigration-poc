@@ -1,0 +1,18 @@
+﻿{
+    "ProcessedAt":  "2026-10-18T16:33:07.1870834+05:30",
+    "Stage":  "ProcessConditions",
+    "Status":  "Completed",
+    "SelectedPlatform":  [
+                             "NVL_HX"
+                         ],
+    "FilesProcessed":  46,
+    "ElementsIncluded":  76,
+    "ElementsExcluded":  377,
+    "RootFilesExcluded":  0,
+    "ReferencesToExcludedFilesRemoved":  0,
+    "IshConditionAttributesRemoved":  76,
+    "StandardPlatformAttributesResolved":  0,
+    "RemainingIshConditions":  0,
+    "Errors":  0,
+    "Note":  "This is a profile-resolved publication. Conditions were evaluated for the selected platform values."
+}

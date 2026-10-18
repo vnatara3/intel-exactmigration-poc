@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"[
+]>
+
+<map id="GUID-F2468D6E-C217-4C61-9554-83C84D55C67D" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+	<title>Master Map</title>
+<mapref href="GUID-4AD7CA2D-3502-4E0A-B50D-94F85B856E77.ditamap" format="ditamap"><topicmeta><navtitle>Stack-Up and PCB Considerations_SysMem</navtitle></topicmeta></mapref><mapref href="GUID-740AD92B-1C7C-451F-ADC2-20DA54FAF750.ditamap" format="ditamap"><topicmeta><navtitle>System Memory Interface Design Guidelines_NVL_HX</navtitle></topicmeta></mapref></map>

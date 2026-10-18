@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<job-specification combinelanguages="no" comparewitholderversion="no">
+  <parameter name="FMAPID">GUID-4BE6A360-204C-4AC1-961E-91C7AFEDAC6E</parameter>
+  <parameter name="export-document">GUID-4BE6A360-204C-4AC1-961E-91C7AFEDAC6E</parameter>
+  <parameter name="export-start-document">GUID-1B578919-8DD0-411D-9C7F-4FF2B67041C5</parameter>
+  <parameter name="language">en-US</parameter>
+</job-specification>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "file:///E:/InfoShare/Web/Author/ASP/DocTypes/dita-oasis/1.2/technicalContent/dtd/concept.dtd"[]>
+<!-- Original file name: Legal Disclaimer=GUID-59C4995B-B036-4E09-8C2D-5959E1DCB2C5=3=en-US=.xml --><!-- Original file name: Legal Disclaimer=GUID-59C4995B-B036-4E09-8C2D-5959E1DCB2C5=3=en-US=.xml --><!-- Original file name: Legal Disclaimer=GUID-59C4995B-B036-4E09-8C2D-5959E1DCB2C5=4=en-US=.xml --><concept id="GUID-59C4995B-B036-4E09-8C2D-5959E1DCB2C5" xml:lang="en-US"> 
+  <title>Legal Disclaimer</title> 
+  <conbody> 
+    <p conref="GUID-0C1D7553-20EC-4A15-8ACA-98CB684E2ED9.dita#GUID-0C1D7553-20EC-4A15-8ACA-98CB684E2ED9/P_663271B678924C92A068593A2AD6364F"><?xm-replace_text This is the start of your concept topic?>
+    </p> 
+    <p conref="GUID-0C1D7553-20EC-4A15-8ACA-98CB684E2ED9.dita#GUID-0C1D7553-20EC-4A15-8ACA-98CB684E2ED9/P_NO_LICENSE_TO_IP_RIGHTS"><?xm-replace_text Paragraph?>
+    </p> 
+    <p conref="GUID-0C1D7553-20EC-4A15-8ACA-98CB684E2ED9.dita#GUID-0C1D7553-20EC-4A15-8ACA-98CB684E2ED9/P_0D130065371E4671A32BD92F5AD9657A"><?xm-replace_text Paragraph?>
+    </p> 
+    <p conref="GUID-0C1D7553-20EC-4A15-8ACA-98CB684E2ED9.dita#GUID-0C1D7553-20EC-4A15-8ACA-98CB684E2ED9/P_3941A18713124B6F819EC36F141491B5"><?xm-replace_text Paragraph?>
+    </p> 
+    <p conref="GUID-0C1D7553-20EC-4A15-8ACA-98CB684E2ED9.dita#GUID-0C1D7553-20EC-4A15-8ACA-98CB684E2ED9/P_TECHNOLOGY_DISCLAIMER"><?xm-replace_text Paragraph?>
+    </p> 
+    <p> Altering clock frequency, voltage, or memory interface speeds may void any product warranties and reduce stability, security, performance, and life of the processor and other components. Intel has not validated processor running memory above Plan-Of-Record (POR) speed. DRAM/DIMM devices should support desired speed, check with DRAM/DIMM vendors for details. System manufacturers are responsible for all validation and assume the risk of any stability, security, performance, or other functional issues resulting from such alterations 
+    </p> 
+    <p conref="GUID-0C1D7553-20EC-4A15-8ACA-98CB684E2ED9.dita#GUID-0C1D7553-20EC-4A15-8ACA-98CB684E2ED9/P_8B7D4452BB3F42CA8D80829FD2B5A870"><?xm-replace_text Paragraph?>
+    </p> 
+  </conbody> 
+</concept> 

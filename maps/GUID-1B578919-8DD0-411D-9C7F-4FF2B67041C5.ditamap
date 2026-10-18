@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd"[]>
+<bookmap id="GUID-1B578919-8DD0-411D-9C7F-4FF2B67041C5" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <booktitle> 
+	 <mainbooktitle>Nova Lake-HX System Memory Platform 
+	 </mainbooktitle> 
+	 <booktitlealt>Design Guide 
+	 </booktitlealt></booktitle> 
+  <bookmeta> 
+	 <publisherinformation> 
+		<organization>CCL</organization><published> 
+		  <revisionid>1.2</revisionid> 
+		</published> 
+	 </publisherinformation> 
+	 <prodinfo> 
+		<prodname>Nova Lake-HX System Memory</prodname> 
+		<vrmlist><vrm version="ProductVersionNumber" /></vrmlist> 
+	 </prodinfo> 
+	 <bookrights> 
+		<copyrfirst><year>2026</year></copyrfirst> 
+		<copyrlast><year /></copyrlast> 
+		<bookowner><organization>CCL</organization></bookowner> 
+	 </bookrights> 
+  </bookmeta> 
+  <frontmatter> 
+	 <notices href="../topics/GUID-59C4995B-B036-4E09-8C2D-5959E1DCB2C5.dita" format="dita" scope="local"> 
+		<topicmeta><!--Navtitle attribute converted into element by SDL Trisoft "Dita11ToDita12.xsl".--><navtitle>Legal Disclaimer</navtitle> 
+		</topicmeta><?xm-replace_text Insert Reference to Legal and Disclaimer Topic?>
+	 </notices> 
+	 <booklists> 
+		<toc /> 
+		<figurelist /> 
+		<tablelist /> 
+	 </booklists> 
+	 <topicref href="../topics/GUID-CD9D0381-F07B-47D6-B05D-22D8410106A4.dita" format="dita">
+		<topicmeta><navtitle>Revision History_Sys Mem</navtitle>
+		</topicmeta>
+	 </topicref>
+  </frontmatter> 
+  <chapter href="GUID-F2468D6E-C217-4C61-9554-83C84D55C67D.ditamap" format="ditamap">
+	 <topicmeta><navtitle>Master Map Sys Mem</navtitle>
+	 </topicmeta>
+  </chapter>
+  <backmatter> 
+	 <booklists> 
+		<glossarylist><?xm-replace_text Uncomment the following mapref to include the master Glossary Map?>
+<!--<mapref href="GUID-55773233-2720-433C-9CBD-4201A0BD6EE8" scope="local" navtitle="Glossary Map"/>-->
+		</glossarylist> 
+		<indexlist /> 
+	 </booklists> 
+  </backmatter> 
+</bookmap> 

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN">
-<map xml:lang="en-US" id="GUID-96FFAE87-CD65-40DA-AB96-62DA67685CB4" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic delay-d)                          (map mapgroup-d)                           (topic indexing-d)                          (map glossref-d)                          (topic hi-d)                           (topic ut-d)                           (topic hazard-d)                          (topic abbrev-d)                          (topic pr-d)                           (topic sw-d)                          (topic ui-d)                          (topic intc-trackChanges-d)                         " class="- map/map ">
-  <title class="- topic/title ">References and Terminology</title>
-  <topicref href="GUID-6423997B-7C0B-4A77-A2F1-30232E345B4A.xml" class="- map/topicref ">
-    <topicref href="GUID-92CA4C56-BD3F-48F1-922E-7B3BC78BAB4A.xml" class="- map/topicref "><topicref href="GUID-1DC71EBD-EF1E-4180-80B0-86F2C96DCF37.xml" class="- map/topicref " /></topicref>
-    <topicref href="GUID-A88AF4F6-59F1-401E-8441-29E023121E82.xml" class="- map/topicref " />
-  </topicref>
-</map>

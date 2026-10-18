@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-AB063B4E-4250-43C4-AD62-FD43A51F905C" xml:lang="en-US"> 
+  <title> DDR Outer and Inner Row Signals Package</title> 
+  <body> 
+    <p> The routing from the DDR to the package will be according to the following two rows: DDR outer signals and inner row signals. 
+    </p> 
+    <fig id="GUID-C658AA96-4EAC-4436-9C42-B6343CD0A446"> 
+      <title> DDR Outer and Inner Row Signals</title><image href="../images/GUID-D21D2588-CDF6-459C-AA59-0BF6A9924528.png" scalefit="yes" id="IMAGE_7458BB7560C1476A95DB0B67B39E2D65" /> 
+    </fig> 
+    <note id="GUID-78EACC95-B4DB-4497-B9BD-2BDF2B2CF442">This image is a reference, not the actual signals pin map. 
+    </note> 
+  </body> 
+</topic> 

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-CD9D0381-F07B-47D6-B05D-22D8410106A4" xml:lang="en-US"> 
+  <title>Revision History</title> 
+  <body> 
+	 <table id="GUID-BBC307B2-CE38-4F16-B47E-B187231AA5A9" pgwide="1"> 
+		<tgroup cols="5"><colspec colnum="1" colname="col1" colwidth="1.19*" align="center" /><colspec colnum="2" colname="col2" colwidth="1.15*" align="center" /><colspec colname="col003" colnum="3" colwidth="1.29*" /><colspec colname="col03" colnum="4" colwidth="3.08*" align="center" /><colspec colnum="5" colname="col3" colwidth="1.00*" align="center" /><thead> 
+			 <row> 
+				<entry colname="col1">Document 
+				  <p>Number 
+				  </p> 
+				</entry> 
+				<entry colname="col2">Revision 
+				  <p>Number 
+				  </p> 
+				</entry> 
+				<entry colname="col003" align="center">Section 
+				</entry> 
+				<entry colname="col03">Description 
+				</entry> 
+				<entry colname="col3">Release 
+				  <p>Date 
+				  </p> 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row valign="middle"> 
+				<entry colname="col1" align="center"> 863254 
+				</entry> 
+				<entry colname="col2" align="center">0.5 
+				</entry> 
+				<entry colname="col003" align="center">NA 
+				</entry> 
+				<entry colname="col03" align="left">Initial release 
+				</entry> 
+				<entry colname="col3" align="center">August 2025 
+				</entry> 
+			 </row> 
+			 <row valign="middle"> 
+				<entry colname="col1" align="center">863254 
+				</entry> 
+				<entry colname="col2" align="center">0.7 
+				</entry> 
+				<entry colname="col003" align="center">System Memory Interface Design Guidelines 
+				</entry> 
+				<entry colname="col03" align="left"> 
+				  <ul id="GUID-33944F20-C16A-41FC-8D21-DBECCDCEAEE4"> 
+					 <li><b>Updated</b> 
+						<ul id="GUID-B231119D-4DF3-4234-AB35-07D0F2E105D1"> 
+						  <li>DDR5 Technology Transfer Rate (MT/s) in 
+							 <xref scope="local" format="dita" href="GUID-1D4401E1-FF3E-4D9B-811F-C634500F45AC.dita#GUID-1D4401E1-FF3E-4D9B-811F-C634500F45AC/TABLE_893F9A88C5FB46EBAF393FCE6A2645E3"><?xm-replace_text POR Memory Configurations?></xref> 
+						  </li> 
+						  <li><xref scope="local" format="dita" href="GUID-1D4401E1-FF3E-4D9B-811F-C634500F45AC.dita#GUID-1D4401E1-FF3E-4D9B-811F-C634500F45AC/TABLE_E4B23C70BB244E6BB74BC38EC3DA24EC"><?xm-replace_text POR Memory Signal List?></xref> 
+						  </li> 
+						  <li>Note from 6400 
+							 <i>to</i> &gt;6400 in 
+							 <xref scope="local" format="dita" href="GUID-849B78DE-BB07-435F-BF98-2B0BB7B2C8E6.dita#GUID-849B78DE-BB07-435F-BF98-2B0BB7B2C8E6"><?xm-replace_text DDR5 SODIMM/CSODIMM 1DPC?></xref> 
+						  </li> 
+						  <li>DDR5 &gt;SODIMM 1DPC sub-section 
+						  </li> 
+						  <li>DDR5 &gt; SODIMM 2DPC Tee ClamShell (B2B) sub-section 
+						  </li> 
+						  <li>LPDDR5/x &gt;CAMM2 x128 Type-3 sub-section 
+						  </li> 
+						  <li>Max Capacity (GB) Parameter Details from 64GB with ODP 
+							 <i>to</i> 96GB in 
+							 <xref scope="local" format="dita" href="GUID-BA11170A-F9AD-4749-8540-7BA0E8160ADE.dita#GUID-BA11170A-F9AD-4749-8540-7BA0E8160ADE/TABLE_8D42CE9E542140118D48632F563A71A2"><?xm-replace_text System Memory Configuration Details Covered in this Section?></xref> 
+						  </li> 
+						  <li>LPDDR5/x &gt;MD x32 Type-4 &gt; Signals 
+						  </li> 
+						</ul> 
+					 </li> 
+				  </ul> 
+				</entry> 
+				<entry colname="col3" align="center">October 2025 
+				</entry> 
+			 </row> 
+			 <row valign="middle"> 
+				<entry colname="col1" align="center">863254 
+				</entry> 
+				<entry colname="col2" align="center">1.0 
+				</entry> 
+				<entry colname="col003" align="center">System Memory Interface Design Guidelines 
+				</entry> 
+				<entry colname="col03" align="left"> 
+				  <ul id="GUID-9C66077D-2CDC-4969-B7B8-8E64E04C6906"> 
+					 <li><b>Added</b> 
+						<ul id="GUID-C3103C6B-D896-4021-AC92-8B6D144A645E"> 
+						  <li>DBI OOB ECC and General Note Details in CAMM2 x128 Type-3 Notes table 
+						  </li> 
+						  <li><xref scope="local" format="dita" href="GUID-C19F3E3A-3F9C-4FF2-A498-3A43CB7EC8C2.dita#GUID-C19F3E3A-3F9C-4FF2-A498-3A43CB7EC8C2/GUID-3AE5D96E-6AF3-4C59-8E1C-46B1656413A2"><?xm-replace_text NVL-HX LPCAMM2 T3 RVP – LPCAMM Connectivity Update?></xref> 
+						  </li> 
+						  <li>Point 3 in 
+							 <xref scope="local" format="dita" href="GUID-BD810D34-768A-4988-AB0A-A0BD6D7FD354.dita#GUID-BD810D34-768A-4988-AB0A-A0BD6D7FD354"><?xm-replace_text Via Placement and Pad Optimization?></xref> 
+						  </li> 
+						</ul> 
+					 </li> 
+					 <li><b>Updated</b> 
+						<ul id="GUID-8F3159AA-8214-4151-90E9-583CD4604790"> 
+						  <li><xref scope="local" format="dita" href="GUID-1D4401E1-FF3E-4D9B-811F-C634500F45AC.dita#GUID-1D4401E1-FF3E-4D9B-811F-C634500F45AC/TABLE_893F9A88C5FB46EBAF393FCE6A2645E3"><?xm-replace_text POR Memory Configurations?></xref> 
+						  </li> 
+						  <li>Note in 
+							 <xref scope="local" format="dita" href="GUID-849B78DE-BB07-435F-BF98-2B0BB7B2C8E6.dita#GUID-849B78DE-BB07-435F-BF98-2B0BB7B2C8E6"><?xm-replace_text DDR5 SODIMM/CSODIMM 1DPC?></xref> 
+						  </li> 
+						  <li>CPU 
+							 <i>to</i> Processor in SODIMM 1DPC 
+						  </li> 
+						  <li>Notes in 
+							 <xref scope="local" format="dita" href="GUID-C7D1B96C-CB09-41AF-B01C-6034B60BD4CB.dita#GUID-C7D1B96C-CB09-41AF-B01C-6034B60BD4CB/RTF31373537313A2030335F4C65"><?xm-replace_text DDR5 SODIMM/CSODIMM 2DPC Topology Guidelines?></xref> 
+						  </li> 
+						  <li>CPU 
+							 <i>to</i> Processor in SODIMM 2DPC Tee ClamShell (B2B) 
+						  </li> 
+						  <li>DRAM Die Density (Gb) in 
+							 <xref scope="local" format="dita" href="GUID-C19F3E3A-3F9C-4FF2-A498-3A43CB7EC8C2.dita#GUID-C19F3E3A-3F9C-4FF2-A498-3A43CB7EC8C2/TABLE_8D42CE9E542140118D48632F563A71A2"><?xm-replace_text System Memory Configuration Details Covered in this Section?></xref> 
+						  </li> 
+						  <li>Notes in 
+							 <xref scope="local" format="dita" href="GUID-C19F3E3A-3F9C-4FF2-A498-3A43CB7EC8C2.dita#GUID-C19F3E3A-3F9C-4FF2-A498-3A43CB7EC8C2/TABLE_8D42CE9E542140118D48632F563A71A2"><?xm-replace_text System Memory Configuration Details Covered in this Section?></xref> 
+						  </li> 
+						  <li>Title in 
+							 <xref scope="local" format="dita" href="GUID-04C38B33-CAF6-42C8-84B1-1EA0F24AE569.dita#GUID-04C38B33-CAF6-42C8-84B1-1EA0F24AE569"><?xm-replace_text Via Placement at SODIMM and CSODIMM and CSODIMM and SODIMM...?></xref> 
+						  </li> 
+						  <li>Memory Type in 
+							 <xref scope="local" format="dita" href="GUID-04C38B33-CAF6-42C8-84B1-1EA0F24AE569.dita#GUID-04C38B33-CAF6-42C8-84B1-1EA0F24AE569/TABLE_37B255F9A86E47E6A4395805A7CD9DC0"><?xm-replace_text Vias Separation Guidelines?></xref> 
+						  </li> 
+						  <li>LPDDR5/x 
+							 <i>to</i> LPDDR5x in LPDDR5x Device Decoupling section 
+						  </li> 
+						</ul> 
+					 </li> 
+				  </ul> 
+				</entry> 
+				<entry colname="col3" align="center">February 2026 
+				</entry> 
+			 </row>
+			 <row valign="middle">
+				<entry colname="col1" align="center" morerows="1">863254
+				</entry>
+				<entry colname="col2" align="center" morerows="1">1.2
+				</entry>
+				<entry colname="col003" align="center">PCB Stackup and Design Considerations 
+				</entry>
+				<entry colname="col03" align="left"> 
+				  <ul id="GUID-E1AB41EA-BD4C-4578-80C0-FB9E83EDCE7B"> 
+					 <li><b>Updated</b> 
+						<ul id="GUID-AA1E7BFD-95A4-4E29-BD47-935E52F81628"> 
+						  <li>Type-3, 0.9mm, 10L, Mainstream, Premium Mid Loss (PML), For DDR5 SODIMM and LPDDR5x CAMM2Type-3, 0.9mm, 10L, Mainstream, Premium Mid Loss (PML), For DDR5 SODIMM and LPDDR5x CAMM2 Tline Spec (Memory) sub-section 
+						  </li> 
+						  <li>Type-4 2-x-2+, 0.8mm, 10L, Mainstream, Premium Mid Loss (PML), For LPDDR5x Memory Down Tline Spec (Memory) 
+						  </li> 
+						</ul> 
+					 </li> 
+				  </ul> 
+				</entry>
+				<entry colname="col3" align="center" morerows="1">May 2026
+				</entry>
+			 </row>
+			 <row valign="middle">
+				<entry colname="col003" align="center">System Memory Interface Design Guidelines 
+				</entry>
+				<entry colname="col03" align="left"> 
+				  <ul id="GUID-D7AFF456-631B-49E6-9353-1E799939D687"> 
+					 <li><b>Added</b> SODIMM 2DPC Daisy (B2B) sub-section 
+					 </li> 
+					 <li><b>Updated</b> 
+						<ul id="GUID-456915CF-8B8F-4975-99C0-1CB0BB95F2F9"> 
+						  <li><xref scope="local" format="dita" href="GUID-1D4401E1-FF3E-4D9B-811F-C634500F45AC.dita#GUID-1D4401E1-FF3E-4D9B-811F-C634500F45AC/TABLE_893F9A88C5FB46EBAF393FCE6A2645E3"><?xm-replace_text POR Memory Configurations?></xref> 
+						  </li> 
+						  <li>Data Processor and Memory Type LPCAMM2 Signal Name in 
+							 <xref scope="local" format="dita" href="GUID-1D4401E1-FF3E-4D9B-811F-C634500F45AC.dita#GUID-1D4401E1-FF3E-4D9B-811F-C634500F45AC/TABLE_E4B23C70BB244E6BB74BC38EC3DA24EC"><?xm-replace_text POR Memory Signal List?></xref> 
+						  </li> 
+						  <li><xref scope="local" format="dita" href="GUID-C7D1B96C-CB09-41AF-B01C-6034B60BD4CB.dita#GUID-C7D1B96C-CB09-41AF-B01C-6034B60BD4CB/RTF31373537313A2030335F4C65"><?xm-replace_text DDR5 SODIMM/CSODIMM 2DPC Tee ClamShell (B2B)Topology Guidelines?></xref> 
+						  </li> 
+						  <li><xref scope="local" format="dita" href="GUID-C7D1B96C-CB09-41AF-B01C-6034B60BD4CB.dita#GUID-C7D1B96C-CB09-41AF-B01C-6034B60BD4CB"><?xm-replace_text DDR5 SODIMM/CSODIMM 2DPC?></xref> 
+						  </li> 
+						  <li> LPCAMM2 x128 Type-3 CAMM Placement and Block Diagram 
+						  </li> 
+						  <li><xref scope="local" format="dita" href="GUID-BA11170A-F9AD-4749-8540-7BA0E8160ADE.dita#GUID-BA11170A-F9AD-4749-8540-7BA0E8160ADE/TABLE_8D42CE9E542140118D48632F563A71A2"><?xm-replace_text System Memory Configuration Details Covered in this Section?></xref> 
+						  </li> 
+						</ul> 
+					 </li> 
+				  </ul> 
+				</entry>
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </body> 
+</topic> 
