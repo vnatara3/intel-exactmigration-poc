@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"[]>
+
+<map id="GUID-FD97328D-69D2-4B29-8AC8-A726AC3A822B" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+	<title>Package Attributes and Overview</title>
+<topicref href="../topics/GUID-F4B6D6E6-9B02-4BDE-A295-8ACD5C81110E.dita" format="dita"><topicmeta><navtitle>Package Attributes and Overview (1)</navtitle></topicmeta><topicref href="../topics/GUID-2C35BBFE-4B21-4271-AAD4-CEFE9145B25F.dita" format="dita"><topicmeta><navtitle>Maximum Turbo Frequency vs. Temperature</navtitle></topicmeta></topicref><topicref href="../topics/GUID-2AF8B7D4-78AE-4958-90A2-A5AE30F061FD.dita" format="dita"><topicmeta><navtitle>Package Power Information</navtitle></topicmeta></topicref></topicref></map>

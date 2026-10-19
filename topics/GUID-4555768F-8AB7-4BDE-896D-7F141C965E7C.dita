@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-4555768F-8AB7-4BDE-896D-7F141C965E7C" xml:lang="en-US"> 
+  <title>Platform Voltage Regulator Thermal Monitor (PVRTM)</title> 
+  <body> 
+	 <p>Platform Voltage Regulator Thermal Management (PVRTM) is a platform-level thermal protection mechanism designed to help manage the thermal operating condition of the processor voltage regulator (VR). PVRTM enables system designers to define thermal protection policies that help prevent the VR from operating beyond its intended thermal limits. 
+	 </p> 
+	 <p>PVRTM is an important aspect of platform thermal design because excessive VR temperatures may affect system reliability, performance consistency, and long-term operation. When a defined PVRTM threshold is reached, platform behavior can change in order to reduce thermal stress on the voltage regulator and maintain operation within validated thermal limits. 
+	 </p> 
+	 <p>System designers should consider PVRTM as part of the overall VR thermal design process. Adequate VR cooling capability, airflow management, thermal solution selection, and platform operating conditions should be evaluated to ensure that PVRTM thresholds are not reached during intended system use. 
+	 </p> 
+	 <p>PVRTM can also influence platform thermal validation and observed system behavior. During thermal characterization and validation activities, system operation may be affected when VR thermal protection mechanisms are engaged. Designers should account for PVRTM behavior when analyzing thermal test results, evaluating platform performance, and assessing system-level thermal margins. 
+	 </p> 
+	 <p>For further information about PVRTM, refer to Nova Lake Mobile Platform Design Guide (#<xref scope="external" format="https" href="HTTPS://CDRDV2.INTEL.COM/V1/DL/GETCONTENT/855310">855310</xref>) Section 10.4 and Nova Lake-HX Platform Design Guide (#<xref scope="external" format="https" href="HTTPS://CDRDV2.INTEL.COM/V1/DL/GETCONTENT/854352">854352</xref>) Section 11.4. 
+	 </p> 
+  </body> 
+</topic> 

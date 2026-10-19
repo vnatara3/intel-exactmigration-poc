@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-AC254EF2-8D4E-4FA4-AA84-48994F49D6BA" xml:lang="en-US"> 
+  <title>Design Guidance for Single Core Turbo Thermal Enablement</title> 
+  <body> 
+	 <p> To maximize the likelihood of achieving maximum frequency in single-core turbo scenarios, the designer should consider:
+	 </p>
+	 <p> 
+		<b>Thermal Resistance Optimization: ​</b> 
+	 </p> 
+	 <p>Use heat pipes and cold plates with low resistance values. ​
+	 </p> 
+	 <p> 
+		<b>Cooling Solution Selection: ​</b> 
+	 </p> 
+	 <p>Air coolers may suffice for mobile SKUs but should be validated against expected workload profiles. ​
+	 </p> 
+	 <p> 
+		<b>System-Level Considerations: ​</b> 
+	 </p> 
+	 <p>Ensure adequate airflow and chassis design to prevent heat buildup. ​
+	 </p> 
+	 <p>Avoid placing heat-sensitive components near the package. ​
+	 </p> 
+	 <p> 
+		<b>Transient vs. Sustained Workloads: ​</b> 
+	 </p> 
+	 <p>For transient workloads (~5s), thermal inertia may allow maximum frequency even if the cooling solution is marginal. ​
+	 </p> 
+	 <p>For sustained workloads, the cooling solution must consistently maintain Tsensor &lt; temperature limits.
+	 </p> 
+  </body> 
+</topic>

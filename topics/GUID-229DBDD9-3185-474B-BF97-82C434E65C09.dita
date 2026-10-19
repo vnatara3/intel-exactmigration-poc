@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-229DBDD9-3185-474B-BF97-82C434E65C09" xml:lang="en-US"> 
+  <title>Dorothy Workloads Summary HW/SW Assumptions</title> 
+  <body> 
+	 <table id="TABLE_1760DF8A3823477292A95F5654209FE6" pgwide="1"> 
+		<tgroup cols="5"> 
+		  <colspec colnum="1" colname="col1" colwidth="1.00*" /> 
+		  <colspec colname="col02" colnum="2" colwidth="2.28*" /><colspec colnum="3" colname="col2" colwidth="2.79*" /> 
+		  <colspec colnum="4" colname="col3" colwidth="2.77*" /> 
+		  <colspec colnum="5" colname="col4" colwidth="3.75*" /> 
+		  <thead> 
+			 <row> 
+				<entry namest="col1" nameend="col02"> Workload 
+				</entry> 
+				<entry colname="col2"> Description 
+				</entry> 
+				<entry colname="col3"> Usage 
+				</entry> 
+				<entry colname="col4"> Application Mix 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry namest="col1" nameend="col02"> Dorothy13<sup>1</sup> - Corporate Light Creator Collaboration w/ AI Assist NVL-H 12X<sup>e</sup> Processor Thin &amp; Powerful 
+				</entry> 
+				<entry colname="col2"> Concurrent high utilization of all system components 
+				</entry> 
+				<entry colname="col3"> Concurrent: Browsing + Video Collaboration + 
+				  <b>AI Assist</b> + Content Creation + IT Security &amp; "Busy Idle" Load 
+				</entry> 
+				<entry colname="col4"> Web Browsing 
+				  <sup>+</sup> [CCAs] (Monitor Ext2) + Teams* 3x3 720p30 (eDP) 
+				  <b>with</b> screen sharing (Monitor Ext1) + 
+				  <b>AI NPU</b> [Proxy for Recall, MEP: BS, AF, EGC + Audio DNS, Img -&gt;Txt -&gt;Txt] (Monitor Ext2) + Content Creation [Proxy UL Procyon* Photo Editing] (Monitor Ext1) + Synthetic Timer [Proxy "Busy Idle"] (Monitor Ext2) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry namest="col1" nameend="col02"> Dorothy13<sup>2</sup> - Corporate Light Creator Collaboration NVL-H 8C Processor Premium Thin &amp; Light 
+				</entry> 
+				<entry colname="col2"> Concurrent high utilization of all system components 
+				</entry> 
+				<entry colname="col3"> Concurrent: Browsing + Video Collaboration + 
+				  <b>AI Assist</b> + Content Creation + IT Security &amp; "Busy Idle" Load 
+				</entry> 
+				<entry colname="col4"> Web Browsing 
+				  <sup>+</sup> [CCAs] (Monitor Ext2) + Teams* 3x3 720p30 (eDP) + 
+				  <b>AI NPU</b> [Proxy for Recall, MEP: BS, AF, EGC + Audio DNS] + Content Creation [Proxy UL Procyon* Photo Editing] (Monitor Ext1) + Synthetic Timer [Proxy "Busy Idle"] (eDP) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry namest="col1" nameend="col02"> Dorothy13<sup>3</sup> - Consumer Escapist Gamer/Creator NVL 16C, HX 16C, HX 28C Processors Slim Gaming/Creator 
+				</entry> 
+				<entry colname="col2"> Concurrent high utilization of all system components 
+				</entry> 
+				<entry colname="col3"> Concurrent: ​ Browsing + ​ Gaming + ​ 
+				  <b>AI Assist</b> + Content Stream+ Content Record + ​ Game Download 
+				</entry> 
+				<entry colname="col4"> Web Browsing 
+				  <sup>+</sup> [CCAs] (eDP) + ​ Game Play [Proxy Cyberpunk* w/ 
+				  <b>AI GPU</b> resolution upscaling] (Monitor Ext1) + ​ OBS* HD Streaming via Twitch* (Monitor Ext1) + 
+				  <b>AI GPU</b> Camera BS + 
+				  <b>AI NPU</b> [Proxy for Recall, Audio DNS features] + OBS* Broadcaster UHD Record [TBT3 External SSD] (eDP) + ​​​ Game Download [Proxy local NAS E: Storage -&gt; D: Storage] (eDP) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry morerows="2"> Stand Alone<sup>4</sup> 
+				</entry> 
+				<entry colname="col02">3DMark* - Industry Benchmark 
+				</entry> 
+				<entry colname="col2"> Sequential high utilization of CPU, GPU, Memory system components 
+				</entry> 
+				<entry colname="col3"> Sequential Tests: Proxy Gaming 
+				</entry> 
+				<entry colname="col4"> 
+				  <p> Solar Bay* (eDP) 
+				  </p> 
+				  <p> or 
+				  </p> 
+				  <p> Time Spy* (eDP) 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col02"> PudgetBench* Adobe* Premiere Pro - Industry Benchmark 
+				</entry> 
+				<entry colname="col2"> Sequential high utilization of CPU, GPU, Memory system components 
+				</entry> 
+				<entry colname="col3"> Sequential Tests:Proxy ProfessionalCreators 
+				</entry> 
+				<entry colname="col4"> GPU Effects (eDP) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col02"> SPECrate* 2017 Floating Point suite - Industry Standard Benchmark 
+				</entry> 
+				<entry colname="col2"> High utilization of CPU (ST or MT) and Memory system components 
+				</entry> 
+				<entry colname="col3"> Sequential Tests:Proxy Professional Engineering - Fluid dynamics 
+				</entry> 
+				<entry colname="col4"> 519.LBM_r (eDP) (Lattice Boltzmann Method) 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <p> Assumes Microsoft* Windows* 11 Enterprise using built-in camera with the following active display assumptions: 
+	 </p> 
+	 <p><sup>1</sup> Three Displays simultaneous: 4K eDP (UHD) + Two 4K Type C DP (Dual UHD) via Thunderbolt™ 4 Dock and TBT3 portable external SSD connected via Port2 Client. 
+	 </p> 
+	 <p><sup>2</sup> Three Displays simultaneous: 2K eDP (QHD) + Two 2K Type C DP (Dual QHD) via Thunderbolt™ 4 Dock and Type C portable external SSD connected via Port2 Client. 
+	 </p> 
+	 <p><sup>3</sup> Two Displays simultaneous: 2K eDP (QHD) + One 4K Type C DP (UHD) via Thunderbolt™ 4 Dock and TBT3 portable external SSD connected via Port2 Client. 
+	 </p> 
+	 <p><sup>4</sup> Single 2K eDP (QHD) OR 4K eDP (UHD) Display 
+	 </p> 
+	 <p><b> Dorothy = Platform Level Thermal Design Power</b> 
+	 </p> 
+  </body> 
+</topic> 

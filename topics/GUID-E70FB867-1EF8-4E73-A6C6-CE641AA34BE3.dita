@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-E70FB867-1EF8-4E73-A6C6-CE641AA34BE3" xml:lang="en-US"> 
+  <title>TIM Selection for Transient Performance</title> 
+  <body> 
+	 <fig id="FIG_FF8DB73C0DA9405381625E341763DAEA"> 
+		<title>RTIM Impact Example: 15W TDP Package, ACT</title><image href="../images/GUID-98830938-D60D-4CC8-9148-8EB1D7E03914.png" scalefit="yes" id="IMAGE_AC2BBD1CC1374012A4614FFF6F152626"> 
+		  <alt> 
+		  </alt></image> 
+	 </fig> 
+	 <p> Improving RTIM will result in significant improvements on short duration (3-5s) turbo power (PL2) despite marginal to negligible improvements to S.S. 
+	 </p> 
+	 <p><b>Nomenclature</b>: 
+	 <ul id="UL_D922C0E483414C2E916FA77367808C3D"> 
+		<li id="LI_7D5703F8BE6B46CBB85742E4C74A70D0">Power Capability: Additional power the processor can support before reaching Tj-max 
+		</li> 
+		<li id="LI_EA04C27D096848C1AE66E61B29505B4C">TIM: Thermal Interface Material 
+		</li> 
+		<li id="LI_8E2082E9EBF34F40AE55DF096247ABF9">RTIM: TIM Thermal Impedance 
+		</li> 
+		<li id="LI_B8E296ED13014AF1A055657C25F6372B">S.S. : Steady State 
+		</li> 
+		<li id="LI_0D53BD66ABA04382B36199F9311B5463">ACT: All-Core-Turbo 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <note id="GUID-1B04D06B-1092-4AB7-AA0F-1DA3CD2876EE">For Liquid Metal Implementation, refer to the Technical Training Course #1002057. 
+	 </note> 
+  </body> 
+</topic> 

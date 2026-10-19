@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-89A7FE58-F6E2-484F-AFB4-43DB366E41C5" xml:lang="en-US"> 
+  <title>Sharing SoC Thermal Solution with Other High-Power Components like dGFX</title> 
+  <body> 
+	 <p>When designing with other high-power components (such as discrete graphics), take into consideration the following thermal solution recommendations: 
+	 </p> 
+	 <ul id="UL_051106E89DF2483482AB881C67B89B13"> 
+		<li id="LI_C6016A2DD81747D6BC0AE0A03C22EB41">Recommendation #1: Share heat-pipes bi-directionally 
+		  <ul id="UL_0D62D2BA29C04E7CA4D84D8CC4FCFDC4"> 
+			 <li id="LI_CC1522D52D29428784C9691D23D2C4AE">Using shared heat-pipes between SoC and dGFX provides the ability to share unused thermal capacity from one package to the other, thereby maximizing both SoC and dGFX sustained performance. 
+			 </li> 
+			 <li id="LI_1A0CA2BA72C04832948F463CECE4C306">Shared heat-pipes also provide better transient thermal capacity for both SoC and dGFX packages 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li id="LI_11B86A91499F4B9CB8F2446B5E4FE6CB">Recommendation #2: Ensure heat pipe routing covers both SoC and dGFX hot spots 
+		  <ul id="UL_8CA645B5F5854A9791D7BDA8B66BA52D"> 
+			 <li id="LI_E2D804E2F6904CA4BEB59F1658532E58">Thermal considerations should be made to ensure dGFX memory and VRs are cooled when necessary 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li id="LI_0DF10C231C67454FA7C79E620782280F">Recommendation #3: Enable Adaptix/DTT power sharing policies to manage power dissipation capability of shared heat-pipes 
+		  <ul id="UL_6450002BCD144F7FA8BC2CB146FE05BE"> 
+			 <li id="LI_CF6A80474FA74FC899E51FA785407340">DTT power sharing policies (PS2, TPG) optimize performance by dynamically balancing power for each component 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li id="LI_3AC8793E0A564EE7BBFA746B5D1713AD">Recommendation #4: Assess total system power capability for SoC + dGFX jointly depending on the system market target: 
+		  <ul id="UL_0E7942DF12FB43B4A5A0556C6BEFA03E"> 
+			 <li id="LI_2FA8B93D966E4BAA950A4A1CEE4E74A1">For cost-optimized systems consider: 80% * (Nominal TGP+ Processor Base Power) 
+			 </li> 
+			 <li id="LI_66DD5E870CDB42A2AEB0CDC4F319FCE2">For premium systems consider: 90%* (Boost TGP+ Processor Base Power) 
+			 </li> 
+		  </ul> 
+		</li> 
+	 </ul> 
+	 <fig id="FIG_E08F157283F941F89FD3A45A94CAD2F0"> 
+		<title>Example of Thermal Solution Design suitable for Power Sharing</title><image href="../images/GUID-A2F0F2EB-87F2-48B8-AFA2-8DFEDA3377A8.png" id="IMAGE_085C3759448C45F7822BCDFCB76F6523" scalefit="yes" height="180"> 
+		  <alt> 
+		  </alt></image> 
+	 </fig> 
+  </body> 
+</topic> 

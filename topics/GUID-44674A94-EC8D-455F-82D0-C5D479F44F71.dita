@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-44674A94-EC8D-455F-82D0-C5D479F44F71" xml:lang="en-US"> 
+  <title>Package Thermal Mechanical Overview</title> 
+  <body> 
+	 <table id="TABLE_2BE594D1F6A24B2F9ED807E0BC7A7BD0"> 
+  <title>Package Thermal Mechanical Overview</title> 
+  <tgroup cols="2"><colspec colnum="1" colname="col1" colwidth="1.00*" /><colspec colnum="2" colname="col2" colwidth="1.45*" /> 
+	 <thead> 
+		<row> 
+		  <entry namest="col1" nameend="col2" valign="middle" align="center">Package Thermal Mechanical Overview 
+		  </entry> 
+		</row></thead> 
+	 <tbody> 
+		<row> 
+		  <entry colname="col1"> 
+			 <image href="../images/GUID-794E7E5F-04E1-42C4-B22F-F113753D70C9.png" height="80px" id="IMAGE_1CD199C32A1A471FB5A0B3D1281A4AA1"></image> 
+		  </entry> 
+		  <entry colname="col2"> 
+			 <b> NVL 8C: 4P-cores +0E-cores + 4LP E-cores +4X<sup>e</sup>-cores</b> 
+			 <p> 
+			 <ul id="UL_19AFE0FC7B274EAFB65CA3DB96548AD3"> 
+				<li id="LI_135118A969FB4BED824AE80236C84555">Using Foveros Packaging Technology (3D face-face chip stacking). 
+				</li> 
+				<li id="LI_E79D3C46ECB84CDD935860E8D6DADB62"> Four top active dice on package (C, HUB, PCD, GCD), one passive interposer (Base) and two passive silicon (P) 
+				</li> 
+				<li id="LI_B25830680EFB427D8F44954E4D828040"> Top surface of all die/mold are coplanar, treat as monolithic die for TIM assessment. 
+				</li> 
+				<li id="LI_416FE38AEABA440D9014E0A9543E2BDE">Metal stiffener is placed around substrate perimeter. Stiffener is shorter than die stack. 
+				</li> 
+				<li id="LI_057166DFA5A741D89DB6E292B2D8A823"> Processor Base Power (PBP)=25W 
+				</li> 
+				<li id="LI_30FC0D4FE3064281881E24EC66CF6B2A" outputclass="keepwithnext">PL1=25W (or any power 10-45W) can be configured in BIOS for NVL 8C as in 
+				  <xref scope="local" format="dita" href="GUID-2AF8B7D4-78AE-4958-90A2-A5AE30F061FD.dita">Section 2.2</xref> 
+				</li> 
+				<li id="LI_3ACBD69B887A4A86947BE4CAC9452B5A">PL2 values can be referenced in the Nova Lake H Platform Design Guide (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/855310" format="https" scope="external">855310</xref>) 
+				</li> 
+			 </ul> 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry colname="col1"><image href="../images/GUID-5517B1DF-A550-4B9C-B74E-B8D656BFADAE.png" id="IMAGE_BCF87A1E757642AF945CD6AA70595433"> 
+				<alt> 
+				</alt></image> 
+		  </entry> 
+		  <entry colname="col2"> 
+			 <b>NVL 14C 2X<sup>e</sup>: 4P-cores+8E-cores + 4LP E-cores +4Xe-cores</b> 
+			 <ul id="UL_155F9C576AE14550B9DBD534AC47EFD4"> 
+				<li id="LI_7394BAB3703D4355B8651102F3C63827"> Using FoverosPackaging Technology (3D face-face chip stacking). 
+				</li> 
+				<li id="LI_558A3B82F83243018BC807402DA54B27"> Four top active dice on package(C, HUB, PCD, GCD), one passive interposer (Base) and one/two passivesilicon (P). 
+				</li> 
+				<li id="LI_D5330D797E6E46B18341B7A639C04637"> Top surfaceof all die/mold are coplanar,treat as monolithic die for TIM assessment. 
+				</li> 
+				<li id="LI_A09E826EB5F4446BB6334750E222E79A"> Metal stiffeneris placed around substrate perimeter. Stiffener is shorter than die stack. 
+				</li> 
+				<li id="LI_CAB7790E07534EB89F3934BB02A25F5F"> Processor Base Power (PBP)=15W. 
+				</li> 
+				<li id="LI_6642EB024C6B4FB08833AC96708796F7"> PL1=15W (or any power10-25W) can be configured in BIOS for both parts as in 
+				  <xref scope="local" format="dita" href="GUID-2AF8B7D4-78AE-4958-90A2-A5AE30F061FD.dita">Section 2.2</xref> 
+				</li> 
+			 </ul> PL2 valuescan be referenced in the Nova Lake H Platform Design Guide (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/855310" format="https" scope="external">855310 
+			 </xref>) 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <image href="../images/GUID-0DF7AE74-9FC4-403B-AC8D-FB1D206EBC26.png" height="200" id="IMAGE_248113D8663D4D33B28EE6963E8CC82E" width="300"></image> 
+		  </entry> 
+		  <entry colname="col2"> 
+			 <p> 
+				<b> NVL 16C 12X<sup>e</sup>: 4P-cores +8E-cores + 4LP E-cores +12X<sup>e</sup>-cores</b> 
+			 </p> 
+			 <p><b>NVL 16C 4X<sup>e</sup>: 4P-cores +8E-cores + 4LP E-cores +4X<sup>e</sup>-cores</b> 
+			 </p> 
+			 <p> 
+			 <ul id="UL_26EED3088BD14A2598D21823D4AD25D3"> 
+				<li id="LI_7CEA41A90DBD4C88B55ACE027F89693B">Using Foveros Packaging Technology (3D face-face chip stacking) 
+				</li> 
+				<li id="LI_BFFBD069752F443597C09EC4AA745612"> Four top active dice on package (C, HUB, PCD, GCD), one passive interposer (Base) and one/two passive silicon (P) 
+				</li> 
+				<li id="LI_0BB0676554244C32B487DD3A8ECD22A4">Top surface of all die/mold are coplanar, treat as monolithic die for TIM assessment 
+				</li> 
+				<li id="LI_C859556D29D04347B253969C4C388B23">Metal stiffener is placed around substrate perimeter. Stiffener is shorter than die stack. 
+				</li> 
+				<li id="LI_299F1F2F211247ACA07D5EF1C3EBAFE5">Processor Base Power (PBP)=25W for NVL 16C12X<sup>e</sup> and NVL 16C 
+				</li> 
+				<li id="LI_CE35AB05EA3E4E7E9133E3091C100C7E">PL1=45W (or any power 15-65W) can be configured in BIOS for both parts as in 
+				  <xref scope="local" format="dita" href="GUID-2AF8B7D4-78AE-4958-90A2-A5AE30F061FD.dita">Section 2.2</xref> 
+				</li> 
+				<li id="LI_038F2FE1401E42C9A63516A304B15B46"> PL2 values can be referenced in the Nova Lake H Platform Design Guide (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/855310" format="https" scope="external">855310</xref>) 
+				</li> 
+			 </ul> 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <image href="../images/GUID-EF53E2E2-5026-4538-B273-05A65E3AA8F2.png" id="IMAGE_E2D9D740A721427D9CD4FBC853AD0343" height="80px"> 
+				<alt> 
+				</alt></image> 
+		  </entry> 
+		  <entry colname="col2"> 
+			 <p> 
+				<b> NVL-HX 16C: 4P-cores +8E-cores+ 4LP E-cores +2X<sup>e</sup> -cores</b> 
+			 </p> 
+			 <p> 
+			 <ul id="UL_6634AB9CFA044113A8FF69C523E539E9"> 
+				<li id="LI_E4EACD0860974B3C894FD159E9B0F22D">Using Foveros Packaging Technology (3D face-face chip stacking) 
+				</li> 
+				<li id="LI_309D8F44167E42A9A49573B3EB9E1055">Four top active dice on package(C, HUB, PCD, GCD), one passive interposer (Base) and one/two passive silicon (P) 
+				</li> 
+				<li id="LI_F210DDC1D8AB4AFCBD6581F72FE0E7AD">Top surface of all die/mold are coplanar, treat as monolithic die for TIM assessment. 
+				</li> 
+				<li id="LI_09655F33F49C46A58A775517F8D4E29A">Metal stiffener is placed around substrate perimeter. Stiffener is shorter than die stack. 
+				</li> 
+				<li id="LI_EA5AB6FE78F84BB2B34D6A9C77AD8E25">Processor Base Power (PBP)=55W for NVL-HX 16C. 
+				</li> 
+				<li id="LI_C3B417D4ADF74292A6D0B5DE13BDBDB2"> PL1=55W (or any power 15-65W)can be configured in BIOS for this parts as in 
+				  <xref scope="local" format="dita" href="GUID-2AF8B7D4-78AE-4958-90A2-A5AE30F061FD.dita">Section 2.2</xref> 
+				</li> 
+				<li id="LI_F231388AF3114F998138F52A42DF3619">PL2 values can be referenced in the Nova Lake H Platform Design Guide (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/855310" format="https" scope="external">855310</xref>) 
+				</li> 
+			 </ul> 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row outputclass="keepwithnext" rowsep="1"> 
+		  <entry> 
+			 <image href="../images/GUID-2B4FCD81-FC6A-434C-B3A1-E5C047E320C7.png" height="100px" id="IMAGE_8143E3EDDCB842278188895BF613479E"></image> 
+		  </entry> 
+		  <entry colname="col2"> 
+			 <p outputclass="keepwithnext"> 
+				<b> NVL-HX 28C: 8P-cores +16E-cores + 4LP E-cores +2X<sup>e</sup>-cores</b> 
+			 </p> 
+			 <p> 
+				<b>NVL-HX 24C: 8P-cores +12E-cores + 4LP E-cores+2Xe-cores</b> 
+			 </p> 
+			 <ul id="UL_3FD182446A214601A304ABBEF247928C"> 
+				<li id="LI_E2A4E45838BB4220982183BDB227B2A1"> Using Foveros Packaging Technology (3D face-face chip stacking) 
+				</li> 
+				<li id="LI_C2082F5AB1DD4D5A9B3D0174DC907367"> Four top active dice on package (C, HUB, PCD, GCD), one passive interposer (Base) and two passive silicon (P) 
+				</li> 
+				<li id="LI_6E56FCED2EE54AAEB05882EDA68B3288"> Top surface of all die/mold are coplanar, treat as monolithic die for TIM assessment 
+				</li> 
+				<li id="LI_703318C7721340C389EB3EE2D4761A70"> Metal stiffener is placed around substrate perimeter. Stiffener is shorter than die stack. 
+				</li> 
+				<li id="LI_FB9621AECF904D4FA7CB5819058BB37D">Processor Base Power (PBP)=55W for NVL HX 28C 
+				</li> 
+				<li id="LI_652F054651774419B57EDB98FAB3F940"> PL1=55W (or any power 35-85W) can be configured in BIOS for NVL HX 24C &amp; NVL HX 28C as in 
+				  <xref scope="local" format="dita" href="GUID-2AF8B7D4-78AE-4958-90A2-A5AE30F061FD.dita">Section 2.2</xref> 
+				</li> 
+				<li id="LI_5BEDE089F875404BA19DEB6BE47B9E6D">PL2 values can be referenced in the Nova Lake H Platform Design Guide (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/854352" format="https" scope="external"> 854352</xref>) 
+				</li> 
+			 </ul> 
+		  </entry> 
+		</row> 
+	 </tbody> 
+  </tgroup> 
+  </table> 
+  <fig id="FIG_29A21E830E15466790D859A8C0A2A8E4"> 
+	 <title>Foveros Packaging Technology</title><image href="../images/GUID-241C5C6D-FF62-40BC-A277-ED57A1DAC3AF.png" scalefit="yes" id="IMAGE_1EC2EFF424004274874D252B98D96F67"> 
+		<alt> 
+		</alt></image> 
+  </fig> 
+  </body> 
+</topic> 

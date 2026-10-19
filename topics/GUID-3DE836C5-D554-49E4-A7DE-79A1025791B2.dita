@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-3DE836C5-D554-49E4-A7DE-79A1025791B2" xml:lang="en-US"> 
+  <title>Hot Spot Coverage versus Turbo Residency</title> 
+  <body> 
+	 <fig id="FIG_B261E1872AEA45838C6E04D2192B7380"><image href="../images/GUID-70FDDD78-79D9-48F5-A48E-BE6C77ED5136.png" scalefit="yes" id="IMAGE_6B40798C9A914D7FA88541522059216C"> 
+		</image> 
+	 </fig> 
+	 <ul id="UL_280688FB90A04F4F8829CF3EFB25672D"> 
+		<li id="LI_C156D5720E8E4F0BB5D3B8A2E77C228F"> Dramatic turbo residency decrease may occur if the hot spot region is not fully covered. 
+		</li> 
+		<li id="LI_A0DFCA67A25E45B888ED7DE442C3CD66"> Turbo residency is the time the part operates in Turbo, or more simply, the time it takes the part to hit Tsn-max during a Turbo event. This is a critical characteristic to design for, as longer times in Turbo are needed to capture the best performance. 
+		</li> 
+		<li id="LI_ED465934352E45B7A2439D846B4058C7"> The above graph illustrates the sensitivity for All Core Turbo residency with the specific heat pipe configurations outlined in the "Recommended" and "Not Recommended" examples on this page. 
+		</li> 
+	 </ul> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p>
+  </body> 
+</topic> 

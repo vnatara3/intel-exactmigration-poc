@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-25ACE5FA-B30B-4CE6-82C7-04ABA3FD2EC5" xml:lang="en-US"> 
+  <title>Thermal Conditions for Single Core Turbo Enablement</title> 
+  <body> 
+	 <p> 
+		<b>Sensor Temperature Threshold:</b> Processor frequency is dependent on sensor temperature. Exceeding thermal limits may restrict performance as referenced in section 2.1. 
+	 </p> 
+	 <p> 
+		<b>Impact of Ambient and Workload Variability:</b> Elevated ambient temperatures or workloads with distinct thermal profiles may cause the sensor temperature to exceed the thermal threshold, thereby limiting the processor from reaching its maximum frequency. 
+	 </p> 
+  </body> 
+</topic> 

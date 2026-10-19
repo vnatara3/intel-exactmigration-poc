@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-2C35BBFE-4B21-4271-AAD4-CEFE9145B25F" xml:lang="en-US"> 
+  <title>Maximum Turbo Frequency vs. Temperature</title> 
+  <body> 
+	 <p> Operating the processor at high frequencies can result in very fast temperature changes. To control these changes Intel has developed a control algorithm that enables parts to reach their maximum frequencies. This technology may proactively limit the maximum frequency threshold at 90°C or below while ensuring that Processor Base Frequency (PBF) is achievable at the maximum operating temperature. Figure shows how this algorithm works. When the processor temperature exceeds 90°C, the maximum frequency threshold is temporarily limited to 5.1 GHz. Once the temperature moves out of that condition, the restriction no longer applies. This will not affect cores whose maximum frequency threshold is less than or equal to 5.1 GHz. This added algorithm is not expected to broadly limit all cores or workloads. Based on Intel's testing, negligible performance impact is observed across sustained workloads. Published performance projections already account for thermal management algorithms. For details, engage with your Intel representative. 
+	 </p> 
+	 <p> Intel remains committed to supporting customers with platform-level optimizations throughout the design and validation process. Figure shows how Fmax may be temporarily limited on cores that meet this algorithm's criteria. Note that achieved frequency is dependent on system thermal design and workload. 
+	 </p> 
+	 <p> Intel has provided cooling needs guidance that ensures sustained operation at Processor Base Power (PBP) at the maximum operating temperature. Depending on environmental conditions and workload, this guidance allows the part to operate at turbo frequencies for a period of time to maximize performance for a given system design. To increase maximum turbo frequency residency, the system designer may engineer the thermal solution to have a lower thermal resistance than the Baseline Design Point. 
+	 </p> 
+	 <fig id="GUID-A56EBAC8-34FC-4F94-A2E3-8532FECB5E5C"> 
+		<title> Maximum Turbo Frequency vs. Temperature </title><image href="../images/GUID-9338ADB2-C81B-402D-8BBD-4F366245913F.png" scalefit="yes" id="IMAGE_254272F8D9CC425C8D1E18B95CFA8675"> 
+		  <alt> 
+		  </alt></image> 
+	 </fig> 
+  </body> 
+</topic> 

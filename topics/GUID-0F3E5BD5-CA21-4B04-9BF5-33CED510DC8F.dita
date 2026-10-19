@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-0F3E5BD5-CA21-4B04-9BF5-33CED510DC8F" xml:lang="en-US"> 
+  <title>Hot Spot Locations</title> 
+  <body> 
+	 <ul id="GUID-483BB591-3E5D-4D5E-AEA8-7AAAEF7A8B93"> 
+		<li id="LI_4CB5918D2D464C67B091869DCF6CDCB1"> The die hot spot is shown to assist with heat pipe placement. It is recommended that the heat pipe be placed so that the active wick is directly over the hot spot. 
+		</li> 
+		<li id="LI_3E760A2097C9459D9B5B79BA26609D5C">Since NVL series processors have multiple cores, there are multiple possible hot spot locations. As it is impossible to predict which core will be utilized in single threaded applications, a region is defined that envelopes all the cores. 
+		</li> 
+		<li id="LI_A8F0322435B84B5EA8644845AD6F69AE">The region enveloping the cores is defined as the XY dimensions of a region and the XY coordinates to the center of that region, relative to Pin 1 package corner. 
+		</li> 
+		<li id="LI_687884DFB339417F841F3596A83C5301">It is strongly recommended that the heat pipe be placed so that the active wick completely covers the hot spot region to safeguard against a moving hot spot. As well that thermal solution fully covers all tiles and not only compute hotspot. 
+		</li> 
+	 </ul> 
+	 <table id="TABLE_F5698BBB84ED45E9829F3B11F7556395" pgwide="1"> 
+		<tgroup cols="4"><colspec colname="col01" colnum="1" colwidth="1.00*" /><colspec colnum="2" colname="col1" colwidth="1.76*" /><colspec colname="col03" colnum="3" colwidth="2.08*" /><colspec colname="col3" colnum="4" colwidth="1.95*" /><thead> 
+			 <row> 
+				<entry colname="col01"> 
+				</entry> 
+				<entry colname="col1"> 
+				  <b>NVL-HX 28C Series</b> 
+				</entry> 
+				<entry colname="col03"> 
+				  <p> NVL-HX 16C Series 
+				  </p> 
+				</entry> 
+				<entry colname="col3"> 
+				  <p> NVL-16C 12X<sup>e</sup> Series 
+				  </p> 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col01"> 
+				</entry> 
+				<entry colname="col1"> 
+				  <image href="../images/GUID-B84F2C55-6832-42A8-8989-585A83A33138.png" height="200px" id="IMAGE_5576B58525DA4045BC7BC09A1AA2CCCE" width="107"></image> 
+				</entry> 
+				<entry colname="col03"> 
+				  <image href="../images/GUID-AA780DC0-EE3A-4552-A14D-53D0C2F0CDC7.png" height="200px" id="IMAGE_2C6393AE94AD49E4A122DE6A953A8BD4" width="107"></image> 
+				</entry> 
+				<entry colname="col3"> 
+				  <image href="../images/GUID-9193AA1E-6B7D-4F9E-A85B-90E4EAA6952C.png" height="200px" id="IMAGE_1ADF431C9115448A85F3B7476D2CC727" width="107"> 
+					 <alt> 
+					 </alt></image> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col01" valign="middle"><b>SKU</b> 
+				</entry> 
+				<entry colname="col1" align="center" valign="middle">28C 8P+16E+4LP E+2X<sup>e</sup> 
+				</entry> 
+				<entry colname="col03" align="center" valign="middle"> 16C 4P+8E+4LP E+2X<sup>e</sup> 
+				</entry> 
+				<entry colname="col3" align="center" valign="middle"> 16C 12X<sup>e</sup> 4P+8E+4LP E+12X<sup>e</sup> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col01" valign="middle">
+				  <p>
+				  </p>
+				  <p>
+				  </p>
+				  <p>
+				  </p>
+				  <p>
+				  </p>
+				  <p>
+				  </p>
+				  <p><sup>1</sup><b>Region [mm]</b> 
+				  </p>
+				</entry> 
+				<entry colname="col1" align="center" valign="middle"> 
+				  <p><?xm-replace_text Paragraph?>
+				  </p>
+				  <p><?xm-replace_text Paragraph?>
+				  </p>
+				  <p><?xm-replace_text Paragraph?>
+				  </p>
+				  <p><?xm-replace_text Paragraph?>
+				  </p>
+				  <p><?xm-replace_text Paragraph?>
+				  </p>
+				  <p><?xm-replace_text Paragraph?>
+				  </p>
+				  <p><?xm-replace_text Paragraph?>
+				  </p>
+				  <p>X = 7.4 
+				  </p> 
+				  <p>Y = 15 
+				  </p> 
+				</entry> 
+				<entry colname="col03" align="center" valign="middle"> 
+				  <p><?xm-replace_text Paragraph?>
+				  </p>
+				  <p><?xm-replace_text Paragraph?>
+				  </p>
+				  <p><?xm-replace_text Paragraph?>
+				  </p>
+				  <p><?xm-replace_text Paragraph?>
+				  </p>
+				  <p><?xm-replace_text Paragraph?>
+				  </p>
+				  <p><?xm-replace_text Paragraph?>
+				  </p>
+				  <p><?xm-replace_text Paragraph?>
+				  </p>
+				  <p> X=6.5 
+				  </p> 
+				  <p> Y=7.7 
+				  </p> 
+				</entry> 
+				<entry colname="col3" align="center" valign="middle"> 
+				  <p><?xm-replace_text Paragraph?>
+				  </p>
+				  <p><?xm-replace_text Paragraph?>
+				  </p>
+				  <p><?xm-replace_text Paragraph?>
+				  </p>
+				  <p><?xm-replace_text Paragraph?>
+				  </p>
+				  <p><?xm-replace_text Paragraph?>
+				  </p>
+				  <p><?xm-replace_text Paragraph?>
+				  </p>
+				  <p><?xm-replace_text Paragraph?>
+				  </p>
+				  <p> X=6.5 
+				  </p> 
+				  <p> Y=7.7 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col01" valign="middle"><sup>2</sup><b>Center of Region (Relative to Pin1) [mm]</b> 
+				</entry> 
+				<entry colname="col1" align="center" valign="middle"> X = -14.3 
+				  <p>Y = 14.9 
+				  </p> 
+				</entry> 
+				<entry colname="col03" align="center" valign="middle"> 
+				  <p> X=-14.1 
+				  </p> 
+				  <p> Y= 17.9 
+				  </p> 
+				</entry> 
+				<entry colname="col3" align="center" valign="middle"> 
+				  <p> X=-14.1 
+				  </p> 
+				  <p> Y= 17.9 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <table id="TABLE_81D89ED7970E4D5486B7096DA01A7068" pgwide="1"> 
+		<tgroup cols="4"><colspec colname="col01" colnum="1" colwidth="1.00*" /><colspec colnum="2" colname="col1" colwidth="1.76*" /><colspec colname="col3" colnum="3" colwidth="1.94*" /><colspec colname="col03" colnum="4" colwidth="2.08*" /><thead> 
+			 <row> 
+				<entry colname="col01"> 
+				</entry> 
+				<entry colname="col1"> 
+				  <b> NVL-16C 4X<sup>e</sup> Series 
+				  </b> 
+				</entry> 
+				<entry colname="col3"> 
+				  <b>NVL-14C4X<sup>e</sup>Series</b> 
+				</entry> 
+				<entry colname="col03"> 
+				  <b>NVL-8C Series</b> 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col01"> 
+				</entry> 
+				<entry colname="col1"> 
+				  <image href="../images/GUID-F4D210CE-5237-4274-A25D-44ABB8E7CD7C.png" scalefit="yes" id="IMAGE_5918ED0121AD44D3A93C3F9CED244BA1" height="200px" width="107"> 
+					 <alt> 
+					 </alt></image> 
+				</entry> 
+				<entry colname="col3"><image href="../images/GUID-D360E15C-D0FA-47A2-B1B0-61F644FBA83E.png" scalefit="yes" id="IMAGE_6BE4374C87C6432E8B4773FB43D7B9BF" height="200px" width="107"> 
+					 <alt> 
+					 </alt></image> 
+				</entry> 
+				<entry colname="col03"> 
+				  <image href="../images/GUID-453C5B2D-D6B0-42DD-AE9E-DF6F5142A96E.png" scalefit="yes" id="IMAGE_6926C27EF66740E0BF373AC3C2B0BBF4" height="200px" width="107"> 
+					 <alt> 
+					 </alt></image> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col01" valign="middle"><b>SKU</b> 
+				</entry> 
+				<entry colname="col1" align="center" valign="middle"> 16C 4X<sup>e</sup> 4P+8E+4LP E+4X<sup>e</sup> 
+				</entry> 
+				<entry colname="col3" align="center" valign="middle"> 14C 4X<sup>e</sup> 2P+8E+4LP E+4X<sup>e</sup> 
+				</entry> 
+				<entry colname="col03" align="center" valign="middle"> 8C 4P+0E+4LP E+4X<sup>e</sup> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col01" valign="middle"><sup>1</sup><b>Region [mm]</b> 
+				</entry> 
+				<entry colname="col1" align="center" valign="middle"> 
+				  <p> X = 6.5 
+				  </p> 
+				  <p> Y = 7.7 
+				  </p> 
+				</entry> 
+				<entry colname="col3" align="center" valign="middle"> 
+				  <p> X = 6.5 
+				  </p> 
+				  <p> Y = 7.7 
+				  </p> 
+				</entry> 
+				<entry colname="col03" align="center" valign="middle"> 
+				  <p> X = 4.8 
+				  </p> 
+				  <p> Y = 7.4 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col01" valign="middle"><sup>2</sup><b>Center of Region (Relative to Pin1) [mm]</b> 
+				</entry> 
+				<entry colname="col1" align="center" valign="middle"> 
+				  <p>X = -14.1 
+				  </p> 
+				  <p> Y = 17.9 
+				  </p> 
+				</entry> 
+				<entry colname="col3" align="center" valign="middle"> 
+				  <p> X = -14.1 
+				  </p> 
+				  <p> Y = 17.9 
+				  </p> 
+				</entry> 
+				<entry colname="col03" align="center" valign="middle"> 
+				  <p>X = -14.4 
+				  </p> 
+				  <p> Y = 17.3 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <note id="GUID-5D667E27-C524-4BBC-A036-FB93642CD857"> 
+		<p><sup>1</sup> X and Y dimensions of region. 
+		</p> 
+		<p><sup>2</sup> X and Y dimensions to center of region relative to Pin 1 package center. 
+		</p> 
+	 </note> 
+  </body> 
+</topic> 

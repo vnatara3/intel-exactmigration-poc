@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-5ABD7922-11EB-4702-9D7C-276686E62444" xml:lang="en-US"> 
+  <title>Load versus Die Size for TIM Pressure Targets</title> 
+  <body> 
+	 <p>TIM thermal performance is a function of application pressure. 
+	 </p> 
+	 <ul id="UL_E94A31AB4EA94E4391B37CA801E202E6"> 
+		<li id="LI_14BA0D3ED0D8423DB264AEA4E002C330"> Thermal solution developers should understand this relationship to identify the proper load targets for attachment. 
+		</li> 
+		<li id="LI_BA0F7FB966C1478EB4AEDE823DEAF390"> Maximum Load is driven by package load limit. 
+		</li> 
+		<li id="LI_25E76E7D0FA44E8483CE9E5A9C4BC085"> Minimum load is driven by TIM performance requirements. Refer TIM data sheet to determine an adequate minimum average pressure for your design. General TIM thermal resistance variation with pressure has been provided in 
+		  <xref scope="local" format="dita" href="GUID-4D0FA61D-39F2-45C5-A96E-2D3DA69F84E4.dita"><?xm-replace_text TIM Thermal Resistance Behavior with Load?></xref>. 
+		</li> 
+	 </ul> 
+	 <fig id="GUID-6359C408-DEE8-4B2F-9595-4F1DF916601C"> 
+		<image href="../images/GUID-1974737E-4696-4EDC-B5FF-D18BF7BD415F.png" scalefit="yes" id="IMAGE_052DEEB495CB42D69397B0E21536D7FE">
+		  <alt>
+		  </alt></image> 
+	 </fig> 
+	 <note id="GUID-4ED826FA-C73A-49A3-9DC8-B16BCB8699A3">Average pressure calculations are based on total die area. 
+	 </note> 
+  </body> 
+</topic> 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-FFF19686-886C-43BF-8037-B4201C5EBB37" xml:lang="en-US"> 
+  <title> Cold Plate Width and Turbo Response</title> 
+  <body> 
+	  
+	 <p> 
+		 
+	 </p> 
+	 <p><sup> 1</sup> Analysis assumes fan running at full speed and 
+		 these curves are exemplary and are not intended to represent any one Intel product. 
+	 </p> 
+	  
+	 <p><u> Increasing the width</u> of the cold plate can slightly 
+		<u>increase the time that the SoC can operate in full turbo power</u> (PL2) prior to reaching. This additional headroom can also be used to increase PL2 power for a targeted duration (Power Capability) to optimize for specific workloads. Intel recommends full PL2 power support for ≥ 3 to 5 seconds to meet target performance. 
+		. 
+	 </p> 
+  </body> 
+</topic> 

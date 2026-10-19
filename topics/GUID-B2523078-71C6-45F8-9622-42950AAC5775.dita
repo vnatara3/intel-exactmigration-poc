@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-B2523078-71C6-45F8-9622-42950AAC5775" xml:lang="en-US"> 
+  <title>Maximum Pressure</title> 
+  <body> 
+    <p> The thermal solution must provide less than 800 PSI on average, for any 2 mm x 2 mm square region on the die complex. 
+    </p> 
+    <fig id="FIG_5032C0932D4146FC8D19E817D4464934"><image href="../images/GUID-67ED67FE-5E4E-4C9F-8ACA-40BE0802132E.png" scalefit="yes" id="IMAGE_D6BB6B824B604ADFACC027463705E1EF"> 
+        <alt> 
+        </alt></image> 
+    </fig> 
+    <section id="SECTION_96F64817D6404C64A6A7F954852C9DF2"> 
+      <title>Notes on Maximum Allowable Die Pressure</title> 
+      <ul id="GUID-9C11EF07-43E3-4C58-A676-B58FC0FA6E03"> 
+        <li id="LI_CC5FF82B13B3418DAF4BD0B503C1ABEF"> During or after thermal solution assembly, disassembly, test, or rework, Intel component dies may be inadvertently subjected to a high concentrated load, resulting in a risk of die damage. For more discussion of these risks, and precautions that can be taken to reduce the risk of die damage, see Section 4.6.2. 
+        </li> 
+        <li id="LI_CFD6CA95945C425A8B5070D12A43199B">Intel recommends that customers validate their thermal solution assembly to ensure that the allowable maximum pressure is never exceeded at any 2mm x 2mm location on the die, at any instant during or after assembly/disassembly of the thermal solution. 
+          <ul id="UL_F892C135FFAD4335B91B89C377F6BAFA"> 
+            <li id="LI_D58FB9D539D04F0FB5055D10514BC403">Transient compressive pressure refers to the momentary pressure at any 2mm x 2mm location on the die during the thermal solution assembly or disassembly (see figure below). 
+            </li> 
+            <li id="LI_EE0D9D7714A4489A85AB1927C8C312F4">Static compressive pressure refers to the long-term maximum pressure at any 2mm x 2mm location on the die after installation of the thermal solution is completed (see figure below). 
+            </li> 
+            <li id="LI_6BE93F1DBC5C4B5192F4D0E324C6D8CC">An ideal thermal solution design will have a transient pressure that is less than or equal to the long-term static pressure on the die. 
+            </li> 
+            <li id="LI_C72D8062BD734054B0756C6E1FC4CC38">However, in practice, not all thermal solution designs will achieve this ideal, and may have a transient pressure that is higher than the static pressure. 
+            </li> 
+            <li id="LI_D68FC51141EF422D8CB84F7FBAD5A0B5">Therefore, Intel recommends validating each thermal solution design for both transient and static pressure, to ensure that the maximum allowable pressure on the die is never exceeded at any time. 
+            </li> 
+          </ul> 
+        </li> 
+        <li id="LI_706265129DF94892A516114233D94062">For guidance on experimental measurement of die pressure, refer to Intel<sup>®</sup> Mobile SoC Die Loading Measurement Techniques, (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/556532" format="https" scope="external">556532</xref>). 
+        </li> 
+        <li id="LI_0AF0FC1CC608402E9BD8EDB1D260BECD">For guidance on the use of structural simulation to predict both static and transient die pressures, refer to Mobile Thermal Attach Structural Modeling (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/575675" format="https" scope="external">575675</xref>). 
+        </li> 
+      </ul> 
+      <table id="TABLE_1CF94644861B4DA595BF33583B56F244" pgwide="1"> 
+        <tgroup cols="2"><colspec colnum="1" colname="col1" colwidth="*" /><colspec colnum="2" colname="col2" colwidth="*" /><thead> 
+            <row> 
+              <entry colname="col1">Static Compressive Pressure 
+              </entry> 
+              <entry colname="col2">Transient Compressive Pressure 
+              </entry> 
+            </row></thead> 
+          <tbody> 
+            <row> 
+              <entry colname="col1"> 
+                <fig id="FIG_65E25F97BA384D8F8492C8C7C3CE7BDA"><image href="../images/GUID-991FA277-71AB-46EB-9D47-F465C58D135A.pdf" scalefit="yes" id="IMAGE_09E9E13A153E4AAFB368FDD13754FA37" /> 
+                </fig> 
+              </entry> 
+              <entry colname="col2"> 
+                <fig id="FIG_FBC88276D98C4F07A4AF8FE9E6CBCBB4"><image href="../images/GUID-AC87D527-42C6-4AD7-BBB6-77F5C018B21C.pdf" scalefit="yes" id="IMAGE_84BE35048E2E422E8F6D938E3EF4F2EB" /> 
+                </fig> 
+              </entry> 
+            </row> 
+            <row> 
+              <entry colname="col1"> 
+                <p>Example of high static pressure 
+                  <b>after</b> thermal solution assembly 
+                </p> 
+              </entry> 
+              <entry colname="col2"> 
+                <p>Example of high transient pressure 
+                  <b>during</b> thermal solution assembly 
+                </p> 
+              </entry> 
+            </row> 
+          </tbody> 
+        </tgroup> 
+      </table> 
+    </section> 
+  </body> 
+</topic> 

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-9B84A0B0-2478-47EF-BB0C-A986175BCEE6" xml:lang="en-US"> 
+  <title>Abbreviations/Acronyms</title> 
+  <body> 
+    <table id="GUID-781A2E95-7E7C-4D73-8056-E8659F95C4D5"> 
+      <tgroup cols="2"> 
+        <colspec colnum="1" colname="col1" colwidth="*" /> 
+        <colspec colnum="2" colname="col2" colwidth="*" /> 
+        <tbody> 
+          <row> 
+            <entry> ACPI - Advanced Configuration and Power Interface 
+            </entry> 
+            <entry> NVL - Nova Lake 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> ALSC - Advanced Land-Side capacitors 
+            </entry> 
+            <entry> OLTM - Open Loop Thermal Management 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> ARL - Arrow Lake 
+            </entry> 
+            <entry> PBM - Power Budget Management 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> DMI - Direct media interface 
+            </entry> 
+            <entry> PCH - Platform Controller Hub 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> DSC - Die-side capacitors 
+            </entry> 
+            <entry> PECI - Platform Environmental Control Interface 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> DTS - Digital Thermal Sensor 
+            </entry> 
+            <entry> PoC-Proof of Concept 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> eDRAM - on package cache memory 
+            </entry> 
+            <entry> PTAT - Power Thermal Analysis Tool 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> GT - graphics area of CPU die 
+            </entry> 
+            <entry> PTL- Panther Lake 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> HIMB - Hole in Mother Board 
+            </entry> 
+            <entry> RHE - Remote Heat Exchanger 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> HP - Heatpipe 
+            </entry> 
+            <entry> SC - Single core 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> HSW - Haswell 
+            </entry> 
+            <entry> SCI - System control interrupt 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> IA - Intel Architecture (CPU) 
+            </entry> 
+            <entry> SDP - Scenario Design Power 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> LSC - Land-side capacitors 
+            </entry> 
+            <entry> SMD - Solder Mask Defined 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> MB - Mother Board 
+            </entry> 
+            <entry> SJR - Solder joint reliability 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> McIVR - Multi Chip Integrated Voltage Regulation 
+            </entry> 
+            <entry> SMI - System Management interrupt 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> MCP - Multi-Chip Package 
+            </entry> 
+            <entry> SRO - Solder Resist Opening 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> MD - Metal Defined 
+            </entry> 
+            <entry> SV - Standard voltage 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> ME - Manageability Engine 
+            </entry> 
+            <entry> NA - To be Defined 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> MMIO - Memory mapped I/O 
+            </entry> 
+            <entry> TBT - Thunderbolt 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> Monolithic - Single die 
+            </entry> 
+            <entry> TDC - Thermal design current 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> MS - Mainstream segment 
+            </entry> 
+            <entry> TIM - Thermal Interface Material 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> MRC - Memory Reference Code 
+            </entry> 
+            <entry> TS-on-Board - Thermal Sensor on Motherboard 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> MSR - Model Specific Register 
+            </entry> 
+            <entry> TS-on-DIMM - Thermal Sensor on DIMM 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> NGFF - Next Generation Form Factor (Add-in Card) 
+            </entry> 
+            <entry> VR - Voltage Regulator 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> NCTF - Not Critical to Function 
+            </entry> 
+            <entry> VTS - Virtual Thermal Sensor 
+            </entry> 
+          </row> 
+        </tbody> 
+      </tgroup> 
+    </table> 
+  </body> 
+</topic> 

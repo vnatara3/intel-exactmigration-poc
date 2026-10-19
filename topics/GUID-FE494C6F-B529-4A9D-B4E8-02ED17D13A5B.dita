@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-FE494C6F-B529-4A9D-B4E8-02ED17D13A5B" xml:lang="en-US"> 
+  <title>Disclaimers</title> 
+  <body> 
+	 <p>Use this information as design guidance. Turbo frequencies are not guaranteed and depend on system conditions.
+	 </p>
+	 <p>Customers should validate their own systems, based on this guidance, and by using representative workloads.
+	 </p> 
+  </body> 
+</topic> 

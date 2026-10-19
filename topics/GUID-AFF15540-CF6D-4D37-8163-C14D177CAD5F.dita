@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-AFF15540-CF6D-4D37-8163-C14D177CAD5F" xml:lang="en-US"> 
+  <title> Package Height Including Post-SMT Warpage</title> 
+  <body> 
+	 <ol id="OL_4A2CB42EF69D4F5B9E9D6D1BEDE7686B"> 
+		<li id="LI_98B97606C56B435BAACCB3C01CF0B51A">Values provided here are guidance only, for early thermal/mechanical design, and are not specifications. Estimates are based on measurements done on limited samples from previous generation packages/boards. 
+		</li> 
+		<li id="LI_FB652ABF9FAF419F9F24083831D54502">Package height including effects of solder and post-SMT package warpage depends on many factors, including: 
+		  <ul id="UL_943A0A66AE6947E9B98F801BE7E1D4B1"> 
+			 <li id="LI_59CC9F73E8E248028B0FA358C8952CA3">Intel package 
+			 </li> 
+			 <li id="LI_295537B676644A1BB6447A99F3CB8686">Customer board thickness and composition 
+			 </li> 
+			 <li id="LI_32499CE3D57A43AE8A3A389F4E5B5947">Customer SMT process 
+			 </li> 
+		  </ul> 
+		  <fig id="FIG_C60782133629495497860A9F939C2356"><image href="../images/GUID-A8697526-7B28-4C40-A3C2-F99F9C9B6E57.png" scalefit="yes" id="IMAGE_68A7787D6FDD4B67A189357759C7BE52"> 
+				<alt> 
+				</alt></image> 
+		  </fig> 
+		</li> 
+		<li id="LI_D823DB19EF2E4657916ECE8FAF13B6E0">For most accurate results, customers are strongly encouraged to measure package height post-SMT for their own particular board design and SMT process. 
+		</li> 
+		<li id="LI_BDF0F06CD95544DBAF0FCE549B2E9ED6">For early heatsink and loading mechanism design studies, Intel recommends using the post-SMT package height (not the Intel PMD drawing), for best accuracy on die loading calculations. 
+		</li> 
+		<li id="LI_4F44503FED534D06AC21006CD4C7B9CD">For early system design studies and z-stack calculations, both the pre-SMT package height (from the Intel PMD drawing) and the post-SMT package height estimate (provided in the table below) are suitable. 
+		  <ul id="GUID-487ABFC7-FC28-4C72-A3E1-3F7DD8B7BEC6"> 
+			 <li id="LI_BF58716C6BC342C8BCFB3FA6808C8019">Customers may choose to use either value depending on their own needs. 
+			 </li> 
+			 <li id="LI_9E54C9360A084800B22E9E5CD84B83A7">For gen-to-gen system comparison, Intel recommends choosing one metric and using it consistently to ensure the comparison makes sense. 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li id="LI_C902BAD1F24540B4A2379D65717CF964"> 
+		  <p>Estimated post-SMT height of Nova Lake Mobile Packages are as follows: 
+		  </p> 
+		  <table id="GUID-077896F4-5353-4228-BB89-0B0E09FCB891"> 
+			 <tgroup cols="5" align="center"> 
+				<colspec colnum="1" colname="col1" colwidth="*" align="left" /> 
+				<colspec colnum="2" colname="col2" colwidth="*" /> 
+				<colspec colnum="3" colname="col3" colwidth="*" /> 
+				<colspec colnum="4" colname="col4" colwidth="*" /> 
+				<colspec colnum="5" colname="col5" colwidth="*" /> 
+				<thead> 
+				  <row valign="middle"> 
+					 <entry align="center" valign="middle"> 
+						<b> Package</b> 
+					 </entry> 
+					 <entry valign="middle" align="center"> 
+						<b> PMD#</b> 
+					 </entry> 
+					 <entry valign="middle" align="center"> 
+						<b> PMD Height (pre-SMT, Nominal)</b> 
+					 </entry> 
+					 <entry valign="middle" align="center"> 
+						<b> Approximate Solder + Post-SMT Package Warpage</b> 
+					 </entry> 
+					 <entry valign="middle" align="center"> 
+						<b> Estimated Post-SMT Package Height</b> 
+					 </entry> 
+				  </row></thead> 
+				<tbody> 
+				  <row valign="middle"> 
+					 <entry align="center" valign="middle"><b> NVL 8C</b> 
+					 </entry> 
+					 <entry valign="middle" align="center">#<xref href="https://cdrdv2.intel.com/V1/DL/GETCONTENT/858127" format="https" scope="external">858127</xref> / N86025 
+					 </entry> 
+					 <entry valign="middle" align="center" morerows="2">1.244 
+					 </entry> 
+					 <entry valign="middle" align="center" morerows="2">0.25 
+					 </entry> 
+					 <entry valign="middle" align="center" morerows="2">1.49 ± 0.11 
+					 </entry> 
+				  </row> 
+				  <row valign="middle"> 
+					 <entry align="center" valign="middle"><b> NVL 16C 4X<sup>e</sup> / 
+						  <b>NVL 14C 4X<sup>e</sup> /</b> NVL HX16C</b> 
+					 </entry> 
+					 <entry valign="middle" align="center">#<xref href="https://cdrdv2.intel.com/V1/DL/GETCONTENT/858127" format="https" scope="external">858127</xref> / N80222 
+					 </entry> 
+				  </row> 
+				  <row valign="middle"> 
+					 <entry align="center" valign="middle"><b> NVL 16C 12X<sup>e</sup></b> 
+					 </entry> 
+					 <entry valign="middle" align="center">#<xref href="https://cdrdv2.intel.com/V1/DL/GETCONTENT/858127" format="https" scope="external">858127</xref> / N91014 
+					 </entry> 
+				  </row> 
+				  <row valign="middle"> 
+					 <entry align="center" valign="middle"><b> NVL-HX 28C/24C</b> 
+					 </entry> 
+					 <entry valign="middle" align="center">#<xref href="https://cdrdv2.intel.com/V1/DL/GETCONTENT/858127" format="https" scope="external">858127</xref> / N73478 
+					 </entry> 
+					 <entry valign="middle" align="center">1.871 
+					 </entry> 
+					 <entry valign="middle" align="center">0.20 
+					 </entry> 
+					 <entry valign="middle" align="center">2.07 ± 0.12 
+					 </entry> 
+				  </row> 
+				</tbody> 
+			 </tgroup> 
+		  </table> 
+		</li> 
+		<li id="LI_A36D93A18C2F4896B236938A0C713721">This estimated package height accounts for the combined effects, after SMT reflow, of multiple components of the total package height: 
+		  <ul id="UL_A56ADD22C74C41E5921A50C2D7E114BA"> 
+			 <li id="LI_A82CC563E4274FEEB36D22A941099CD7">Solder paste thickness 
+			 </li> 
+			 <li id="LI_1FCF5D08D0F742CAA7B1DEF721CCDEA4">BGA height after SMT reflow 
+			 </li> 
+			 <li id="LI_34EA5CF9830C43BEAE6728C9480C50F1">Package + board warpage after SMT reflow 
+			 </li> 
+		  </ul> 
+		</li> 
+	 </ol> 
+  </body> 
+</topic> 

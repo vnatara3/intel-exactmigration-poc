@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-48AB4879-D8F8-4F9B-9B58-A98B95CFE784" xml:lang="en-US"> 
+  <title>Single Core Turbo Expectation</title> 
+  <body> 
+	 <p>Turbo frequencies are 
+		<b>guaranteed</b>, but time residency at the power is not guaranteed. They depend on multiple dynamic factors including: 
+	 </p> 
+	 <ul id="GUID-0957FC5A-2FA6-47D4-B359-698DD4923A6A"> 
+		<li> Power delivery limits (PL1, PL2) 
+		</li> 
+		<li> Thermal headroom 
+		</li> 
+		<li> Workload characteristics 
+		</li> 
+		<li> System cooling capabilities 
+		</li> 
+	 </ul> 
+	 <p>Intel processors include built-in throttle mechanisms to protect against overheating. These mechanisms automatically reduce frequency or power draw when thermal limits are approached, ensuring safe operation without requiring customer intervention. 
+	 </p> 
+  </body> 
+</topic> 

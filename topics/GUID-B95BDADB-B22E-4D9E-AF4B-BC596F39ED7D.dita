@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-B95BDADB-B22E-4D9E-AF4B-BC596F39ED7D" xml:lang="en-US"> 
+  <title>Introduction</title> 
+  <body> 
+    <ul id="UL_D891D53310D44F8E82AAE9F7434B1190"> 
+      <li id="LI_063AA586592D4702A7213B411CB70FFF">The contents of the Thermal and Mechanical Design Guide are intended to be design guidance only, not specifications or guaranteed by Intel. 
+      </li> 
+      <li id="LI_743183A57CC9430983376ED833757996">In some cases, specifications from other documents are referenced for convenience. In the event of a conflict, the specification documents should supersede this document. 
+      </li> 
+    </ul> 
+  </body> 
+</topic> 

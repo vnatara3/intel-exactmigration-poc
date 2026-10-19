@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-A3A3910E-A66E-4C20-9F39-C7EB8720971F" xml:lang="en-US"> 
+  <title>Sizing Thermal Solution for PL2 – Recommendations</title> 
+  <body> 
+	 <ul id="UL_FD0151759D7A4B1A81F3BCFD7BA34BD8"> 
+		<li id="LI_97259D60B07D436BB71403820E7E0843">The heat pipe should cover all the cores to maximize turbo durations and ensure every core is cooled during single core workloads. 
+		</li> 
+		<li id="LI_EDDC0E3F5C29493C862AD33AE88A156C">To select the heat pipe for your design, thermal modeling can help to determine how much heat is going into the heat pipe, as it is &lt;100% of the PL2. Use this power to select a heat pipe that can handle it, without drying out. 
+		</li> 
+		<li id="LI_21E2601445FF4D69A8DF08242B610D01">Qmax should include proper de-rating for final heat pipe geometry including factors such as bends, length and thickness, according to the heat pipe manufacturer's spec sheet. 
+		</li> 
+		<li id="LI_62A9AC9B86CA4B6691DFCEC1ADB986D7">Intel recommends testing your heat pipe to assure no dry-out occurs, specially if you decide to operate a heat pipe above it's Qmax for the short duration of PL2 events. 
+		</li> 
+		<li id="LI_2E0178BDF86F4B719B158AFC5281E30D">Using 2 heat pipes, 3 heat pipes or vapor chambers for high PL2s is recommended to avoid heat pipe dry-out. 
+		</li> 
+		<li id="LI_50709101EDB848EFBFFCA17ED13B57E1">The fan RPM during the PL2 event may not affect transient thermal performance for the first 5 to 10 seconds. 
+		</li> 
+		<li id="LI_00AA4B51A18A4B80BCBE7B013BA5A3C2">Reducing rest of system power will enable lower starting temperatures and could lead to longer turbo durations. 
+		</li> 
+		<li id="LI_D25D567FBD95490DBC204EBAA31808C0">TIM performance optimization has a significant impact on transient performance. Refer to section 
+		  <xref scope="local" format="dita" href="GUID-0DEC91D6-1568-4AED-AEE6-249D5F4599D3.dita"><?xm-replace_text TIM Performance and Turbo Thermal Response (1)?></xref> and 
+		  <xref scope="local" format="dita" href="GUID-E70FB867-1EF8-4E73-A6C6-CE641AA34BE3.dita"><?xm-replace_text TIM Selection for Transient Performance (1)?></xref> for more details. 
+		</li> 
+		<li id="LI_2270ED322C8648D6BC75A7299C2BA9B5">Cold plate thickness has significant impact on transient thermal performance. Refer to section 
+		  <xref scope="local" format="dita" href="GUID-BFCC6F5E-2EB7-4C80-BF02-8848D113D259.dita"><?xm-replace_text Cold Plate Thickness and Turbo Thermal Response (1)?></xref> and 
+		  <xref scope="local" format="dita" href="GUID-16720FA9-FD1D-4281-A276-836B2C8D041E.dita"><?xm-replace_text Cold Plate Thickness for Transient Performance (1)?></xref> for details. 
+		</li> 
+		<li id="LI_0562333D3C494C7A99842615649E7224">Thicker heat pipes increase maximum heat carrying capacity of heat pipes (Qmax). 
+		</li> 
+		<li id="LI_6C0ADA4F962A462EABDA98AFAA33045E">Thermal engineer can choose to trade-off cold plate thickness for heat pipe z-height. 
+		</li> 
+		<li id="LI_A70312EBE00A49E385E234BE4A105E1B">Cold plate width (<xref scope="local" format="dita" href="GUID-BFCC6F5E-2EB7-4C80-BF02-8848D113D259.dita"><?xm-replace_text Cold Plate Thickness and Turbo Thermal Response (1)?></xref> and heat exchanger thermal mass also has relatively minor effects on transient thermals. 
+		</li> 
+	 </ul> 
+  </body> 
+</topic> 

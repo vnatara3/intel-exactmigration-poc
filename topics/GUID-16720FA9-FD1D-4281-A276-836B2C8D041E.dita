@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-16720FA9-FD1D-4281-A276-836B2C8D041E" xml:lang="en-US"> 
+  <title> Cold Plate Thickness for all-core Transient Performance</title> 
+  <body> 
+	 <fig id="FIG_3537949B5FC34A34B199BFC047D1BAF1"> 
+		<title>Cold Plate Thickness Example: 15W TDP Package, ACT</title><image href="../images/GUID-0031493A-9FE2-4F98-9E8A-8D017B74DD36.png" scalefit="yes" id="IMAGE_F8F0297A90BA475DA51611C86B08FF7D"> 
+		  <alt> 
+		  </alt></image> 
+	 </fig> 
+	 <p> Improving cold plate thickness will result in improvements on short duration (3-5s) turbo power (PL2) despite marginal to negligible improvements to S.S. 
+	 </p> 
+	 <p><b>Nomenclature</b>: 
+	 <ul id="UL_52E7C15267A14DEC9451F933EF5EA98C"> 
+		<li id="LI_0E3A6663E56B4AA793A8B6E8E77834DB"><b>Power Capability</b>: Additional power the processor can support before reaching maximum operating temperature
+		</li> 
+		<li id="LI_0EF078F48CD149C2AB3E0D765078290F"><b>S.S.</b> : Steady State 
+		</li> 
+		<li id="LI_2476818391164160845A4BB50766A5D0"> 
+		  <b>ACT</b>: All-Core-Turbo 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <note id="GUID-FAEB3174-C2E1-4A9B-A736-1ACA5111A878"> 
+		<p><sup>1</sup> Assumes thicker cold plate does not contribute to higher skin hot spot temperatures 
+		</p> 
+		<p> 
+		  <sup>2</sup> It may be difficult to achieve a low bond line thickness (BLT) with 0.25mm cold plates, and that complexity is not comprehended in this sensitivity study. 
+		</p> 
+	 </note> 
+  </body> 
+</topic> 

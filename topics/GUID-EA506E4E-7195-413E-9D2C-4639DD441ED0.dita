@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-EA506E4E-7195-413E-9D2C-4639DD441ED0" xml:lang="en-US"> 
+  <title>Minimum and Maximum Load Limits</title> 
+  <body> 
+	 <fig id="FIG_07B4A82C1764451BBCC9AB1ABCD18B1A" expanse="page"> 
+		<image href="../images/GUID-1CCFE3DF-2C2C-457C-B2DE-11369860E0DC.png" scalefit="yes" id="IMAGE_9AB0EB5296354AF9B9B3119E4BF6E7B1"> 
+		  <alt> 
+		  </alt></image> 
+	 </fig> 
+	 <table id="TABLE_9CDDE24BEAFC491D834DCFA61B75B3FC" pgwide="1"> 
+		<tgroup cols="2"><colspec colnum="1" colname="col1" colwidth="*" /><colspec colnum="2" colname="col2" colwidth="*" /><thead> 
+			 <row> 
+				<entry colname="col1" valign="middle" align="center">Low Load/Pressure Limit 
+				</entry> 
+				<entry colname="col2" valign="middle" align="center">High Load/Pressure Limit 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Driven by thermal concerns (need sufficient load on TIM to achieve adequate thermal performance) 
+				  </p> 
+				</entry> 
+				<entry colname="col2">Driven by Intel package mechanical limits 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Things to consider: 
+				  <ul id="UL_3AE42390E9F448C1AFBA8FE51E26B75B"> 
+					 <li id="LI_7D3B80C2A0A94374ADE8F748EC7E2ED4">Appropriate selection of TIM (customer choice) 
+					 </li> 
+					 <li id="LI_441C33F74229403D9F7D51217D1B59F8">Relationship between pressure and thermal resistance/ impedance for the selected TIM 
+					 </li> 
+					 <li id="LI_3FD231B3C35F4D00B4462402489858EE">Force required to provide the needed total average TIM pressure, based on die area (customer calculation, refer to the 
+						<xref scope="local" format="dita" href="GUID-5ABD7922-11EB-4702-9D7C-276686E62444.dita"><?xm-replace_text Load versus Die Size for TIM Pressure Targets?></xref>). 
+					 </li> 
+					 <li id="LI_A546AF0FA41F4C20A65BCF3ACE42E613">Cross-reference Intel's assumed Technical Targets for TIM resistance (refer to the 
+						<xref scope="local" format="dita" href="GUID-9B5153DA-1445-4503-9C48-26D23EDFF9E4.dita"><?xm-replace_text Thermal Solution Technical Targets per Segment?></xref>). 
+					 </li> 
+					 <li id="LI_A529ACC17A18421B97BCBF11C0F1EB62">Avoid heatsink contact with package stiffener, which reduces force on TIM and may impact thermal performance. 
+					 </li> 
+				  </ul> 
+				</entry> 
+				<entry colname="col2">Things to consider: 
+				  <ul id="UL_C1556D49A8D24F88A9947B931686E054"> 
+					 <li id="LI_546AE6291D0A4AC9B87A9844544FF284">Total allowable force on package, which depends on the specific Intel package plus several customer choices including PCB thickness, use of a backplate, and use of corner glue (refer to the 
+						<xref scope="local" format="dita" href="GUID-0EA22DE7-8071-435F-B797-337DE1093F35.dita"><?xm-replace_text Structural Testing - Static Compressive Load?></xref>). 
+					 </li> 
+					 <li id="LI_B9F54D96AB934109BE194DDB1BF12322">Allowable peak pressure on any 2mm x 2mm area of the die. 
+						<note id="GUID-2305C182-4031-4060-9EB1-A0D3B61D2A4A">This applies for both “static pressure” (i.e., steady-state), and “transient pressure” (i.e., occurring very briefly during the heatsink attachment process) (refer to the 
+						  <xref scope="local" format="dita" href="GUID-B2523078-71C6-45F8-9622-42950AAC5775.dita"><?xm-replace_text Maximum Pressure (1)?></xref>). 
+						</note>
+					 </li> 
+					 <li id="LI_7D4B6F89D27C4A7AB1A042A8EFDA83D5">Refer to the #<xref href="https://cdrdv2.intel.com/v1/dl/getContent/575675" format="https" scope="external">575675</xref> for guidance on using structural simulation to check heatsink conformance to load and pressure specifications. 
+					 </li> 
+					 <li id="LI_0AE2D17F8BED4727A57FB634B86EDA9E">Refer to the #<xref href="https://cdrdv2.intel.com/v1/dl/getContent/556532" format="https" scope="external">556532</xref> for a recommended method for measuring heatsink pressure on each 2mm x 2mm area of the die using a commercial thin film pressure sensor. 
+					 </li> 
+				  </ul> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </body> 
+</topic> 

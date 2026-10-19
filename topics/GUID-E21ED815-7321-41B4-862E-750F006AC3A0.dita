@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-E21ED815-7321-41B4-862E-750F006AC3A0" xml:lang="en-US"> 
+  <title>Mobile Bare Die Thermal Density Factor</title> 
+  <body> 
+	 <p> 
+	 <ul id="GUID-053747B0-1EFC-4B9D-BA90-B22D64714B78"> 
+		<li>A Density Factor (DF) is the change in thermal resistance from a uniformly powered 1 cm<sup>2</sup> square die to a non-uniform power distribution representing a real working die. 
+		  <ul id="GUID-6D303380-D6F7-422C-ACB6-C8080812C46D"> 
+			 <li> 
+				<p>The magnitude of the DF is influenced by the material(s) in the heat transfer path as well as the power map density. 
+				</p> 
+			 </li> 
+			 <li>Intel provides reference material assumptions in the form of "Technology Targets" for TIM and evaporator performance and uses these values to calculate resistance (Ψsn-hp in -&gt; C/W) from junction to evaporator (CPU end of the heat pipe). 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li> DFs are only applicable to the portion of the thermal resistance stack that is affected by power density changes (Ψsn-hp portion). 
+		</li> 
+		<li> Ψsn-a (C/W) are used to compare different product generations to understand cooling requirements from junction to ambient. 
+		  <ol id="GUID-5513142C-F6D0-40C1-9BF4-294CCE1BDC23"> 
+			 <li>Ψsn-a<sup>2</sup> requirements ([Maximum operating temperature<sup>1</sup> -Ta]/Ptotal in -&gt; C/W) for a particular product may have different percentage split between Ψsn-hp<sup>2</sup> and Ψhp-a portions of the resistance stack than the previous product. 
+			 </li> 
+			 <li> Adjustments in material selection and Remote Heat Exchanger (RHE) performance may need to be considered to meet Ψsn-a requirements. 
+			 </li> 
+			 <li> New lower power products being cooled by passive thermal solutions will require an adjustment in thermal solution materials and Maximum operating temperature calculations. 
+			 </li> 
+		  </ol> 
+		</li> 
+		<li> 
+		  <p> 
+			 <note id="GUID-01FF316C-1CC3-4477-BA8C-A6D8EBD846F7">This document uses the same density factor definitions, as mentioned in the latest Panther Lake Mobile Platform Thermal and Mechanical Design Guide (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/823589" format="https" scope="external">823589</xref>). 
+				<ol id="GUID-902DA12F-81F8-44F9-A822-F3C24EC8C4BE"> 
+				  <li>Ψj have been replaced by Ψsn. The values are calculated based on reported sensor temperature, Any reference to Ψj would mean Ψsn in this document.
+				  </li> 
+				</ol> 
+			 </note> 
+		  </p> 
+		</li> 
+	 </ul> 
+	 </p> 
+  </body> 
+</topic> 

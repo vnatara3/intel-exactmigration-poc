@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-685EB05A-8FD8-4FB0-8F35-9509B882C739" xml:lang="en-US"> 
+  <title>Revision History</title> 
+  <body> 
+	 <table id="TABLE_794054CAF3F343D08B3451830ABA6F7A" pgwide="1"> 
+		<tgroup cols="3"><colspec colnum="1" colname="col1" colwidth="1.00*" /><colspec colnum="2" colname="col2" colwidth="4.64*" /><colspec colnum="3" colname="col3" colwidth="1.11*" /><thead> 
+			 <row> 
+				<entry colname="col1">Revision Number 
+				</entry> 
+				<entry colname="col2">Description 
+				</entry> 
+				<entry colname="col3">Date 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1">0.3 
+				</entry> 
+				<entry colname="col2">Initial Release 
+				</entry> 
+				<entry colname="col3">July 2025 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">0.31 
+				</entry> 
+				<entry colname="col2"><xref scope="local" format="dita" href="GUID-F4B6D6E6-9B02-4BDE-A295-8ACD5C81110E.dita"><?xm-replace_text Package Attributes and Overview?></xref> 
+				  <ul id="GUID-7B09805E-99B1-44A8-955D-B7BE92395839"> 
+					 <li id="LI_5F1C88AE72A447BFA2F0DCFF3C191AF6">Updated NVL 16C product details 
+					 </li> 
+				  </ul> 
+				</entry> 
+				<entry colname="col3">July 2025 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">0.4 
+				</entry> 
+				<entry colname="col2"><xref scope="local" format="dita" href="GUID-F4B6D6E6-9B02-4BDE-A295-8ACD5C81110E.dita"><?xm-replace_text Package Attributes and Overview?></xref> 
+				  <ul id="GUID-26C28E44-FE30-4608-BF04-3A19B5726C5B"> 
+					 <li id="LI_7D59E713A9324852BC107B1B70C259D7">Updated Maximum Operating Temperature for NVL-H in 
+						<xref scope="local" format="dita" href="GUID-F4B6D6E6-9B02-4BDE-A295-8ACD5C81110E.dita#GUID-F4B6D6E6-9B02-4BDE-A295-8ACD5C81110E/GUID-DE3AB614-6282-449A-866E-C12140AC49E1"><?xm-replace_text Mobile Package Overview?></xref> 
+					 </li> 
+				  </ul><xref scope="local" format="dita" href="GUID-44674A94-EC8D-455F-82D0-C5D479F44F71.dita"><?xm-replace_text Package Thermal Mechanical Overview?></xref> 
+				  <ul id="GUID-B97D74BE-5B57-45A0-8FFC-D1A3175A023D"> 
+					 <li id="LI_7A637AA8769A40DA9E39F79BC38159C3">Updated table in 
+						<xref scope="local" format="dita" href="GUID-9B5153DA-1445-4503-9C48-26D23EDFF9E4.dita"><?xm-replace_text Thermal Solution Technical Targets per Segment?></xref>, 
+						<xref scope="local" format="dita" href="GUID-680A8FDF-E411-4147-8343-017ACCB4FA39.dita"><?xm-replace_text Cooling Needs and Density Factors (Sustained PL1)?></xref> 
+					 </li> 
+					 <li id="LI_0155807EB7764EB3A8CCED94BEEC7C83">Added a reference in 
+						<xref scope="local" format="dita" href="GUID-680A8FDF-E411-4147-8343-017ACCB4FA39.dita"><?xm-replace_text Cooling Needs and Density Factors (Sustained PL1)?></xref> 
+					 </li> 
+				  </ul> 
+				</entry> 
+				<entry colname="col3">July 2025 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">0.5 
+				</entry> 
+				<entry colname="col2"><xref scope="local" format="dita" href="GUID-F4B6D6E6-9B02-4BDE-A295-8ACD5C81110E.dita">Package Attributes and Overview</xref> 
+				  <ul id="GUID-F165C5D2-0F40-40DC-96F0-0FEC02E5615F"> 
+					 <li id="LI_6EFB5CFB0D904BF1A59CAAD77C5D9222">Updated 
+						<xref scope="local" format="dita" href="GUID-F4B6D6E6-9B02-4BDE-A295-8ACD5C81110E.dita#GUID-F4B6D6E6-9B02-4BDE-A295-8ACD5C81110E/GUID-DE3AB614-6282-449A-866E-C12140AC49E1">Mobile Package Overview</xref> table and 
+						<xref scope="external" format="dita" href="GUID-F4B6D6E6-9B02-4BDE-A295-8ACD5C81110E#GUID-F4B6D6E6-9B02-4BDE-A295-8ACD5C81110E/GUID-5EE9F37E-5350-4311-8052-9D4D37D94DA8">Mobile Package Attributes - Panther Lake H versus Nova Lake 6C</xref> table 
+					 </li> 
+				  </ul> 
+				  <p>Updated sections: 
+				  </p> 
+				  <ul id="GUID-567EA3A0-86AD-4619-8F4B-9EBB998C090C"> 
+					 <li id="LI_B605D99FD8FC4564A53646901C6CFF7B"><xref scope="local" format="dita" href="GUID-2AF8B7D4-78AE-4958-90A2-A5AE30F061FD.dita">Package Power Information</xref> 
+					 </li> 
+					 <li id="LI_A4E7CBD66B9245788FDB8FF9E337EF1A"><xref scope="local" format="dita" href="GUID-680A8FDF-E411-4147-8343-017ACCB4FA39.dita">Cooling Needs and Density Factors (Sustained PL1)</xref> 
+					 </li> 
+					 <li id="LI_1C1E9E52F4C04A5592638C5A4CC8655B"><xref scope="local" format="dita" href="GUID-A48C9490-D492-4F19-A004-6C387FF39CF8.dita">Cooling Needs and Density Factors (All Core Turbo)</xref> 
+					 </li> 
+					 <li id="LI_6FA23EED1AFA4162A5ABC6AFADB6E589"><xref scope="local" format="dita" href="GUID-0F3E5BD5-CA21-4B04-9BF5-33CED510DC8F.dita#GUID-0F3E5BD5-CA21-4B04-9BF5-33CED510DC8F/TABLE_F5698BBB84ED45E9829F3B11F7556395">Hot Spot Locations</xref> 
+					 </li> 
+					 <li id="LI_3079616FF4AA4B778D98313A4302BCE4"><xref scope="local" format="dita" href="GUID-B9B61465-BAC5-4FF5-B51D-BE9FCF258AE6.dita">Die Center Offsets to Package Center</xref> 
+					 </li> 
+				  </ul> 
+				  <p>Added 
+					 <xref scope="local" format="dita" href="GUID-FDC0C9F7-20AB-4C18-962B-23EF036C62F2.dita">Dynamic Loading Q Strain Metric Guidance</xref> section. 
+				  </p> 
+				</entry> 
+				<entry colname="col3">September 2025 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">0.7 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Updated sections: 
+				  </p> 
+				  <ul id="GUID-60A5121D-D55E-4986-8943-366A2BB3A017"> 
+					 <li id="LI_460F59CF28CE4CA995C0F4DC3BC0C0F3"><xref scope="local" format="dita" href="GUID-F4B6D6E6-9B02-4BDE-A295-8ACD5C81110E.dita">Package Attributes and Overview</xref> table 
+					 </li> 
+					 <li id="LI_B40FE18DC12D4391B394DDC2732FA79D"><xref scope="local" format="dita" href="GUID-680A8FDF-E411-4147-8343-017ACCB4FA39.dita">Cooling Needs and Density Factors (Sustained PL1)</xref> table 
+					 </li> 
+					 <li id="LI_E4C7A8E082ED4B09A30E8DA5A9C3AEBF"><xref scope="local" format="dita" href="GUID-4B9145E0-125A-44D8-AF0E-ADA8879B3DA2.dita">Selection of Single Source Models</xref> 
+					 </li> 
+				  </ul> 
+				  <p>Added sections: 
+				  </p> 
+				  <ul id="GUID-E19609DD-3957-42AE-BCEA-856E047DC296"> 
+					 <li id="LI_D0576A9AD5E24D3583400F4BADA38DF1"><xref scope="local" format="dita" href="GUID-2C35BBFE-4B21-4271-AAD4-CEFE9145B25F.dita">Maximum Turbo Frequency vs. Temperature</xref> 
+					 </li> 
+					 <li id="LI_B43E3189660C425D9BCFE46AABA32112"><xref scope="local" format="dita" href="GUID-91F17DD4-D053-4CB2-A958-DC794FB383D5.dita">GT Workload Cooling Needs</xref> 
+					 </li> 
+					 <li id="LI_FDBAF20B5BDA456482F44537920CB045"><xref scope="local" format="dita" href="GUID-18A90CBE-1DDE-441B-9A72-EDF4D4FDCF44.dita">PCH Hotspot (Base Power)</xref> 
+					 </li> 
+					 <li id="LI_0A893E328DA445A69F514C8A432794AD"><xref scope="local" format="dita" href="../maps/GUID-4DD25BE2-7C2D-420B-887F-E5BBA3748935.ditamap">Single-core Turbo Thermal Behavior</xref> 
+						<ul id="GUID-8BEC1677-7F77-483C-8E31-1FAC47B59F0F"> 
+						  <li id="LI_366935706B8B44869C43CDEA94AD6312"><xref scope="local" format="dita" href="GUID-0B6A5701-242E-40DB-81B9-AC2C68C7BB5A.dita">Understanding Single Core Turbo</xref> 
+						  </li> 
+						  <li id="LI_A5FB55C176694FA7BE60BB2C1E85CCB8"><xref scope="local" format="dita" href="GUID-48AB4879-D8F8-4F9B-9B58-A98B95CFE784.dita"> Single Core Turbo Expectation</xref> 
+						  </li> 
+						  <li id="LI_51C7411835A6429397062AAEE117DD20"><xref scope="local" format="dita" href="GUID-25ACE5FA-B30B-4CE6-82C7-04ABA3FD2EC5.dita">Thermal Conditions for Single Core Turbo Enablement</xref> 
+						  </li> 
+						  <li id="LI_DE226138FC2A4AAEA6FCCCD6C032279F"><xref scope="local" format="dita" href="GUID-D293C09A-8D8D-4BF1-BF1A-B690416BFFEA.dita">Density Factor for Single Core (Sustained)</xref> 
+						  </li> 
+						  <li id="LI_2ADBFC7180E14D938C7E4ED810F8217B"><xref scope="local" format="dita" href="GUID-FE494C6F-B529-4A9D-B4E8-02ED17D13A5B.dita">Disclaimers</xref> 
+						  </li> 
+						</ul> 
+					 </li> 
+				  </ul> 
+				  <p>Removed Intel Platform Design Studio (IPDS) Thermal Tools section. 
+				  </p> 
+				</entry> 
+				<entry colname="col3">November 2025 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">0.71 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Updated sections: 
+				  </p> 
+				  <ul id="GUID-80D667FB-E1BB-414D-BC43-426D9AB699EE"> 
+					 <li id="LI_60EE74E8AF0144508E3B7769B855A0DF"><xref scope="local" format="dita" href="GUID-F4B6D6E6-9B02-4BDE-A295-8ACD5C81110E.dita">Package Attributes and Overview</xref> 
+					 </li> 
+					 <li id="LI_0D02552A6EC54F29ACB7DFC293011CB5"><xref scope="local" format="dita" href="GUID-44674A94-EC8D-455F-82D0-C5D479F44F71.dita#GUID-44674A94-EC8D-455F-82D0-C5D479F44F71/TABLE_2BE594D1F6A24B2F9ED807E0BC7A7BD0">Package Thermal Mechanical Overview</xref> table 
+					 </li> 
+					 <li id="LI_5F5226A996FA4E8BAC03AB587575E4E7"><xref scope="local" format="dita" href="GUID-9B5153DA-1445-4503-9C48-26D23EDFF9E4.dita">Thermal Solution Technical Targets per Segment</xref> 
+					 </li> 
+					 <li id="LI_1945EFF2203343D58040B83E2EFA5221"><xref scope="local" format="dita" href="GUID-2D0FB25D-4B42-4793-B3A7-B1B1CBECA14B.dita">Client Sustain T-Sensor Calculator</xref> 
+					 </li> 
+					 <li id="LI_93DFB509372C4BE0BB8FEA00550A2F30"><xref scope="local" format="dita" href="GUID-D293C09A-8D8D-4BF1-BF1A-B690416BFFEA.dita#GUID-D293C09A-8D8D-4BF1-BF1A-B690416BFFEA">Density Factor for Single Core (Sustained)</xref> 
+					 </li> 
+					 <li id="LI_A23BC4ADE8D84AE7A37DC70F87FC572B"><xref scope="local" format="dita" href="GUID-0F3E5BD5-CA21-4B04-9BF5-33CED510DC8F.dita">Hot Spot Locations</xref> 
+					 </li> 
+					 <li id="LI_4B029EFE31A64953BBF4FD8D20D859A8"><xref scope="local" format="dita" href="GUID-B9B61465-BAC5-4FF5-B51D-BE9FCF258AE6.dita">Die Center Offsets to Package Center</xref> 
+					 </li> 
+					 <li id="LI_5B96467E29F240EFA7FAC2692402A684">Images in 
+						<xref scope="local" format="dita" href="GUID-1860A096-D74E-441C-BE2A-F1CA30342548.dita">System Thermal - Platform Power Guidance</xref> 
+					 </li> 
+				  </ul> 
+				</entry> 
+				<entry colname="col3">November 2025 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">0.8 
+				</entry> 
+				<entry colname="col2"><xref scope="local" format="dita" href="GUID-F4B6D6E6-9B02-4BDE-A295-8ACD5C81110E.dita">Package Attributes and Overview</xref> 
+				  <ul id="UL_ED26C150AEF743F59F9500AB362E2045"> 
+					 <li id="LI_05E95BFC77EA457D9120E3BC66506C4A">Updated 
+						<xref scope="local" format="dita" href="GUID-F4B6D6E6-9B02-4BDE-A295-8ACD5C81110E.dita#GUID-F4B6D6E6-9B02-4BDE-A295-8ACD5C81110E/GUID-DE3AB614-6282-449A-866E-C12140AC49E1">Mobile Package Overview</xref> table, 
+						<xref scope="local" format="dita" href="GUID-F4B6D6E6-9B02-4BDE-A295-8ACD5C81110E.dita#GUID-F4B6D6E6-9B02-4BDE-A295-8ACD5C81110E/TABLE_0064F501A4E64A128C53DE999152F8F8">Mobile Package Attributes - Panther Lake versus Nova Lake</xref> table and 
+						<xref scope="local" format="dita" href="GUID-F4B6D6E6-9B02-4BDE-A295-8ACD5C81110E.dita#GUID-F4B6D6E6-9B02-4BDE-A295-8ACD5C81110E/GUID-5B535AD7-2CF7-4BAB-ADCF-438D8EAB1032">Mobile Package Attributes - Arrow Lake HX versus Nova Lake 28C</xref> table. 
+					 </li> 
+				  </ul> 
+				  <p>Updated sections: 
+				  </p> 
+				  <ul id="UL_29092CB5927148E88FFB7431203D2033"> 
+					 <li id="LI_B4A310498BBA402E87283A4FE025D4A8"><xref scope="local" format="dita" href="GUID-2AF8B7D4-78AE-4958-90A2-A5AE30F061FD.dita">Package Power Information</xref> 
+					 </li> 
+					 <li id="LI_6D83999D02C1449091661224EED24209"><xref scope="local" format="dita" href="GUID-9B5153DA-1445-4503-9C48-26D23EDFF9E4.dita">Thermal Solution Technical Targets per Segment</xref> 
+					 </li> 
+					 <li id="LI_D9EC9F5E907C4197AFE6B3ED6F58E6A1"><xref scope="local" format="dita" href="GUID-2D0FB25D-4B42-4793-B3A7-B1B1CBECA14B.dita">Client Sustain T-Sensor Calculator</xref> 
+					 </li> 
+					 <li id="LI_33758759E454402F846A5B4DB83C2951"><xref scope="local" format="dita" href="GUID-A48C9490-D492-4F19-A004-6C387FF39CF8.dita">Cooling Needs and Density Factors (All Core Turbo)</xref> 
+					 </li> 
+					 <li id="LI_6E136D53D9FA49D9A07291984103D124"><xref scope="local" format="dita" href="GUID-91F17DD4-D053-4CB2-A958-DC794FB383D5.dita">GT Workload Cooling Needs</xref> 
+					 </li> 
+					 <li id="LI_BA71A8CDDAE84F06B307D09CF61DAEF8"><xref scope="local" format="dita" href="GUID-D293C09A-8D8D-4BF1-BF1A-B690416BFFEA.dita#GUID-D293C09A-8D8D-4BF1-BF1A-B690416BFFEA">Density Factor for Single Core (Sustained)</xref> 
+					 </li> 
+					 <li id="LI_E1BC403D810A46C18DD69BC1F04533D9"><xref scope="local" format="dita" href="GUID-4B9145E0-125A-44D8-AF0E-ADA8879B3DA2.dita">Selection of Single Source Models</xref> 
+					 </li> 
+					 <li id="LI_E8B218276F2240938752E0A35EB8CC13"><xref scope="local" format="dita" href="GUID-0F3E5BD5-CA21-4B04-9BF5-33CED510DC8F.dita#GUID-0F3E5BD5-CA21-4B04-9BF5-33CED510DC8F/TABLE_F5698BBB84ED45E9829F3B11F7556395">Hot Spot Locations</xref> 
+					 </li> 
+					 <li id="LI_123F355D70704BD1B82A81473018A7F8"><xref scope="local" format="dita" href="GUID-5ABD7922-11EB-4702-9D7C-276686E62444.dita">Load versus Die Size for TIM Pressure Targets</xref> 
+					 </li> 
+					 <li id="LI_5A1E751E1DAF4B9295858B5A2172C99B"><xref scope="local" format="dita" href="GUID-B9B61465-BAC5-4FF5-B51D-BE9FCF258AE6.dita">Die Center Offsets to Package Center</xref> 
+					 </li> 
+					 <li id="LI_D6C5EFCE1AF5433F8AA8A306B7B212A0"><xref scope="local" format="dita" href="GUID-AFF15540-CF6D-4D37-8163-C14D177CAD5F.dita">Package Height Including Post-SMT Warpage</xref> 
+					 </li> 
+					 <li id="LI_1D8725FAD0F04DDD9596A17821FE09EF"><xref scope="local" format="dita" href="GUID-0EA22DE7-8071-435F-B797-337DE1093F35.dita">Structural Testing - Static Compressive Load</xref> 
+					 </li> 
+					 <li id="LI_474CC17D53D44EFCB9FD5CBEDC735C51"><xref scope="local" format="dita" href="GUID-FDC0C9F7-20AB-4C18-962B-23EF036C62F2.dita">Dynamic Loading Q Strain Metric Guidance</xref> 
+					 </li> 
+					 <li id="LI_CF0078337F3441A1A56FB2F8FF6F01AC"><xref scope="local" format="dita" href="GUID-229DBDD9-3185-474B-BF97-82C434E65C09.dita">Dorothy Workloads Summary HW/SW Assumptions</xref> 
+					 </li> 
+				  </ul> 
+				</entry> 
+				<entry colname="col3">February 2026 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">0.9 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Updated sections: 
+				  </p> 
+				  <ul id="UL_52E29DEDD5EE445C996628C15F7C39AE"> 
+					 <li id="LI_0636CB3F53904F0D9FAD6528A8F82B47"><xref scope="local" format="dita" href="GUID-2AF8B7D4-78AE-4958-90A2-A5AE30F061FD.dita">Package Power Information</xref> 
+					 </li> 
+					 <li id="LI_A7FBD551A332491CBB88FD31B8BDEF37"><xref scope="local" format="dita" href="GUID-9B5153DA-1445-4503-9C48-26D23EDFF9E4.dita">Thermal Solution Technical Targets per Segment</xref> 
+					 </li> 
+					 <li id="LI_67B2F929425443739E4CF7B5AF0CAC60"><xref scope="local" format="dita" href="GUID-2D0FB25D-4B42-4793-B3A7-B1B1CBECA14B.dita">Client Sustain T-Sensor Calculator</xref> 
+					 </li> 
+					 <li id="LI_299C8EC0138E457AB264B06110206AA9"><xref scope="local" format="dita" href="GUID-A48C9490-D492-4F19-A004-6C387FF39CF8.dita">Cooling Needs and Density Factors (All Core Turbo)</xref> 
+					 </li> 
+					 <li id="LI_7933747088C745029432892E571E525A"><xref scope="local" format="dita" href="GUID-91F17DD4-D053-4CB2-A958-DC794FB383D5.dita">GT Workload Cooling Needs</xref> 
+					 </li> 
+					 <li id="LI_76BB3359C615444E91B46A53B3F2FBBD"><xref scope="local" format="dita" href="GUID-D293C09A-8D8D-4BF1-BF1A-B690416BFFEA.dita#GUID-D293C09A-8D8D-4BF1-BF1A-B690416BFFEA">Density Factor for Single Core (Sustained)</xref> 
+					 </li> 
+					 <li id="LI_602DC4F22B604C769BBE8541762D87E4"><xref scope="local" format="dita" href="GUID-1860A096-D74E-441C-BE2A-F1CA30342548.dita">System Thermal - Platform Power Guidance</xref> 
+					 </li> 
+					 <li id="LI_AB518EF669C1410E8956C9634C934CDA"><xref scope="local" format="dita" href="GUID-229DBDD9-3185-474B-BF97-82C434E65C09.dita">Dorothy Workloads Summary HW/SW Assumptions</xref> 
+					 </li> 
+					 <li id="LI_E75501940A454138A953FA0DD0A10B9C"><xref scope="local" format="dita" href="GUID-01C5D035-68E8-4FB0-A51F-40690BFD4635.dita">Platform Workload (Dorothy) Scenarios</xref> 
+					 </li> 
+					 <li id="LI_739A1E1D52794D4C8C6644360A6D01FA"><xref scope="local" format="dita" href="GUID-C39A11D6-7B2F-4C45-AC47-CF122C3400A5.dita">Platform Workload (Stand Alone) Scenarios</xref> 
+					 </li> 
+				  </ul> 
+				</entry> 
+				<entry colname="col3">April 2026 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">1.0 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Added sections: 
+				  </p> 
+				  <ul id="UL_CA7A30A1259440159CE9A7E7534DD9B0"> 
+					 <li id="LI_566F3426062E4A5F8D6B8EE546E83DE4"><xref scope="local" format="dita" href="GUID-58109EA1-414C-43F8-A468-172D178BF0B0.dita">NPU Workload Cooling Needs</xref> 
+					 </li> 
+					 <li id="LI_7441225C989C4A85984101A2CB15A6B6"><xref scope="local" format="dita" href="GUID-4555768F-8AB7-4BDE-896D-7F141C965E7C.dita">Platform Voltage Regulator Thermal Monitor (PVRTM)</xref> 
+					 </li> 
+				  </ul> 
+				  <p>Updated sections: 
+				  </p> 
+				  <ul id="UL_112B908E3103461E9C389B344B62A9AF"> 
+					 <li id="LI_626F5239C9E4439F8A28AF3D3D505530"><xref scope="local" format="dita" href="GUID-F4B6D6E6-9B02-4BDE-A295-8ACD5C81110E.dita">Package Attributes and Overview</xref> 
+					 </li> 
+					 <li id="LI_B7D666D9022B4861829E24D8C2004D04"><xref scope="local" format="dita" href="GUID-2AF8B7D4-78AE-4958-90A2-A5AE30F061FD.dita">Package Power Information</xref> 
+					 </li> 
+					 <li id="LI_F9A41F3747BD415DA94DE984038A73FA"><xref scope="local" format="dita" href="GUID-44674A94-EC8D-455F-82D0-C5D479F44F71.dita#GUID-44674A94-EC8D-455F-82D0-C5D479F44F71/TABLE_2BE594D1F6A24B2F9ED807E0BC7A7BD0">Package Thermal Mechanical Overview</xref> 
+					 </li> 
+					 <li id="LI_DEDF3E07E9D64BCD85BBD589B776AA21"><xref scope="local" format="dita" href="GUID-9B5153DA-1445-4503-9C48-26D23EDFF9E4.dita">Thermal Solution Technical Targets per Segment</xref> 
+					 </li> 
+					 <li id="LI_2D5848AC05AA4E4CB739057601B3685A"><xref scope="local" format="dita" href="GUID-2D0FB25D-4B42-4793-B3A7-B1B1CBECA14B.dita">Client Sustain T-Sensor Calculator</xref> 
+					 </li> 
+					 <li id="LI_B4DDBBA776384A9D876AE61C5457A23D"><xref scope="local" format="dita" href="GUID-A48C9490-D492-4F19-A004-6C387FF39CF8.dita">Cooling Needs and Density Factors (All Core Turbo)</xref> 
+					 </li> 
+					 <li id="LI_2F5DC943F6584484A62B7D4905569EED"><xref scope="local" format="dita" href="GUID-91F17DD4-D053-4CB2-A958-DC794FB383D5.dita">GT Workload Cooling Needs</xref> 
+					 </li> 
+					 <li id="LI_079F5EF84AB74EB9B1025A5A3CF889AE"><xref scope="local" format="dita" href="GUID-D293C09A-8D8D-4BF1-BF1A-B690416BFFEA.dita#GUID-D293C09A-8D8D-4BF1-BF1A-B690416BFFEA">Density Factor for Single Core (Sustained)</xref> 
+					 </li> 
+					 <li id="LI_85BB7C9D17064D06913798F68E244FEC"><xref scope="local" format="dita" href="GUID-4B9145E0-125A-44D8-AF0E-ADA8879B3DA2.dita">Selection of Single Source Models</xref> 
+					 </li> 
+					 <li id="LI_0F92A2C64A9B4DCD976717F0A87D37B2"><xref scope="local" format="dita" href="GUID-0F3E5BD5-CA21-4B04-9BF5-33CED510DC8F.dita#GUID-0F3E5BD5-CA21-4B04-9BF5-33CED510DC8F/TABLE_F5698BBB84ED45E9829F3B11F7556395">Hot Spot Locations</xref> 
+					 </li> 
+					 <li id="LI_ACB7A1BBC29F454A9E4D406A93565AC2"><xref scope="local" format="dita" href="GUID-B9B61465-BAC5-4FF5-B51D-BE9FCF258AE6.dita">Die Center Offsets to Package Center</xref> 
+					 </li> 
+					 <li id="LI_2936E0DC79CE477998E16D98AFE06FD6"><xref scope="local" format="dita" href="GUID-AFF15540-CF6D-4D37-8163-C14D177CAD5F.dita">Package Height Including Post-SMT Warpage</xref> 
+					 </li> 
+					 <li id="LI_1D5D7960849F442FA81897EEA50A0287"><xref scope="local" format="dita" href="GUID-ADAC073F-4C26-474E-9338-009690C74D9D.dita">Die Flatness Post-SMT</xref> 
+					 </li> 
+					 <li id="LI_F9131BAB08F044E2A751356079B2262D"><xref scope="local" format="dita" href="GUID-0EA22DE7-8071-435F-B797-337DE1093F35.dita">Structural Testing - Static Compressive Load</xref> 
+					 </li> 
+					 <li id="LI_01605649679F47548948D02694B68A79"><xref scope="local" format="dita" href="GUID-FDC0C9F7-20AB-4C18-962B-23EF036C62F2.dita">Dynamic Loading Q Strain Metric Guidance</xref> 
+					 </li> 
+					 <li id="LI_AC0202CCA6584210B12F2273A08AE842"><xref scope="local" format="dita" href="GUID-1860A096-D74E-441C-BE2A-F1CA30342548.dita">System Thermal - Platform Power Guidance</xref> 
+					 </li> 
+					 <li id="LI_B9991CCE13B1484B8E2AA228FE688372"><xref scope="local" format="dita" href="GUID-229DBDD9-3185-474B-BF97-82C434E65C09.dita">Dorothy Workloads Summary HW/SW Assumptions</xref> 
+					 </li> 
+					 <li id="LI_BF2F54C2A9264BB7B175E979209FB6B1"><xref scope="local" format="dita" href="GUID-01C5D035-68E8-4FB0-A51F-40690BFD4635.dita">Platform Workload (Dorothy) Scenarios</xref> 
+					 </li> 
+					 <li id="LI_A18DE7A473534FE4BA63217CEAFA4B66"><xref scope="local" format="dita" href="GUID-C39A11D6-7B2F-4C45-AC47-CF122C3400A5.dita">Platform Workload (Stand Alone) Scenarios</xref> 
+					 </li> 
+				  </ul> 
+				</entry> 
+				<entry colname="col3">September 2026 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>1.1 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Updated sections: 
+				  </p> 
+				  <ul id="UL_21024947532B4048BE286678619357A3"> 
+					 <li id="LI_A0D91FFC24F74126AB49D0B069DB0C91"><xref scope="local" format="dita" href="GUID-F4B6D6E6-9B02-4BDE-A295-8ACD5C81110E.dita">Package Attributes and Overview</xref> 
+					 </li> 
+					 <li id="LI_173D4FF2C0B444A8B9F9A54B61BFB6E0"><xref scope="local" format="dita" href="GUID-44674A94-EC8D-455F-82D0-C5D479F44F71.dita#GUID-44674A94-EC8D-455F-82D0-C5D479F44F71/TABLE_2BE594D1F6A24B2F9ED807E0BC7A7BD0">Package Thermal Mechanical Overview</xref> 
+					 </li> 
+					 <li id="LI_50C97002DD9D47829906E72CC54182ED"><xref scope="local" format="dita" href="GUID-0F3E5BD5-CA21-4B04-9BF5-33CED510DC8F.dita#GUID-0F3E5BD5-CA21-4B04-9BF5-33CED510DC8F/TABLE_F5698BBB84ED45E9829F3B11F7556395">Hot Spot Locations</xref> 
+					 </li> 
+					 <li id="LI_56485FD853364F54854B2FD7CE35953F"><xref scope="local" format="dita" href="GUID-B9B61465-BAC5-4FF5-B51D-BE9FCF258AE6.dita">Die Center Offsets to Package Center</xref> 
+					 </li> 
+					 <li id="LI_9363731224BC46B9903D0223A7272955"><xref scope="local" format="dita" href="GUID-AFF15540-CF6D-4D37-8163-C14D177CAD5F.dita">Package Height Including Post-SMT Warpage</xref> 
+					 </li> 
+				  </ul> 
+				</entry> 
+				<entry colname="col3"> 
+				  <p>September 2026 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">1.2 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Updated sections: 
+				  <ul id="UL_D7B8FB282DFE46BD8BB270EB9F0655B3"> 
+					 <li id="LI_74C71973165641A58748BA4ABA05E783"><xref scope="local" format="dita" href="GUID-F4B6D6E6-9B02-4BDE-A295-8ACD5C81110E.dita"> Package Attributes and Overview</xref> 
+					 </li> 
+					 <li id="LI_33143FED091944FEBC37DE06A3C2AF00"> 
+						<xref scope="local" format="dita" href="GUID-2AF8B7D4-78AE-4958-90A2-A5AE30F061FD.dita">Package Power Information</xref> 
+					 </li> 
+					 <li id="LI_8718A610F9E942DDBB6C13460AA280E1"><xref scope="local" format="dita" href="GUID-44674A94-EC8D-455F-82D0-C5D479F44F71.dita#GUID-44674A94-EC8D-455F-82D0-C5D479F44F71/TABLE_2BE594D1F6A24B2F9ED807E0BC7A7BD0">Package Thermal Mechanical Overview</xref> 
+					 </li> 
+					 <li id="LI_20BC0CCC7196419CB06B2E9C086B8F00"><xref scope="local" format="dita" href="GUID-9B5153DA-1445-4503-9C48-26D23EDFF9E4.dita">Thermal Solution Technical Targets per Segment</xref> 
+					 </li> 
+					 <li id="LI_782F6778A2DE4D34963A4537B3A9F2C3"><xref scope="local" format="dita" href="GUID-2D0FB25D-4B42-4793-B3A7-B1B1CBECA14B.dita">Client Sustain T-Sensor Calculator</xref> 
+					 </li> 
+					 <li id="LI_93CB8BC324B34AADA9F658CFB07115D9"><xref scope="local" format="dita" href="GUID-A48C9490-D492-4F19-A004-6C387FF39CF8.dita">Cooling Needs and Density Factors (All Core Turbo)</xref>
+					 </li> 
+					 <li id="LI_F5BE318FF40843628CA95DFA9CF4A1A6"><xref scope="local" format="dita" href="GUID-91F17DD4-D053-4CB2-A958-DC794FB383D5.dita">GT Workload Cooling Needs</xref>
+					 </li>
+					 <li id="LI_988B8C750C1B482286E887015F75A516"><xref scope="local" format="dita" href="GUID-58109EA1-414C-43F8-A468-172D178BF0B0.dita">NPU Workload Cooling Needs</xref>
+					 </li> 
+					 <li id="LI_AF5E916BC7FE4A4D900ACB578B1CDF19"><xref scope="local" format="dita" href="GUID-D293C09A-8D8D-4BF1-BF1A-B690416BFFEA.dita">Density Factor for Single Core (Sustained)</xref> 
+					 </li> 
+					 <li id="LI_2F95093EE8BC4297BC410FAA89CC5FAF"><xref scope="local" format="dita" href="GUID-0F3E5BD5-CA21-4B04-9BF5-33CED510DC8F.dita#GUID-0F3E5BD5-CA21-4B04-9BF5-33CED510DC8F/TABLE_F5698BBB84ED45E9829F3B11F7556395">Hot Spot Locations</xref>
+					 </li>
+					 <li id="LI_33C7E0B1245643ED879865E04F4E7515"><xref scope="local" format="dita" href="GUID-5ABD7922-11EB-4702-9D7C-276686E62444.dita">Load versus Die Size for TIM Pressure Targets</xref>
+					 </li> 
+					 <li id="LI_B4E9E47D6A674F8B8C5D4342BD2E7ED4"><xref scope="local" format="dita" href="GUID-B9B61465-BAC5-4FF5-B51D-BE9FCF258AE6.dita">Die Center Offsets to Package Center</xref> 
+					 </li> 
+					 <li id="LI_6A9C98EBD91641CBB4DE786BBEC3E146"><xref scope="local" format="dita" href="GUID-AFF15540-CF6D-4D37-8163-C14D177CAD5F.dita">Package Height Including Post-SMT Warpage</xref> 
+					 </li> 
+					 <li id="LI_56671B1A6A03448781AE7F62E9A97253"><xref scope="local" format="dita" href="GUID-ADAC073F-4C26-474E-9338-009690C74D9D.dita">Die Flatness Post-SMT</xref> 
+					 </li> 
+					 <li id="LI_CE9EFC1324E248E89B4FB8E08258A99F"><xref scope="local" format="dita" href="GUID-0EA22DE7-8071-435F-B797-337DE1093F35.dita">Structural Testing - Static Compressive Load</xref> 
+					 </li> 
+					 <li id="LI_AD07A10A29194252A379BA39DD722C91"><xref scope="local" format="dita" href="GUID-FDC0C9F7-20AB-4C18-962B-23EF036C62F2.dita">Dynamic Loading Q Strain Metric Guidance</xref> 
+					 </li> 
+					 <li id="LI_73A01DC29CE2423DA51E40D49A1DA8E3"><xref scope="local" format="dita" href="GUID-1860A096-D74E-441C-BE2A-F1CA30342548.dita">System Thermal - Platform Power Guidance</xref> 
+					 </li> 
+					 <li id="LI_72F7B4BEA8D74A0982A8ACC125B4CA1D"><xref scope="local" format="dita" href="GUID-01C5D035-68E8-4FB0-A51F-40690BFD4635.dita">Platform Workload (Dorothy) Scenarios</xref> 
+					 </li> 
+					 <li id="LI_7DACDE9B896C4F1A8296F15093CEDF06"><xref scope="local" format="dita" href="GUID-C39A11D6-7B2F-4C45-AC47-CF122C3400A5.dita">Platform Workload (Stand Alone) Scenarios</xref> 
+					 </li> 
+					 <li id="LI_315D2903AA3E478EB502C87039F9A478"><xref scope="local" format="dita" href="GUID-14E4A672-F6A1-4EF3-8AAF-D62617E91D4A.dita">Reference Documents</xref> 
+					 </li> 
+				  </ul> 
+				  </p> 
+				</entry> 
+				<entry colname="col3">October 2026 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </body> 
+</topic> 

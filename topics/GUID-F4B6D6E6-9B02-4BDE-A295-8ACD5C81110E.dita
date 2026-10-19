@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-F4B6D6E6-9B02-4BDE-A295-8ACD5C81110E" xml:lang="en-US"> 
+  <title>Package Attributes and Overview</title> 
+  <body> 
+	 <table id="GUID-DE3AB614-6282-449A-866E-C12140AC49E1" pgwide="1"> 
+  <title>Mobile Package Overview</title> 
+  <tgroup cols="4" align="center"> 
+	 <colspec colnum="1" colname="col1" colwidth="1.06*" /> 
+	 <colspec colname="col4" colnum="2" colwidth="1.05*" /><colspec colname="col03" colnum="3" colwidth="1.05*" /><colspec colname="col3" colnum="4" colwidth="1.05*" /> 
+	 <thead> 
+		<row> 
+		  <entry> 
+			 <b>Package</b> 
+		  </entry> 
+		  <entry namest="col4" nameend="col3">Nova Lake Mobile Package<sup>1</sup> 
+		  </entry> 
+		</row></thead> 
+	 <tbody> 
+		<row> 
+		  <entry> 
+		  </entry> 
+		  <entry align="center" colname="col4"> 
+			 <image href="../images/GUID-BDEB941E-C30C-4E77-AD5A-64EAA8F174D8.png" scalefit="yes" id="IMAGE_F2CDA4FACAC24E21BD7CF1E7E1459697" height="255" width="145"> 
+				<alt> 
+				</alt></image> 
+		  </entry> 
+		  <entry align="center" colname="col03"><image href="../images/GUID-69D80712-14BA-468A-A49D-6D3B44CF62E3.png" id="IMAGE_959F2E02143241BCA4D3DC1629DA7C1B" scalefit="yes" height="255" width="145">
+				<alt>
+				</alt></image> 
+		  </entry> 
+		  <entry align="center" colname="col3"><image href="../images/GUID-0A813FE1-9BCE-480D-B3AB-62C648ED35EF.png" scalefit="yes" id="IMAGE_A43C2E10A38047D9A4A357B9E673A331" height="255" width="145"> 
+				<alt> 
+				</alt></image> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="left" valign="middle">Product 
+		  </entry> 
+		  <entry colname="col4"> 
+			 <b> NVL 8C</b> : Also referred to as 4 P-cores +0 E-cores + 4 LP E-cores +4X<sup>e</sup> -cores 
+		  </entry> 
+		  <entry colname="col03"> 
+			 <b>NVL 14C 4Xe</b>: Also referred to as 2 P-cores +8 E-cores + 4 LP E-cores +4X<sup>e</sup> -cores 
+		  </entry> 
+		  <entry colname="col3"> 
+			 <b> NVL 16C 12X<sup>e</sup></b> : Also referred to as 4 P-cores +8 E-cores + 4 LP E-cores +12X<sup>e</sup> -cores 
+		  </entry> 
+		</row> 
+		<row valign="middle"> 
+		  <entry align="left"> Package (mm)<sup>2</sup> 
+		  </entry> 
+		  <entry colname="col4"> BGA (0.62bp) 25 x 50 x 1.33<sup>2 
+			 </sup> 
+		  </entry> 
+		  <entry colname="col03"> BGA (0.62bp) 25 x 50 x 1.33<sup>2</sup> 
+		  </entry> 
+		  <entry colname="col3"> BGA (0.62bp) 25 x 50 x 1.33<sup>2 
+			 </sup> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="left"> Processor Base Power 
+		  </entry> 
+		  <entry align="center" colname="col4">25W 
+		  </entry> 
+		  <entry align="center" colname="col03">15W 
+		  </entry> 
+		  <entry align="center" colname="col3">25W 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="left">Minimum Assured Power 
+		  </entry> 
+		  <entry align="center" colname="col4">10W 
+		  </entry> 
+		  <entry align="center" colname="col03">10W 
+		  </entry> 
+		  <entry align="center" colname="col3">25W<sup>5</sup> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="left">Maximum Assured Power 
+		  </entry> 
+		  <entry align="center" colname="col4">45W 
+		  </entry> 
+		  <entry align="center" colname="col03">25W 
+		  </entry> 
+		  <entry align="center" colname="col3">65W 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="left"> Maximum Operating Temperature (°C)<sup>3, 4</sup> 
+		  </entry> 
+		  <entry align="center" namest="col4" nameend="col3"> 100°C 
+		  </entry> 
+		</row> 
+	 </tbody> 
+  </tgroup> 
+  </table> 
+  <table id="GUID-F60AEAC0-EEE4-4C55-A49E-09A9C930031A" pgwide="1"> 
+	 <tgroup cols="4"> 
+		<colspec colnum="1" colname="col1" colwidth="1.00*" /> 
+		<colspec colnum="2" colname="col2" colwidth="1.50*" /> 
+		<colspec colnum="3" colname="col3" colwidth="1.53*" /><colspec colname="col4" colnum="4" colwidth="1.67*" /> 
+		<thead> 
+		  <row> 
+			 <entry colname="col1"> 
+				<b> Package</b> 
+			 </entry> 
+			 <entry namest="col2" nameend="col3"> 
+				<b> Nova Lake Mobile Packages<sup>1</sup></b> 
+			 </entry> 
+			 <entry colname="col4"> 
+			 </entry> 
+		  </row></thead> 
+		<tbody> 
+		  <row> 
+			 <entry colname="col1"> 
+			 </entry> 
+			 <entry colname="col2"> 
+				<image href="../images/GUID-84382230-3BE3-4945-ADCD-A21268004C4E.png" scalefit="yes" id="IMAGE_AFD00637C2024B0FB8992CC733982F5B" height="200"> 
+				  <alt> 
+				  </alt></image> 
+			 </entry> 
+			 <entry colname="col3"> 
+				<image href="../images/GUID-C95C49D6-040E-4166-B1A8-44DCAACE7484.png" scalefit="yes" id="IMAGE_152F69FAC02942E0A8E20658695DDF20" height="200"> 
+				  <alt> 
+				  </alt></image> 
+			 </entry> 
+			 <entry colname="col4"> 
+				<image href="../images/GUID-69D80712-14BA-468A-A49D-6D3B44CF62E3.png" id="IMAGE_F3C3DFC1455D45F18DC661AB6D004C66" scalefit="yes" height="200"> 
+				  <alt> 
+				  </alt></image> 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry> Product 
+			 </entry> 
+			 <entry valign="middle" align="center"> 
+				<b>NVL 16C 4X<sup>e</sup></b>: Also referred to as 4 P-cores +8 E-cores + 4 LP E-cores +4X<sup>e</sup>-cores 
+			 </entry> 
+			 <entry valign="middle" align="center"> 
+				<b> NVL HX 16C</b> : Also referred to as 4 P-cores + 8 E-cores + 4 LP E-cores +2X e -cores 
+			 </entry> 
+			 <entry valign="middle" align="center" colname="col4"><b> NVL HX 28C</b> : Also referred to as 8 P-cores +16 E-cores + 4 LP E-cores +2X<sup>e</sup> -cores 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry> Package (mm)<sup>2</sup> 
+			 </entry> 
+			 <entry valign="middle" align="center"> BGA (0.62bp) 25 x 50 x 1.33<sup>2</sup> 
+			 </entry> 
+			 <entry valign="middle" align="center"> BGA (0.62bp) 25 x 50 x 1.33 2 
+			 </entry> 
+			 <entry valign="middle" align="center" colname="col4">BGA (0.62bp) 25 x 50 x 1.99<sup> 2 
+				</sup> 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry> Processor Base Power 
+			 </entry> 
+			 <entry valign="middle" align="center"> 25W 
+			 </entry> 
+			 <entry valign="middle" align="center">55W 
+			 </entry> 
+			 <entry valign="middle" align="center" colname="col4">55W 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry> Minimum Assured Power 
+			 </entry> 
+			 <entry valign="middle" align="center"> 25W<sup>5</sup> 
+			 </entry> 
+			 <entry valign="middle" align="center">35W 
+			 </entry> 
+			 <entry valign="middle" align="center" colname="col4">35W 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry> Maximum Assured Power 
+			 </entry> 
+			 <entry valign="middle" align="center"> 65W 
+			 </entry> 
+			 <entry valign="middle" align="center">65W 
+			 </entry> 
+			 <entry valign="middle" align="center" colname="col4">85W 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry> Maximum Operating Temperature (°C)<sup>3, 4</sup> 
+			 </entry> 
+			 <entry valign="middle" align="center" namest="col2" nameend="col4"> 100°C 
+			 </entry> 
+		  </row> 
+		</tbody> 
+	 </tgroup> 
+  </table> 
+  <note id="GUID-74F52CDA-A3CE-461A-8506-8760BD27017D"> All values are subject to change: 
+	 <p><sup>1</sup> C: compute tile, GCD: graphics tile, HUB: hub tile, PCD: Peripheral Control Die tile, P: passive tile 
+	 </p> 
+	 <p> 
+		<sup>2</sup> Z-Height value is the Max Z-Height Pre-SMT, refer NVL Package Mechanical Drawings (#<xref format="https" scope="external" href="https://cdrdv2.intel.com/v1/dl/getContent/858127">858127</xref>) 
+	 </p> 
+	 <p><sup>3</sup> Max Operating Temperature is the maximum operating temperature allowed as reported by temperature sensors. Instantaneous temperature may exceed this value for short durations. Note that maximum observable temperature is configurable by system vendors and can be design specific. 
+	 </p> 
+	 <p><sup>4</sup> For Maximum Turbo Frequency vs Temperature, refer to the 
+		<xref scope="local" format="dita" href="GUID-2C35BBFE-4B21-4271-AAD4-CEFE9145B25F.dita">Section 2.1</xref> for definition. 
+	 </p> 
+	 <p><sup>5</sup>≥25W recommended for 16C designs to take advantage of performance scaling. Customers with designs inflight targeting a PL1 between 15-25W for H16C will continue to be supported in NVL. 
+	 </p> 
+  </note> 
+  <table id="TABLE_0064F501A4E64A128C53DE999152F8F8" pgwide="1"> 
+  <title>Mobile Package Attributes - Panther Lake versus Nova Lake</title> 
+  <tgroup cols="8"> 
+	 <colspec colnum="1" colname="col1" colwidth="1.00*" /> 
+	 <colspec colnum="2" colname="col2" colwidth="1.12*" /> 
+	 <colspec colname="col03" colnum="3" colwidth="1.20*" /><colspec colnum="4" colname="col3" colwidth="1.19*" /> 
+	 <colspec colnum="5" colname="col4" colwidth="1.25*" /> 
+	 <colspec colname="col06" colnum="6" colwidth="1.32*" /><colspec colnum="7" colname="col5" colwidth="1.10*" /><colspec colname="col6" colnum="8" colwidth="1.13*" /> 
+	 <thead> 
+		<row> 
+		  <entry namest="col1" nameend="col03" valign="middle" align="center"> 
+			 <b>Panther Lake Processors</b> 
+		  </entry> 
+		  <entry colname="col3" align="center"> 
+			 <b>Attribute</b> 
+		  </entry> 
+		  <entry namest="col4" nameend="col6" align="center"> 
+			 <b>Nova Lake Processors</b> 
+		  </entry> 
+		</row></thead> 
+	 <tbody> 
+		<row> 
+		  <entry> H (4 P-cores+0 E-cores + 4 LP E-cores +4 X<sup>e</sup>- cores) 
+		  </entry> 
+		  <entry> H (4 P-cores +8 E-cores + 4 LP E- cores +12 X<sup>e</sup>- cores) 
+		  </entry> 
+		  <entry colname="col03"> H (4 P-cores+8 E-cores + 4 LP E-cores +4 
+			 <sup>e</sup>- cores) 
+		  </entry> 
+		  <entry colname="col3"> SKU 
+		  </entry> 
+		  <entry colname="col4"> 
+			 <p> 
+				<b> 8C</b> 
+			 </p> 
+			 <p> 
+				<b>(4 P-cores +0 E-cores + 4 LP E-cores +4X<sup>e</sup>-cores)</b> 
+			 </p> 
+		  </entry> 
+		  <entry colname="col06"> 
+			 <p> 
+				<b> 14C X<sup>e</sup></b> 
+			 </p> 
+			 <p> 
+				<b> (2 P-cores + 8 E-cores+ 4 LP E-cores + 4X<sup>e</sup>-cores)</b> 
+			 </p> 
+		  </entry> 
+		  <entry colname="col5"> 
+			 <p> 
+				<b> 16C 12X<sup>e</sup> 
+				</b> 
+			 </p> 
+			 <p> 
+				<b>(4 P-cores +8 E-cores + 4 LP E-cores +12X<sup>e</sup>-cores)</b> 
+			 </p> 
+		  </entry> 
+		  <entry colname="col6"> 
+			 <p> 
+				<b> 16C 4X<sup>e</sup></b> 
+			 </p> 
+			 <p> 
+				<b>(4 P-cores +8 E-cores + 4 LP E-cores +4X<sup>e</sup>-cores)</b> 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="middle"> 50 X 25 
+		  </entry> 
+		  <entry align="center" valign="middle"> 50 X 25 
+		  </entry> 
+		  <entry colname="col03" align="center" valign="middle"> 50 X 25 
+		  </entry> 
+		  <entry colname="col3" align="center" valign="middle"> Package Size (mm) 
+		  </entry> 
+		  <entry colname="col4" align="center" valign="middle"> 50 X 25 
+		  </entry> 
+		  <entry colname="col06" align="center" valign="middle">50 X 25 
+		  </entry> 
+		  <entry colname="col5" align="center" valign="middle"> 50 X 25 
+		  </entry> 
+		  <entry colname="col6" align="center" valign="middle"> 50 X 25 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>SAC305 x2532 Solder Balls SAC305 x8 Cu Core Solder Balls 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>SAC305 x2532 Solder Balls SAC305 x8 Cu Core Solder Balls 
+			 </p> 
+		  </entry> 
+		  <entry colname="col03"> 
+			 <p>SAC305 x2532 Solder Balls SAC305 x8 Cu Core Solder Balls 
+			 </p> 
+		  </entry> 
+		  <entry colname="col3"> Solder Ball Material 
+		  </entry> 
+		  <entry colname="col4"> 
+			 <p>SAC305 x2532 Solder Balls SAC305 x8 Cu Core Solder Balls 
+			 </p> 
+		  </entry> 
+		  <entry colname="col06"> 
+			 <p> SAC305 x2532 Solder Balls SAC305 x8 Cu Core Solder Balls 
+			 </p> 
+		  </entry> 
+		  <entry colname="col5"> 
+			 <p>SAC305 x2532 Solder Balls SAC305 x8 Cu Core Solder Balls 
+			 </p> 
+		  </entry> 
+		  <entry colname="col6"> 
+			 <p>SAC305 x2532 Solder Balls SAC305 x8 Cu Core Solder Balls 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry valign="middle" align="center"> NiPdAu 
+		  </entry> 
+		  <entry valign="middle" align="center"> NiPdAu 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="center"> NiPdAu 
+		  </entry> 
+		  <entry colname="col3" valign="middle" align="center"> Surface Finish 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="center"> NiPdAu 
+		  </entry> 
+		  <entry colname="col06" valign="middle" align="center">NiPdAu 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="center"> NiPdAu 
+		  </entry> 
+		  <entry colname="col6" valign="middle" align="center"> NiPdAu 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry valign="middle" align="center"> 2540 
+		  </entry> 
+		  <entry valign="middle" align="center"> 2540 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="center"> 2540 
+		  </entry> 
+		  <entry colname="col3" valign="middle" align="center"> Ball Count 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="center"> 2540 
+		  </entry> 
+		  <entry colname="col06" valign="middle" align="center">2540 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="center"> 2540 
+		  </entry> 
+		  <entry colname="col6" valign="middle" align="center"> 2540 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="middle"> 0.62 
+		  </entry> 
+		  <entry valign="middle" align="center"> 0.62 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="center"> 0.62 
+		  </entry> 
+		  <entry colname="col3" valign="middle" align="center"> Min Ball Pitch (mm) 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="center"> 0.62 
+		  </entry> 
+		  <entry colname="col06" valign="middle" align="center">0.62 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="center"> 0.62 
+		  </entry> 
+		  <entry colname="col6" valign="middle" align="center"> 0.62 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>SAC ball: 381um, Copper Core Solder Ball: 230um 
+			 </p> 
+		  </entry> 
+		  <entry> 
+			 <p>SAC ball: 381um, Copper Core Solder Ball: 230um 
+			 </p> 
+		  </entry> 
+		  <entry colname="col03"> 
+			 <p>SAC ball: 381um, Copper Core Solder Ball: 230um 
+			 </p> 
+		  </entry> 
+		  <entry colname="col3"> Ball Diameter (Pre- attach) (um/mil) 
+		  </entry> 
+		  <entry colname="col4"> 
+			 <p>SAC ball: 381um, Copper Core Solder Ball: 230um 
+			 </p> 
+		  </entry> 
+		  <entry colname="col06"> 
+			 <p>SAC ball: 381um, Copper Core Solder Ball: 230um 
+			 </p> 
+		  </entry> 
+		  <entry colname="col5"> 
+			 <p>SAC ball: 381um, Copper Core Solder Ball: 230um 
+			 </p> 
+		  </entry> 
+		  <entry colname="col6"> 
+			 <p>SAC ball: 381um, Copper Core Solder Ball: 230um 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry valign="middle" align="center"> 1.065 ± 0.083 
+		  </entry> 
+		  <entry valign="middle" align="center"> 1.176 ± 0.09 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="center"> 1.176 ± 0.09 
+		  </entry> 
+		  <entry colname="col3"> Pre-SMT z-Height (SLI bottom to 
+			 <b> 
+				<u>die top</u> 
+			 </b> ) (mm) Assumes Zero Package Warpage 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="center"> 
+			 <b> 1.244 ± 0.09</b> 
+		  </entry> 
+		  <entry colname="col06" valign="middle" align="center"> 
+			 <b>1.244 ± 0.09</b> 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="center"> 
+			 <b> 1.244 ± 0.09</b> 
+		  </entry> 
+		  <entry colname="col6" valign="middle" align="center"> 
+			 <b> 1.244 ± 0.09</b> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="col1" nameend="col03"> Customer's SMT process and materials affect Post-SMT Z- height. If needed, customers should measure Post-SMTZ- heights on actual product 
+		  </entry> 
+		  <entry colname="col3" valign="middle" align="center">Post-SMT z-Height 
+		  </entry> 
+		  <entry namest="col4" nameend="col6"> Customer's SMT process and materials affect Post-SMT Z- height. If needed, customers should measure Post-SMTZ- heights on actual product 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry valign="middle" align="center"> No 
+		  </entry> 
+		  <entry valign="middle" align="center"> No 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="center"> No 
+		  </entry> 
+		  <entry colname="col3" valign="middle" align="center"> Land Side Capacitor 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="center"> No 
+		  </entry> 
+		  <entry colname="col06" valign="middle" align="center">No 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="center"> No 
+		  </entry> 
+		  <entry colname="col6" valign="middle" align="center"> No 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry valign="middle" align="center"> No 
+		  </entry> 
+		  <entry valign="middle" align="center"> No 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="center"> No 
+		  </entry> 
+		  <entry colname="col3" valign="middle" align="center"> Die Side Capacitor 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="center"> No 
+		  </entry> 
+		  <entry colname="col06" valign="middle" align="center">No 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="center"> No 
+		  </entry> 
+		  <entry colname="col6" valign="middle" align="center"> No 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry valign="middle" align="center"> No 
+		  </entry> 
+		  <entry valign="middle" align="center"> No 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="center"> No 
+		  </entry> 
+		  <entry colname="col3" valign="middle" align="center"> Separate Chipset 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="center"> No 
+		  </entry> 
+		  <entry colname="col06" valign="middle" align="center">No 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="center"> No 
+		  </entry> 
+		  <entry colname="col6" valign="middle" align="center"> No 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry valign="middle" align="center"> Multi-Chip and Foveros Package 
+		  </entry> 
+		  <entry valign="middle" align="center"> Multi-Chip and Foveros Package 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="center"> Multi-Chip and Foveros Package 
+		  </entry> 
+		  <entry colname="col3" morerows="1" valign="middle" align="center"> Die Configuration 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="center"> Multi-Chip and Foveros Package 
+		  </entry> 
+		  <entry colname="col06" valign="middle" align="center"> Multi-Chip and Foveros Package 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="center"> Multi-Chip and Foveros Package 
+		  </entry> 
+		  <entry colname="col6" valign="middle" align="center"> Multi-Chip and Foveros Package 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry valign="middle" align="center"> 3 active top tiles 
+		  </entry> 
+		  <entry valign="middle" align="center"> 3 active top tiles 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="center"> 3 active top tiles 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="center"> 
+			 <b> 4 active top tiles</b> 
+		  </entry> 
+		  <entry colname="col06" valign="middle" align="center"><b> 4 active top tiles</b> 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="center"> 
+			 <b> 4 active top tiles</b> 
+		  </entry> 
+		  <entry colname="col6" valign="middle" align="center"> 
+			 <b> 4 active top tiles</b> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry valign="middle" align="center"> Base tile: 17.4 x 12.9 
+		  </entry> 
+		  <entry valign="middle" align="center"> Base tile: 22.45 x 12.9 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="center"> Base tile: 19.6 x 12.9 
+		  </entry> 
+		  <entry colname="col3" valign="middle" align="center"> Base tile (Die 0) Size (mm) 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="center"> 
+			 <b> Base tile: 20.2 x 12.1</b> 
+		  </entry> 
+		  <entry colname="col06" valign="middle" align="center"> 
+			 <b> Base tile: 23.2 x 12.1</b> 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="center"> 
+			 <b> Base tile: 25.1 x 12.1</b> 
+		  </entry> 
+		  <entry colname="col6" valign="middle" align="center"> 
+			 <b> Base tile: 23.2 x 12.1</b> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry valign="middle" align="center"> Refer to the PMD (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/823590" format="https" scope="external"> 823590</xref>) 
+		  </entry> 
+		  <entry valign="middle" align="center"> Refer to the PMD (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/823590" format="https" scope="external"> 823590</xref>) 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="center"> Refer to the PMD (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/823590" format="https" scope="external"> 823590</xref>) 
+		  </entry> 
+		  <entry colname="col3" valign="middle" align="center"> Other tile Size (mm) 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="center"> 
+			 <b> Refer to the PMD (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/858127" format="https" scope="external">858127</xref>)</b> 
+		  </entry> 
+		  <entry colname="col06" valign="middle" align="center"><b> Refer to the PMD (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/858127" format="https" scope="external">858127</xref>)</b> 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="center"> 
+			 <b> Refer to the PMD (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/858127" format="https" scope="external">858127</xref>)</b> 
+		  </entry> 
+		  <entry colname="col6" valign="middle" align="center"> 
+			 <b> Refer to the PMD (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/858127" format="https" scope="external">858127</xref>)</b> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry valign="middle" align="center"> 320 
+		  </entry> 
+		  <entry valign="middle" align="center"> 320 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="center"> 320 
+		  </entry> 
+		  <entry colname="col3" valign="middle" align="center"> Die Thickness + C4 bumps (um) 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="center"> 320 
+		  </entry> 
+		  <entry colname="col06" valign="middle" align="center">320 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="center"> 320 
+		  </entry> 
+		  <entry colname="col6" valign="middle" align="center"> 320 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry valign="middle" align="center"> 473±60 
+		  </entry> 
+		  <entry valign="middle" align="center"> 584±70 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="center"> 584±70 
+		  </entry> 
+		  <entry colname="col3" valign="middle" align="center"> Substrate thickness (um) 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="center"> 
+			 <b> 634±70</b> 
+		  </entry> 
+		  <entry colname="col06" valign="middle" align="center"> 
+			 <b>634±70</b> 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="center"> 
+			 <b> 634±70</b> 
+		  </entry> 
+		  <entry colname="col6" valign="middle" align="center"> 
+			 <b> 634±70</b> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry valign="middle" align="center"> 7/Corner 
+		  </entry> 
+		  <entry valign="middle" align="center"> 7/Corner 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="center"> 7/Corner 
+		  </entry> 
+		  <entry colname="col3" valign="middle" align="center"> NCTF Corner Balls 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="center"> 7/Corner 
+		  </entry> 
+		  <entry colname="col06" valign="middle" align="center">7/Corner 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="center"> 7/Corner 
+		  </entry> 
+		  <entry colname="col6" valign="middle" align="center"> 7/Corner 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry valign="middle" align="center"> Type 3 
+		  </entry> 
+		  <entry valign="middle" align="center"> Type 3 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="center"> Type 3 
+		  </entry> 
+		  <entry colname="col3" valign="middle" align="center"> PCB Type 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="center"> Type 3 
+		  </entry> 
+		  <entry colname="col06" valign="middle" align="center">Type 3 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="center"> Type 3 
+		  </entry> 
+		  <entry colname="col6" valign="middle" align="center"> Type 3 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry valign="middle" align="center"> Yes 
+		  </entry> 
+		  <entry valign="middle" align="center"> Yes 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="center"> Yes 
+		  </entry> 
+		  <entry colname="col3" valign="middle" align="center"> Stiffener 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="center"> Yes 
+		  </entry> 
+		  <entry colname="col06" valign="middle" align="center">Yes 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="center"> Yes 
+		  </entry> 
+		  <entry colname="col6" valign="middle" align="center"> Yes 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry valign="middle" align="center"> No 
+		  </entry> 
+		  <entry valign="middle" align="center"> No 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="center"> No 
+		  </entry> 
+		  <entry colname="col3" valign="middle" align="center"> Hole, Recess or Cavity Void in MB 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="center"> No 
+		  </entry> 
+		  <entry colname="col06" valign="middle" align="center">No 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="center"> No 
+		  </entry> 
+		  <entry colname="col6" valign="middle" align="center"> No 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry valign="middle" align="center"> TFT (Soft Tray) 
+		  </entry> 
+		  <entry valign="middle" align="center"> TFT (Soft Tray) 
+		  </entry> 
+		  <entry colname="col03" valign="middle" align="center"> TFT (Soft Tray) 
+		  </entry> 
+		  <entry colname="col3" valign="middle" align="center"> Shipping Media 
+		  </entry> 
+		  <entry colname="col4" valign="middle" align="center"> TFT (Soft Tray) 
+		  </entry> 
+		  <entry colname="col06" valign="middle" align="center">TFT (Soft Tray) 
+		  </entry> 
+		  <entry colname="col5" valign="middle" align="center"> TFT (Soft Tray) 
+		  </entry> 
+		  <entry colname="col6" valign="middle" align="center"> TFT (Soft Tray) 
+		  </entry> 
+		</row> 
+	 </tbody> 
+  </tgroup> 
+  </table> 
+  <p><b>Bold</b>=Change Relative to prior platform 
+  </p> 
+   
+  <p> 
+  </p> 
+  <table id="GUID-5B535AD7-2CF7-4BAB-ADCF-438D8EAB1032" pgwide="1"> 
+  <title> Mobile Package Attributes - Arrow Lake HX versus Nova Lake HX</title> 
+  <tgroup cols="4"> 
+	 <colspec colnum="1" colname="col1" colwidth="*" /> 
+	 <colspec colnum="2" colname="col2" colwidth="*" /> 
+	 <colspec colname="col03" colnum="3" colwidth="1.33*" /><colspec colnum="4" colname="col3" colwidth="*" /> 
+	 <thead> 
+		<row> 
+		  <entry valign="middle" align="center"> 
+			 <b> Arrow Lake Processor</b> 
+		  </entry> 
+		  <entry valign="middle" align="center" colname="col2"> 
+			 <b> Attribute</b> 
+		  </entry> 
+		  <entry valign="middle" align="center" namest="col03" nameend="col3"> 
+			 <b> Nova Lake Processor</b> 
+		  </entry> 
+		</row></thead> 
+	 <tbody> 
+		<row> 
+		  <entry> Hx (8 P-core+ 16 E-core+ 4X<sup>e</sup>) 
+		  </entry> 
+		  <entry colname="col2"> SKU 
+		  </entry> 
+		  <entry colname="col03"><b>HX 16C 4 P-cores +8 E-cores + 4 LP E-cores +2 X<sup>e</sup>-cores)</b> 
+		  </entry> 
+		  <entry colname="col3"> 
+			 <b>HX 28C 8 P-cores +16 E-cores + 4 LP E-cores +2 X<sup>e</sup>-cores) &amp; HX 24C 8 P-cores+12E- cores + 4 LP E-cores +2 X<sup>e</sup>-cores)</b> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 37.5 X 30.2 
+		  </entry> 
+		  <entry colname="col2"> Package Size (mm) 
+		  </entry> 
+		  <entry colname="col03">50 X 25 
+		  </entry> 
+		  <entry colname="col3"> 
+			 <b> 50 X 25</b> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> SAC405 x2110 Solder Balls SAC305 x4 Cu Core Solder Balls 
+		  </entry> 
+		  <entry colname="col2"> Solder Ball Material 
+		  </entry> 
+		  <entry colname="col03"><b> SAC305 x2532 Solder Balls SAC305 x8 Cu Core Solder Balls</b> 
+		  </entry> 
+		  <entry colname="col3"> 
+			 <b> SAC305 x2531 Solder Balls SAC305 x9 Cu Core Solder Balls</b> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> NiPdAu 
+		  </entry> 
+		  <entry colname="col2"> Surface Finish 
+		  </entry> 
+		  <entry colname="col03">NiPdAu 
+		  </entry> 
+		  <entry colname="col3"> NiPdAu 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 2114 
+		  </entry> 
+		  <entry colname="col2"> Ball Count 
+		  </entry> 
+		  <entry colname="col03"><b> 2540</b> 
+		  </entry> 
+		  <entry colname="col3"> 
+			 <b> 2540</b> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 0.65 
+		  </entry> 
+		  <entry colname="col2"> Min Ball Pitch (mm) 
+		  </entry> 
+		  <entry colname="col03"><b> 0.62</b> 
+		  </entry> 
+		  <entry colname="col3"> 
+			 <b> 0.62</b> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 406/16 (SAC405 balls) 289 / 11.4 (Cu Core solder balls) 
+		  </entry> 
+		  <entry colname="col2"> Ball Diameter (Pre- attach) (um/mil) 
+		  </entry> 
+		  <entry colname="col03"> 
+			 <p><b>SAC ball: 381um, Copper Core Solder Ball: 230um</b> 
+			 </p> 
+		  </entry> 
+		  <entry colname="col3"> 
+			 <p><b>SAC ball: 381um, Copper Core Solder Ball: 230um</b> 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 1.795 ± 0.111 
+		  </entry> 
+		  <entry colname="col2"> Pre-SMT z-Height (SLI bottom to 
+			 <b> 
+				<u>die top</u> 
+			 </b> ) (mm) Assumes Zero Package Warpage 
+		  </entry> 
+		  <entry colname="col03"><b> 1.244±0.09</b> 
+		  </entry> 
+		  <entry colname="col3"> 
+			 <b> 1.871±0.119</b> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> Customer's SMT process and materials affect Post-SMT Z-height. If needed, customers should measure Post-SMT Z-heights on actual product. 
+		  </entry> 
+		  <entry colname="col2"> Post-SMT z-Height 
+		  </entry> 
+		  <entry namest="col03" nameend="col3"> Customer's SMT process and materials affect Post-SMT Z-height. If needed, customers should measure Post-SMT Z-heights on actual product 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> No 
+		  </entry> 
+		  <entry colname="col2"> Land Side Capacitor 
+		  </entry> 
+		  <entry colname="col03"> No 
+		  </entry> 
+		  <entry colname="col3"> No 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> No 
+		  </entry> 
+		  <entry colname="col2"> Die Side Capacitor 
+		  </entry> 
+		  <entry colname="col03"> No 
+		  </entry> 
+		  <entry colname="col3"> No 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> Yes 
+		  </entry> 
+		  <entry colname="col2"> Separate Chipset 
+		  </entry> 
+		  <entry colname="col03"><b> Yes</b> 
+		  </entry> 
+		  <entry colname="col3"> 
+			 <b> Yes</b> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> Multi-Chip and Foveros Package 
+		  </entry> 
+		  <entry morerows="1" colname="col2">Die Configuration 
+		  </entry> 
+		  <entry morerows="1" colname="col03"> Multi-Chip and Foveros Package 
+		  </entry> 
+		  <entry colname="col3"> Multi-Chip and Foveros Package 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 3 active top tiles 
+		  </entry> 
+		  <entry colname="col3"> 
+			 <b> 4 active top tiles</b> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 25.8 X 11.7 
+		  </entry> 
+		  <entry colname="col2"> Base tile (Die 0) Size (mm) 
+		  </entry> 
+		  <entry colname="col03"><b> Base tile: 
+			 </b> 
+			 <p><b> 23.2 x 12.1</b> 
+			 </p> 
+		  </entry> 
+		  <entry colname="col3"> 
+			 <b> Base tile: 
+			 </b> 
+			 <p><b>ES1: 30.3 x 12.1</b> 
+			 </p> 
+			 <p> 
+				<b> ES2: 28.6 x 12.1</b> 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> Refer to the PMD (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/790189" format="https" scope="external">790189</xref>) 
+		  </entry> 
+		  <entry colname="col2"> Other tile Size (mm) 
+		  </entry> 
+		  <entry colname="col03"><b>Refer to the PMD (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/858127" format="https" scope="external">858127</xref>)</b> 
+		  </entry> 
+		  <entry colname="col3"> 
+			 <b>Refer to the PMD<sup>1, 2</sup> (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/858127" format="https" scope="external">858127</xref>)</b> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 320 
+		  </entry> 
+		  <entry colname="col2"> Die Thickness + C4 bumps (um) 
+		  </entry> 
+		  <entry colname="col03">320 
+		  </entry> 
+		  <entry colname="col3"> 320 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 1189±95 
+		  </entry> 
+		  <entry colname="col2"> Substrate thickness (um) 
+		  </entry> 
+		  <entry colname="col03"> 
+			 <b> 634±70</b> 
+		  </entry> 
+		  <entry colname="col3"> 
+			 <b> 1279±105</b> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 16/Corner 
+		  </entry> 
+		  <entry colname="col2"> NCTF Corner Balls 
+		  </entry> 
+		  <entry colname="col03"> 
+			 <b> 7/Corner</b> 
+		  </entry> 
+		  <entry colname="col3"> 
+			 <b> 7/Corner</b> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> Type 3 
+		  </entry> 
+		  <entry colname="col2"> PCB Type 
+		  </entry> 
+		  <entry colname="col03"> Type 3 
+		  </entry> 
+		  <entry colname="col3"> Type 3 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> No 
+		  </entry> 
+		  <entry colname="col2"> Stiffener 
+		  </entry> 
+		  <entry colname="col03"> 
+			 <b> Yes</b> 
+		  </entry> 
+		  <entry colname="col3"> 
+			 <b> Yes</b> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> N/A 
+		  </entry> 
+		  <entry colname="col2"> Hole, Recess or Cavity Void in MB 
+		  </entry> 
+		  <entry colname="col03"> No 
+		  </entry> 
+		  <entry colname="col3"> No 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> TFT (Soft Tray) 
+		  </entry> 
+		  <entry colname="col2"> Shipping Media 
+		  </entry> 
+		  <entry colname="col03"> TFT (Soft Tray) 
+		  </entry> 
+		  <entry colname="col3"> TFT (Soft Tray) 
+		  </entry> 
+		</row> 
+	 </tbody> 
+  </tgroup> 
+  </table> 
+  <p><b>Bold</b>=Change Relative to prior platform 
+  </p> 
+  <p><sup>1</sup> NVL HX 28C PMD currently has both ES1 &amp; ES2 sample dimensions. 
+  </p> 
+  <p><sup>2</sup> Refer NVL HX 28C PMD for ES1 &amp; ES2 sample dimensions appropriately. 
+  </p> 
+  <note id="NOTE_1BC3E322B9BF427D9B113D2C776DC955"> 
+	 <ul id="UL_76C645A8D8A44D6DA5E80346CB35E623"> 
+		<li id="LI_C5382FAC55EE439598CD5F3135C4EEE5">Informational only: Refer to the Nova Lake Mobile Processor, EDS' (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/844316" format="https" scope="external">844316</xref>, #<xref href="https://cdrdv2.intel.com/v1/dl/getContent/855520" format="https" scope="external">855520</xref>) and PDGs (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/854352" format="https" scope="external">854352</xref>, #<xref href="https://cdrdv2.intel.com/v1/dl/getContent/855310" format="https" scope="external">855310</xref>). 
+		</li> 
+		<li id="LI_43D7349ACC494261A8F8724953BDF815">All components are halogen free FCBGAs with a maximum non-operational temperature rating of 260°C. 
+		</li> 
+	 </ul> 
+  </note> 
+  </body> 
+</topic> 

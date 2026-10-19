@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-4B9145E0-125A-44D8-AF0E-ADA8879B3DA2" xml:lang="en-US"> 
+  <title>Selection of Single Source Models</title> 
+  <body> 
+	 <ul id="GUID-BF7CAFAC-8962-4E04-A519-A5744E179112"> 
+		<li id="LI_9BBD4E019E054693A431DD0B8134CC22">Intel is releasing multiple thermal package models per product (at traditional PL1 levels for NVL 8C - 15W and 25W, NVL 16C 12X<sup>e</sup> and NVL 16C - 25W,45W and 65W and NVL-HX 28C - 55W and 85W) to aid in the selection of most appropriate thermal models for various design points. 
+		</li> 
+		<li id="LI_21A0A693DBA74ED2A809EAD5F929AFF4"> Intel is providing Single-core (ST) thermal package models for NVL 8C, 16C 12X<sup>e</sup>, 16C and HX 28C. 
+		</li> 
+		<li id="LI_507E05D779844B4983397FA0473E57A8">Intel also provides simplified thermal models for using it for other power levels than the provided models for all NVL SKUs. 
+		  <ul id="GUID-ACB78A01-BCAB-4F0F-80DB-5305B8DBBA8E"> 
+			 <li id="LI_277ECDDF8B6849058494360F28C8C743">These can be located within document (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/858796" format="https" scope="external">858796</xref>). 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li id="LI_6FF133BBC7BB4CE48B6AB5ED76B932C1"> Customer design points will not always align to these values, so it is important to understand the accuracy impact that is introduced with the selection of the single source thermal model. 
+		  <ul id="GUID-E1604160-E0FE-40B6-AB70-CE00870E7024"> 
+			 <li id="LI_4F0A48E13E5D492AA584B860DED469D6">The single sources are tuned based on a detailed distribution of the power, and as the PL1 and frequency change so does the power density and the resulting size of the single source. The model is most accurate at the power level specified. 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li id="LI_2ACF3B67F27D425083CDEE352A1CCA79">It is recommended to select a model that has been tuned to a PL1 value as close to your design target, and if it is not a match, to use the simplified thermal model with the design target. 
+		</li> 
+	 </ul> 
+  </body> 
+</topic> 
