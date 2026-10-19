@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-FDC0C9F7-20AB-4C18-962B-23EF036C62F2" xml:lang="en-US"> 
+  <title>Dynamic Loading Q Strain Metric Guidance</title> 
+  <body> 
+	 <p> Below are the Q Strain Metric Guidance and weighting factor for NVL-HX 28C platform. The Q Strain Metric values in all corners should be less than the Q Strain Metric Guidance. In a design exceeding the guidance, a change to the design is recommended to reduce the bending of the motherboard under shock. 
+	 </p> 
+	 <table id="GUID-A721E6A3-91D2-4CF7-8BA3-9D5AB732C697"> 
+		<tgroup cols="4" align="center"> 
+		  <colspec colnum="1" colname="col1" colwidth="*" align="left" /> 
+		  <colspec colnum="2" colname="col2" colwidth="*" /> 
+		  <colspec colnum="3" colname="col3" colwidth="*" /> 
+		  <colspec colnum="4" colname="col4" colwidth="*" /> 
+		  <thead> 
+			 <row> 
+				<entry align="center" valign="middle"> 
+				  <b> Package</b> 
+				</entry> 
+				<entry align="center" valign="middle"> 
+				  <b> Nominal Board Thickness<sup>1</sup></b> 
+				</entry> 
+				<entry align="center" valign="middle"> 
+				  <b> Weighting Factor (w)<sup>1,2</sup></b> 
+				</entry> 
+				<entry align="center" valign="middle"> 
+				  <b> Q Strain Metric Guidance<sup>2,3</sup></b> 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row valign="middle"> 
+				<entry morerows="1"> 
+				  <b> NVL 8C, 14C 4X<sup>e</sup>, 16C-12X<sup>e</sup>, 16C 4X<sup>e</sup>, HX 16C</b> Platform (50x25mm) 
+				</entry> 
+				<entry valign="middle" align="center"> 24 mils (0.6mm) 
+				</entry> 
+				<entry valign="middle" align="center"> 50.00% 
+				</entry> 
+				<entry valign="middle" align="center"> 875 ue 
+				</entry> 
+			 </row> 
+			 <row valign="middle"> 
+				<entry valign="middle" align="center" colname="col2"> 66 mils (1.67 mm) 
+				</entry> 
+				<entry valign="middle" align="center"> 51.51% 
+				</entry> 
+				<entry valign="middle" align="center"> 600 ue 
+				</entry> 
+			 </row> 
+			 <row valign="middle"> 
+				<entry morerows="1"> 
+				  <b> NVL-HX 28C/24C</b> Platform (50x25mm) 
+				</entry> 
+				<entry valign="middle" align="center"> 32 mils (0.8 mm) 
+				</entry> 
+				<entry valign="middle" align="center"> 53.29% 
+				</entry> 
+				<entry valign="middle" align="center"> 700 ue 
+				</entry> 
+			 </row> 
+			 <row valign="middle"> 
+				<entry colname="col2" valign="middle" align="center"> 66 mils (1.67 mm) 
+				</entry> 
+				<entry valign="middle" align="center"> 47.62% 
+				</entry> 
+				<entry valign="middle" align="center"> 550 ue 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <note id="GUID-582C063F-8329-42FA-A2F4-10FB219E630B"> 
+		<p><sup>1</sup> Weighting factor w is valid for actual board thicknesses within +/- 10% of the nominal board thickness. 
+		</p> 
+		<p><sup>2</sup> If the customer system board thickness is between two thicknesses for Q Metric published guidance by Intel, customer should use the more conservative guidance (lower value) with the weighting functions for that value. 
+		</p> 
+		<p><sup>3</sup> This Q Strain Metric guidance value is only applicable to this package. 
+		</p> 
+		<p> 
+		  <sup>4</sup>Strain value is provided for guidance only. Testing is recommended on actual design to confirm SJR performance. 
+		</p> 
+	 </note> 
+	 <fig id="FIG_5032C0932D4146FC8D19E817D4464934"> 
+		<image href="../images/GUID-42AAC0EE-2C8F-4AFC-B9C0-D2CD20559407.png" scalefit="yes" id="IMAGE_568A0FBAC82C4435A421B48BBAB349EF"> 
+		  <alt> 
+		  </alt></image> 
+	 </fig> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+  </body> 
+</topic> 

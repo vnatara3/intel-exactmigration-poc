@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-2D0FB25D-4B42-4793-B3A7-B1B1CBECA14B" xml:lang="en-US"> 
+  <title>Client Sustain T-Sensor Calculator</title> 
+  <body> 
+	 <p> The Client Sustain T-Sensor Calculator (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/860647" format="https" scope="external">860647</xref>) can be used to calculate the sustained T-sensor value by using custom inputs from the below mentioned values in the table. 
+	 </p> 
+	 <fig id="FIG_D5CBDF04022A454E8BB2586A7D84BC0A"><image href="../images/GUID-10B631D4-FAE0-48DF-98FD-86C5B8A863E8.png" scalefit="yes" id="IMAGE_809121B98B2A4094ADC7EB9BE9305DE2"> 
+		  <alt> 
+		  </alt></image> 
+	 </fig> 
+	 <p> Following case can be used as initial reference for cooling needs and density factor (Sustained PL1) usage: 
+	 </p> 
+	 <table id="GUID-52512DB1-77EA-46AA-A2CB-A4C785B55D20"> 
+		<tgroup cols="1"><colspec colnum="1" colname="col1" colwidth="*" /> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1" valign="middle" align="center"> 
+				  <b>Scenario 1</b> 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1"> 
+				  <ul id="GUID-0D583674-448F-447E-B3B0-2C2CF67A8E65"> 
+					 <li id="LI_9B62651A7BC64471BB514F65707858D4"> T<sub>amb</sub> - 35 °C, T<sub>sys</sub> -11 °C, PL1-45W 
+					 </li> 
+					 <li id="LI_F905506DC6984BC4B2B57B67D2D3ADC6">Assume, PTL: Ψ<sub>hp-a</sub> - 0.36 [°C/W]; (iso thermal solution b/w PTL and NVL) 
+					 </li> 
+					 <li id="LI_21470BCE91DD48E089EE402728109A53">PTL and NVL resistance considered (refer section) as below: 
+						<ul id="GUID-880256F7-D060-4EE9-85C6-60D0FF5C1854"> 
+						  <li id="LI_94ECB680A6AE4258B7A350F1DC2D133F">PTL-H 484 4X<sup>e</sup>: Ψ<sub>sn-hp</sub> - 0.84 [°C/W] 
+						  </li> 
+						  <li id="LI_16E0A1D8855C4E4C8DB645644647FB6E">NVL 16C: Ψ<sub>sn-hp</sub> - 0.63 [°C/W] 
+						  </li> 
+						</ul> 
+					 </li> 
+					 <li id="LI_DAEF22E911A3462699CE59DF7534C91A">Use 
+						<b>Equation 1</b> to find T<sub>sn</sub> for PTL and NVL 
+						<p> 
+						  <b>PTL-H 484 T<sub>sn</sub> : 100 °C; NVL 16C T<sub>sn</sub> : 90.6 °C 
+						  </b> 
+						</p> 
+					 </li> 
+				  </ul> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p> 
+					 <b>Equation 1</b> 
+				  </p> 
+				  <p> Ψ<sub>sn - a</sub> = Ψ<sub>hp-a</sub> + Ψ<sub>sn -hp</sub>; T<sub>sn</sub> = [ Ψ<sub>sn</sub> - a * PL1] + T<sub>sys</sub> +T<sub>amb</sub> 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <note id="GUID-EDE8BBAC-2CBB-43FC-A856-ECC069A5439C"> This is a first order calculation and needs to be verified through simulation or test. For performing calculations with custom inputs, refer to the Client Sustain T-Sensor Calculator (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/860647" format="https" scope="external">860647</xref>). 
+				  </note> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <table id="TABLE_49523E042B204F1C8E087416B638B41B" pgwide="1"> 
+		<tgroup cols="10"> 
+		  <colspec colnum="1" colname="col1" colwidth="*" /> 
+		  <colspec colnum="2" colname="col2" colwidth="*" /> 
+		  <colspec colnum="3" colname="col3" colwidth="*" /> 
+		  <colspec colnum="4" colname="col4" colwidth="*" /> 
+		  <colspec colnum="5" colname="col5" colwidth="*" /> 
+		  <colspec colnum="6" colname="col6" colwidth="*" /> 
+		  <colspec colnum="7" colname="col7" colwidth="*" /> 
+		  <colspec colnum="8" colname="col8" colwidth="*" /> 
+		  <colspec colnum="9" colname="col9" colwidth="*" /> 
+		  <colspec colnum="10" colname="col10" colwidth="*" /> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1" valign="middle" align="center"> Product 
+				</entry> 
+				<entry colname="col2" valign="middle" align="center"> PL1 (W) 
+				</entry> 
+				<entry colname="col3" valign="middle" align="center"> T<sub>amb</sub> (°C) 
+				</entry> 
+				<entry colname="col4" valign="middle" align="center"> T<sub>sys</sub> (°C) 
+				</entry> 
+				<entry colname="col5" valign="middle" align="center"> T 
+				  <sub>sensor-max</sub> (°C) 
+				</entry> 
+				<entry colname="col6" valign="middle" align="center"> DF 
+				  <sub>Thermal_Solution</sub> 
+				  <sup>1,4,5</sup> (1/cm<sup>2</sup>) 
+				</entry> 
+				<entry colname="col7" valign="middle" align="center"> Ψ 
+				  <sub>sn-hp</sub><sup>1,5</sup> (°C/W) 
+				</entry> 
+				<entry colname="col8" valign="middle" align="center"> Cooling Needs<sup>1, 6</sup> Ψ<sub>hp-a</sub> (°C/W) 
+				</entry> 
+				<entry namest="col9" nameend="col10" valign="middle" align="center">Heat Exchanger Performance Improvement Needed Relative to PTL<sup>2,3</sup> 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p> PTL-H 4P +0E+4LP E+4X 
+					 <sup>e</sup> 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 15 
+				</entry> 
+				<entry colname="col3"> 35 
+				</entry> 
+				<entry colname="col4"> 16 
+				</entry> 
+				<entry colname="col5"> 100 
+				</entry> 
+				<entry colname="col6"> 0.93 
+				</entry> 
+				<entry colname="col7"> 1.27 
+				</entry> 
+				<entry colname="col8"> 2.00 
+				</entry> 
+				<entry colname="col9"> 
+				</entry> 
+				<entry valign="middle" align="center" morerows="2" colname="col10"> 
+				  <b>wrt PTL-H 4P+0E +4LP E +4X<sup>e</sup> 
+				  </b> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p> 
+					 <b>NVL 8C 4P+0E +4LP E +4X<sup>e</sup> 
+					 </b> 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <b> 15</b> 
+				</entry> 
+				<entry colname="col3"> 
+				  <b> 35</b> 
+				</entry> 
+				<entry colname="col4"> 
+				  <b> 16</b> 
+				</entry> 
+				<entry colname="col5"> 
+				  <b> 100</b> 
+				</entry> 
+				<entry colname="col6"> 
+				  <b> 0.86</b> 
+				</entry> 
+				<entry colname="col7"> 
+				  <b> 0.98</b> 
+				</entry> 
+				<entry colname="col8"> 
+				  <b> 2.29</b> 
+				</entry> 
+				<entry colname="col9"> 
+				  <b> -15%</b> 
+				</entry> 
+			 </row>
+			 <row>
+				<entry colname="col1"><b>NVL 14C 2P+8E +4LP E +4X<sup>e</sup> 
+				  </b>
+				</entry>
+				<entry colname="col2"><b>15</b>
+				</entry>
+				<entry colname="col3"><b>35</b>
+				</entry>
+				<entry colname="col4"><b>16</b>
+				</entry>
+				<entry colname="col5"><b>100</b>
+				</entry>
+				<entry colname="col6"><b>0.86</b>
+				</entry>
+				<entry colname="col7"><b>0.82</b>
+				</entry>
+				<entry colname="col8"><b>2.44</b>
+				</entry>
+				<entry colname="col9"><b>-22%</b>
+				</entry>
+			 </row> 
+			 <row> 
+				<entry colname="col1">
+				</entry> 
+				<entry colname="col2"> 
+				</entry> 
+				<entry colname="col3"> 
+				</entry> 
+				<entry colname="col4"> 
+				</entry> 
+				<entry colname="col5"> 
+				</entry> 
+				<entry colname="col6"> 
+				</entry> 
+				<entry colname="col7"> 
+				</entry> 
+				<entry colname="col8"> 
+				</entry> 
+				<entry colname="col9"> 
+				</entry> 
+				<entry valign="middle" align="center" colname="col10"> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p> PTL-H 4P+0E +4LP E +4X<sup>e</sup> 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 25 
+				</entry> 
+				<entry colname="col3"> 35 
+				</entry> 
+				<entry colname="col4"> 11 
+				</entry> 
+				<entry colname="col5"> 100 
+				</entry> 
+				<entry colname="col6"> 1.01 
+				</entry> 
+				<entry colname="col7"> 1.31 
+				</entry> 
+				<entry colname="col8"> 0.85 
+				</entry> 
+				<entry colname="col9"> 
+				</entry> 
+				<entry valign="middle" align="center" colname="col10" morerows="2"> 
+				  <b>wrt PTL-H 4P+0E +4LP E +4X<sup>e</sup></b> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p><b> NVL 8C 4P+0E +4LP E +4X<sup>e</sup> 
+					 </b> 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <b> 25</b> 
+				</entry> 
+				<entry colname="col3"> 
+				  <b> 35</b> 
+				</entry> 
+				<entry colname="col4"> 
+				  <b> 11</b> 
+				</entry> 
+				<entry colname="col5"> 
+				  <b> 100</b> 
+				</entry> 
+				<entry colname="col6"> 
+				  <b> 0.88</b> 
+				</entry> 
+				<entry colname="col7"> 
+				  <b> 1.02</b> 
+				</entry> 
+				<entry colname="col8"> 
+				  <b> 1.14</b> 
+				</entry> 
+				<entry colname="col9"> 
+				  <b> -34%</b> 
+				</entry> 
+			 </row>
+			 <row>
+				<entry colname="col1"><b> NVL 14C 2P+8E +4LP E +4X<sup>e</sup> 
+				  </b>
+				</entry>
+				<entry colname="col2"><b>25</b>
+				</entry>
+				<entry colname="col3"><b>35</b>
+				</entry>
+				<entry colname="col4"><b>11</b>
+				</entry>
+				<entry colname="col5"><b>100</b>
+				</entry>
+				<entry colname="col6"><b>0.94</b>
+				</entry>
+				<entry colname="col7"><b>1.00</b>
+				</entry>
+				<entry colname="col8"><b>1.16</b>
+				</entry>
+				<entry colname="col9"><b>-36%</b>
+				</entry>
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				</entry> 
+				<entry colname="col2"> 
+				</entry> 
+				<entry colname="col3"> 
+				</entry> 
+				<entry colname="col4"> 
+				</entry> 
+				<entry colname="col5"> 
+				</entry> 
+				<entry colname="col6"> 
+				</entry> 
+				<entry colname="col7"> 
+				</entry> 
+				<entry colname="col8"> 
+				</entry> 
+				<entry colname="col9"> 
+				</entry> 
+				<entry valign="middle" align="center" colname="col10"> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p> PTL-H 4P +8E+4LP E+12X<sup>e</sup> 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 25 
+				</entry> 
+				<entry colname="col3"> 35 
+				</entry> 
+				<entry colname="col4"> 11 
+				</entry> 
+				<entry colname="col5"> 100 
+				</entry> 
+				<entry colname="col6"> 0.77 
+				</entry> 
+				<entry colname="col7"> 0.94 
+				</entry> 
+				<entry colname="col8"> 1.22 
+				</entry> 
+				<entry colname="col9"> 
+				</entry> 
+				<entry valign="middle" align="center" colname="col10" morerows="1"> 
+				  <b>wrt PTL 4P+8E+4LP E+12X<sup>e</sup></b> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p><b> NVL 16C 4P+8E +4LP E +4X<sup>e</sup></b> 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <b> 25</b> 
+				</entry> 
+				<entry colname="col3"> 
+				  <b> 35</b> 
+				</entry> 
+				<entry colname="col4"> 
+				  <b> 11</b> 
+				</entry> 
+				<entry colname="col5"> 
+				  <b> 100</b> 
+				</entry> 
+				<entry colname="col6"> 
+				  <b> 0.83</b> 
+				</entry> 
+				<entry colname="col7"> 
+				  <b> 0.70</b> 
+				</entry> 
+				<entry colname="col8"> 
+				  <b> 1.46</b> 
+				</entry> 
+				<entry colname="col9"> 
+				  <b> -20%</b> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				  <p> PTL-H 4P+8E+4LP E+4X 
+					 <sup>e</sup> 
+				  </p> 
+				</entry> 
+				<entry> 25 
+				</entry> 
+				<entry> 35 
+				</entry> 
+				<entry> 11 
+				</entry> 
+				<entry> 100 
+				</entry> 
+				<entry> 0.77 
+				</entry> 
+				<entry> 0.94 
+				</entry> 
+				<entry> 1.22 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry morerows="1" valign="middle" align="center"> 
+				  <b>wrt PTL-H 4P+8E+4LP E+4X<sup>e</sup></b> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				  <p> 
+					 <b> NVL 16C 4P+8E+4LP E +4X<sup>e 
+						</sup></b> 
+				  </p> 
+				</entry> 
+				<entry> 
+				  <b> 25</b> 
+				</entry> 
+				<entry> 
+				  <b> 35</b> 
+				</entry> 
+				<entry> 
+				  <b> 11</b> 
+				</entry> 
+				<entry> 
+				  <b> 100</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.83</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.70</b> 
+				</entry> 
+				<entry> 
+				  <b> 1.46</b> 
+				</entry> 
+				<entry> 
+				  <b> -20%</b> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> PTL-H 4P+8E+4LP E+12X<sup>e</sup> 
+				</entry> 
+				<entry> 45 
+				</entry> 
+				<entry> 35 
+				</entry> 
+				<entry> 11 
+				</entry> 
+				<entry> 100 
+				</entry> 
+				<entry> 0.88 
+				</entry> 
+				<entry> 0.84 
+				</entry> 
+				<entry> 0.36 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry morerows="1" valign="middle" align="center"> 
+				  <b>wrt PTL-H 4P+8E+4LP E+12X<sup>e</sup></b> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				  <b> NVL 16C 4P+8E+4LP E+12X<sup>e</sup></b> 
+				</entry> 
+				<entry> 
+				  <b> 45</b> 
+				</entry> 
+				<entry> 
+				  <b> 35</b> 
+				</entry> 
+				<entry> 
+				  <b> 11</b> 
+				</entry> 
+				<entry> 
+				  <b> 100</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.89</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.63</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.57</b> 
+				</entry> 
+				<entry> 
+				  <b> -58%</b> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry valign="middle" align="center" colname="col10"> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> PTL-H 4P+8E+4LP E+4X<sup>e</sup> 
+				</entry> 
+				<entry> 45 
+				</entry> 
+				<entry> 35 
+				</entry> 
+				<entry> 11 
+				</entry> 
+				<entry> 100 
+				</entry> 
+				<entry> 0.88 
+				</entry> 
+				<entry> 0.84 
+				</entry> 
+				<entry> 0.36 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry valign="middle" align="center" morerows="1"> 
+				  <b>wrt PTL-H 4P+8E+4LP E+4X<sup>e</sup></b> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				  <b> NVL 16C 4P+8E+4LP E+4X<sup>e</sup></b> 
+				</entry> 
+				<entry> 
+				  <b> 45</b> 
+				</entry> 
+				<entry> 
+				  <b> 35</b> 
+				</entry> 
+				<entry> 
+				  <b> 11</b> 
+				</entry> 
+				<entry> 
+				  <b> 100</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.89</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.63</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.57</b> 
+				</entry> 
+				<entry> 
+				  <b> -58%</b> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> ARL-HX 8P+16E +4X<sup>e</sup> 
+				</entry> 
+				<entry> 55 
+				</entry> 
+				<entry> 35 
+				</entry> 
+				<entry> 11 
+				</entry> 
+				<entry> 105 
+				</entry> 
+				<entry> 0.79 
+				</entry> 
+				<entry> 0.48 
+				</entry> 
+				<entry> 0.59 
+				  <sup>7</sup> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry valign="middle" align="center" morerows="3"> 
+				  <b> wrt ARL-HX 8P+16E+4X<sup>e</sup></b> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				  <b> NVL 16C 4P+8E+4LP E+2X<sup>e</sup></b> 
+				</entry> 
+				<entry> 
+				  <b> 55</b> 
+				</entry> 
+				<entry> 
+				  <b> 35</b> 
+				</entry> 
+				<entry> 
+				  <b> 11</b> 
+				</entry> 
+				<entry> 
+				  <b> 100</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.91</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.64</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.34 
+					 <sup>7</sup></b> 
+				</entry> 
+				<entry> 
+				  <b> 42%</b> 
+				</entry> 
+			 </row>
+			 <row>
+				<entry><b> NVL HX 24C 8P +12E +2X<sup>e</sup> NVL HX 24C 8P +12E +2X<sup>e</sup> 
+				  </b>
+				</entry>
+				<entry><b>55</b>
+				</entry>
+				<entry><b>35</b>
+				</entry>
+				<entry><b>11</b>
+				</entry>
+				<entry><b>100</b>
+				</entry>
+				<entry><b>0.76</b>
+				</entry>
+				<entry><b>0.47</b>
+				</entry>
+				<entry><b>0.51 
+					 <sup>7</sup></b>
+				</entry>
+				<entry><b>-58%</b>
+				</entry>
+			 </row> 
+			 <row> 
+				<entry> 
+				  <p> 
+					 <b> NVL HX 28C 8P+16E+2X<sup>e</sup></b> 
+				  </p> 
+				</entry> 
+				<entry> 
+				  <b> 55</b> 
+				</entry> 
+				<entry> 
+				  <b> 35</b> 
+				</entry> 
+				<entry> 
+				  <b> 11</b> 
+				</entry> 
+				<entry> 
+				  <b> 100</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.71</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.43</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.55 
+					 <sup>7</sup></b> 
+				</entry> 
+				<entry> 
+				  <b> 7%</b> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				  <p> ARL-HX 8P +16E+4X<sup>e</sup> 
+				  </p> 
+				</entry> 
+				<entry> 55 
+				</entry> 
+				<entry> 35 
+				</entry> 
+				<entry> 11 
+				</entry> 
+				<entry> 105 
+				</entry> 
+				<entry> 0.82 
+				</entry> 
+				<entry> 0.37 
+				</entry> 
+				<entry> 0.70 
+				  <sup>8</sup> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry valign="middle" align="center" morerows="3"> 
+				  <b> wrt ARL-HX 8P+16E+4X<sup>e</sup></b> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				  <b> NVL 16C 4P+8E+4LP E+2X<sup>e</sup></b> 
+				</entry> 
+				<entry> 
+				  <b> 55</b> 
+				</entry> 
+				<entry> 
+				  <b> 35</b> 
+				</entry> 
+				<entry> 
+				  <b> 11</b> 
+				</entry> 
+				<entry> 
+				  <b> 100</b> 
+				</entry> 
+				<entry> 
+				  <b> 1.13</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.54</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.44 
+					 <sup>8</sup></b> 
+				</entry> 
+				<entry> 
+				  <b> 37%</b> 
+				</entry> 
+			 </row> 
+			 <row>
+				<entry colname="col1"><b> NVL HX 24C 8P +12E +2X<sup>e</sup> 
+				  </b>
+				</entry>
+				<entry colname="col2"><b>55</b>
+				</entry>
+				<entry colname="col3"><b>35</b>
+				</entry>
+				<entry colname="col4"><b>11</b>
+				</entry>
+				<entry colname="col5"><b>100</b>
+				</entry>
+				<entry colname="col6"><b>0.87</b>
+				</entry>
+				<entry colname="col7"><b>0.36</b>
+				</entry>
+				<entry colname="col8"><b>0.62 
+					 <sup>8</sup></b>
+				</entry>
+				<entry colname="col9"><b>11%</b>
+				</entry>
+			 </row>
+			 <row> 
+				<entry> 
+				  <p> 
+					 <b> NVL HX 28C 8P+16E +2X<sup>e</sup></b> 
+				  </p> 
+				</entry> 
+				<entry> 
+				  <b> 55</b> 
+				</entry> 
+				<entry> 
+				  <b> 35</b> 
+				</entry> 
+				<entry> 
+				  <b> 11</b> 
+				</entry> 
+				<entry> 
+				  <b> 100</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.82</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.32</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.66 
+					 <sup>8</sup></b> 
+				</entry> 
+				<entry> 
+				  <b> 6%</b> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <note id="GUID-99A7F778-4333-4B30-AAA0-24952EBC795A"> Preliminary values and subject to change. 
+		<p> 
+		  <sup>1</sup> NVL and PTL DF, Ψ<sub>sn -hp</sub> , and Ψ<sub>hp-a</sub> are calculated using Intel Technology Targets based on most up to date test data. 
+		</p> 
+		<p> 
+		  <sup>2</sup> Positive values mean heat exchanger performance needs to increase for this generation; negative values means last generation's heat exchanger will have thermal margin if reused. 
+		</p> 
+		<p> 
+		  <sup>3</sup> Resistances calculated based on the same thermal solution assumptions used for PTL. 
+		</p> 
+		<p> 
+		  <sup>4</sup> DF<sub>Thermal_Solution</sub> is different from the Global DF, refer to the 
+		  <xref scope="local" format="dita" href="GUID-1D89D292-7CD3-4E06-9D28-4E18877EC4E0.dita"><?xm-replace_text Calculating Mobile Cooling Needs at Target PL1 (1)?></xref> for definition. 
+		</p> 
+		<p><sup>5</sup> DF<sub>Thermal_Solution</sub> is sensitive to the nature of the workload, Ψ<sub>sn-hp</sub> and Ψ<sub>hp-a</sub> are less sensitive to the nature of workload. 
+		</p> 
+		<p><sup>6</sup> There are changes in cooling needs based on silicon measurements. 
+		</p> 
+		<p><sup> 7</sup> The thermal solution used is 1.3mm cold plate soldered to 3 heat pipes (2nos. of original diameter of 6mm crushed to 1.6mm, 1no. of original diameter of 8mm crushed to 1.6mm) 
+		</p> 
+		<p> 
+		  <sup>8</sup> The thermal solution used is 3mm cold plate soldered to 2 heat pipes (1no. of original diameter of 8mm crushed to 2mm, 1no. of original diameter of 10mm crushed to 2mm). 
+		</p> 
+	 </note> 
+  </body> 
+</topic> 

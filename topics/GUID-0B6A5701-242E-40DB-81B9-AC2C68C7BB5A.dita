@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-0B6A5701-242E-40DB-81B9-AC2C68C7BB5A" xml:lang="en-US"> 
+  <title>Understanding Single Core Turbo</title> 
+  <body> 
+	 <ul id="GUID-1B250504-3647-4AFD-8149-AC6EA2AF1FBF"> 
+		<li> Single-core turbo refers to the processor's ability to temporarily boost the frequency of a single active core beyond its base operating level, enabling peak performance for lightly threaded or latency-sensitive workloads. 
+		</li> 
+		<li>This feature is particularly relevant in scenarios where applications rely on fast execution of single-threaded tasks. 
+		</li>
+		<li>Achieving the maximum turbo frequency depends on favorable thermal and power conditions, making it essential for system designers to understand how to optimize their platforms to unlock this performance potential.
+		</li>
+	 </ul>
+  </body> 
+</topic> 

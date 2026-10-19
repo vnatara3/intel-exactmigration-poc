@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-18A90CBE-1DDE-441B-9A72-EDF4D4FDCF44" xml:lang="en-US"> 
+  <title> Mobile NVL-HX IOE Hotspot (Base Power)</title> 
+  <body> 
+	 <ul id="GUID-2A42D121-CB78-47D8-88E6-08F7FE5AEFAC"> 
+		<li id="LI_1A2C52836FD447C293A0973E8D3FF761"> The die hot spot in the 
+		  <xref scope="local" format="dita" href="GUID-18A90CBE-1DDE-441B-9A72-EDF4D4FDCF44.dita#GUID-18A90CBE-1DDE-441B-9A72-EDF4D4FDCF44/FIG_1744C4730B4742F3A43F95EE82F74FA4">Figure 4</xref> approximately corresponds to the Base Power workload as described in 
+		  <xref scope="local" format="dita" href="GUID-1011E44B-6C1C-4C7F-B93A-984485EAB079.dita">Section 3.11.1</xref>. Under the Base Power workload and at a room ambient temperature of 35°C, Intel estimates that a thermal solution for the PCH could be required to keep the PCH sensor temperature at 113°C or below. 
+		</li> 
+		<li id="LI_B1CECFCCF5DA458EB4A2F6842686ADD9"> The need for a thermal solution for the PCH will be determined by the usage condition targeted for the system design, the local ambient temperature around the PCH, and the room ambient temperature specifications. 
+		</li> 
+	 </ul> 
+	 <fig id="FIG_1744C4730B4742F3A43F95EE82F74FA4"> 
+		<title> Approximate Hotspot Location Relative to Pin1</title><image href="../images/GUID-030F6FD6-8348-4A9F-AC47-2F8D9075612D.png" scalefit="yes" id="IMAGE_DFBA680FD375492A9406B95CD424B8AB"> 
+		  <alt> 
+		  </alt></image> 
+	 </fig> 
+  </body> 
+</topic> 

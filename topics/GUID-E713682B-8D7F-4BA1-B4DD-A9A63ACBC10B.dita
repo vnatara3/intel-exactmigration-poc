@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-E713682B-8D7F-4BA1-B4DD-A9A63ACBC10B" xml:lang="en-US"> 
+  <title>Heat Pipe Routing for Hot Spot Coverage</title> 
+  <body> 
+    <fig id="FIG_A29FB55CDC0A465C93CC80F0904FB78F"><image href="../images/GUID-28E5CC64-A32F-4214-B159-89A413B36DA7.png" scalefit="yes" id="IMAGE_71344CEACEF944FF9D358E6DD2672004"> 
+      </image> 
+    </fig> 
+    <ul id="UL_2D9BCCDEA88243F89FF12349523B7A1C"> 
+      <li id="LI_C49CC7E5838A4D30A7C878008001868F">Intel continues to recommend routing heat pipes parallel to long side of package with the intent of maximizing heat pipe coverage on the tiles and ensuring complete coverage of the cores. 
+      </li> 
+      <li id="LI_B9973CC531F746F19D4839C2F5F9BF7A">Designs should completely cover all tiles to avoid reduced Turbo Residency and design for the best performance 
+      </li> 
+    </ul> 
+  </body> 
+</topic> 

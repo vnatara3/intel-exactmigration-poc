@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-0849A6E3-4773-4EF0-9870-5B065769265B" xml:lang="en-US"> 
+  <title> Heat Exchanger Thermal Mass and Turbo 
+	  Response</title> 
+  <body> 
+	  
+	  
+	 <p> 
+		<sup>1</sup> Analysis assumes fan running at full speed and 
+		. These curves are exemplary and are not intended to represent any one Intel product 
+	 </p> 
+	  
+	 <p> 
+		<u>Increasing the thermal mass</u> of the heat exchanger can slightly 
+		<u>increase the time that the SoC can operate in full turbo power</u> (PL2) prior to reaching 
+		. This additional headroom can also be used to increase PL2 power for a targeted duration (Power Capability) to optimize for specific workloads. Intel recommends full PL2 power support for ≥ 3 to 5 seconds to meet target performance for 
+		. 
+	 </p> 
+  </body> 
+</topic> 

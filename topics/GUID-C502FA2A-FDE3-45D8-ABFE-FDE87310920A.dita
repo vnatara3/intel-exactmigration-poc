@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-C502FA2A-FDE3-45D8-ABFE-FDE87310920A" xml:lang="en-US"> 
+  <title>Design for Turbo Workloads</title> 
+  <body> 
+	 <p> Intel is providing ease of access and interpretation of transient response using a ready-made excel tool instead of coefficients and equations. For details, refer to the Client Active Transient Calculator (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/632134" format="https" scope="external">632134</xref>). The calculator has both single-core turbo and multi-core turbo thermal capabilities. 
+	 </p> 
+	 <fig id="FIG_E4F22AE3D91247358AD029754EEE0358"> 
+		<title> Client Active Transient Calculator</title><image href="../images/GUID-E0D3FEA3-37D8-4EBE-9BEC-80A38120C5A7.png" scalefit="yes" scale="50" id="IMAGE_B12BBCA2D13341E7877BDAD15B9210DE"> 
+		  <alt> 
+		  </alt></image> 
+	 </fig> 
+  </body> 
+</topic> 

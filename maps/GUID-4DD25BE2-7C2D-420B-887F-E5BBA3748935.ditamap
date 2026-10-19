@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"[
+]>
+
+<map id="GUID-4DD25BE2-7C2D-420B-887F-E5BBA3748935" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+	<title>Single-core Turbo Thermal Behavior</title>
+<topicref href="../topics/GUID-733B158A-5727-4A68-9578-3C713132A7AB.dita" format="dita"><topicmeta><navtitle>Single-core Turbo Thermal Behavior</navtitle></topicmeta><topicref href="../topics/GUID-0B6A5701-242E-40DB-81B9-AC2C68C7BB5A.dita" format="dita"><topicmeta><navtitle>Understanding Single Core Turbo</navtitle></topicmeta></topicref><topicref href="../topics/GUID-48AB4879-D8F8-4F9B-9B58-A98B95CFE784.dita" format="dita"><topicmeta><navtitle>Single Core Turbo expectation</navtitle></topicmeta></topicref><topicref href="../topics/GUID-25ACE5FA-B30B-4CE6-82C7-04ABA3FD2EC5.dita" format="dita"><topicmeta><navtitle>Thermal Conditions for Single Core Turbo Enablement</navtitle></topicmeta></topicref><topicref href="../topics/GUID-D293C09A-8D8D-4BF1-BF1A-B690416BFFEA.dita" format="dita"><topicmeta><navtitle>Density Factor for Single Core (Sustained)</navtitle></topicmeta></topicref><topicref href="../topics/GUID-FE494C6F-B529-4A9D-B4E8-02ED17D13A5B.dita" format="dita"><topicmeta><navtitle>Disclaimers</navtitle></topicmeta></topicref></topicref></map>

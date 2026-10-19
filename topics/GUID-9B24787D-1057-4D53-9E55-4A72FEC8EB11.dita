@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "file:///E:/InfoShare/Web/Author/ASP/DocTypes/dita-oasis/1.2/technicalContent/dtd/topic.dtd"[]>
+<topic id="GUID-9B24787D-1057-4D53-9E55-4A72FEC8EB11" xml:lang="en-US"> 
+  <title>Reported Package Temperature</title> 
+  <body> 
+	 <p> 
+	 <ul id="UL_EF14C233D5FE471EBC0F61D08049C9B8"> 
+		<li id="LI_6E6C0E946AF2469CA0973942FC7DB857"> Nova Lake products have a single temperature limit, which applies to all tiles on the package. 
+		</li> 
+		<li id="LI_5D0F4F469EF0455C88D9D7E14FD824A0"> The package will report a singular temperature value according to the maximum Tsn reported for all tiles. 
+		</li> 
+		<li id="LI_CB42B2D01E3E4CA2904F93901249F457"> When using the simplified thermal package models (#<xref scope="external" format="https" href="https://cdrdv2.intel.com/v1/dl/getContent/858796">858796</xref>) or transient calculator (#<xref scope="external" format="https" href="https://cdrdv2.intel.com/v1/dl/getContent/632134">632134</xref>), the simulated temperature results do not need to be adjusted by any offset to match the in-system reported temperatures 
+		</li> 
+	 </ul> 
+	 </p> 
+  </body> 
+</topic> 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-1D89D292-7CD3-4E06-9D28-4E18877EC4E0" xml:lang="en-US"> 
+  <title>Calculating Mobile Cooling Needs at Target PL1</title> 
+  <body> 
+    <ul id="UL_2DC3861CCB6D45149F2AA5113EDF8C82"> 
+      <li id="LI_3390BC61C885452E973DAC13A44E942F">Thermal solutions should be initially designed to the Target PL1 definition and Pre-Si power map analysis: 
+        <ul id="UL_17782AD1C34140AE8FEDECA8D9762410"> 
+          <li id="LI_3CC0050BED964D7B85817E7A8AD60983">Target PL1 definition is a steady state / sustained cooling assumption. 
+          </li> 
+          <li id="LI_7AB21CB280F84783BF0DA74C1DAA468D">Tsys is based on Intel system configuration and airflow. Customers should adjust Tsys based on their design. 
+          </li> 
+        </ul> 
+      </li> 
+      <li id="LI_A9B65ECFF80042C2B7D68355660396B2">The Ψhp-air cooling needs shown in the previous sections is based on the assumed Rsn-hp from Intel Technology Targets. The following equations can be used to modify the technology targets and arrive at a specific Ψhp-air for any particular design 
+      </li> 
+    </ul> 
+    <fig id="FIG_F210C6F62D37495BBCAF3D4A4FD089E6"><image href="../images/GUID-79E053D3-97A5-49E4-BB21-2BF465A32551.png" scalefit="yes" id="IMAGE_645676FBD9E1497EABE6F4B89EB476D3"> 
+        <alt> 
+        </alt></image> 
+    </fig> 
+  </body> 
+</topic> 

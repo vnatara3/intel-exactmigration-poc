@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-B321462F-6C04-4342-AB7E-55198C4AEFF7" xml:lang="en-US"> 
+  <title>Considerations during Thermal Solution Assembly and Disassembly</title> 
+  <body> 
+	 <p>During the process of thermal solution assembly, disassembly, repair, and/or rework, various factors can result in a higher concentrated load, peak pressure, and non-uniform pressure distribution. This, in turn, can lead to increased die damage risk, such as backside die crack or backside die chipping. 
+	 </p> 
+	 <p>Recommendations are provided in this section to help identify and avoid some of the main factors that contribute to the risk of die damage during thermal solution assembly, disassembly, repair, rework, and beyond. Always ensure proper care is taken to minimize die damage risk. 
+	 </p> 
+	 <fig id="FIG_CDE0FBAC888F4141B41234EA5845F821"><image href="../images/GUID-F402F13F-D57D-4A75-8218-38116425BFB4.png" scalefit="yes" id="IMAGE_460AA7CCEDF046C2A55DD3AF8A0BAF41"> 
+		  <alt> 
+		  </alt></image> 
+	 </fig> 
+	 <table id="TABLE_C4BF82F100B24727A17B06EFF9AC6F1E" pgwide="1"> 
+  <title>General Considerations on Die Loading and Pressure Uniformity<sup>1</sup></title> 
+  <tgroup cols="3"><colspec colname="col01" colnum="1" colwidth="1.00*" /><colspec colname="col1" colnum="2" colwidth="1.05*" /><thead> 
+		<row> 
+		  <entry colname="col01">Do's 
+		  </entry> 
+		  <entry colname="col1">Dont's 
+		  </entry> 
+		</row></thead> 
+	 <tbody> 
+		<row> 
+		  <entry> 
+			 <p>Key factors influencing load magnitude and distribution are: 
+			 <ul id="UL_AA5C9BDF012C48EA99F43B0D9402F77E"> 
+				<li id="LI_013545034F10404B9CA87CC6CD21314B">Loading center 
+				</li> 
+				<li id="LI_06760B01FDE944BEA13A3D0A801ADCCF">TIM type 
+				</li> 
+				<li id="LI_3C7ED9762260436D86004CF37CF8F624">Excess warpage of cold plate 
+				</li> 
+				<li id="LI_223BD53348224433B06EF00AA90F0612">Misaligned TIM dispense from die areas 
+				</li> 
+				<li id="LI_00AA40D65BF3451985B51387C6E71E62">Assembly/disassembly screw sequence 
+				</li> 
+				<li id="LI_2C0A473403584F60910CFFAF06C2D134">Thermal solution tilting during assembly/disassembly 
+				</li> 
+				<li id="LI_2B0951ADE48E458091D0EFD2498BFA1F">Board support during assembly/disassembly 
+				</li> 
+				 
+			 </ul> 
+			 </p> 
+		  </entry> 
+		  <entry>Avoid load concentration at die edge or corners during thermal solution assembly/disassembly and after assembly, which could increase risk of die crack. 
+			 <fig id="FIG_A4EF4A99E50E41DEA206779E6652D6B1"><image href="../images/GUID-34D06F3E-9A23-47C6-8298-2CE176467206.png" id="IMAGE_ED8D0BB05E5146D0B53EFD350E07398F" scalefit="yes"> 
+				  <alt> 
+				  </alt></image> 
+			 </fig> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry>An ideal load is distributed as uniformly as possible on the die(s) during and after thermal solution assembly/disassembly onto the Intel SoC package. 
+			 <fig id="FIG_30358C64A87F4FEA99DBCAF5B386FE08"><image href="../images/GUID-11D78CB0-6A44-4264-872C-67A1E0E3E324.png" scalefit="yes" id="IMAGE_1827A340BEE9444999BE36B36590A206"> 
+				  <alt> 
+				  </alt></image> 
+			 </fig> 
+		  </entry> 
+		  <entry>Avoid sliding or dynamic lateral movement of thermal solution on the die(s) during assembly/ disassembly. Avoid any relative movement between the board, backing plate and thermal solution during assembly/disassembly. This can lead to die damage. 
+			 <fig id="FIG_8D1A5835BEB04EE0970B5293808B7E6A"><image href="../images/GUID-91F94819-44B9-46C9-8D1E-18DD01F3DE01.png" scalefit="yes" id="IMAGE_46C8B893CF784F96B416493D29A24EB2"> 
+				  <alt> 
+				  </alt></image> 
+			 </fig> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <p>Ensure the peak pressure on the die(s) does not exceed the specified value in 
+				<xref scope="external" format="dita" href="GUID-B2523078-71C6-45F8-9622-42950AAC5775">Maximum Pressure</xref> at any point during or after thermal solution assembly/disassembly. 
+			 </p> 
+			 <p>Collect mechanical quality and reliability validation data to risk assess thermal Solution assembly process. Refer to the Intel Mobile SoC Die Loading Measurement Techniques, (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/556532" format="https" scope="external">556532</xref>) 
+			 </p> 
+		  </entry> 
+		  <entry>Avoid foreign material (FM) deposited on the die(s) or thermal solution surfaces. This can cause concentrated loading on die(s) during thermal solution assembly/disassembly that can lead to die damage. 
+			 <fig id="FIG_97F8C3EB7F9E4BBDA77E3E9B234DF7E9"><image href="../images/GUID-8F1FE640-E1D2-46CF-AE11-B7AA332B0A9C.png" scalefit="yes" id="IMAGE_022C0DB423F643C78441C026CA5A61C5"> 
+				  <alt> 
+				  </alt></image> 
+			 </fig> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="col01" nameend="col1"><sup>1</sup> Diagrams shown here are example images and are not inclusive or representative of all possible scenarios. 
+		  </entry> 
+		</row> 
+	 </tbody> 
+  </tgroup> 
+  </table> 
+  <table id="TABLE_0C59D2AAE0D34714839A634244EEBAFA" pgwide="1"> 
+  <title>Thermal Attach Torque and Screw Sequence 
+  <sup>1</sup></title> 
+  <tgroup cols="3"><colspec colname="col01" colnum="1" colwidth="1.03*" /><colspec colname="col1" colnum="2" colwidth="1.00*" /> 
+	 <thead> 
+		<row valign="middle"> 
+		  <entry namest="col01" nameend="col1"> Screw Sequence Guideline 
+		  </entry> 
+		</row></thead> 
+	 <tbody> 
+		<row valign="top"> 
+		  <entry morerows="2"> 
+			 <ul id="UL_030CE8DB3BD445CA96556FC576673890"> 
+				<li id="LI_7C5411CF6F6D47DE998003BC2A3D9035"><b>Ensure regular calibration</b> of the screwdriver used for thermal solution assembly/disassembly. 
+				</li> 
+				<li id="LI_0B02084FBB4245F8B5F72CA8C8AFF054"><b>Torque of 2.0 kgf-cm or less</b> is recommended for assembly/disassembly process. 
+				</li> 
+				<li id="LI_B5311799D2264592910CC08BC0E5F190"><b>Ensure optimal screw sequence</b> is used for thermal solution assembly/disassembly to minimize concentrated load during and after assembly process. 
+				</li> 
+				<li id="LI_E033415C4B6C4C299DD8896C37136155">Every thermal solution design has its own optimum screw sequence that results in minimum concentrated loading during assembly/disassembly and after assembly. It is recommended to choose a screw sequence for each specific thermal solution and each Intel SoC package to reduce load concentration. 
+				</li> 
+				<li id="LI_00EEBE50984E4796A02CFF0F1FAFF0F0">Unoptimized screw sequence can result in higher concentrated peak pressure on the die(s) during assembly/disassembly and after assembly, and can lead to die damage. 
+				</li> 
+				<li id="LI_F0CE98A5EB54475A9AD15C1375A240DF">Refer to the Intel Mobile SoC Die Loading Measurement Techniques, (#<xref href="https://CDRDV2.INTEL.COM/V1/DL/GETCONTENT/556532" format="https" scope="external">556532</xref>), for a methodology to determine the optimized screw sequence. 
+				</li> 
+			 </ul> 
+		  </entry> 
+		  <entry> 
+			 <ul id="UL_64156EB66D314B3AA5E54DBB80CB64D1"> 
+				<li id="LI_21BB689C615A4304BCD369BEC046DABB">An example is shown below of a specific 4-point thermal attach design, using two different torque sequences. 
+				</li> 
+				<li id="LI_89EE921743834E73A5F53493652A370B">The respective impact on concentrated peak pressure is shown for each torque sequence. 
+				</li> 
+				<li id="LI_4F8734F2B9C947829D1E67402695D7F6">In this example, Screw Sequence 1 is preferred over Screw sequence 2, since it results in a lower peak pressure on the die during thermal solution assembly/disassembly. 
+				</li> 
+			 </ul> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <fig id="FIG_50002E5F68E543DB9EE57555052C6214"> 
+				<title>Screw Sequence 1</title><image href="../images/GUID-EBAE26A2-3150-4565-86AD-B0504646C1A6.png" id="IMAGE_410D268D2A344DD6A48B84A3C3AA0F9B" scalefit="yes"> 
+				  <alt> 
+				  </alt></image> 
+			 </fig> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 
+			 <fig id="FIG_AFF08887917C46D9B17CB68428B84439"> 
+				<title>Screw Sequence 2</title><image href="../images/GUID-01386DC2-6DF4-4E86-930E-8105317DAA38.png" id="IMAGE_79287486A7B94768A966F2F549238858" scalefit="yes"> 
+				  <alt> 
+				  </alt></image> 
+			 </fig> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry namest="col01" nameend="col1"><sup>1</sup> Diagrams shown here are example images and are not inclusive or representative of all possible scenarios. 
+		  </entry> 
+		</row> 
+	 </tbody> 
+  </tgroup> 
+  </table> 
+  <table id="TABLE_55AD410A450C4DC18E5D16FB62BA1261" pgwide="1"> 
+  <title>Proper Board Support during Assembly/Disassembly 
+  <sup>2,3</sup></title> 
+   
+   
+  </table> 
+  </body> 
+</topic> 

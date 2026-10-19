@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-0DEC91D6-1568-4AED-AEE6-249D5F4599D3" xml:lang="en-US"> 
+  <title> TIM Performance and all-core Turbo Thermal Response</title> 
+  <body> 
+	 <fig id="FIG_FDA535623249428E8DC9F58A6252C6FE"> 
+		<title> Transient Tsn all-core Turbo Example: 15W TDP Package</title><image href="../images/GUID-E85E4A66-7F1C-4739-A376-31547A926BDB.png" scalefit="yes" id="IMAGE_7F452B586A3449ADB158D6569376836B"> 
+		  <alt> 
+		  </alt></image> 
+	 </fig> 
+	 <note id="GUID-850B3299-5883-4592-BF02-34FEEDD682A5"><sup> 1</sup> Analysis assumes fan running at full speed and maximum operating temperature. 
+	 </note> 
+	 <p> 
+		<u> Reducing the thermal impedance</u> of the thermal interface material (RTIM) can significantly<u> increase the time that the processor can operate in full turbo power</u> (PL2) prior to reaching maximum operating temperature. This additional headroom can also be used to increase PL2 power for a targeted duration (Power Capability) to optimize for specific workloads. Intel recommends full PL2 power support for ≥ 3 to 5 seconds to meet target performance for representative bursty workloads. 
+	 </p> 
+  </body> 
+</topic> 

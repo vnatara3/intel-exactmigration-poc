@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-4D0FA61D-39F2-45C5-A96E-2D3DA69F84E4" xml:lang="en-US"> 
+  <title>TIM Thermal Resistance Behavior with Load </title> 
+  <body> 
+	 <fig id="FIG_7839762584AA4B5D9893C83A79D6D413"><image href="../images/GUID-6E539999-ADBA-4DD3-B897-937CDC1DB72F.png" scalefit="yes" id="IMAGE_F7BC7DC8BA0B4A3D83386DAD4FF6F06E"> 
+		  <alt> 
+		  </alt></image> 
+	 </fig> 
+	 <p>For the TIM materials in discussion: after a threshold load / pressure, the thermal resistance does not decrease much. 
+	 </p> 
+	 <p>Increasing the thermal solution load on the TIM beyond this region creates high mechanical stresses on the system, without providing thermal benefit. In real products, increasing the thermal solution load beyond this region can increase thermal resistance, due to combined bending of the thermal solution, processor package, and board. 
+	 </p> 
+	 <p>Refer to the #<xref href="https://cdrdv2.intel.com/v1/dl/getContent/575675" format="https" scope="external">575675</xref> for more details on optimizing the thermal solution. Refer to the sections of this document for guidance on maximum allowed load on the package and maximum allowed pressure on the die. 
+	 </p> 
+  </body> 
+</topic> 

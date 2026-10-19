@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "file:///E:/InfoShare/Web/Author/ASP/DocTypes/dita-oasis/1.2/technicalContent/dtd/topic.dtd"[]>
+<topic id="GUID-2F98DFC4-9169-4EC3-9302-AB847CB357DD" xml:lang="en-US"> 
+  <title>Integrating High Power M.2 Components into Platform</title> 
+  <body> 
+	 <ul id="UL_10B8C0AAE4E54548B1235D81D4CD8635"> 
+		<li id="LI_4989267B223348CB8964D4D2DE40E47F">Certain M.2 components (ex: hybrid storage, WWAN module) can pose thermal challenges under certain scenarios 
+		</li> 
+		<li id="LI_2229C71C9F264F43B04DDD2410B33317">Designing these usage scenarios will require special considerations 
+		  <ul id="UL_FDB6F75B7AD24885B04743FD69BB4744"> 
+			 <li id="LI_9B029E80C89B4AD28AF420B26E61E1C3">Optimize Air flow to M.2 – place close to a fan 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li id="LI_8B594EE91AC249DB8A5DE569154A010C">Minimize ambient temp by the M.2 – place M.2 away from heat source 
+		</li> 
+		<li id="LI_2A4D1FF3214A44F99CB09EECECB8F047">Add thermal mechanical - thermal pad and heat spreader, if necessary 
+		</li> 
+		<li id="LI_508E1E277D5E4EE6BA66973C85F701C2">Contact your field rep or supplier to understand M.2 component usage guidance 
+		</li> 
+		<li id="LI_8C8D6BDF9C7843C8B1EFB95DEFA34404">Intel recommends using Intel Dynamic Tuning Technology to manage M.2 component power/perf/thermals 
+		</li> 
+	 </ul> 
+  </body> 
+</topic> 

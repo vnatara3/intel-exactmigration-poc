@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-A0FDE50A-112B-472E-8665-AD4BECEF000E" xml:lang="en-US"> 
+  <title> Cold Plate Width for Transient Performance</title> 
+  <body> 
+    <fig id="GUID-3B44EDAC-238C-4292-B973-B8C4035E903F"><image href="../images/GUID-F5169DB9-8853-43B6-B96E-1163B0CA16D5.pdf" scalefit="yes" id="IMAGE_16184864FAFE42D9983FE9552E7D31B4"></image> 
+    </fig> 
+    <fig id="GUID-1AE360EA-6D13-4841-A5AD-D3A9A560F6D9"><image href="../images/GUID-EB309B3E-1E35-4F60-82BC-4C66F149DAD6.png" scalefit="yes" id="IMAGE_3359B34CD1964E10984C02B91D241563" height="150"></image> 
+    </fig> 
+    <p> Improving cold plate width will result in improvements on short duration (3-5s) turbo power (PL2) despite marginal to negligible improvements to S.S. 
+    </p> 
+    <p> 
+      <b>Nomenclature:</b> 
+    <ul id="GUID-122873F7-2CFE-41A9-992A-2CEFA62A3E4B"> 
+      <li id="LI_701E0392101440FC8A40492DED2E610D"><b>Power Capability : 
+        </b>Additional power the SoC can support before reaching 
+        
+      </li> 
+      <li id="LI_89CDB3FC16A54C90AD4F67F26396E339"><b>S.S. :</b> Steady State 
+      </li> 
+      <li id="LI_4AC04CD08E72465983436C3DE4AE1BFC"><b>ACT : 
+        </b>All-Core-Turbo 
+      </li> 
+    </ul> 
+    </p> 
+  </body> 
+</topic> 

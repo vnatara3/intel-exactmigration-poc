@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-667BD7E6-1771-4984-8BA8-C1C5BD573B4F" xml:lang="en-US"> 
+  <title>Mobile NVL-HX IOE (PCH): Additional Power Guidance</title> 
+  <body> 
+	 <section id="GUID-82EC09CA-9C52-4E23-9CC9-6EFCD95FF6A9"> 
+		<title>IOE Power Adders (Now Gen5 x4 PCIe up to 4 System with 3 IOE SSD Devices):</title> 
+		<ul id="GUID-0D472CFE-C878-4D7D-A67C-B43B1375F8EC"> 
+		  <li id="LI_6C8ED71DD0D04447BB758CFE3A8249D7">"New Typical Config" Design requires 2 IOE with 3 system Gen5 x4 SSDs in design 
+			 <ul id="GUID-181E98F4-2BFC-4C98-9FDA-0080EF40232F"> 
+				<li id="LI_00C76B9334E94CC18CB2472516DCDF89"> 
+				  <p>Cooling needs up to 7W Must be considered for the Fully Stuffed IOE &amp; System design 
+				  </p> 
+				  <p> 
+				  <ul id="GUID-2A579560-2B78-4FAE-AFFA-00ED0018671D"> 
+					 <li id="LI_6D543ADCC93C4A08AA5842CE5ADAB727">Base Power (BP) is provided only to aid customers that want to further optimize IOE cooling when Min Stuffed conditions are met, NOT the overall design recommendation 
+					 </li> 
+				  </ul> 
+				  </p> 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li id="LI_E7765F23910E46D2A31C4D75DF6658E1"> 
+			 <p> 
+				<b>Max Config</b>: 3 IOE Gen5 x4 (SSDs) + 2 USB3.2 +1 Gen4 x4 (dTBT) -&gt; 6 IOE Devices 
+			 </p> 
+		  </li> 
+		  <li id="LI_E9F0C1B211A94888A1E9CEB8789C8604"> 
+			 <p> Below plot shows only IOE Power (Adders) Total 
+				<fig id="GUID-2642EF4D-787B-4187-B4C0-3DED86058365"> 
+				  <title> IOE Power (Adders) Total</title><image href="../images/GUID-40D391E3-2B0C-46C8-98C6-955FCAF47753.png" scalefit="yes" id="IMAGE_E12A50DCE98542A69D985CA8E44FA288"> 
+					 <alt> 
+					 </alt></image> 
+				</fig> 
+			 </p> 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <note id="GUID-64460BC3-52AB-4B34-8C3E-98A95D4E61DF"> 
+		<p> While 900 Series Flexible HSIO muxing allows 12 Gen5 + 4 Gen4 PCIe lanes -&gt; 4 IOE SSDs theoretically, it's an unlikely design trade-off. Each Gen5 SSD can be ~4-5W of sustained and ~9-11W burst power for L0=100% (Based on IOMeter 80rd/20wrt 50rand/50seq 100%duty) cooling consideration needs. All PCIe 100% worst case Power Adders assume worst case part at maximum operating temperature and DMI at 100%. Residency is a function of all device IO activity connected to the IOE and is not directly controllable. The IOE (PCH) link states depend on the devices connected and therefore residencies are determined by the design selection implementation of SSD devices and by OSPM Options/Schemes. 
+		</p> 
+	 </note> 
+	 <p><b>All values beyond 5.0W Base Power "TDP" are model extrapolated estimates and are NOT validated nor Manufacturing guaranteed. 
+		</b> 
+	 </p> 
+  </body> 
+</topic> 

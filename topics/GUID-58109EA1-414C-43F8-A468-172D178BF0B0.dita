@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-58109EA1-414C-43F8-A468-172D178BF0B0" xml:lang="en-US"> 
+  <title>NPU Workload Cooling Needs</title> 
+  <body> 
+	 <p> 
+	 <ul id="UL_3D859F75557B4E729133E4984DFDE5A5"> 
+		<li id="LI_335AB2A2077442AAB278551764B0564D"> The table below shows cooling needs for a NPU workload. 
+		</li> 
+		<li id="LI_04137CE86C2D497BA493CB0D6450BDBC"> Note that for sizing the heat exchanger on T_sensor limited systems, the lowest thermal resistance cooling need is the dominant recommended target. 
+		</li> 
+		<li id="LI_17558392577F4327A617C34006DF5D13"> NVL SKUs could have cases where the NPU-centric workload has more stringent cooling needs than the Reference IA MT workloads. 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <table id="TABLE_4F9606899CAA45C8BF0B4C376BDECF1E"> 
+		<tgroup cols="9"> 
+		  <colspec colnum="1" colname="col1" colwidth="*" /> 
+		  <colspec colnum="2" colname="col2" colwidth="*" /> 
+		  <colspec colnum="3" colname="col3" colwidth="*" /> 
+		  <colspec colnum="4" colname="col4" colwidth="*" /> 
+		  <colspec colnum="5" colname="col5" colwidth="*" /> 
+		  <colspec colnum="6" colname="col6" colwidth="*" /> 
+		  <colspec colnum="7" colname="col7" colwidth="*" /> 
+		  <colspec colnum="8" colname="col8" colwidth="*" /> 
+		  <colspec colnum="9" colname="col9" colwidth="*" /> 
+		  <thead> 
+			 <row> 
+				<entry> 
+				  <b> Product</b> 
+				</entry> 
+				<entry> 
+				  <b> Workload</b> 
+				</entry> 
+				<entry> 
+				  <b> Power Level (W)/ Processor Base Power (W)</b> 
+				</entry> 
+				<entry> 
+				  <b> Packag e Power on Workload (W)</b> 
+				</entry> 
+				<entry> 
+				  <b> T amb (°C)</b> 
+				</entry> 
+				<entry> 
+				  <b> T sys (°C)</b> 
+				</entry> 
+				<entry> 
+				  <b> Maxim um Operating Temperature (°C)</b> 
+				</entry> 
+				<entry> 
+				  <b> Ψ sn-hp 
+					 <sup>1, 5</sup> (°C/W)</b> 
+				</entry> 
+				<entry> 
+				  <b> Cooling Needs 
+					 <sup>1</sup> Ψ hp-a (°C/W)</b> 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry> 
+				  <b> NVL 8C 4P+0E +4LP E +4X<sup>e 3</sup></b> 
+				</entry> 
+				<entry> 
+				  <b> Stable Diffusion</b> 
+				</entry> 
+				<entry> 
+				  <b> 15</b> 
+				</entry> 
+				<entry> 
+				  <b> 15</b> 
+				</entry> 
+				<entry> 
+				  <b> 35</b> 
+				</entry> 
+				<entry> 
+				  <b> 16</b> 
+				</entry> 
+				<entry> 
+				  <b> 100</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.93</b> 
+				</entry> 
+				<entry> 
+				  <b> 2.33</b> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				  <b> NVL 16C 12Xe 4P+8E +4LP E +12X<sup>e 3</sup> 
+				  </b> 
+				</entry> 
+				<entry> 
+				  <b> Stable Diffusion</b> 
+				</entry> 
+				<entry> 
+				  <b> 25</b> 
+				</entry> 
+				<entry> 
+				  <b> 22</b> 
+				</entry> 
+				<entry> 
+				  <b> 35</b> 
+				</entry> 
+				<entry> 
+				  <b> 11</b> 
+				</entry> 
+				<entry> 
+				  <b> 100</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.95</b> 
+				</entry> 
+				<entry> 
+				  <b> 1.5</b> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				  <b> NVL 16C 4Xe4P +8E +4LP E +4X<sup>e 4</sup></b> 
+				</entry> 
+				<entry> 
+				  <b> Stable Diffusion</b> 
+				</entry> 
+				<entry> 
+				  <b> 45</b> 
+				</entry> 
+				<entry> 
+				  <b> 26<sup>6</sup></b> 
+				</entry> 
+				<entry> 
+				  <b> 35</b> 
+				</entry> 
+				<entry> 
+				  <b> 11</b> 
+				</entry> 
+				<entry> 
+				  <b> 100</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.74</b> 
+				</entry> 
+				<entry> 
+				  <b> 1.34</b> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				  <b> NVL HX 8P+16E +2X e</b> 4 
+				  <b> / NVL HX 16C 4Xe4P +8E +4LP E +2X<sup>e 4</sup></b> 
+				</entry> 
+				<entry> 
+				  <b> Stable Diffusion</b> 
+				</entry> 
+				<entry> 
+				  <b> 55</b> 
+				</entry> 
+				<entry> 
+				  <b> 26</b> 
+				</entry> 
+				<entry> 
+				  <b> 35</b> 
+				</entry> 
+				<entry> 
+				  <b> 11</b> 
+				</entry> 
+				<entry> 
+				  <b> 100</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.74</b> 
+				</entry> 
+				<entry> 
+				  <b> 1.34</b> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+				<entry> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				  <b> NVL HX 8P+16E +2X<sup>e 5</sup> / NVL HX 16C 4Xe4P +8E +4LP E +2X<sup>e 5</sup></b> 
+				</entry> 
+				<entry> 
+				  <b> Stable Diffusion</b> 
+				</entry> 
+				<entry> 
+				  <b> 55</b> 
+				</entry> 
+				<entry> 
+				  <b> 26</b> 
+				</entry> 
+				<entry> 
+				  <b> 35</b> 
+				</entry> 
+				<entry> 
+				  <b> 11</b> 
+				</entry> 
+				<entry> 
+				  <b> 100</b> 
+				</entry> 
+				<entry> 
+				  <b> 0.56</b> 
+				</entry> 
+				<entry> 
+				  <b> 1.52</b> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <p>Preliminary values and subject to change. 
+	 </p> 
+	 <p> 
+		<sup>1</sup> NVL, Ψsn -hp, and Ψhp-a are calculated using Intel Technology Targets based on most up to date test data. 
+	 </p> 
+	 <p> 
+		<sup>2</sup> Resistance are calculated based on the same thermal solution assumptions. 
+	 </p> 
+	 <p><sup> 3</sup> The thermal solution used is 0.5mm cold plate soldered to 2 heat pipes (2nos.of original diameter of 6mm crushed to 1.4mm). 
+	 </p> 
+	 <p> 
+		<sup>4</sup> The thermal solution used is 1.3mmcold plate soldered to 2 heat pipes (2nos.of original diameter of 6mm crushed to 1.4mm, 1no. of original diameter of 8mm crushed to 1.6mm) 
+	 </p> 
+	 <p><sup> 5</sup> The thermal solution used is 3mm cold plate soldered to 2 heat pipes (1no.of original diameter of 8mm crushed to 2mm, 1no. of original diameter of 10mm crushed to 2mm) 
+	 </p>
+	 <p><sup>6</sup> Refer for 14C 4Xe, the cooling needs of NVL 16C 4Xe as it has the same NPU cores.
+	 </p> 
+  </body> 
+</topic> 

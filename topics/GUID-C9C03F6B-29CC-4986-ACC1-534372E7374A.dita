@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "file:///E:/InfoShare/Web/Author/ASP/DocTypes/dita-oasis/1.2/technicalContent/dtd/topic.dtd"[]>
+<topic id="GUID-C9C03F6B-29CC-4986-ACC1-534372E7374A" xml:lang="en-US"> 
+  <title>Appendix</title> 
+  <body> 
+	 <section id="GUID-1595BEBF-C38F-4204-9BB1-46E5DB89D807"> 
+		<title> Dynamic Loading Considerations - Q Strain Metric</title> 
+		<p> Dynamic loading (or Mechanical Shock) is characterized by an ~2-11 ms peak load superimposed on the static load, representative of loads (compressive or tensile) experienced by the package during use conditions and shipping. Excessive loading can result in cracking of solder ball joints between the package and the motherboard. 
+		</p> 
+		<p><b> Common instances of dynamic load are:</b> 
+		<ul id="GUID-0C93F608-3EE7-4541-B226-75308AD3609D"> 
+		  <li id="LI_256E918E8AAF44F3BE7567680BF9A31F"> Excessive load due to improper handling by the user. 
+		  </li> 
+		  <li id="LI_658D5A258485402182D3F5F5450A139F">Accidental drop of the system from a certain height. 
+		  </li> 
+		  <li id="LI_1FDF066F265C48DABF96F93997104683">Loading on the package incurred during shipment of a boxed system. 
+		  </li> 
+		  <li id="LI_8FC89A1EF0BF45348B6AF4C735A11079">Other events that can result in a dynamic load on the package should also be taken into consideration. 
+		  </li> 
+		</ul> 
+		</p> 
+		<p> Q Strain Metric is being introduced for Skylake platform in order to reduce the bend mode dependency and provide more clear solder joint risk evaluation without requiring additional measurements. While the key difference between Q Strain Metric and Principal Strain Metric is in the calculation of the final strain value, only Q Strain Metric guidance will be provided. It is not intended to be compared to the Principal Strain Metric guidance previously provided for other BGA products. The two metrics are independent of each other. 
+		</p> 
+		<p>Q Strain Metric = | MIN (e1 x w, e3 x w, e2 x (1-w) | 
+		</p> 
+		<p>Where: w = weighted factor for the BGA package 
+		</p> 
+		<p>| | = absolute value 
+		</p> 
+		<p>e1, e2, e3 = raw strain values from each grid of strain gage rosette at an individual corner 
+		</p> 
+		<note id="GUID-0B28E7C3-6C7F-4FBB-AC65-7BAE4574EB8B"> 
+		  <ul id="GUID-D55EEF50-394B-4D2C-A26B-99045D6C37A4"> 
+			 <li id="LI_15657585B1F04498BE8E832A9E385B25"> For more information on the calculation and usage of the Q Strain Metric, refer the Q Strain Metric for BGA Strain Analysis Application Note (#<xref href="HTTPS://CDRDV2.INTEL.COM/V1/DL/GETCONTENT/494198" scope="external" format="https">494198</xref> ) and/or consult an Intel Representative. 
+			 </li> 
+			 <li id="LI_617C08CB2DA2478AA1C7AC14BF8900EA">For selection, application, and usage of strain gages refer the Shock Strain Monitoring Approach Customer Reference Document (#<xref href="HTTPS://CDRDV2.INTEL.COM/V1/DL/GETCONTENT/426413" scope="external" format="https">426413</xref> ). 
+			 </li> 
+		  </ul> 
+		</note> 
+	 </section> 
+  </body> 
+</topic> 

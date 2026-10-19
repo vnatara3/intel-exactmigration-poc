@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-0D0BE258-1833-49A9-A62D-C179317FC498" xml:lang="en-US"> 
+  <title> BGA Shock Strain Gage Location</title> 
+  <body> 
+	 <ul id="GUID-077FA4DD-66F4-4B27-8DFC-20C3B856FF91"> 
+		<li id="LI_E51CE1E4CE1242D8918A4CFD55D89B9D"> Strain gage location is critical parameter for strain accuracy. 
+		</li> 
+		<li id="LI_40E01F053CA349C9AC0E0BBBE3DB1BAD">Intel recommends use of silkscreen print on PCB opposite of package as shown (Figure 1). 
+		</li> 
+		<li id="LI_97DA6ED35DCD4699ACF76188DFD724CE">Strain gage symbol is available. Ask your Intel field representative for more information. 
+		</li> 
+		<li id="LI_EB9402178D564DA0BCD1673150BF5D83">Strain gage rosette center will be published with x, y coordinates with (0,0) in package center (Figure 3). 
+		</li> 
+		<li id="LI_97F86C5ECD08404F8DF105FAB77B7B32">PCB coordinate system may have different center (0,0) location; strain gage coordinates may need to be offset or adjusted for local package coordinate center. 
+		</li> 
+	 </ul> 
+	 <fig id="FIG_0DE35D0201D346B485483D101CBEC7DB"><image href="../images/GUID-92EF5837-A3A3-4193-94F3-D38C89B0CE82.png" scalefit="yes" id="IMAGE_7368E71DB91A43C2935AFB1E8EBC7D8E" /> 
+	 </fig> 
+	 <p> Refer to Shock Strain Monitoring Approach Customer Reference Document (#<xref href="HTTPS://CDRDV2.INTEL.COM/V1/DL/GETCONTENT/426413" scope="external">426413</xref>) 
+	 </p> 
+  </body> 
+</topic> 

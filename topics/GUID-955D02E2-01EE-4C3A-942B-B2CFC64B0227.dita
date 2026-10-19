@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "file:///E:/InfoShare/Web/Author/ASP/DocTypes/dita-oasis/1.2/technicalContent/dtd/topic.dtd"[]>
+<topic id="GUID-955D02E2-01EE-4C3A-942B-B2CFC64B0227" xml:lang="en-US"> 
+  <title>Thermal Consideration for Mechanical Loading</title> 
+  <body> 
+	 <p>This section contains details about TIM thermal resistance behavior with load and the relationship between load and die size for TIM pressure targets.
+	 </p> 
+  </body> 
+</topic>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-6FDB0443-B257-4850-B46D-655E7731BD79" xml:lang="en-US"> 
+  <title>Mobile NVL-HX IOE (formerly PCH): Base Power Definition</title> 
+  <body> 
+	 <section id="GUID-D66CAA50-E69A-4021-A759-91DE820FD99F"> 
+		<title> Mobile NVL-HX IOE TDP Scenario User Description (Measurable/Observable)</title> 
+		<p>A user starts a conference call (voice and video) with a game-caster friend on the notebook primary display. During call the user launches OBS and their favorite game on a secondary UHD display, to both network stream and storage record to an external USB SSD their combined call via OBS virtual camera and game play and all the while doing gameplay backup uploads to the cloud and downloads of new games they plan to play. 
+		</p> 
+		<fig id="GUID-2EBB988F-BFAE-4E96-80F0-1CBB8D334870"><image href="../images/GUID-9B46F2D7-65FB-4ED8-8C05-043E0DEC4719.png" scalefit="yes" id="IMAGE_E0216F40BD9A4CE6855D7D30A4E0EE3F"> 
+			 <alt> 
+			 </alt></image> 
+		</fig> 
+		<p> 
+		  <sup> 1</sup> IOE is not required for most popular configured designs (2 SSDs) since all the active interfaces and devices for the same ARL Base Power definition above are now available from NVL-Hx. Designs &gt;2 Gen5 x4 SSDs will require NVL IOE (PCH). But, may not require an extra heatsink attach cooling. For example, the Base Power Definition above shows 3 M.2 Gen5 x4 PCIe SSD design (1 CPU &amp; 2 IOE, but 1 IOE M.2 slots ships empty). For the Game Download workload traffic could vary the residency btw 50% to 100% over the repurposed DMI Gen5 x4 to the IOE M.2 (D: drive) SSD. OS Power Plan assumes Balanced (recommended). Other Power plans may disable some power saving PCH link states. 
+		</p> 
+		<p> 
+		  <sup> 2</sup> Network connectivity assumes companion RF module Intel® Wi-Fi7 BE411 (CNVi) formerly Whale Peak4, but also supports standard discrete Intel® Wi-Fi7 BE200 (PCIe) formerly Gale Peak2 to enable system design and usage flexibility options with standard Key-E or Key-A socket M.2 2230, M.2 1216 FF. 
+		</p> 
+	 </section> 
+  </body> 
+</topic> 

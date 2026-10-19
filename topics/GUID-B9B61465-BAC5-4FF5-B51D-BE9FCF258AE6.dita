@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-B9B61465-BAC5-4FF5-B51D-BE9FCF258AE6" xml:lang="en-US"> 
+  <title>Die Center Offsets to Package Center</title> 
+  <body> 
+	 <ul id="UL_CCF8CB2CBD864FF08E015EAB4243EC42"> 
+		<li id="LI_246B89C7A48748C1A5D526651D1A721B">An ideal thermal solution design would apply a load as uniform as possible on all dies in order to optimize thermal performance and minimize mechanical risk. 
+		</li> 
+		<li id="LI_B96B44D9F2F4439CBBBFA6E20D80A787">The heat pipe should be oriented to cover the hot spots on the die (refer 
+		  <xref scope="local" format="dita" href="GUID-C502FA2A-FDE3-45D8-ABFE-FDE87310920A.dita"><?xm-replace_text Design for PL2?></xref>). 
+		</li> 
+		<li id="LI_889B6EC7E509486EA58C8357E6036998">Refer Nova Lake Mobile Platform Package Mechanical Models and Drawings (#<xref href="https://cdrdv2.intel.com/V1/DL/GETCONTENT/858127" format="https" scope="external">858127</xref>), for specific package dimensions and die locations. 
+		</li> 
+	 </ul> 
+	 <p> 
+	 <table id="TABLE_F5698BBB84ED45E9829F3B11F7556395" pgwide="1"> 
+		<tgroup cols="4"><colspec colname="col01" colnum="1" colwidth="1.00*" /><colspec colnum="2" colname="col1" colwidth="2.06*" /><colspec colname="col03" colnum="3" colwidth="2.24*" /><colspec colname="col3" colnum="4" colwidth="2.32*" /><thead> 
+			 <row> 
+				<entry colname="col01"> 
+				</entry> 
+				<entry colname="col1"> 
+				  <b>NVL-HX 28C Series</b> 
+				</entry> 
+				<entry colname="col03"> 
+				  <p> NVL-HX 16C Series 
+				  </p> 
+				</entry> 
+				<entry colname="col3"> 
+				  <p> NVL-16C 12X<sup>e</sup> Series 
+				  </p> 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col01"> 
+				  <fig id="GUID-4DD1D791-37DB-4D6F-94AD-D5FD546CBB00"> 
+					 <p><b>Coordinates</b> 
+					 </p><image href="../images/GUID-95E40A37-83A3-47C8-A21A-DF792A6A7774.png" scalefit="yes" height="50" id="IMAGE_593AE0B733174507A84F11F7FAC1CC11"> 
+						<alt> 
+						</alt></image> 
+				  </fig> 
+				</entry> 
+				<entry colname="col1"> 
+				  <image href="../images/GUID-363D6ED7-03E3-4DF8-94BF-8D9A1501B299.png" scalefit="yes" height="160" id="IMAGE_363CC5E1CECE439EB7E41191F175DF7C"> 
+					 <alt> 
+					 </alt></image> 
+				</entry> 
+				<entry colname="col03"> 
+				  <image href="../images/GUID-9A48DFF1-21FA-40E9-979B-713804CD5C93.png" scalefit="yes" height="160" id="IMAGE_209301C5EDC5461686B2C01D7C64E2F7"> 
+					 <alt> 
+					 </alt></image> 
+				</entry> 
+				<entry colname="col3"> 
+				  <image href="../images/GUID-DA31B0A1-6A20-4D1E-BB20-5EB205556D9E.png" scalefit="yes" height="160" id="IMAGE_80A7699C20794AB9BB96A88C10C60C9F"> 
+					 <alt> 
+					 </alt></image> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col01"> 
+				</entry> 
+				<entry colname="col1"> 
+				  <p> 8 P-cores +16 E-cores + 4 LP E-cores +2 X<sup>e</sup>-cores 
+				  </p> 
+				</entry> 
+				<entry colname="col03"> 4 P-cores +8 E-cores + 4 LP E-cores +2 X<sup>e</sup>-cores 
+				</entry> 
+				<entry colname="col3"> 4 P-cores +8 E-cores + 4 LP E-cores +12 X<sup>e</sup>-cores 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col01"> 
+				  <p> Base Die Center Offset 1,2 (mm) 
+				  </p> 
+				</entry> 
+				<entry colname="col1"> 
+				  <p>X = 0.774 
+				  </p> 
+				  <p>Y = -3.122 
+				  </p> 
+				</entry> 
+				<entry colname="col03"> 
+				  <p> X= 0.771 
+				  </p> 
+				  <p> Y= 0.453 
+				  </p> 
+				</entry> 
+				<entry colname="col3"> 
+				  <p> X= 0.771 
+				  </p> 
+				  <p> Y= 1.406 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <table id="TABLE_435C1D4F51D84EFA8D4CC1FFAB03C202" pgwide="1"> 
+		<tgroup cols="4"><colspec colname="col01" colnum="1" colwidth="1.00*" /><colspec colnum="2" colname="col1" colwidth="2.06*" /><colspec colname="col3" colnum="3" colwidth="2.10*" /><colspec colname="col03" colnum="4" colwidth="2.24*" /><thead> 
+			 <row> 
+				<entry colname="col01"> 
+				</entry> 
+				<entry colname="col1"> 
+				  <b>NVL-16C 4X<sup>e</sup> Series</b> 
+				</entry> 
+				<entry colname="col3"> 
+				  <b> NVL-14C 4X<sup>e</sup> Series</b> 
+				</entry> 
+				<entry colname="col03"> 
+				  <b>NVL-8C Series</b> 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col01"> 
+				  <fig id="FIG_521D65A9FDC84981A7F6A587C425C555"> 
+					 <p><b>Coordinates</b> 
+					 </p><image href="../images/GUID-95E40A37-83A3-47C8-A21A-DF792A6A7774.png" scalefit="yes" height="50" id="IMAGE_CBB245CE5458497E90DCD4BFB52B41D3"> 
+						<alt> 
+						</alt></image> 
+				  </fig> 
+				</entry> 
+				<entry colname="col1"> 
+				  <image href="../images/GUID-18169E95-26A3-46A8-B7AC-7C5C8720BCD3.png" scalefit="yes" id="IMAGE_A5CAA80DB02B49388F8FAE00B74C3693" height="130"> 
+					 <alt> 
+					 </alt></image> 
+				</entry> 
+				<entry colname="col3"><image href="../images/GUID-2D59EE68-167B-4ABB-B7D7-57CF2A380ACE.png" scalefit="yes" id="IMAGE_C36CBFA1915C4920AD55A0A5C59806A5"> 
+					 <alt> 
+					 </alt></image> 
+				</entry> 
+				<entry colname="col03"> 
+				  <image href="../images/GUID-E331DD3A-0F37-4F6A-AD56-4C303599CF6B.png" scalefit="yes" id="IMAGE_ADAE6546A64E42BCBDC500868EDEE6FC"> 
+					 <alt> 
+					 </alt></image> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col01"> 
+				</entry> 
+				<entry colname="col1"> 
+				  <p> 4 P-cores +8 E-cores + 4 LP E-cores +4 X<sup>e</sup>-cores 
+				  </p> 
+				</entry> 
+				<entry colname="col3"> 
+				  <p> 2P-cores +8 E-cores+ 4 LP E-cores +4 X<sup>e</sup> -cores 
+				  </p> 
+				</entry> 
+				<entry colname="col03"> 4 P-cores +0 E-cores + 4 LP E-cores +4 X<sup>e</sup>-cores 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col01"> 
+				  <p> Base Die Center Offset 1,2 (mm) 
+				  </p> 
+				</entry> 
+				<entry colname="col1"> 
+				  <p>X = 0.771 
+				  </p> 
+				  <p>Y = 0.453 
+				  </p> 
+				</entry> 
+				<entry colname="col3"> 
+				  <p> X = 0.771 
+				  </p> 
+				  <p> Y = 0.453 
+				  </p> 
+				</entry> 
+				<entry colname="col03"> 
+				  <p>X = 0.771 
+				  </p> 
+				  <p>Y = 1.941 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 </p> 
+	 <note id="GUID-34A5FB18-2BAE-4139-AEE1-A6611ABE53A9"> 
+		<p><sup>1</sup> Package orientation: Pin1 on the bottom of the image. 
+		</p> 
+		<p> 
+		  <sup>2</sup> X and Y offsets relative to Package Center. 
+		</p> 
+	 </note> 
+  </body> 
+</topic> 

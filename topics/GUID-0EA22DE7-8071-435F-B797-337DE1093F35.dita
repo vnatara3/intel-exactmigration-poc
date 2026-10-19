@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "file:///E:/InfoShare/Web/Author/ASP/DocTypes/dita-oasis/1.2/technicalContent/dtd/topic.dtd"[]>
+<topic id="GUID-0EA22DE7-8071-435F-B797-337DE1093F35" xml:lang="en-US"> 
+  <title>Structural Testing - Static Compressive Load</title> 
+  <body> 
+	 <ul id="UL_5F1F2A3ED62240C1AE96323CE64C8EF4"> 
+		<li id="LI_C7D4AAFBECCF4D4F878443E393A93F3A">Considerations should be made to ensure steady state static loading on the packages that does not exceed the limits recommended. Excessive steady state static loading can induce solder ball cracks, especially over a period of time resulting in higher failure rate. 
+		</li> 
+		<li id="LI_AB6205D8492446D4873A9CBB5214DC44">This static compressive load is not to be exceeded; therefore, the tolerance of the package and the tolerances of the thermal solution (including attach mechanism) should be considered when calculating or measuring static load on the package. 
+		</li> 
+		<li id="LI_468ED0C5E6854AF2997F1FD5A9F439CB">An ideal thermal solution design would apply a load as uniform as possible on 
+		  <ph>all dies</ph> to optimize thermal performance and minimize mechanical risk. 
+		</li> 
+	 </ul> 
+	 <table id="TABLE_30B9C6B308B14E3A9BD1C525E4E5084A" pgwide="1"> 
+		<tgroup cols="7" align="center"> 
+		  <colspec colnum="1" colname="col1" colwidth="1.25*" /> 
+		  <colspec colnum="2" colname="col2" colwidth="1.00*" /> 
+		  <colspec colnum="3" colname="col3" colwidth="1.28*" /> 
+		  <colspec colnum="4" colname="col4" colwidth="1.04*" /> 
+		  <colspec colnum="5" colname="col5" colwidth="1.37*" /> 
+		  <colspec colnum="6" colname="col6" colwidth="1.36*" /> 
+		  <colspec colnum="7" colname="col7" colwidth="1.43*" /> 
+		  <thead> 
+			 <row> 
+				<entry> 
+				  <b>Package</b> 
+				</entry> 
+				<entry> 
+				  <b>PCB Thickness<sup>2</sup> 
+				  </b> 
+				</entry> 
+				<entry> 
+				  <b>Supported Load Back Plate</b> 
+				</entry> 
+				<entry> 
+				  <b>&lt;=10 lbf</b> 
+				</entry> 
+				<entry> 
+				  <b>10.1 lbf - 15 lbf</b> 
+				</entry> 
+				<entry> 
+				  <b>15.1 lbf - 20 lbf</b> 
+				</entry> 
+				<entry> 
+				  <b>20.1 lbf - 25 lbf</b> 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row valign="middle"> 
+				<entry morerows="5" valign="middle" align="center"> 
+				  <b> 
+					 <b> NVL 8C/14C 4X<sup>e</sup>/16C 12X</b><sup><b>e</b></sup><b>/16C</b> 
+					 <b>4X</b><sup><b>e</b></sup><b>/HX16C 
+					 </b></b> 
+				</entry> 
+				<entry morerows="1" valign="middle" align="center"> 
+				  <p> 0.60mm - 0.69mm / 23.6mil - 27.92mil 
+				  </p> 
+				</entry> 
+				<entry valign="middle" align="center"> No Back Plate 
+				</entry> 
+				<entry namest="col4" nameend="col5" valign="middle" align="center"> Corner Glue Allowed (not required) 
+				</entry> 
+				<entry valign="middle" align="center" namest="col6" nameend="col7"> 
+				  <b>Not supported</b> 
+				</entry> 
+			 </row> 
+			 <row valign="middle"> 
+				<entry colname="col3" valign="middle" align="center"> Back Plate 
+				  <sup>1</sup> 
+				</entry> 
+				<entry namest="col4" nameend="col5" valign="middle" align="center"> Corner Glue Allowed (not required) 
+				</entry> 
+				<entry valign="middle" align="center" namest="col6" nameend="col7"> 
+				  <b>Not supported</b> 
+				</entry> 
+			 </row> 
+			 <row valign="middle"> 
+				<entry colname="col2" morerows="1" valign="middle" align="center"> 
+				  <p> 0.7mm - 0.79mm / 27.6mil - 31.1mil 
+				  </p> 
+				</entry> 
+				<entry valign="middle" align="center"> No Back Plate 
+				</entry> 
+				<entry namest="col4" nameend="col5" valign="middle" align="center"> Corner Glue Allowed (not required) 
+				</entry> 
+				<entry valign="middle" align="center" namest="col6" nameend="col7"> 
+				  <b>Not supported</b> 
+				</entry> 
+			 </row> 
+			 <row valign="middle"> 
+				<entry colname="col3" valign="middle" align="center"> Back Plate 
+				  <sup>1</sup> 
+				</entry> 
+				<entry namest="col4" nameend="col6" valign="middle" align="center"> Corner Glue Allowed (not required) 
+				</entry> 
+				<entry valign="middle" align="center" colname="col7"><b>Not supported</b> 
+				</entry> 
+			 </row> 
+			 <row valign="middle"> 
+				<entry colname="col2" valign="middle" align="center" morerows="1"> 
+				  <p> 0.8mm - 1.67mm / 32mil - 66mil 
+				  </p> 
+				</entry> 
+				<entry colname="col3" valign="middle" align="center">No Back Plate 
+				</entry> 
+				<entry namest="col4" nameend="col6" valign="middle" align="center"> Corner Glue Allowed (not required) 
+				</entry> 
+				<entry valign="middle" align="center" colname="col7"><b>Not supported</b> 
+				</entry> 
+			 </row> 
+			 <row valign="middle"> 
+				<entry colname="col3" valign="middle" align="center">Back Plate 
+				  <sup>1</sup> 
+				</entry> 
+				<entry namest="col4" nameend="col7" valign="middle" align="center">Corner Glue Allowed (not required) 
+				</entry> 
+			 </row> 
+			 <row valign="middle"> 
+				<entry morerows="1" valign="middle" align="center"> 
+				  <b> NVL-HX 28C/24C</b> 
+				</entry> 
+				<entry colname="col2" morerows="1" valign="middle" align="center"> 
+				  <p> 0.8mm - 1.67mm / 
+				  </p> 
+				  <p> 32mil - 66mil 
+				  </p> 
+				</entry> 
+				<entry colname="col3" valign="middle" align="center"> No Back Plate 
+				</entry> 
+				<entry namest="col4" nameend="col7" valign="middle" align="center">Corner Glue Required 
+				</entry> 
+			 </row> 
+			 <row valign="middle"> 
+				<entry colname="col3" valign="middle" align="center"> Back Plate 
+				  <sup>2</sup> 
+				</entry> 
+				<entry namest="col4" nameend="col7" valign="middle" align="center">Corner Glue Required 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <p> 
+		<sup>1</sup> If using backplate, recommended maximum back plate thickness is 0.5mm 
+	 </p> 
+	 <p> 
+		<sup>2</sup> If using backplate, recommended maximum back plate thickness is 1.2mm 
+	 </p> 
+	 <p> 
+		<sup>3</sup> 
+		<b>Caution:</b> Board thicknesses outside of the allowable range may cause unexpected reliability issues and are not supported. Customers are strongly advised to only use board thicknesses that fall within the range shown in the table. 
+	 </p> 
+  </body> 
+</topic> 

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "file:///E:/InfoShare/Web/Author/ASP/DocTypes/dita-oasis/1.2/technicalContent/dtd/topic.dtd"[]>
+<topic id="GUID-3FF25ADD-E257-4E09-992B-EA4EAD729274" xml:lang="en-US"> 
+  <title>Feature-rich Platform</title> 
+  <body> 
+	 <ul id="UL_A026125C62204EDCB47396DE2CF8DD1F"> 
+		<li id="LI_D02DFF16802B492AB6453F99B8D4F7DE">Panther Lake Platform integrates more features into the SoC than just CPU functionality. To ensure the system has appropriate thermal capacity to allow these additional features to be active while delivering full CPU performance, it is recommended to adjust the SoC power design point accordingly. IA performance will be more significantly impacted at lower processor base power values. 
+		</li> 
+		<li id="LI_E9BEBD8FFB194E0999555DC39AD1E036">Power information is provided by Intel through the “TCSS Power Adders Guidance” section of the Panther Lake Platform Design Guide (<xref href="https://cdrdv2.intel.com/v1/dl/getContent/813278" format="https" scope="external">813278</xref>). More information on TCSS scenario descriptions, current data and disclaimers can be found in those documents. Information provided in the Platform Design Guide will take precedence in case of a conflict of information with the current document. 
+		</li> 
+	 </ul> 
+	 <ul id="UL_AD8277AD71104170967FAB1EFF7A8869"> 
+		<li id="LI_0D891743C42A4C60BA6569710D34426F">To ensure appropriate thermal capacity, the junction and skin temperature needs to be evaluated using the additional SOC and non-SOC powers provided in the PDG. The thermal impact of the additional power can be assessed using: 
+		  <ul id="GUID-3272A75D-E335-4810-8F91-D7CA65A2C5F7"> 
+			 <li id="LI_6DEA6CAAD3A548A3ACB4326C9D4847A2">Modeling and Simulation 
+			 </li> 
+			 <li id="LI_76F4CB6092614389B3B79C18B441E3D5">Testing in lab 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li id="LI_2B574C534DAD41E8B5B81C74EE119A55">Example of a design verification: 
+		  <ol id="GUID-15B68B2F-CCA5-4E85-BD14-008B79D8B497"> 
+			 <li id="LI_E0A6D765EC35483CA5ED44184D696B92">Baseline design verification: Test the system at the PL1 target and confirm that Tskins are lower than the Tskin limits. 
+				<ul id="GUID-3EE80CBA-2347-40F0-B680-157BB90B8F47"> 
+				  <li id="LI_4044B01E297D4DF49063342480C4E250">Example: Test Baseline_PL1_target scenario, verify Tskin &lt; threshold 
+				  </li> 
+				</ul> 
+			 </li> 
+			 <li id="LI_F1CF8BF619B840DFBA50C0CFEBE011B3">Feature rich design verification: To verify thermal performance with feature rich scenario two approach could be taken, either test directly the feature rich scenario or ensure the baseline config has adequate margin to absorb the power adders. 
+				<ul id="GUID-DB0AB2A2-F4B5-4F3A-B03F-20BF8EB1C199"> 
+				  <li id="LI_9DC09C7275484FA89BE76E2FAC9DA704">Example 1: Test FeatureRich_PL1_target scenario, verify Tskin &lt; threshold. Pros: exact power; Cons: testing complexity is high 
+				  </li> 
+				  <li id="LI_070C57AF390E4DCEBB20B12ED84A62D9">Example 2: Test Baseline_PL1_scenario, verify Tskin &lt; (threshold – adequate margin). Pros: testing simplicity; Cons: identify adequate margin 
+				  </li> 
+				</ul> 
+			 </li> 
+		  </ol> 
+		</li> 
+	 </ul> 
+  </body> 
+</topic> 

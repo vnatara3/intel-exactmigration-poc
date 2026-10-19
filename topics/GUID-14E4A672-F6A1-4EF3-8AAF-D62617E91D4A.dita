@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "file:///E:/InfoShare/Web/Author/ASP/DocTypes/dita-oasis/1.2/technicalContent/dtd/topic.dtd"[]>
+<topic id="GUID-14E4A672-F6A1-4EF3-8AAF-D62617E91D4A" xml:lang="en-US"> 
+  <title>Reference Documents</title> 
+  <body> 
+	 <table id="TABLE_AF71A16A4CC74402B65B1388B0573B9B"> 
+		<tgroup cols="2"> 
+		  <colspec colnum="1" colname="col1" colwidth="*" /> 
+		  <colspec colnum="2" colname="col2" colwidth="*" /> 
+		  <thead> 
+			 <row> 
+				<entry valign="middle" align="center"> Document Title 
+				</entry> 
+				<entry valign="middle" align="center"> Document Number 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry> Nova Lake Platform Package Mechanical Models and Drawings 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <xref href="https://cdrdv2.intel.com/v1/dl/getContent/858127" format="https" scope="external"> 858127</xref> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Nova Lake Mobile Package Thermal Models 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <xref href="https://cdrdv2.intel.com/v1/dl/getContent/858796" format="https" scope="external">858796</xref> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <table id="TABLE_3C5F996178484F19A75300CEE8CBCCCC"> 
+		<tgroup cols="2"> 
+		  <colspec colnum="1" colname="col1" colwidth="*" /> 
+		  <colspec colnum="2" colname="col2" colwidth="*" /> 
+		  <thead> 
+			 <row> 
+				<entry valign="middle" align="center"> Specifications 
+				</entry> 
+				<entry valign="middle" align="center"> Document Number 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry> Nova Lake-H/HX Processor External Design Specification, Volume 1 of 2 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <xref href="https://cdrdv2.intel.com/v1/dl/getContent/844316" format="https" scope="external">844316</xref> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <table id="TABLE_2929EDDF1C584E258ABB179950F459D9"> 
+		<tgroup cols="2"> 
+		  <colspec colnum="1" colname="col1" colwidth="*" /> 
+		  <colspec colnum="2" colname="col2" colwidth="*" /> 
+		  <thead> 
+			 <row> 
+				<entry valign="middle" align="center"> Tools, Models, Methods 
+				</entry> 
+				<entry valign="middle" align="center"> Document Number 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry> Client Thermal Validation BKMs 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <xref>544652</xref> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Client Active Transient Calculator 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <xref>632134</xref> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Intel<sup>®</sup> Power and Thermal Analysis Tool (PTAT) 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <xref>637737</xref> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Mobile Thermal Attach Structural Modeling 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <xref>575675</xref> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Liquid Metal Thermal Interface Materials for Bare Die Client BGA Packages 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <xref>647141</xref> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <table id="TABLE_A368A442FAA144D4AE399E6CA792E946"> 
+		<tgroup cols="2"> 
+		  <colspec colnum="1" colname="col1" colwidth="*" /> 
+		  <colspec colnum="2" colname="col2" colwidth="*" /> 
+		  <thead> 
+			 <row> 
+				<entry valign="middle" align="center"> Guides, Tutorials, Technical Advisory 
+				</entry> 
+				<entry valign="middle" align="center"> Document Number 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry> PTL H to NVL H chassis transition guidance 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <xref href="https://cdrdv2.intel.com/V1/DL/GETCONTENT/819439" format="https" scope="external">819439</xref> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> ARL HX to NVL HX chassis transition guidance 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <xref href="https://cdrdv2.intel.com/V1/DL/GETCONTENT/849466" format="https" scope="external">849466</xref> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> Peak Performance Handbook (PPH); beyond fully validated PDG (e.g., Beyond TMDG)<sup>1</sup> 
+				</entry> 
+				<entry colname="col2" valign="middle" align="center"> 
+				  <xref href="https://cdrdv2.intel.com/V1/DL/GETCONTENT/819281" format="https" scope="external">819281</xref> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Shock Strain Monitoring Approach Customer Reference Document 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <xref href="https://cdrdv2.intel.com/v1/dl/getContent/426413" format="https" scope="external">426413</xref> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Q Strain Metric for Shock Testing Application Note 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <xref href="https://cdrdv2.intel.com/v1/dl/getContent/494198" format="https" scope="external">494198</xref> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Panther Lake Mobile Platform Thermal Mechanical Design Guide 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <xref href="https://cdrdv2.intel.com/V1/DL/GETCONTENT/823589" format="https" scope="external"> 823589</xref> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Nova Lake H Platform Design Guide 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <xref href="https://cdrdv2.intel.com/V1/DL/GETCONTENT/855310" format="https" scope="external">855310</xref> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Nova Lake-HX Platform Design Guide 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <xref href="https://cdrdv2.intel.com/V1/DL/GETCONTENT/854352" format="https" scope="external">854352</xref> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Nova Lake HX Processor Symbol Kit 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <xref href="https://cdrdv2.intel.com/V1/DL/GETCONTENT/856117" format="https" scope="external">856117</xref> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Nova Lake HX/H DDR5 SODIMM 1DPC T3 RVP TDK 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <xref href="https://cdrdv2.intel.com/V1/DL/GETCONTENT/856341" format="https" scope="external">856341</xref> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Nova Lake Thermals Considerations 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <xref scope="external" format="https" href="https://cdrdv2.intel.com/v1/dl/getContent/869137">869137</xref> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry>Nova Lake Mobile – Power and Performance Design Guide 
+				</entry> 
+				<entry valign="middle" align="center"><xref scope="external" format="https" href="https://cdrdv2.intel.com/v1/dl/getContent/867669">867669</xref> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry>Nova Lake Mobile 6C Update Customer Communication 
+				</entry> 
+				<entry valign="middle" align="center"><xref scope="external" format="https" href="HTTPS://CDRDV2.INTEL.COM/V1/DL/GETCONTENT/919592">919592</xref> 
+				</entry> 
+			 </row>
+			 <row>
+				<entry>Nova Lake 14C and 8C System Design Thermal Mechanical Compatibility Guidance
+				</entry>
+				<entry valign="middle" align="center"><xref href="https://cdrdv2.intel.com/v1/dl/getContent/930368" format="https" scope="external">930368</xref>
+				</entry>
+			 </row> 
+			 <row> 
+				<entry namest="col1" nameend="col2"><sup>1</sup> Ask the Intel representative for availability of higher than POR speed memory Beyond TMDG platform projection guidance collaterals. 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </body> 
+</topic> 

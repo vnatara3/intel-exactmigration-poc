@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-4168191B-819E-46C7-AB74-E001C9279DE5" xml:lang="en-US"> 
+  <title> Heat Exchanger (HX) Selection for Transient Performance</title> 
+  <body> 
+    <fig id="GUID-C739E0FC-3009-4B1E-88B4-6512F3496532"><image href="../images/GUID-7AC13546-1DD3-4BF2-8033-9DEE461F4EEC.pdf" scalefit="yes" id="IMAGE_D5A7D222DF574A6EAA6968C425FC8D83"></image> 
+    </fig> 
+    <fig id="GUID-6B1B27C0-2CFD-4B14-A210-E4DC6DC893AD"><image href="../images/GUID-31A17DD0-C46F-4D01-A009-654BD4A85CB6.png" scalefit="yes" id="IMAGE_1939B02779E84AB6A1153BA23D07301E" height="150"></image> 
+    </fig> 
+    <p> Improving cold plate thermal mass will result in improvements on short duration (3-5s) turbo power (PL2) despite marginal to negligible improvements to S.S. 
+    </p> 
+    <p><?xm-replace_text Paragraph?>
+    </p> 
+    <p> 
+      <b>Nomenclature:</b> 
+    <ul id="GUID-00FC2F70-9581-4761-91EC-8B67DD659C83"> 
+      <li id="LI_3F041248F5B04B12A9978ACC480D10FB"><b>Power Capability:</b> Additional power the SoC can support before reaching 
+        
+      </li> 
+      <li id="LI_7A5BC4BFABE94FA79C74111E24B3450C"><b>S.S. 
+        </b>: Steady State 
+      </li> 
+      <li id="LI_F15C48F4B1FF4C6AAAB1388E25F349D1"><b>ACT : 
+        </b>All-Core-Turbo 
+      </li> 
+      <li id="LI_83A09A6A460447AD8F0F2E52B89721D6"><b>HX :</b> Heat Exchanger 
+      </li> 
+    </ul> 
+    </p> 
+  </body> 
+</topic> 

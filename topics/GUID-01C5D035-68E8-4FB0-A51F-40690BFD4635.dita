@@ -1,0 +1,1167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "file:///E:/InfoShare/Web/Author/ASP/DocTypes/dita-oasis/1.2/technicalContent/dtd/topic.dtd"[]>
+<topic id="GUID-01C5D035-68E8-4FB0-A51F-40690BFD4635" xml:lang="en-US"> 
+  <title>Platform Workload (Dorothy) Scenarios</title> 
+  <body> 
+	  
+	 <table id="GUID-A8EA4FCB-29E0-4D04-9D3E-47857215A61B"> 
+		<tgroup cols="7"> 
+		  <colspec colnum="1" colname="col1" colwidth="*" /> 
+		  <colspec colnum="2" colname="col2" colwidth="*" /> 
+		  <colspec colnum="3" colname="col3" colwidth="*" /> 
+		  <colspec colnum="4" colname="col4" colwidth="*" /> 
+		  <colspec colnum="5" colname="col5" colwidth="*" /> 
+		  <colspec colnum="6" colname="col6" colwidth="*" /> 
+		  <colspec colnum="7" colname="col7" colwidth="*" /> 
+		  <thead> 
+			 <row valign="middle"> 
+				<entry colname="col1" morerows="1" align="center" valign="middle"> 
+				  <b>Component</b> 
+				</entry> 
+				<entry namest="col2" nameend="col7" align="center" valign="middle"> 
+				  <p>Scenario Guidance Power (W) for Dorothy13<sup>5</sup> NVL 8C Processor Premium T&amp;L (14") 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry namest="col2" nameend="col4" align="center" valign="middle">LP5x (T4)-9600 
+				</entry> 
+				<entry namest="col5" nameend="col7" align="center" valign="middle"> DDR5 (T3)-7200 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry align="left"> NVL Package 
+				</entry> 
+				<entry valign="middle" align="center"> 15<sup>1</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 25<sup>1</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> NVL 8C 
+				</entry> 
+				<entry valign="middle" align="center"> 15<sup>1</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 25<sup>1</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> NVL 8C 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry align="left"> NVL VR Loss 
+				</entry> 
+				<entry valign="middle" align="center"> 2.6 
+				</entry> 
+				<entry valign="middle" align="center"> 4.6 
+				</entry> 
+				<entry valign="middle" align="center"> 6 Pkg: 2+1+2+1 Phases (NVDC<sup>4</sup> ) 
+				</entry> 
+				<entry valign="middle" align="center"> 2.6 
+				</entry> 
+				<entry valign="middle" align="center"> 4.6 
+				</entry> 
+				<entry valign="middle" align="center"> 6 Pkg: 2+1+2+1 Phases (NVDC<sup>4</sup> ) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry align="left"> Memory 
+				</entry> 
+				<entry valign="middle" align="center"> 2.3 
+				</entry> 
+				<entry valign="middle" align="center"> 2.6 
+				</entry> 
+				<entry valign="middle" align="center"> 32GB 
+				</entry> 
+				<entry valign="middle" align="center"> 4.3 
+				</entry> 
+				<entry valign="middle" align="center"> 4.6 
+				</entry> 
+				<entry valign="middle" align="center"> 32GB 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry align="left"> Storage 
+				</entry> 
+				<entry valign="middle" align="center"> 1.6 
+				</entry> 
+				<entry valign="middle" align="center"> 1.6 
+				</entry> 
+				<entry valign="middle" align="center"> C: M.2 NVMe* SSD Gen4 
+				</entry> 
+				<entry valign="middle" align="center"> 1.6 
+				</entry> 
+				<entry valign="middle" align="center"> 1.6 
+				</entry> 
+				<entry valign="middle" align="center"> C: M.2 NVMe* SSD Gen4 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry align="left"> Storage 
+				</entry> 
+				<entry valign="middle" align="center"> - 
+				</entry> 
+				<entry valign="middle" align="center"> - 
+				</entry> 
+				<entry valign="middle" align="center"> D: M.2 NVMe* SSD Gen4 
+				</entry> 
+				<entry valign="middle" align="center"> - 
+				</entry> 
+				<entry valign="middle" align="center"> - 
+				</entry> 
+				<entry valign="middle" align="center"> D: M.2 NVMe* SSD Gen4 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry align="left"> Comms A 
+				</entry> 
+				<entry valign="middle" align="center"> 0.6 
+				</entry> 
+				<entry valign="middle" align="center"> 0.6 
+				</entry> 
+				<entry valign="middle" align="center"> M.2 Key-E (WLAN/BT) 
+				</entry> 
+				<entry valign="middle" align="center"> 0.6 
+				</entry> 
+				<entry valign="middle" align="center"> 0.6 
+				</entry> 
+				<entry valign="middle" align="center"> M.2 Key-E (WLAN/BT) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry align="left"> Others 
+				</entry> 
+				<entry valign="middle" align="center"> 2.4 
+				</entry> 
+				<entry valign="middle" align="center"> 2.4 
+				</entry> 
+				<entry valign="middle" align="center"> Audio, Mics, Sensors, MB, EC, 2 Retimers, etc. 
+				</entry> 
+				<entry valign="middle" align="center"> 2.4 
+				</entry> 
+				<entry valign="middle" align="center"> 2.4 
+				</entry> 
+				<entry valign="middle" align="center"> Audio, Mics, Sensors, MB, EC, 2 Retimers, etc. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry align="left"> Fan 
+				</entry> 
+				<entry valign="middle" align="center"> 0.5 
+				</entry> 
+				<entry valign="middle" align="center"> 0.5 
+				</entry> 
+				<entry valign="middle" align="center"> 1 PWM Fan (~3mm) 
+				</entry> 
+				<entry valign="middle" align="center"> 0.5 
+				</entry> 
+				<entry valign="middle" align="center"> 0.5 
+				</entry> 
+				<entry valign="middle" align="center"> 1 PWM Fan (~3mm) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry align="left"> Sys VR Loss 
+				</entry> 
+				<entry valign="middle" align="center"> 1.8 
+				</entry> 
+				<entry valign="middle" align="center"> 1.9 
+				</entry> 
+				<entry valign="middle" align="center"> Rest of Platform 
+				</entry> 
+				<entry valign="middle" align="center"> 2.1 
+				</entry> 
+				<entry valign="middle" align="center"> 2.2 
+				</entry> 
+				<entry valign="middle" align="center"> Rest of Platform 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry align="left"> System Charger Loss<sup>2</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 1.9<sup>2</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 2.7<sup>2</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> NVDC (AC Only) 
+				</entry> 
+				<entry valign="middle" align="center"> 2<sup>2</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 2.8<sup>2</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> NVDC (AC Only) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry align="left"> Battery Charger Loss 
+				</entry> 
+				<entry valign="middle" align="center"> 1.8<sup>3a</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 1.8<sup>3a</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> MB Circuitry Charger (55WHr) 
+				</entry> 
+				<entry valign="middle" align="center"> 1.8<sup>3a</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 1.8<sup>3a</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> MB Circuitry Charger (55WHr) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry align="left"> 
+				  <b> Base System Total</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <b> 30.5</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <b> 43.7</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <b> 32.9</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <b> 46.1</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry align="left"> Camera 
+				</entry> 
+				<entry valign="middle" align="center"> 0.5 
+				</entry> 
+				<entry valign="middle" align="center"> 0.5 
+				</entry> 
+				<entry valign="middle" align="center"> MIPI 5MP User Facing 
+				</entry> 
+				<entry valign="middle" align="center"> 0.5 
+				</entry> 
+				<entry valign="middle" align="center"> 0.5 
+				</entry> 
+				<entry valign="middle" align="center"> MIPI 5MP User Facing 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry align="left"> Display<sup>5</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 2.8 
+				</entry> 
+				<entry valign="middle" align="center"> 2.8 
+				</entry> 
+				<entry valign="middle" align="center"> eDP* 28x19/PSR/ Touch 
+				</entry> 
+				<entry valign="middle" align="center"> 2.8 
+				</entry> 
+				<entry valign="middle" align="center"> 2.8 
+				</entry> 
+				<entry valign="middle" align="center"> eDP* 28x19/PSR/ Touch 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry align="left"> 
+				  <b> System Total</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <b> 33.8</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <b> 47.0</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <b> 36.2</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <b> 49.4</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <table id="GUID-3B9B1FD2-0254-47DE-9F9E-BB0DB4A296CC"> 
+		<tgroup cols="7"> 
+		  <colspec colnum="1" colname="col1" colwidth="1.11*" /> 
+		  <colspec colnum="2" colname="col2" colwidth="1.11*" /> 
+		  <colspec colnum="3" colname="col3" colwidth="1.11*" /> 
+		  <colspec colnum="4" colname="col4" colwidth="1.00*" /> 
+		  <colspec colnum="5" colname="col5" colwidth="1.22*" /> 
+		  <colspec colnum="6" colname="col6" colwidth="1.11*" /> 
+		  <colspec colnum="7" colname="col7" colwidth="1.11*" /> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1" morerows="2" align="center" valign="middle"> 
+				  <b>Component</b> 
+				</entry> 
+				<entry namest="col2" nameend="col7" align="center" valign="middle">Scenario Guidance Power (W) for Dorothy13<sup>5</sup> NVL Compatibility 16C 4X<sup>e</sup> / HX 16C 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry namest="col2" nameend="col4" align="center" valign="middle">Dorothy13 8C Premium T&amp;L 14" 
+				</entry> 
+				<entry namest="col5" nameend="col7" align="center" valign="middle"> 
+				  <p>Dorothy13 16C 12X<sup>e</sup> Thin &amp; Powerful 15.6" 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col2" align="center" valign="middle"> 
+				  <b>LP5x (T4)-9600</b> 
+				</entry> 
+				<entry colname="col3" align="center" valign="middle"> 
+				  <b>DDR5 (T3)-7200</b> 
+				</entry> 
+				<entry colname="col4" valign="middle" align="center"> 
+				</entry> 
+				<entry colname="col5" align="center" valign="middle"> 
+				  <b>LP5x (T4)-9600</b> 
+				</entry> 
+				<entry colname="col6" align="center" valign="middle"> 
+				  <b>DDR5 (T3)-7200</b> 
+				</entry> 
+				<entry colname="col7" valign="middle" align="center"> 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry> NVL Package 
+				</entry> 
+				<entry valign="middle" align="center"> 25<sup>1</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 25<sup>1</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> NVL 16C 4X<sup>e</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 25<sup>1</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 25<sup>1</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> NVL 16C 4X<sup>e</sup> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> NVL VR Loss 
+				</entry> 
+				<entry valign="middle" align="center"> 4.8 
+				</entry> 
+				<entry valign="middle" align="center"> 5.6 
+				</entry> 
+				<entry valign="middle" align="center"> 8 Pkg: 3+2+2+1 Phases (NVDC<sup>4</sup>) 
+				</entry> 
+				<entry valign="middle" align="center"> 4.5 
+				</entry> 
+				<entry valign="middle" align="center"> 4.6 
+				</entry> 
+				<entry valign="middle" align="center"> 8 Pkg: 3+2+2+1 Phases (NVDC<sup>4</sup>) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Memory 
+				</entry> 
+				<entry valign="middle" align="center"> 2.5 
+				</entry> 
+				<entry valign="middle" align="center"> 4.5 
+				</entry> 
+				<entry valign="middle" align="center"> 32GB 
+				</entry> 
+				<entry valign="middle" align="center"> 3.2 
+				</entry> 
+				<entry valign="middle" align="center"> 5.6 
+				</entry> 
+				<entry valign="middle" align="center"> 32GB 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Storage 
+				</entry> 
+				<entry valign="middle" align="center"> 1.6 
+				</entry> 
+				<entry valign="middle" align="center"> 1.6 
+				</entry> 
+				<entry valign="middle" align="center"> C: M.2 NVMe* SSD Gen5 
+				</entry> 
+				<entry valign="middle" align="center"> 2.5 
+				</entry> 
+				<entry valign="middle" align="center"> 2.5 
+				</entry> 
+				<entry valign="middle" align="center"> C: M.2 NVMe* SSD Gen5 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Storage 
+				</entry> 
+				<entry valign="middle" align="center"> - 
+				</entry> 
+				<entry valign="middle" align="center"> - 
+				</entry> 
+				<entry valign="middle" align="center"> D: M.2 NVMe* SSD Gen4 
+				</entry> 
+				<entry valign="middle" align="center"> - 
+				</entry> 
+				<entry valign="middle" align="center"> - 
+				</entry> 
+				<entry valign="middle" align="center"> D: M.2 NVMe* SSD Gen4 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Comms A 
+				</entry> 
+				<entry valign="middle" align="center"> 0.6 
+				</entry> 
+				<entry valign="middle" align="center"> 0.6 
+				</entry> 
+				<entry valign="middle" align="center"> M.2 Key-E (WLAN/BT) 
+				</entry> 
+				<entry valign="middle" align="center"> 0.6 
+				</entry> 
+				<entry valign="middle" align="center"> 0.6 
+				</entry> 
+				<entry valign="middle" align="center"> M.2 Key-E (WLAN/BT) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Others 
+				</entry> 
+				<entry valign="middle" align="center"> 2.4 
+				</entry> 
+				<entry valign="middle" align="center"> 2.4 
+				</entry> 
+				<entry valign="middle" align="center"> Audio, Mics, Sensors, MB, EC, 2 Retimers, etc. 
+				</entry> 
+				<entry valign="middle" align="center"> 2.6 
+				</entry> 
+				<entry valign="middle" align="center"> 1.8 
+				</entry> 
+				<entry valign="middle" align="center"> Audio, Mics, Sensors, MB, EC, 2 Retimers, etc. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Fan 
+				</entry> 
+				<entry valign="middle" align="center"> 0.5 
+				</entry> 
+				<entry valign="middle" align="center"> 0.5 
+				</entry> 
+				<entry valign="middle" align="center"> 2 PWM Fans (~3mm) 
+				</entry> 
+				<entry valign="middle" align="center"> 1 
+				</entry> 
+				<entry valign="middle" align="center"> 1 
+				</entry> 
+				<entry valign="middle" align="center"> 2 PWM Fans (~3mm) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Sys VR Loss 
+				</entry> 
+				<entry valign="middle" align="center"> 1.8 
+				</entry> 
+				<entry valign="middle" align="center"> 2.2 
+				</entry> 
+				<entry valign="middle" align="center"> Rest of Platform 
+				</entry> 
+				<entry valign="middle" align="center"> 2.3 
+				</entry> 
+				<entry valign="middle" align="center"> 2.6 
+				</entry> 
+				<entry valign="middle" align="center"> Rest of Platform 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> System Charger Loss<sup>2</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 2.7<sup>2</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 2.9<sup>2</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> NVDC (AC Only) 
+				</entry> 
+				<entry valign="middle" align="center"> 2.6<sup>2</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 2.7<sup>2</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> NVDC (AC Only) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Battery Charger Loss 
+				</entry> 
+				<entry valign="middle" align="center"> 1.8<sup>3a</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 1.8<sup>3a</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> MB Circuitry Charger (65WHr) 
+				</entry> 
+				<entry valign="middle" align="center"> 1.9<sup>3a</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 1.9<sup>3a</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> MB Circuitry Charger (65WHr) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				  <b> Base System Total</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <b> 43.7</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <b> 47.1</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <b> 46.2</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <b> 48.3</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Camera 
+				</entry> 
+				<entry valign="middle" align="center"> 0.5 
+				</entry> 
+				<entry valign="middle" align="center"> 0.5 
+				</entry> 
+				<entry valign="middle" align="center"> MIPI 5MP User Facing 
+				</entry> 
+				<entry valign="middle" align="center"> 0.5 
+				</entry> 
+				<entry valign="middle" align="center"> 0.5 
+				</entry> 
+				<entry valign="middle" align="center"> MIPI 5MP User Facing 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Display<sup>5</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 2.8 
+				</entry> 
+				<entry valign="middle" align="center"> 2.8 
+				</entry> 
+				<entry valign="middle" align="center"> eDP* 38x21/PSR/Touch 
+				</entry> 
+				<entry valign="middle" align="center"> 3.5 
+				</entry> 
+				<entry valign="middle" align="center"> 3.5 
+				</entry> 
+				<entry valign="middle" align="center"> eDP* 38x21/PSR/Touch 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				  <b> System Total</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <b> 47</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <b> 50.4</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <b> 50.3</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <b> 52.4</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <table id="GUID-21DEE985-FC92-4916-B2B4-16508E6AEB75"> 
+		<tgroup cols="4"> 
+		  <colspec colnum="1" colname="col1" colwidth="*" /> 
+		  <colspec colnum="2" colname="col2" colwidth="*" /> 
+		  <colspec colnum="3" colname="col3" colwidth="*" /> 
+		  <colspec colnum="4" colname="col4" colwidth="*" /> 
+		  <thead> 
+			 <row valign="middle"> 
+				<entry colname="col1" morerows="1" valign="middle" align="center"> 
+				  <b>Component</b> 
+				</entry> 
+				<entry namest="col2" nameend="col4" align="center" valign="middle">Scenario Guidance Power (W) for Dorothy13<sup>5</sup> NVL 16C 12X<sup>e</sup> Thin &amp; Powerful 15.6" 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry namest="col2" nameend="col4" align="center" valign="middle"> 
+				  <b>LP5x-10700</b> 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry> NVL Package 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <b> 25</b><sup><b>1</b></sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <b> 35</b><sup><b>1</b></sup> 
+				</entry> 
+				<entry valign="middle" align="center"> NVL 8C 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> NVL VR Loss 
+				</entry> 
+				<entry valign="middle" align="center"> 4.5 
+				</entry> 
+				<entry valign="middle" align="center"> 6.3 
+				</entry> 
+				<entry valign="middle" align="center"> 6 Pkg: 2+1+2+1 Phases (NVDC<sup>4</sup> ) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Memory 
+				</entry> 
+				<entry valign="middle" align="center"> 3.5 
+				</entry> 
+				<entry valign="middle" align="center"> 3.8 
+				</entry> 
+				<entry valign="middle" align="center"> LP5x-10700 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Storage 
+				</entry> 
+				<entry valign="middle" align="center"> 2.5 
+				</entry> 
+				<entry valign="middle" align="center"> 2.7 
+				</entry> 
+				<entry valign="middle" align="center"> C: M.2 NVMe* SSD Gen4 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Storage 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				</entry> 
+				<entry valign="middle" align="center"> D: M.2 NVMe* SSD Gen4 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Comms A 
+				</entry> 
+				<entry valign="middle" align="center"> 0.6 
+				</entry> 
+				<entry valign="middle" align="center"> 0.6 
+				</entry> 
+				<entry valign="middle" align="center"> M.2 Key-E (WLAN/BT) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Others 
+				</entry> 
+				<entry valign="middle" align="center"> 2.6 
+				</entry> 
+				<entry valign="middle" align="center"> 2.6 
+				</entry> 
+				<entry valign="middle" align="center"> Audio, Mics, Sensors, MB, EC, 2 Retimers, etc. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Fan 
+				</entry> 
+				<entry valign="middle" align="center"> 1 
+				</entry> 
+				<entry valign="middle" align="center"> 1 
+				</entry> 
+				<entry valign="middle" align="center"> 1 PWM Fan (~3mm) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Sys VR Loss 
+				</entry> 
+				<entry valign="middle" align="center"> 2.4 
+				</entry> 
+				<entry valign="middle" align="center"> 2.5 
+				</entry> 
+				<entry valign="middle" align="center"> Rest of Platform 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> System Charger Loss<sup>2</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 2.6<sup>2</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 3.4<sup>2</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> NVDC (AC Only) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Battery Charger Loss 
+				</entry> 
+				<entry valign="middle" align="center"> 1.9<sup>3a</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 1.9<sup>3a</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> MB Circuitry Charger (55WHr) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				  <b> Base System Total</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <b> 46.6</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <b> 59.8</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Camera 
+				</entry> 
+				<entry valign="middle" align="center"> 0.5 
+				</entry> 
+				<entry valign="middle" align="center"> 0.5 
+				</entry> 
+				<entry valign="middle" align="center"> MIPI 5MP User Facing 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Display<sup>5</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 3.5 
+				</entry> 
+				<entry valign="middle" align="center"> 3.5 
+				</entry> 
+				<entry valign="middle" align="center"> eDP* 28x19/PSR/ Touch 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				  <b> System Total</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <b> 50.6</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				  <b> 63.8</b> 
+				</entry> 
+				<entry valign="middle" align="center"> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <table id="GUID-18FEBE64-DC6C-4AE7-9243-28DF5E973835"> 
+		<tgroup cols="8"> 
+		  <colspec colname="col001" colnum="1" colwidth="1.00*" /><colspec colname="col01" colnum="2" colwidth="2.62*" /><colspec colnum="3" colname="col1" colwidth="1.79*" /> 
+		  <colspec colnum="4" colname="col2" colwidth="2.16*" /> 
+		  <colspec colnum="5" colname="col3" colwidth="2.26*" /> 
+		  <colspec colnum="6" colname="col4" colwidth="1.92*" /> 
+		  <colspec colnum="7" colname="col5" colwidth="1.94*" /> 
+		  <colspec colnum="8" colname="col6" colwidth="1.63*" /> 
+		  <thead> 
+			 <row valign="middle"> 
+				<entry morerows="2" namest="col001" nameend="col01" valign="middle" align="center">Component 
+				</entry> 
+				<entry namest="col1" nameend="col6" align="center" valign="middle">Scenario Guidance Power (W) for Dorothy13<sup>5</sup> NVL 16C/<b>HX 16C / HX 24C / HX</b> 28C Escapist Gaming 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry namest="col1" nameend="col3" align="center" valign="middle">16" Slim Gaming Creator NVL 16C 
+				</entry> 
+				<entry namest="col4" nameend="col6" align="center" valign="middle"> 
+				  <p>18" Hard Core Gaming NVL-HX 24C/28C 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" align="center" valign="middle">LP5x-8533 CAMM (T3) 
+				</entry> 
+				<entry colname="col2" align="center" valign="middle">DDR5-7200 (T3) 
+				</entry> 
+				<entry colname="col3" valign="middle" align="center"> 
+				</entry> 
+				<entry colname="col4" align="center" valign="middle">LP5x- 10700 (T4) 
+				</entry> 
+				<entry colname="col5" align="center" valign="middle">DDR5-8000 (T3) 
+				</entry> 
+				<entry colname="col6" valign="middle" align="center"> 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry namest="col001" nameend="col01" align="center" valign="middle"> 
+				  <p>NVL Package 
+				  </p> 
+				</entry> 
+				<entry colname="col1" valign="middle" align="center"> 
+				  <b> 26</b> 
+				</entry> 
+				<entry colname="col2" valign="middle" align="center"> 
+				  <b> 26</b> 
+				</entry> 
+				<entry colname="col3" valign="middle" align="center"> NVL 16C / HX 16C 
+				</entry> 
+				<entry colname="col4" valign="middle" align="center"> 
+				  <b> 26</b> 
+				</entry> 
+				<entry colname="col5" valign="middle" align="center"> 
+				  <b> 26</b> 
+				</entry> 
+				<entry colname="col6" valign="middle" align="center"> NVL-HX 24C/28C 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry namest="col001" nameend="col01" align="center" valign="middle"> 
+				  <p>NVL VR Loss 
+				  </p> 
+				</entry> 
+				<entry colname="col1" valign="middle" align="center"> 4.5 
+				</entry> 
+				<entry colname="col2" valign="middle" align="center"> 4.5 
+				</entry> 
+				<entry colname="col3" valign="middle" align="center"> 8 Pkg: 4+1+2+1 Phases (NVDC<sup>4</sup>) 
+				</entry> 
+				<entry colname="col4" valign="middle" align="center"> 5.3 
+				</entry> 
+				<entry colname="col5" valign="middle" align="center"> 5.3 
+				</entry> 
+				<entry colname="col6" valign="middle" align="center"> 10 Pkg: 4+1+2+1+1+1 Phases (HPB<sup>4</sup> ) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col001" morerows="2"> 
+				  <p>TGP 
+				  </p> 
+				</entry> 
+				<entry colname="col01"> 
+				  <b>GPU Pkg</b> 
+				</entry> 
+				<entry colname="col1" valign="middle" align="center"> 
+				  <b> 36.3</b> 
+				</entry> 
+				<entry colname="col2" valign="middle" align="center"> 
+				  <b> 36.3</b> 
+				</entry> 
+				<entry colname="col3" valign="middle" align="center"> DGPU 
+				  <b>50W</b> TGP 
+				</entry> 
+				<entry colname="col4" valign="middle" align="center"> 
+				  <b> 36.3</b> 
+				</entry> 
+				<entry colname="col5" valign="middle" align="center"> 
+				  <b> 36.3</b> 
+				</entry> 
+				<entry colname="col6" valign="middle" align="center"> DGPU 
+				  <b>50W</b> TGP 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col01"> 
+				  <b>Memory (GPU)</b> 
+				</entry> 
+				<entry colname="col1" valign="middle" align="center"> 
+				  <b> 6.5</b> 
+				</entry> 
+				<entry colname="col2" valign="middle" align="center"> 
+				  <b> 6.5</b> 
+				</entry> 
+				<entry colname="col3" valign="middle" align="center"> GDDR6 8GB 14GT 
+				</entry> 
+				<entry colname="col4" valign="middle" align="center"> 
+				  <b> 6.5</b> 
+				</entry> 
+				<entry colname="col5" valign="middle" align="center"> 
+				  <b> 6.5</b> 
+				</entry> 
+				<entry colname="col6" valign="middle" align="center"> GDDR6 8GB 14GT 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col01"> 
+				  <b>GPU +GDDR VR</b> 
+				</entry> 
+				<entry colname="col1" valign="middle" align="center"> 
+				  <b> 7.2</b> 
+				</entry> 
+				<entry colname="col2" valign="middle" align="center"> 
+				  <b> 7.2</b> 
+				</entry> 
+				<entry colname="col3" valign="middle" align="center"> 3-Phase 
+				</entry> 
+				<entry colname="col4" valign="middle" align="center"> 
+				  <b> 7.2</b> 
+				</entry> 
+				<entry colname="col5" valign="middle" align="center"> 
+				  <b> 7.2</b> 
+				</entry> 
+				<entry colname="col6" valign="middle" align="center"> 3-Phase 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry namest="col001" nameend="col01" align="center" valign="middle"> Memory 
+				</entry> 
+				<entry colname="col1" valign="middle" align="center"> 2.4 
+				</entry> 
+				<entry colname="col2" valign="middle" align="center"> 6.5 
+				</entry> 
+				<entry colname="col3" valign="middle" align="center"> 64GB 
+				</entry> 
+				<entry colname="col4" valign="middle" align="center"> 3.0 
+				</entry> 
+				<entry colname="col5" valign="middle" align="center"> 7.0 
+				</entry> 
+				<entry colname="col6" valign="middle" align="center"> 64GB 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry namest="col001" nameend="col01" align="center" valign="middle"> HVL IOE Pkg 
+				</entry> 
+				<entry colname="col1" valign="middle" align="center"> -- 
+				</entry> 
+				<entry colname="col2" valign="middle" align="center"> -- 
+				</entry> 
+				<entry colname="col3" valign="middle" align="center"> -- 
+				</entry> 
+				<entry colname="col4" valign="middle" align="center"> -- 
+				</entry> 
+				<entry colname="col5" valign="middle" align="center"> -- 
+				</entry> 
+				<entry colname="col6" valign="middle" align="center"> Optional Hx IOE 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry namest="col001" nameend="col01" align="center" valign="middle"> Storage 
+				</entry> 
+				<entry colname="col1" valign="middle" align="center"> 2.4 
+				</entry> 
+				<entry colname="col2" valign="middle" align="center"> 2.4 
+				</entry> 
+				<entry colname="col3" valign="middle" align="center"> C: M.2 NVMe* SSD Gen5 
+				</entry> 
+				<entry colname="col4" valign="middle" align="center"> 2.4 
+				</entry> 
+				<entry colname="col5" valign="middle" align="center"> 2.4 
+				</entry> 
+				<entry colname="col6" valign="middle" align="center"> C: M.2 NVMe* SSD Gen5 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry namest="col001" nameend="col01" align="center" valign="middle"> Storage 
+				</entry> 
+				<entry colname="col1" valign="middle" align="center"> 1.7 
+				</entry> 
+				<entry colname="col2" valign="middle" align="center"> 1.7 
+				</entry> 
+				<entry colname="col3" valign="middle" align="center"> D: M.2 NVMe* SSD Gen5 
+				</entry> 
+				<entry colname="col4" valign="middle" align="center"> 2.0 
+				</entry> 
+				<entry colname="col5" valign="middle" align="center"> 2.0 
+				</entry> 
+				<entry colname="col6" valign="middle" align="center"> D: M.2 NVMe* SSD Gen5 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry namest="col001" nameend="col01" align="center" valign="middle"> Comms A 
+				</entry> 
+				<entry colname="col1" valign="middle" align="center"> 1.1 
+				</entry> 
+				<entry colname="col2" valign="middle" align="center"> 1.1 
+				</entry> 
+				<entry colname="col3" valign="middle" align="center"> M.2 Key-E (WLAN/BT) 
+				</entry> 
+				<entry colname="col4" valign="middle" align="center"> 1.1 
+				</entry> 
+				<entry colname="col5" valign="middle" align="center"> 1.1 
+				</entry> 
+				<entry colname="col6" valign="middle" align="center"> M.2 Key-E (WLAN/BT) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry namest="col001" nameend="col01" align="center" valign="middle"> Others 
+				</entry> 
+				<entry colname="col1" valign="middle" align="center"> 2.6 
+				</entry> 
+				<entry colname="col2" valign="middle" align="center"> 2.6 
+				</entry> 
+				<entry colname="col3" valign="middle" align="center"> Audio, Mics, Sensors, MB, EC, 
+				  <b>2 Retimers</b>, etc 
+				</entry> 
+				<entry colname="col4" valign="middle" align="center"> 2.6 
+				</entry> 
+				<entry colname="col5" valign="middle" align="center"> 2.6 
+				</entry> 
+				<entry colname="col6" valign="middle" align="center"> Audio, Mics, Sensors, MB, EC, 
+				  <b>2 Retimers</b>, etc 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry namest="col001" nameend="col01" align="center" valign="middle"> Fan 
+				</entry> 
+				<entry colname="col1" valign="middle" align="center"> 1.8 
+				</entry> 
+				<entry colname="col2" valign="middle" align="center"> 1.8 
+				</entry> 
+				<entry colname="col3" valign="middle" align="center"> 2 Fans 
+				</entry> 
+				<entry colname="col4" valign="middle" align="center"> 1.8 
+				</entry> 
+				<entry colname="col5" valign="middle" align="center"> 1.8 
+				</entry> 
+				<entry colname="col6" valign="middle" align="center"> 2 Fans 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry namest="col001" nameend="col01" align="center" valign="middle"> Sys VR Loss 
+				</entry> 
+				<entry colname="col1" valign="middle" align="center"> 2 
+				</entry> 
+				<entry colname="col2" valign="middle" align="center"> 2.7 
+				</entry> 
+				<entry colname="col3" valign="middle" align="center"> Rest of Platform 
+				</entry> 
+				<entry colname="col4" valign="middle" align="center"> 3.4 
+				</entry> 
+				<entry colname="col5" valign="middle" align="center"> 4.2 
+				</entry> 
+				<entry colname="col6" valign="middle" align="center"> Rest of Platform 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry namest="col001" nameend="col01" align="center" valign="middle"> System Charger Loss<sup>2</sup> 
+				</entry> 
+				<entry colname="col1" valign="middle" align="center"> 2.7 
+				</entry> 
+				<entry colname="col2" valign="middle" align="center"> 2.9 
+				</entry> 
+				<entry colname="col3" valign="middle" align="center"> NVDC (AC Only) 
+				</entry> 
+				<entry colname="col4" valign="middle" align="center"> 
+				</entry> 
+				<entry colname="col5" valign="middle" align="center"> 
+				</entry> 
+				<entry colname="col6" valign="middle" align="center"> HPB<sup>4</sup> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry namest="col001" nameend="col01" align="center" valign="middle"> Battery Charger Loss 
+				</entry> 
+				<entry colname="col1" valign="middle" align="center"> 2.5 
+				</entry> 
+				<entry colname="col2" valign="middle" align="center"> 2.5 
+				</entry> 
+				<entry colname="col3" valign="middle" align="center"> MB Circuitry Charger (85WHr) 
+				</entry> 
+				<entry colname="col4" valign="middle" align="center"> 2.8 
+				</entry> 
+				<entry colname="col5" valign="middle" align="center"> 2.8 
+				</entry> 
+				<entry colname="col6" valign="middle" align="center"> MB Circuitry Charger (95WHr) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry namest="col001" nameend="col01" align="center" valign="middle"> 
+				  <b> Base System Total</b> 
+				</entry> 
+				<entry colname="col1" valign="middle" align="center"> 
+				  <b> 99.7</b> 
+				</entry> 
+				<entry colname="col2" valign="middle" align="center"> 
+				  <b> 104.8</b> 
+				</entry> 
+				<entry colname="col3" valign="middle" align="center"> 
+				</entry> 
+				<entry colname="col4" valign="middle" align="center"> 
+				  <b> 100.4</b> 
+				</entry> 
+				<entry colname="col5" valign="middle" align="center"> 
+				  <b> 105.2</b> 
+				</entry> 
+				<entry colname="col6" valign="middle" align="center"> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry namest="col001" nameend="col01" align="center" valign="middle"> Camera 
+				</entry> 
+				<entry colname="col1" valign="middle" align="center"> 0.5 
+				</entry> 
+				<entry colname="col2" valign="middle" align="center"> 0.5 
+				</entry> 
+				<entry colname="col3" valign="middle" align="center"> MIPI 5MP User Facing 
+				</entry> 
+				<entry colname="col4" valign="middle" align="center"> 0.5 
+				</entry> 
+				<entry colname="col5" valign="middle" align="center"> 0.5 
+				</entry> 
+				<entry colname="col6" valign="middle" align="center"> MIPI 5MP User Facing 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry namest="col001" nameend="col01" align="center" valign="middle"> Display<sup>5</sup> 
+				</entry> 
+				<entry colname="col1" valign="middle" align="center"> 2.8 
+				</entry> 
+				<entry colname="col2" valign="middle" align="center"> 2.8 
+				</entry> 
+				<entry colname="col3" valign="middle" align="center"> eDP* 28x19/PSR/ Touch 
+				</entry> 
+				<entry colname="col4" valign="middle" align="center"> 2.8 
+				</entry> 
+				<entry colname="col5" valign="middle" align="center"> 2.8 
+				</entry> 
+				<entry colname="col6" valign="middle" align="center"> eDP* 28x19/PSR/ Touch 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry namest="col001" nameend="col01" align="center" valign="middle"> 
+				  <b> System Total</b> 
+				</entry> 
+				<entry colname="col1" valign="middle" align="center"> 
+				  <b> 103</b> 
+				</entry> 
+				<entry colname="col2" valign="middle" align="center"> 
+				  <b> 108.1</b> 
+				</entry> 
+				<entry colname="col3" valign="middle" align="center"> 
+				</entry> 
+				<entry colname="col4" valign="middle" align="center"> 
+				  <b> 103.7</b> 
+				</entry> 
+				<entry colname="col5" valign="middle" align="center"> 
+				  <b> 108.5</b> 
+				</entry> 
+				<entry colname="col6" valign="middle" align="center"> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <note id="GUID-8B731207-59DD-4830-B9D7-C0BE89153617"> 
+		<p>All values used for pre-Si estimates and are subject to change. 
+		</p> 
+		<p><sup>1</sup> Assumes thermally constrained system at steady state (i.e., turbo headroom exhausted) CPU PL1 or combined (CPU+GPU) Power Share PL1 (PSL1) Target @ Tsn limit. 
+		</p> 
+		<p><sup>2</sup> Narrow VDC (NVDC) has system loss in AC Mode only. Ignore in Battery Mode OR if using alternative PD designs (i.e., Hybrid Power Boost (HPB) or WVDC). 
+		</p> 
+		<p><sup>3a) 
+		  </sup>Assumes 0.5C Charge Rate (example, max charge rates are tightly controlled typically starts ~30% and released/backed-offby ~50% Battery State of Charge). It's maybe possible to manage this to be negligible charging loss with platform management tools like DTT during sustained high concurrency levels. 
+		</p> 
+		<p><sup>4</sup> Downstream VR Losses are based on improved VR efficiencies by +3% for NVDC versus alternate PD designs. 
+		</p> 
+		<p><sup>5</sup> For each workload definitions external hardware configurations and application mix detail assumptions, refer to the 
+		  <xref scope="local" format="dita" href="GUID-229DBDD9-3185-474B-BF97-82C434E65C09.dita">Section 5.1</xref>. 
+		</p> 
+	 </note> 
+  </body> 
+</topic> 

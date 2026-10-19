@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "file:///E:/InfoShare/Web/Author/ASP/DocTypes/dita-oasis/1.2/bookmap/dtd/bookmap.dtd"[]>
+<bookmap id="GUID-A96E6924-4235-4A94-92C3-7836036CCEA5" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <booktitle> 
+    <mainbooktitle>Nova Lake Mobile Platform 
+    </mainbooktitle> 
+    <booktitlealt>Thermal and Mechanical Design Guide 
+    </booktitlealt></booktitle> 
+  <bookmeta> 
+    <publisherinformation> 
+      <organization><?xm-replace_text Optional: enter "CDI" if publishing Public Content to CDI?></organization><published> 
+        <revisionid>1.2</revisionid> 
+      </published> 
+    </publisherinformation> 
+    <prodinfo> 
+      <prodname>Nova Lake Mobile Platform</prodname> 
+      <vrmlist><vrm version="ProductVersionNumber" /></vrmlist> 
+    </prodinfo> 
+    <bookrights> 
+      <copyrfirst><year>2025</year></copyrfirst> 
+      <copyrlast><year>2026</year></copyrlast> 
+      <bookowner><organization>Intel Corporation</organization></bookowner> 
+    </bookrights> 
+  </bookmeta> 
+  <frontmatter> 
+    <notices href="../topics/GUID-FC96CB39-6C3B-4172-9D38-8F80EE2AFF0B.dita" format="dita" scope="local"> 
+      <topicmeta><!--Navtitle attribute converted into element by SDL Trisoft "Dita11ToDita12.xsl".--><navtitle>Legal Disclaimer</navtitle> 
+      </topicmeta><?xm-replace_text Insert Reference to Legal and Disclaimer Topic?>
+    </notices> 
+    <booklists> 
+      <toc /> 
+      <figurelist /> 
+      <tablelist /> 
+    </booklists> 
+    <topicref href="../topics/GUID-685EB05A-8FD8-4FB0-8F35-9509B882C739.dita" format="dita" scope="local" navtitle="Revision History"> 
+      <topicmeta><navtitle>Revision History</navtitle> 
+      </topicmeta> 
+    </topicref> 
+  </frontmatter> <?xm-replace_text Insert Chapter and Appendix References Here?>
+  <chapter href="GUID-D0E0A286-5E01-4D6B-886D-F662D3F3E593.ditamap" format="ditamap" scope="local" navtitle="PTL TMDG Chapters"> 
+    <topicmeta><navtitle>Panther Lake UH Chapters</navtitle> 
+    </topicmeta> 
+  </chapter> 
+  <backmatter> 
+    <booklists> 
+      <glossarylist><?xm-replace_text Uncomment the following mapref to include the master Glossary Map?>
+<!--<mapref href="GUID-55773233-2720-433C-9CBD-4201A0BD6EE8" scope="local" navtitle="Glossary Map"/>-->
+      </glossarylist> 
+      <indexlist /> 
+    </booklists> 
+  </backmatter> 
+</bookmap> 

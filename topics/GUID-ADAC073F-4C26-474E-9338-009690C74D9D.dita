@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-ADAC073F-4C26-474E-9338-009690C74D9D" xml:lang="en-US"> 
+  <title>Die Flatness Post-SMT</title> 
+  <body> 
+	 <ul id="GUID-825CC064-3C32-430C-B0B2-5B8A001A5732"> 
+		<li id="LI_405F1B67EB48459290DF74B0BB9833F1">Die warpage before and after the SMT process is expected, normal behavior. 
+		  <ul id="GUID-A56DD495-89FA-4BE9-B401-65533B6C85D7"> 
+			 <li id="LI_654AEC07463E48CD95B2E0A301A35F08">Room-temperature die flatness is typically worse before SMT, and better (flatter) after SMT. 
+			 </li> 
+			 <li id="LI_06BB9ABE93D640A6A19CEC423B556DEC">Die flatness post-SMT depends on all the same factors as package height post-SMT (Refer to the 
+				<xref scope="local" format="dita" href="GUID-AFF15540-CF6D-4D37-8163-C14D177CAD5F.dita">Section 4.4.1</xref>). 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li id="LI_B835E862476E4AA6B80327467FD00704">Die flatness post-SMT is particularly sensitive to motherboard thickness: 
+		  <ul id="GUID-D0160C79-4E51-4540-86B1-77DC6A9AF800"> 
+			 <li id="LI_999F69A93C524EE3AE3BB3DA371C28CE">Thicker boards generally result in better die flatness (i.e., less curvature) 
+			 </li> 
+		  </ul> 
+		  <fig id="GUID-2BD5A805-251B-43CB-8D35-9474DBB85B19"> 
+			 <image href="../images/GUID-3F8BB17D-B920-4574-9ABB-C6D2406B8077.png" scalefit="yes" id="IMAGE_904F144BFE7E4F4890ECDED0947BA29D" /> 
+		  </fig> 
+		</li> 
+		<li id="LI_2BEEDA2365B44237A93A6BC562D426E4"> Awareness of die flatness post-SMT is important for proper heatsink design. 
+		  <ul id="GUID-2F25B454-4CC6-415D-A51B-A0235A12C307"> 
+			 <li id="LI_ECA42397AC8E49589772554795E0D11F">The heatsink pressure distribution on the Thermal Interface Material (TIM) and die can be measured using experimental. techniques described in Intel<sup>®</sup> Mobile SoC Die Loading Measurement Techniques (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/556532" format="https" scope="external">556532</xref>). 
+			 </li> 
+			 <li id="LI_FC2730F1563242679013412D1ECE7A3E">For guidance on incorporating die flatness estimates into structural simulation during the heatsink mechanical design process, refer to Mobile Thermal Attach Structural Modeling (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/575675" format="https" scope="external">575675</xref>). 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li id="LI_EB85E7E58AE64A69970F9A19C3D408C5">Estimated post-SMT die flatness of Nova Lake Mobile Packages are as follows: 
+		  <table id="GUID-4CBD9376-651D-403A-9149-4EDD93AE442B"> 
+			 <tgroup cols="3" align="center"> 
+				<colspec colnum="1" colname="col1" colwidth="1.10*" /><colspec colname="col2" colnum="2" colwidth="1.00*" align="center" /><colspec colname="col03" colnum="3" colwidth="2.06*" /> 
+				<thead> 
+				  <row> 
+					 <entry align="center" valign="middle"> 
+						<b> Package</b> 
+					 </entry> 
+					 <entry align="center" valign="middle" namest="col2" nameend="col03"> 
+						<b>Estimated Post-SMT Die Flatness</b> 
+					 </entry> 
+				  </row></thead> 
+				<tbody> 
+				  <row valign="middle"> 
+					 <entry valign="middle" align="center"> 
+						<b> NVL 8C</b> 
+					 </entry> 
+					 <entry colname="col2" align="center" valign="middle" morerows="3">0.10 
+					 </entry> 
+					 <entry colname="col03" align="center" valign="middle" morerows="3"> 
+						<p>+ 0.05 
+						</p> 
+						<p> − 0.08 
+						</p> 
+					 </entry> 
+				  </row> 
+				  <row valign="middle"> 
+					 <entry valign="middle" align="center"> 
+						<b> NVL 16C 12X<sup>e</sup></b> 
+					 </entry> 
+				  </row> 
+				  <row valign="middle"> 
+					 <entry valign="middle" align="center"> 
+						<b> NVL 16C</b> 
+						<b>4X</b><sup><b>e</b></sup><b>/ 
+						  <b>NVL 14C 4X<sup>e</sup>/</b>NVL HX16C</b> 
+					 </entry> 
+				  </row> 
+				  <row valign="middle"> 
+					 <entry valign="middle" align="center"> 
+						<b> NVL-HX 28C/24C</b> 
+					 </entry> 
+				  </row> 
+				</tbody> 
+			 </tgroup> 
+		  </table> 
+		</li> 
+		<li id="LI_12D92853F1C04018A2DB935AECBB9984">These die flatness estimates are valid for the range of board thicknesses listed for each package in 
+		  <xref scope="local" format="dita" href="GUID-0EA22DE7-8071-435F-B797-337DE1093F35.dita">Section 4.5.1</xref>. 
+		</li> 
+		<li id="LI_1A7E01DB52EA4EBB8AF27D57AD8EFE52">For most accurate results, customers are strongly encouraged to measure die flatness post-SMT for their own particular board design and SMT process. 
+		</li> 
+		<li id="LI_3E13419C9F674444A2580F18C445FFC3">Values provided here are guidance only, for early thermal/mechanical design, and are not specifications. 
+		</li> 
+	 </ul> 
+  </body> 
+</topic> 

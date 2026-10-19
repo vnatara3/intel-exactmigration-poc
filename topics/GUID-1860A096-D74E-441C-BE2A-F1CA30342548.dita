@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-1860A096-D74E-441C-BE2A-F1CA30342548" xml:lang="en-US"> 
+  <title>System Thermal - Platform Power Guidance</title> 
+  <body> 
+	  
+	 <section id="SECTION_0D430BBBFCAF473FB6BE8805C5BA6F82"> 
+		<title> NVL 8C Processor Platform Workload (Dorothy13)</title> 
+		<p>Scenario "Corporate: 
+		  <b>Light Creator AI Collaboration</b>": The user is in a conference call utilizing audio and video AI enhanced features with a few colleagues on the notebook display. During the call, the user continues to create new picture edited content on their primary external display, all the while viewing various websites relevant to the discussion topic loading on second external display. Meanwhile AI snapshots of their activity are being stored locally on the device for future search/recall. 
+		</p> 
+		<p><b>Applications:</b> 
+		<ul id="UL_0CDA9EA013154EAB861C4B919D159C23"> 
+		  <li id="LI_C52EF56897CC4E33A12522D3EA851536">Web Browsing+ [Constant Companion Apps (CCAs)] 
+		  </li> 
+		  <li id="LI_176ADA6816DA437EB54414A90652DBBC">Teams* 3x3 Call 
+			 <ul id="UL_A8D70EFA68A1465087711E1FC743D577"> 
+				<li id="LI_065BE24C2C3F4261825AAA1AEEDE35C3">AI NPU w/ MEP* features BS, AF, EGC, + Audio Denoise 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li id="LI_0835B85FE29F4479B8E5FED56D8BCB9B">Proxy for Copilot* Recall 
+			 <ul id="UL_ED5D3ADE4F484426B94699221B0E38FB"> 
+				<li id="LI_F17430A438CD4E18959F9C1A9C58116E">AI NPU [Proxy Snapshot local storage feature] 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li id="LI_EDC591DA17C8409484F7C9B485C69007">Content Creation [Proxy UL Procyon* Photo Editing] 
+		  </li> 
+		  <li id="LI_B51496BA58714A689F513D365070433B">Enterprise Win11 with Security L3* 
+			 <p> (Synthetic Timer to replicate IT real behavior) 
+			 </p> 
+		  </li> 
+		</ul> 
+		</p> 
+		<fig id="FIG_5E3D9957055944E29E94F415377ED4E4"><image href="../images/GUID-284C1C37-9804-48B0-9858-4B2FB5B2DD01.png" scalefit="yes" id="IMAGE_EDE25F76DD0B4BC09E4D024873CB7433"> 
+		  </image> 
+		</fig> 
+		<note id="GUID-CC3132A1-4301-48FD-B18D-14E39CD29C1A"> 
+		  <ul id="UL_31C66349B65A43259E72C9A0A8AEA768"> 
+			 <li id="LI_5334BEA40D7845178C35EE6FEF0FC27D">BS: Background Segmentation 
+			 </li> 
+			 <li id="LI_18421EDBFE4B4ADBA34EE01B4E65F4A7">AF: Auto Framing 
+			 </li> 
+			 <li id="LI_E6A0931BDEA14A8EAD9328F42FC4F2A7">EGC: Eye Gaze Correction 
+			 </li> 
+		  </ul> 
+		</note> 
+	 </section> 
+	 <section id="SECTION_C96F96084ED5438690CC72909DB45500"> 
+		<title> NVL 16C 12X<sup>e</sup> Processor Platform Workload (Dorothy13)</title> Scenario "Corporate: 
+		<b>Light Creator AI Collaboration w/AI Assist</b>": The user is in a conference call utilizing audio and video AI enhanced features with a few colleagues on the notebook display. During the call, the user starts screen sharing the primary external display used for creating new picture edited content, all the while the user is periodically looking at various websites relevant to their discussion topic on a 2<sup>nd</sup> external display. Meanwhile, realizing the value of before edited pictures' descriptions, the user starts a local AI image-to-text summary of each picture followed by a more condensed AI text-to-text summary and monitors the progress also on the 2<sup>nd</sup> external display while AI snapshots are taken of the session activity stored locally on the device for future search/recall. 
+		<p><b>Applications:</b> 
+		<ul id="UL_74F4D0313EAF47E49938E25AF208F2C5"> 
+		  <li id="LI_62D8B507B3F64F46A35A4ACFEDDA5585">Web Browsing+ [Constant Companion Apps (CCAs)] 
+		  </li> 
+		  <li id="LI_D5FEB44599C1433084D831E09FE56AA7">Teams* 3x3 Call plus Screen Sharing 
+			 <ul id="UL_C5FA542A51014B4C9558A6BCD80AC72D"> 
+				<li id="LI_D1C16A948AB440EC9C37F0646DE34C12">AI NPU w/ MEP features BS, AF, EGC, + Audio Denoise 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li id="LI_90BF323958A149CA92D5195CCC1CE25D">Proxy for Copilot* Recall 
+			 <ul id="UL_CA5BE7B28D15433B86D7789EBF7F5F8B"> 
+				<li id="LI_4C0C49C2E0374BF0BE1971BBCDDDD274">AI NPU [Proxy Snapshot local storage feature] 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li id="LI_5170F7CCB027463DAAFDEC84A29B6768">Local Content AI Summarizers: 
+			 <ul id="UL_65F13175A196472987705BF37058C775"> 
+				<li id="LI_498F6BB1CB91450EB0551EC9DE339DE3">AI NPU for Image-to-Text &amp; Text-to-Text LLM features 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li id="LI_3DF81ED865A1471F866508F43A1F8739">Content Creation [Proxy UL Procyon* Photo Editing] 
+		  </li> 
+		  <li id="LI_4AB16421FB954DF1B79517625A5EEB11">Enterprise Win11 with Security L3* 
+			 <p> (Synthetic Timer to replicate IT real behavior) 
+			 </p> 
+		  </li> 
+		</ul> 
+		</p> 
+		<fig id="GUID-2D871AD7-7E51-4EC2-AFE7-ADA860BFBAC2"><image href="../images/GUID-1982B495-7CE2-4C04-BA67-C27C93FF327C.png" scalefit="yes" id="IMAGE_5BCCD83E2E8946C89E2D242B8ADE4577"> 
+			 <alt> 
+			 </alt></image> 
+		</fig> 
+		<note id="GUID-98F047DD-17FE-4A9D-BA25-9318BACF68D2"> 
+		  <ul id="UL_4882457CC094475296F079F44EC56607"> 
+			 <li id="LI_B920BEA6C7844939AB1297A276D894BA">BS: Background Segmentation 
+			 </li> 
+			 <li id="LI_C569B17BB4084C659356C4249A4E8218">AF: Auto Framing 
+			 </li> 
+			 <li id="LI_860ED254DC8E44338FD5CD97FFD69CAE">EGC: Eye Gaze Correction 
+			 </li> 
+		  </ul> 
+		</note> 
+	 </section> 
+	 <section id="SECTION_FE4803BB9C6E4851B28EC89B227419AC"> 
+		<title> NVL 16C 4X<sup>e</sup>, NVL HX 16C, HX 24C, and HX 28C Processor Platform Workload (Dorothy13)</title> Scenario "Consumer: 
+		<b>Escapist Gamer/Creator</b>": The user likes to escape from their usual computer work by playing games on their notebook, but with a higher resolution external display. Meanwhile the user has a lot of browser tabs open and periodically looks at relevant websites for 'how to play' and create their own entertaining game play video content on the notebook display. During game play, the user enables AI enhanced OBS video and audio to both network stream and record to an external SSD storage the combined OBS virtual camera and game play. 
+		<p> All the while AI snapshots are being stored locally on the device for future search/recall and downloading new games the user wants to play in a future session 
+		</p> 
+		<p><b>Applications:</b> 
+		<ul id="UL_58443F1A6DF342909DEFE7BF6D9B107A"> 
+		  <li id="LI_077332A2AA3441E7B3A48CB6C5556E7C">Web Browsing+ [Constant Companion Apps (CCAs)] 
+		  </li> 
+		  <li id="LI_438B7444FA4B4BFABD25E2DA953A82C8">Game play [Cyberpunk*] 
+			 <ul id="UL_02B5976493ED4107A1422BD76E961702"> 
+				<li id="LI_05335073C0254050A282C827E6D8FDC0">AI GPU Intel XeSS or Super Sampling [e.g., resolution upscaling] 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li id="LI_36104FE5F5734CED81C2EF7D8FBAD555">Proxy for Copilot* Recall 
+			 <ul id="UL_C75093F6944C4D8F98B941053A5FCE62"> 
+				<li id="LI_B4BF995068084A8F9207634857F63412">AI NPU [Proxy Snapshot local storage feature] 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li id="LI_CAB80DB2175A4442A4363F0413EB91CE">OBS* Streaming via Twitch* 
+			 <ul id="UL_737B6353EA1244D7A34E1A2214CE0817"> 
+				<li id="LI_CC954373104549D1B8A938296A1182FC">AI GPU Camera BS + AI NPU Audio Denoise features 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li id="LI_1AE5B1396A184C04851959D36E49E256">OBS* Capture UHD Record [TBT3 External SSD] 
+		  </li> 
+		  <li id="LI_C4C0412BED9A4232B2F94A8E83FF45FE">Game Download [Proxy Steam* download to 2nd Client Storage] 
+		  </li> 
+		</ul> 
+		</p> 
+		<fig id="GUID-2A9AC964-704C-4F1A-932D-84221397BBF0"><image href="../images/GUID-0C825407-A956-41EC-83B0-BAFFEED172C0.png" scalefit="yes" id="IMAGE_9CFF6E7D314B4580B1FFA2F9121F4823"> 
+			 <alt> 
+			 </alt></image> 
+		</fig> 
+	 </section> 
+  </body> 
+</topic> 

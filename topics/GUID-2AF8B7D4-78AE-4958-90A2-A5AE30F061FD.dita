@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "file:///E:/InfoShare/Web/Author/ASP/DocTypes/dita-oasis/1.2/technicalContent/dtd/topic.dtd"[]>
+<topic id="GUID-2AF8B7D4-78AE-4958-90A2-A5AE30F061FD" xml:lang="en-US"> 
+  <title>Package Power Information</title> 
+  <body> 
+	 <p> 
+	 <ul id="GUID-5D7A2305-B571-4D92-8CD2-C0BA32764E41"> 
+		<li id="LI_729D761D21E140FEAF2EA88CD44CC7BA">The power values given below are for IA centric workload which does not include all the feature rich power adders available in NVL (I/O connectivity scenarios). The IOE powers will depend on workload. For more details, refer to the Feature Rich section. 
+		</li> 
+		<li id="LI_ACA9EE3BBBF540A999D3C555B4A7E292">To know about power adder estimation for various I/O connectivity scenarios, refer to the Nova Lake H Platform Design Guide and Nova Lake-HX Platform Design Guide (#<xref href="HTTPS://CDRDV2.INTEL.COM/V1/DL/GETCONTENT/855310" format="HTTPS" scope="external">855310</xref> and #<xref href="HTTPS://CDRDV2.INTEL.COM/V1/DL/GETCONTENT/854352" format="HTTPS" scope="external">854352</xref>). System designers should consider the thermally relevant power adder of different I/O connections scenarios on processor and platform, when determining the thermal budget and associated cooling solution to preserve similar user experiences or performance. 
+		</li> 
+		<li id="LI_F20F183AEB524C51B6FCF2FAC72553AD">The below table shows power splits for the IA-centric workload used for sustained cooling needs considered in 
+		  <xref scope="local" format="dita" href="GUID-680A8FDF-E411-4147-8343-017ACCB4FA39.dita">section 3.5</xref>. 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <table id="GUID-A791153F-9EB7-4E5E-836F-4D5DDA9DD119" pgwide="1"> 
+		<tgroup cols="9"> 
+		  <colspec colnum="1" colname="col1" colwidth="1.50*" /> 
+		  <colspec colnum="2" colname="col2" colwidth="1.54*" /> 
+		  <colspec colnum="3" colname="col3" colwidth="1.15*" /> 
+		  <colspec colnum="4" colname="col4" colwidth="1.00*" /> 
+		  <colspec colnum="5" colname="col5" colwidth="1.24*" /> 
+		  <colspec colnum="6" colname="col6" colwidth="1.00*" /> 
+		  <colspec colnum="7" colname="col7" colwidth="1.29*" /> 
+		  <colspec colnum="8" colname="col8" colwidth="1.35*" /><colspec colname="col9" colnum="9" colwidth="1.50*" /> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1" morerows="1" align="center" valign="middle"> 
+				  <b>Package</b> 
+				</entry> 
+				<entry colname="col2" align="center" morerows="1" valign="middle"> 
+				  <b> Package Power Level(W)</b> 
+				</entry> 
+				<entry namest="col3" nameend="col6" align="center" valign="middle"> 
+				  <b>Assumed Package Power</b> 
+				</entry> 
+				<entry colname="col7" align="center" valign="middle"> 
+				  <b> Minimum Assured Power</b> 
+				</entry> 
+				<entry colname="col8" align="center" valign="middle"> 
+				  <b> Maximum Assured Power</b> 
+				</entry> 
+				<entry colname="col9" align="center" valign="middle"> 
+				  <p>High 
+				  </p> 
+				  <p>Concurrency 
+				  </p> 
+				  <p>Power 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col3" align="center" valign="middle"> 
+				  <b> Compute Tile Power (W)</b> 
+				</entry> 
+				<entry colname="col4" align="center" valign="middle"> 
+				  <b> HUB Tile Power (W)</b> 
+				</entry> 
+				<entry colname="col5" align="center" valign="middle"> 
+				  <b> PCD Tile Power (W)</b> 
+				</entry> 
+				<entry colname="col6" align="center" valign="middle"> 
+				  <b> GCD Tile Power (W)</b> 
+				</entry> 
+				<entry colname="col7" align="center" valign="middle"> 
+				  <b> Package Power (W)</b> 
+				</entry> 
+				<entry colname="col8" align="center" valign="middle"> 
+				  <b> Package Power (W)</b> 
+				</entry> 
+				<entry colname="col9" align="center" valign="middle"> 
+				  <b> Package Power (W)</b> 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry> NVL 8C 4P+0E+4LP E+4X<sup>e 1</sup> 
+				</entry> 
+				<entry align="center" valign="middle"> 15<sup>4</sup> 
+				</entry> 
+				<entry align="center" valign="middle"> 8.1 
+				</entry> 
+				<entry align="center" valign="middle"> 6.5 
+				</entry> 
+				<entry align="center" valign="middle"> 0.4 
+				</entry> 
+				<entry align="center" valign="middle"> 0 
+				</entry> 
+				<entry align="center" valign="middle"> 12 
+				</entry> 
+				<entry align="center" valign="middle"> 45 
+				</entry> 
+				<entry colname="col9" align="center" valign="middle"> TBD 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry>NVL 8C 4P+0E+4LP E+4X<sup>e 1</sup> 
+				</entry> 
+				<entry align="center" valign="middle">25<sup>4</sup> 
+				</entry> 
+				<entry align="center" valign="middle">15.2 
+				</entry> 
+				<entry align="center" valign="middle">9.4 
+				</entry> 
+				<entry align="center" valign="middle">0.4 
+				</entry> 
+				<entry align="center" valign="middle">0 
+				</entry> 
+				<entry align="center" valign="middle">10 
+				</entry> 
+				<entry align="center" valign="middle">45 
+				</entry> 
+				<entry colname="col9" align="center" valign="middle">TBD 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> NVL 14C 2P +8E+4LP E +4X 
+				  <sup>e2</sup> 
+				</entry> 
+				<entry align="center" valign="middle">15<sup>5</sup> 
+				</entry> 
+				<entry align="center" valign="middle">8 
+				</entry> 
+				<entry align="center" valign="middle">6.6 
+				</entry> 
+				<entry align="center" valign="middle">0.4 
+				</entry> 
+				<entry align="center" valign="middle">0 
+				</entry> 
+				<entry align="center" valign="middle">10 
+				</entry> 
+				<entry align="center" valign="middle">25 
+				</entry> 
+				<entry colname="col9" align="center" valign="middle">TBD 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> NVL 14C 2P +8E+4LP E +4X 
+				  <sup>e2</sup> 
+				</entry> 
+				<entry align="center" valign="middle">25<sup>5</sup> 
+				</entry> 
+				<entry align="center" valign="middle">15.8 
+				</entry> 
+				<entry align="center" valign="middle">8.8 
+				</entry> 
+				<entry align="center" valign="middle">0.4 
+				</entry> 
+				<entry align="center" valign="middle">0 
+				</entry> 
+				<entry align="center" valign="middle">10 
+				</entry> 
+				<entry align="center" valign="middle">25 
+				</entry> 
+				<entry colname="col9" align="center" valign="middle">TBD 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> NVL 16C 12X<sup>e</sup> 4P+8E+4LP E+12X<sup>e 1</sup> / NVL 16C 4P+8E+4LP E+4X<sup>e 1</sup> 
+				</entry> 
+				<entry align="center" valign="middle"> 25<sup>6</sup> 
+				</entry> 
+				<entry align="center" valign="middle"> 14.6 
+				</entry> 
+				<entry align="center" valign="middle"> 10 
+				</entry> 
+				<entry align="center" valign="middle"> 0.4 
+				</entry> 
+				<entry align="center" valign="middle"> 0 
+				</entry> 
+				<entry align="center" valign="middle"> 15 
+				</entry> 
+				<entry align="center" valign="middle"> 65 
+				</entry> 
+				<entry colname="col9" align="center" valign="middle"> TBD 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> NVL 16C 4P+8E+4LP E+4X<sup>e 1</sup> / NVL 16C 12X<sup>e</sup> 4P+8E+4LP E+12X<sup>e 1</sup> 
+				</entry> 
+				<entry align="center" valign="middle"> 45<sup>6</sup> 
+				</entry> 
+				<entry align="center" valign="middle">30.9 
+				</entry> 
+				<entry align="center" valign="middle"> 13.7 
+				</entry> 
+				<entry align="center" valign="middle"> 0.4 
+				</entry> 
+				<entry align="center" valign="middle"> 0 
+				</entry> 
+				<entry align="center" valign="middle"> 15 
+				</entry> 
+				<entry align="center" valign="middle"> 65 
+				</entry> 
+				<entry colname="col9" align="center" valign="middle"> TBD 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry>NVL-HX 16C 4P+8E+4LP E+2X<sup>e 3</sup> 
+				</entry> 
+				<entry align="center" valign="middle">55<sup>7</sup> 
+				</entry> 
+				<entry align="center" valign="middle">39.1 
+				</entry> 
+				<entry align="center" valign="middle">15.5 
+				</entry> 
+				<entry align="center" valign="middle">0.4 
+				</entry> 
+				<entry align="center" valign="middle">0 
+				</entry> 
+				<entry align="center" valign="middle">35 
+				</entry> 
+				<entry align="center" valign="middle">65 
+				</entry> 
+				<entry colname="col9" align="center" valign="middle">TBD 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> NVL-HX 24C 8P+12E+4LPE+2X<sup>e 3</sup> 
+				</entry> 
+				<entry align="center" valign="middle">55<sup>7</sup> 
+				</entry> 
+				<entry align="center" valign="middle">43.9 
+				</entry> 
+				<entry align="center" valign="middle">10.7 
+				</entry> 
+				<entry align="center" valign="middle">0.4 
+				</entry> 
+				<entry align="center" valign="middle">0 
+				</entry> 
+				<entry align="center" valign="middle">35 
+				</entry> 
+				<entry align="center" valign="middle">85 
+				</entry> 
+				<entry colname="col9" align="center" valign="middle">TBD 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				  <p> NVL-HX 24C 8P+12E+4LPE+2X 
+				  </p> 
+				  <p> e 3 
+				  </p> 
+				</entry> 
+				<entry align="center" valign="middle">85<sup>7</sup> 
+				</entry> 
+				<entry align="center" valign="middle">71 
+				</entry> 
+				<entry align="center" valign="middle">13.6 
+				</entry> 
+				<entry align="center" valign="middle">0.4 
+				</entry> 
+				<entry align="center" valign="middle">0 
+				</entry> 
+				<entry align="center" valign="middle">35 
+				</entry> 
+				<entry align="center" valign="middle">85 
+				</entry> 
+				<entry colname="col9" align="center" valign="middle">TBD 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> NVL-HX 28C 8P+16E+4LP E+2X<sup>e 3</sup> 
+				</entry> 
+				<entry align="center" valign="middle"> 55<sup>7</sup> 
+				</entry> 
+				<entry align="center" valign="middle"> 42.1 
+				</entry> 
+				<entry align="center" valign="middle"> 12.5 
+				</entry> 
+				<entry align="center" valign="middle"> 0.4 
+				</entry> 
+				<entry align="center" valign="middle"> 0 
+				</entry> 
+				<entry align="center" valign="middle"> 35 
+				</entry> 
+				<entry align="center" valign="middle"> 85 
+				</entry> 
+				<entry colname="col9" align="center" valign="middle"> TBD 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> NVL-HX 28C 8P+16E+4LP E+2X<sup>e 3</sup> 
+				</entry> 
+				<entry align="center" valign="middle"> 85<sup>7</sup> 
+				</entry> 
+				<entry align="center" valign="middle"> 67.6 
+				</entry> 
+				<entry align="center" valign="middle"> 17 
+				</entry> 
+				<entry align="center" valign="middle"> 0.4 
+				</entry> 
+				<entry align="center" valign="middle"> 0 
+				</entry> 
+				<entry align="center" valign="middle">35 
+				</entry> 
+				<entry align="center" valign="middle">85 
+				</entry> 
+				<entry colname="col9" align="center" valign="middle">TBD 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <note id="GUID-9515F8AB-E257-4903-9B9C-14D74CC3BB60">The following table is to be used as NVL mobile package power allocation for package power levels other than the ones provided in the previous table for the simplified thermal model provided in the Nova Lake Mobile Package Thermal Models (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/858796" format="https" scope="external">858796</xref>). 
+		<table id="GUID-0F912522-0C45-4A9F-9C44-AA0CC4761B8A"> 
+		  <tgroup cols="6" align="left"> 
+			 <colspec colnum="1" colname="col1" colwidth="*" /> 
+			 <colspec colnum="2" colname="col2" colwidth="*" /> 
+			 <colspec colnum="3" colname="col3" colwidth="*" /> 
+			 <colspec colnum="4" colname="col4" colwidth="*" /> 
+			 <colspec colnum="5" colname="col5" colwidth="*" /> 
+			 <colspec colnum="6" colname="col6" colwidth="*" /> 
+			 <thead> 
+				<row> 
+				  <entry valign="middle" align="center">Package 
+				  </entry> 
+				  <entry valign="middle" align="center"> Compute Tile Power (W) 
+				  </entry> 
+				  <entry valign="middle" align="center"> HUB Tile Power (W) 
+				  </entry> 
+				  <entry valign="middle" align="center"> PCD Tile Power (W) 
+				  </entry> 
+				  <entry valign="middle" align="center"> GPU Tile Power (W) 
+				  </entry> 
+				  <entry valign="middle" align="center"> Total Package Power (W) 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry> NVL 8C 4P+0E+4LPE+4X<sup>e 1, 9</sup> 
+				  </entry> 
+				  <entry valign="middle" align="center"> =0.7095*TDP-2.5541 
+				  </entry> 
+				  <entry valign="middle" align="center"> =0.2903*TDP+2.149 
+				  </entry> 
+				  <entry valign="middle" align="center"> 0.4 
+				  </entry> 
+				  <entry valign="middle" align="center"> 0 
+				  </entry> 
+				  <entry valign="middle" align="center"> TDP 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> NVL 14C 2P +8E+4LPE+4X<sup>e 2, 9</sup> 
+				  </entry> 
+				  <entry valign="middle" align="center"> =0.7798*TDP − 3.6536 
+				  </entry> 
+				  <entry valign="middle" align="center"> =0.22*TDP + 3.2515 
+				  </entry> 
+				  <entry valign="middle" align="center">0.4 
+				  </entry> 
+				  <entry valign="middle" align="center">0 
+				  </entry> 
+				  <entry valign="middle" align="center">TDP 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> NVL 16C 4P+8E+4LPE+12X<sup>e 1, 9</sup> / NVL 16C 4P+8E+4LPE+4X<sup>e 1, 9</sup> 
+				  </entry> 
+				  <entry valign="middle" align="center"> =0.8155*TDP-5.7975 
+				  </entry> 
+				  <entry valign="middle" align="center"> =0.1845*TDP+5.3975 
+				  </entry> 
+				  <entry valign="middle" align="center"> 0.4 
+				  </entry> 
+				  <entry valign="middle" align="center"> 0 
+				  </entry> 
+				  <entry valign="middle" align="center"> TDP 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> NVL HX 16C 4P +8E+4LPE +2X 
+					 <sup>e 3 ,9</sup> 
+				  </entry> 
+				  <entry valign="middle" align="center">=0.8155*TDP-5.7975 
+				  </entry> 
+				  <entry valign="middle" align="center">=0.1845*TDP+5.3975 
+				  </entry> 
+				  <entry valign="middle" align="center">0.4 
+				  </entry> 
+				  <entry valign="middle" align="center">0 
+				  </entry> 
+				  <entry valign="middle" align="center">TDP 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> NVL HX 24C8P+12E +4LPE +2X<sup>e 3, 9</sup> 
+				  </entry> 
+				  <entry valign="middle" align="center"> =0.901*TDP − 5.6159 
+				  </entry> 
+				  <entry valign="middle" align="center"> =0.0981*TDP + 5.2481 
+				  </entry> 
+				  <entry valign="middle" align="center">0.4 
+				  </entry> 
+				  <entry valign="middle" align="center">0 
+				  </entry> 
+				  <entry valign="middle" align="center">TDP 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> NVL HX 28C 8P+16E+4LPE+2X<sup>e 3, 9</sup> 
+				  </entry> 
+				  <entry valign="middle" align="center"> =0.8516*TDP-4.7684 
+				  </entry> 
+				  <entry valign="middle" align="center"> =0.1484*TDP+4.3684 
+				  </entry> 
+				  <entry valign="middle" align="center"> 0.4 
+				  </entry> 
+				  <entry valign="middle" align="center"> 0 
+				  </entry> 
+				  <entry valign="middle" align="center"> TDP 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p>All values are subject to change. 
+		</p> 
+		<p> 
+		  <sup>1</sup> Processor Base Power (PBP)=25W for 8C/16C 12X<sup>e</sup>/16C 4X<sup>e</sup>. 
+		</p> 
+		<p><sup>2</sup> Processor Base Power(PBP)=15W for 14C4X<sup>e</sup>. 
+		</p> 
+		<p> 
+		  <sup>3</sup> Processor Base Power (PBP)=55W for HX 16C/HX 28C/HX 24C. 
+		</p> 
+		<p> 
+		  <sup>4</sup> PL1=25W (or any power 10-45W) can be configured in BIOS for 8C. 
+		</p> 
+		<p><sup>5</sup> PL1=15W (or any power 10-25W) can be configured in BIOS for14C 4X<sup>e</sup>. 
+		</p> 
+		<p><sup>6</sup> PL1=45W (or any power 25-65W) can be configured in BIOS for 16C 12X<sup>e</sup> and 16C. 
+		</p> 
+		<p> 
+		  <sup>7</sup> PL1=55W (or any power 35-65W) can be configured in BIOS for HX 16C. 
+		</p> 
+		<p><sup>8</sup> PL1=55W (or any power 35-85W) can be configured in BIOS for HX 28C &amp; HX 24C. 
+		</p> 
+		<p><sup>9</sup> The equations are applicable only between the range of minimum assured power/processor base power to maximum assured power. 
+		</p> 
+	 </note> 
+	 <p>The below table shows power splits for the Single core IA-centric workload used for cooling needs considered in 
+		<xref scope="local" format="dita" href="GUID-D293C09A-8D8D-4BF1-BF1A-B690416BFFEA.dita">section 3.8.4</xref>. 
+	 </p> 
+	 <table id="TABLE_00484DA50CB546899E368FA5ABD780E0"> 
+		<tgroup cols="6" align="left"> 
+		  <colspec colnum="1" colname="col1" colwidth="*" /> 
+		  <colspec colnum="2" colname="col2" colwidth="*" /> 
+		  <colspec colnum="3" colname="col3" colwidth="*" /> 
+		  <colspec colnum="4" colname="col4" colwidth="*" /> 
+		  <colspec colnum="5" colname="col5" colwidth="*" /> 
+		  <colspec colnum="6" colname="col6" colwidth="*" /> 
+		  <thead> 
+			 <row> 
+				<entry valign="middle" align="center">Package 
+				</entry> 
+				<entry valign="middle" align="center"> Compute Tile Power (W) 
+				</entry> 
+				<entry valign="middle" align="center"> HUB Tile Power (W) 
+				</entry> 
+				<entry valign="middle" align="center"> PCD Tile Power (W) 
+				</entry> 
+				<entry valign="middle" align="center"> GPU Tile Power (W) 
+				</entry> 
+				<entry valign="middle" align="center"> Total Package Power (W) 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry> NVL 8C 4P+0E+4LPE+4X<sup>e</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 12.1 
+				</entry> 
+				<entry valign="middle" align="center"> 2.5 
+				</entry> 
+				<entry valign="middle" align="center"> 0.4 
+				</entry> 
+				<entry valign="middle" align="center"> 0 
+				</entry> 
+				<entry valign="middle" align="center"> 15 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> NVL 14C 2P+8E +4LPE+4X<sup>e</sup> 
+				</entry> 
+				<entry valign="middle" align="center">12.2 
+				</entry> 
+				<entry valign="middle" align="center">2.4 
+				</entry> 
+				<entry valign="middle" align="center">0.4 
+				</entry> 
+				<entry valign="middle" align="center">0 
+				</entry> 
+				<entry valign="middle" align="center">15 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> NVL 16C 4P+8E+4LPE +12X<sup>e</sup> / NVL 16C 4P+8E+4LPE+4X<sup>e</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 17.9 
+				</entry> 
+				<entry valign="middle" align="center"> 2.7 
+				</entry> 
+				<entry valign="middle" align="center"> 0.4 
+				</entry> 
+				<entry valign="middle" align="center"> 0 
+				</entry> 
+				<entry valign="middle" align="center"> 21 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				  <p> NVL HX 16C 4P+8E +4LPE+2X<sup>e</sup> 
+				  </p> 
+				</entry> 
+				<entry valign="middle" align="center">17.9 
+				</entry> 
+				<entry valign="middle" align="center">2.7 
+				</entry> 
+				<entry valign="middle" align="center">0.4 
+				</entry> 
+				<entry valign="middle" align="center">0 
+				</entry> 
+				<entry valign="middle" align="center">21 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> NVL 24C 8P +12E+4LPE +2X<sup>e</sup> / NVL 28C 8P+16E+4LPE+2X<sup>e</sup> 
+				</entry> 
+				<entry valign="middle" align="center"> 18.9 
+				</entry> 
+				<entry valign="middle" align="center"> 2.7 
+				</entry> 
+				<entry valign="middle" align="center"> 0 .4 
+				</entry> 
+				<entry valign="middle" align="center"> 0 
+				</entry> 
+				<entry valign="middle" align="center"> 22 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <table id="TABLE_AAE7ADFEAEA3450A95AE768B36070085" pgwide="1"> 
+		<tgroup cols="3"> 
+		  <colspec colnum="1" colname="col1" colwidth="1.00*" /> 
+		  <colspec colnum="2" colname="col2" colwidth="1.60*" /> 
+		  <colspec colnum="3" colname="col3" colwidth="1.21*" /> 
+		  <thead> 
+			 <row> 
+				<entry align="center"> SoC Power Characteristic​ 
+				</entry> 
+				<entry align="center"> Description​ of Characteristic 
+				</entry> 
+				<entry align="center"> SoC Design Considerations​ 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry> Maximum Turbo Power​ 
+				</entry> 
+				<entry> The maximum sustained (&gt;1s) power dissipation of the processor as limited by current and/or temperature controls. Instantaneous power may exceed Maximum Turbo Power for short durations (&lt;=10ms). Maximum Turbo Power is configurable by system vendor and can be system specific​. 
+				</entry> 
+				<entry> Intel performance advocacy for power delivery and transient thermal solution design (PL2)​ 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Processor Base Power​ 
+				</entry> 
+				<entry> The time-averaged power dissipation that the processor is validated to not exceed during manufacturing while executing an Intel-specified high complexity workload at Base Frequency and at the junction temperature as specified in the Datasheet for the SKU segment and configuration.​ 
+				</entry> 
+				<entry> Intel reference performance advocacy for sustained thermal solution design (PL1)​ 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Minimum Assured Power ​ 
+				</entry> 
+				<entry> Min Assured Power is a performance advocacy determined by running a complex scenario defined by Intel. Every product SKU stack has guidance on Min Assured Power for thermal chassis design. Represents Intel specified min PL1 that needs to be taken for thermal design to get the advocated performance experience. Min Assured Power is the performance vs power cross-over point across the product SKU stack. 
+				</entry> 
+				<entry> Intel minimum performance advocacy for sustained thermal solution design (PL1) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> High Concurrency Power ​ 
+				</entry> 
+				<entry> High Concurrency Power is a functional characteristic determined by running a complex scenario defined by Intel. Every SoC consumes a minimum power during a max connected case. This is a functional characteristic, not intended to indicate the performance floor. Scenario takes into consideration IO ports, compute IPs concurrency (CPU, GPU, IPU) along with memory BW. Temperature assumption of spec limit. Manufacturing screening is done to exclude parts that do not meet the target power for the high concurrency scenario. The SoC may not honor PL1 values set lower than high concurrency power during the high concurrency scenario. 
+				</entry> 
+				<entry> Thermal solution capability required to support the high concurrency scenario as described 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </body> 
+</topic> 

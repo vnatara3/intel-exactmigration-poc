@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-BFCC6F5E-2EB7-4C80-BF02-8848D113D259" xml:lang="en-US"> 
+  <title> Cold Plate Thickness and all-core Turbo Thermal Response</title> 
+  <body> 
+	 <fig id="FIG_30A5DC12B2FD4AD5AD2116E85BF42A8F"> 
+		<title> Transient Tsn all-core Turbo Example: 15W TDP Package</title><image href="../images/GUID-70BF5BFB-76C6-4884-BFE0-B5ABCAEEE3B5.png" scalefit="yes" id="IMAGE_6DB43CEC3E15449BA13DF5D5D6C4DD57"> 
+		  <alt> 
+		  </alt></image> 
+	 </fig> 
+	 <note id="GUID-A8F10B9E-3C41-4C77-9982-F194FEAE2CA7"> 
+		<p> 
+		  <sup>1</sup> Analysis assumes fan running at full speed and maximum operating temperature. These curves are exemplary and are not intended to represent any one Intel product. 
+		</p> 
+		<p><sup>2</sup> It may be difficult to achieve a low bond line thickness (BLT) with 0.25mm cold plates, and that complexity is not comprehended in this sensitivity study. 
+		</p> 
+	 </note> 
+	 <p><u>Increasing the thickness</u> of the cold plate can significantly 
+		<u>increase the time that the processor can operate in full turbo power</u> (PL2) prior to reaching maximum operating temperature. This additional headroom can also be used to increase PL2 power for a targeted duration (Power Capability) to optimize for specific workloads. Intel recommends full PL2 power support for ≥ 3 to 5 seconds to meet target performance for representative bursty workloads. 
+	 </p> 
+  </body> 
+</topic> 

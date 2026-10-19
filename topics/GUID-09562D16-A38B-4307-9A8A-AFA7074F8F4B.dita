@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-09562D16-A38B-4307-9A8A-AFA7074F8F4B" xml:lang="en-US"> 
+  <title>Guidance on Thermal Testing of Turbo Response</title> 
+  <body> 
+	 <ol id="OL_E950E3B0ABDB4983937CD8AD2597682F"> 
+		<li id="LI_013F35851EC04B26BA63B37963E855AA">Make sure the thermal solution is well contacted to package and will meet sustain design target. 
+		</li> 
+		<li id="LI_0CBDD6B9F55F43F18C6674EF37304022">Place system in targeted max thermal environment for turbo optimization (Example: Thermal Chamber set to 30°C) 
+		</li> 
+		<li id="LI_0C980447B6F042CABA034FD5D388878F">Make sure Turbo is enabled. 
+		</li> 
+		<li id="LI_23B4C64AC1AB4F3E9A19BBE23AD5471C">Use PTAT to log Temperature, Frequency, Power, and Turbo Budget. 
+		</li> 
+		<li id="LI_2F84CFD5CAD1497697E3E6B9A5C36CFF">Allow system to reach thermal steady-state while at idle. 
+		</li> 
+		<li id="LI_5507F577BB434BF3A6EB6F408077C1A6">Start workload(s): PTAT thermal workload and/ or any additional workloads system designer wishes to test. 
+		</li> 
+		<li id="LI_9308FAD4EF6C4066BA3FA02BA5BE44BF">Monitor Temperature/Power/Frequency response - Wait until workload is complete or thermal steady-state is achieved. 
+		</li> 
+		<li id="LI_53953BB6F2974ED1AC5AA5539BC23366">For more details on how to design for transient performance in mobile systems refer "Thermal Design for Transient Performance - Mobile Systems Design Consideration" (#<xref href="https://cdrdv2.intel.com/v1/dl/getContent/621476" format="https" scope="external">621476</xref>) 
+		</li> 
+	 </ol> 
+	 <fig id="FIG_D8D343309C6C44178BC27F5C87155E1D"><image href="../images/GUID-346DED0A-7794-4AA1-8DEC-CEA66EA5D38B.png" scalefit="yes" id="IMAGE_78E9A5FDE0CB4258A74DF8E1DDCC864C"> 
+		  <alt> 
+		  </alt></image> 
+	 </fig> 
+  </body> 
+</topic> 
