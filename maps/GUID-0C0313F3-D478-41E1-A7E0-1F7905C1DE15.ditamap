@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN">
-<map xml:lang="en-US" id="GUID-0C0313F3-D478-41E1-A7E0-1F7905C1DE15" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic delay-d)                          (map mapgroup-d)                           (topic indexing-d)                          (map glossref-d)                          (topic hi-d)                           (topic ut-d)                           (topic hazard-d)                          (topic abbrev-d)                          (topic pr-d)                           (topic sw-d)                          (topic ui-d)                          (topic intc-trackChanges-d)                         " class="- map/map ">
-  <title class="- topic/title ">Introduction</title>
-  <topicref href="GUID-4BDC383A-0086-45A4-AA92-5E5A156DC768.xml" class="- map/topicref ">
-    <topicref href="GUID-529CA6B9-9C59-4CAF-8D2C-8FF41DE1292A.xml" class="- map/topicref ">
-      <topicref href="GUID-EE3180E3-2741-4024-95A5-E070B520274F.xml" class="- map/topicref " />
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"[]>
+<map xml:lang="en-US" id="GUID-0C0313F3-D478-41E1-A7E0-1F7905C1DE15" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <title>Introduction</title>
+  <topicref href="../topics/GUID-4BDC383A-0086-45A4-AA92-5E5A156DC768.dita">
+    <topicref href="../topics/GUID-529CA6B9-9C59-4CAF-8D2C-8FF41DE1292A.dita">
+      <topicref href="../topics/GUID-EE3180E3-2741-4024-95A5-E070B520274F.dita" />
       
     </topicref>
-    <topicref href="GUID-E7A500C7-F18E-41EF-BBD3-AD332D264380.xml" class="- map/topicref " />
+    <topicref href="../topics/GUID-E7A500C7-F18E-41EF-BBD3-AD332D264380.dita" />
     
     
     
     
     
-  <topicref href="GUID-A8728EBB-9B4E-4D54-B61B-AE6C1DA7282A.xml" format="dita" class="- map/topicref "><topicmeta class="- map/topicmeta "></topicmeta></topicref></topicref>
+  <topicref href="../topics/GUID-A8728EBB-9B4E-4D54-B61B-AE6C1DA7282A.dita" format="dita"><topicmeta><navtitle>Platform Readiness Considerations</navtitle></topicmeta></topicref></topicref>
 </map>

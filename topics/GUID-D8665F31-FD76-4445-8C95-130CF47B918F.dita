@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-D8665F31-FD76-4445-8C95-130CF47B918F" xml:lang="en-US"> 
+  <title>Boot From Hub-Die E-core</title> 
+  <body> 
+    <p>Requirement to boot from Hub-Die E-core is mainly for compatibility support. Razor Lake SoC shall boot with Nova Lake BIOS/IFWI using Hub-Die E-core. Prompt option to user to update the appropriate IFWI image and OS image. Hub-Die E-core has only L2 Cache (only MLC and no LLC) and is 4MB. BIOS cacheable code should fit within 4MB including data/heap. 
+    </p> 
+  </body> 
+</topic> 

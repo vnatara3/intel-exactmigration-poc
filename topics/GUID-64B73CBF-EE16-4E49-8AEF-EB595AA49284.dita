@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-64B73CBF-EE16-4E49-8AEF-EB595AA49284" xml:lang="en-US"> 
+  <title>Isolated Memory Regions (IMRs)</title> 
+  <body> 
+	 <p> 
+		<b>New BIOS Policy:</b> 
+	 <ul id="UL_F2124D92F1144BEE93C4214407282A19"> 
+		<li id="LI_CE08554BB4274FAE93DD8FB05EB2AE95"> CCS IMR with CCS stolen memory and include in IA exclude range 
+		  <ul id="UL_F8C7DF99F74A41CC93422239500A01FA"> 
+			 <li id="LI_BB3D58D0AB164E7DA500113E30465D91"> CCS (compression control surface) protection is used for compression 
+			 </li> 
+			 <li id="LI_0B2EDBCF4C834533AA5C80C98182333D"> CCS IMR allocation is default to IMR1M6 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li id="LI_321B99D5442D46738243828A38D9E540"> Stream Tracer IMR and include in IO exclude range 
+		  <ul id="UL_A5F38F09453F45279ACE66BFBD39D594"> 
+			 <li id="LI_BCB8524395E94147B008E16A5345E345">Stream Tracer IMR allocation is default to IMR25 
+			 </li> 
+		  </ul> 
+		</li> 
+	 </ul> 
+	 </p>
+	 <p> 
+		<b> SoC implemented:</b> 
+	 <ul id="UL_EAE6A7A0DD7F432AABF6D9E2E0ECA68E"> 
+		<li id="LI_DB64E033562246B89DAACF764AA09C62"> 26 IMRs - (Increased from MTL) 
+		</li> 
+		<li id="LI_E4704BC4461F45A4919960301088FF40"> Full IMRs include BASE/MASK/RAC/WAC/CP with alignment and size power of 2 
+		</li> 
+		<li id="LI_05A8A111CF894E52866944643DC27E72"> 16 IMR1M - (Same as MTL) 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p> 
+		<b>IMR with 1MB access resolution:</b> Having address aligned to power of 2 creates allocation problem is some cases. For example it is not possible to allocate 3GB region in the low memory. To solve this issue, we implemented Special IMR regions (IMR1MAcc) that can be defined at any address/size with 1MB resolution. 
+	 </p> 
+	 <p> 
+		<b>Simplified IMRs:</b> is defined only BASE/MASK (or BASE/LIMIT) register. It returns UR on any transaction that hit defined range without checking transaction SAI. 
+	 </p> 
+  </body> 
+</topic> 
