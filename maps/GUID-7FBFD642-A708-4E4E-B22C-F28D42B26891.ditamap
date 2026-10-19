@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"[
+]>
 
-<map id="GUID-7FBFD642-A708-4E4E-B22C-F28D42B26891" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic delay-d)                          (map mapgroup-d)                           (topic indexing-d)                          (map glossref-d)                          (topic hi-d)                           (topic ut-d)                           (topic hazard-d)                          (topic abbrev-d)                          (topic pr-d)                           (topic sw-d)                          (topic ui-d)                          (topic intc-trackChanges-d)                         " class="- map/map ">
-	<title class="- topic/title ">Meteor Lake Compute (CPU) Die</title>
-<topicref href="GUID-AD946D17-4455-439E-BFF6-F0A268BEAB2C.xml" format="dita" class="- map/topicref "><topicmeta class="- map/topicmeta "></topicmeta><topicref href="GUID-6D9A5B77-2AF8-4296-B042-4D5A5D320DCE.xml" format="dita" class="- map/topicref "><topicmeta class="- map/topicmeta "></topicmeta><topicref href="GUID-D18B93B8-24ED-468C-B437-D76A544A5270.xml" format="dita" class="- map/topicref "><topicmeta class="- map/topicmeta "></topicmeta><topicref href="GUID-BEBDEA89-BF20-4D5B-AB64-1338E70DE5CE.xml" format="dita" class="- map/topicref "><topicmeta class="- map/topicmeta "></topicmeta></topicref></topicref></topicref></topicref></map>
+<map id="GUID-7FBFD642-A708-4E4E-B22C-F28D42B26891" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+	<title>Meteor Lake Compute (CPU) Die</title>
+<topicref href="../topics/GUID-AD946D17-4455-439E-BFF6-F0A268BEAB2C.dita" format="dita"><topicmeta><navtitle>Meteor Lake Compute (CPU) Die</navtitle></topicmeta><topicref href="../topics/GUID-6D9A5B77-2AF8-4296-B042-4D5A5D320DCE.dita" format="dita"><topicmeta><navtitle>Cores</navtitle></topicmeta><topicref href="../topics/GUID-D18B93B8-24ED-468C-B437-D76A544A5270.dita" format="dita"><topicmeta><navtitle>Boot Strap Processor</navtitle></topicmeta><topicref href="../topics/GUID-BEBDEA89-BF20-4D5B-AB64-1338E70DE5CE.dita" format="dita"><topicmeta><navtitle>BIOS Requirements</navtitle></topicmeta></topicref></topicref></topicref></topicref></map>
