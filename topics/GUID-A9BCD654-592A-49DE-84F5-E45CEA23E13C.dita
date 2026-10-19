@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-A9BCD654-592A-49DE-84F5-E45CEA23E13C" xml:lang="en-US"> 
+  <title>Intel® Total Storage Encryption BIOS Blocks</title> 
+  <body> 
+    <p> The BIOS components for Intel® Total Storage Encryption feature are as such: 
+    </p> 
+    <fig id="GUID-A779A8E2-EBE4-44E1-B4A7-6A2FF57232CC"> 
+      <title> BIOS Building Blocks for Intel® Total Storage Encryption Support</title><image href="../images/GUID-BB5C9A16-B189-4ED1-BFD5-EAE18C162B32.png" scalefit="yes"> 
+        <alt> 
+        </alt></image> 
+    </fig> 
+    <p> Above figure shows BIOS Building Blocks for Intel® Total Storage Encryption Support 
+    </p> 
+    <p> 
+    <ol id="GUID-A28E81D6-DA02-4F9B-B8CD-1B4D56DC7B17"> 
+      <li> The Intel® Total Storage Encryption hardware detection is responsible for detecting the TSE hardware presence and BIOS Policy to enable TSE support in the BIOS. 
+      </li> 
+      <li> The Intel® Total Storage Encryption BIOS initialization is responsible for initializing the IOCCE IP, IOC IP, IMR programming and allocating TSE DRAM Table in memory. 
+      </li> 
+      <li> The Intel® Total Storage Encryption ACPI reporting is responsible for publishing TSE ACPI device object with TSE _CRS resource methods. In addition, it is responsible for publishing TSE ACPI table with TSE capabilities reporting. 
+      </li> 
+      <li> The UEFI Block IO Crypto Protocol for Intel Inline Encryption provides inline cryptographic interfaces that allows hardware based inline encryption/decryption crypto capabilities of the NVMe device data. This protocol is installed per NVMe Drive Namespace. At high level, the data is encrypted by the IOCCE IP during the write to NVMe drive operation. Similarly, the data is decrypted by the IOCCE IP during the read from NVMe drive operation. 
+      </li> 
+    </ol> 
+    </p> 
+  </body> 
+</topic> 

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-B467EDFF-EEDF-4AC1-9415-02D51BED0ED3" xml:lang="en-US"> 
+  <title>No-Eviction Mode (NEM) Sizes</title> 
+  <body> 
+    <draft-comment>Converted using FMHtml2Dita version: 2.1.0 
+    </draft-comment> 
+    <table id="GUID-C9EF598D-15D8-4A72-98E7-F6361FAFB454"> 
+      <tgroup cols="3"> 
+        <colspec colnum="1" colname="col1" colwidth="1.00*" /> 
+        <colspec colnum="2" colname="col2" colwidth="2.63*" /> 
+        <colspec colnum="3" colname="col3" colwidth="3.83*" /> 
+        <thead> 
+          <row valign="middle"> 
+            <entry> Step 
+            </entry> 
+            <entry> Description 
+            </entry> 
+            <entry> Details 
+            </entry> 
+          </row></thead> 
+        <tbody> 
+          <row> 
+            <entry morerows="2"> 1 
+            </entry> 
+            <entry morerows="2"> Get the cache size of L3 via CPUID leaf 4 of BSP. 
+            </entry> 
+            <entry> If values returned for L3 are all zeros, NEM is supported by L2 cache, else by L3. 
+            </entry> 
+          </row> 
+          <row> 
+            <entry colname="col3"> L2:WAY_MASK_1=MSR 0xD11, WAY_MASK_2=MSR 0xD12 
+            </entry> 
+          </row> 
+          <row> 
+            <entry colname="col3"> L3:WAY_MASK_1=MSR 0xC91, WAY_MASK_2=MSR 0xC92 
+            </entry> 
+          </row> 
+          <row> 
+            <entry morerows="1"> 2 
+            </entry> 
+            <entry morerows="1"> Get the cache size of NEM supported cache level via CPUID leaf 4 of BSP. 
+            </entry> 
+            <entry> CacheSize (Bytes) = (WayCnt) * (PartitionCnt) * (LineSize) * (SetCnt) = 
+            </entry> 
+          </row> 
+          <row> 
+            <entry colname="col3"> (EBX[31:22] + 1) * (EBX[21:12] + 1) * (EBX[11:0] + 1) * (ECX + 1) 
+            </entry> 
+          </row> 
+           
+          <row>
+            <entry morerows="1"> 2 
+            </entry>
+            <entry morerows="1"> Get the cache size of NEM supported cache level via CPUID leaf 4 of BSP. 
+            </entry> 
+            <entry colname="col3"> L3: ACMways = 0 
+            </entry> 
+          </row> 
+          <row> 
+            <entry colname="col3"> WayCnt = (EBX[31:22] + 1) 
+            </entry> 
+          </row> 
+          <row>
+            <entry colname="col1"> 3 
+            </entry> 
+            <entry colname="col2"> If ACM takes a number of ways reduce that. 
+            </entry> 
+            <entry> EffWayCnt = WayCnt - ACMways 
+            </entry> 
+          </row> 
+          <row> 
+            <entry morerows="1"> 4 
+            </entry> 
+            <entry morerows="1"> Recalculate NEM size. 
+            </entry> 
+            <entry> EffCacheSize= EffWayCnt * previous_power_of_two(CacheSize/WayCnt)) 
+            </entry> 
+          </row> 
+          <row> 
+            <entry colname="col3"> EffCacheSize= EffWayCnt * previous_power_of_two( (EBX[21:12] + 1) * (EBX[11:0] + 1) * (ECX + 1)) 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> 5 
+            </entry> 
+            <entry> Compute required guard band (GB). 
+            </entry> 
+            <entry> GbSize = EffCacheSize / EffWayCnt 
+            </entry> 
+          </row> 
+          <row> 
+            <entry morerows="3"> 6 
+            </entry> 
+            <entry> Compute NEM size based on number of contiguous ranges 
+            </entry> 
+            <entry> 
+            </entry> 
+          </row> 
+          <row> 
+            <entry colname="col2"> 1 NEM range 
+            </entry> 
+            <entry> NemSize = EffCacheSize 
+            </entry> 
+          </row> 
+          <row> 
+            <entry colname="col2"> 2 NEM ranges 
+            </entry> 
+            <entry> NemSize = EffCacheSize - GbSize 
+            </entry> 
+          </row> 
+          <row> 
+            <entry colname="col2"> 3 NEM ranges 
+            </entry> 
+            <entry> NemSize = EffCacheSize - (2*GbSize) 
+            </entry> 
+          </row> 
+        </tbody> 
+      </tgroup> 
+    </table> 
+  </body> 
+</topic> 

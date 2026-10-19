@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-D0FB01EA-F222-41DA-9F02-D9A96679A0B6" xml:lang="en-US"> 
+  <title>Clock</title> 
+  <body> 
+    <p>NVL Fabric is split into multiple separate fabrics subnet segments namely:
+    <ul id="GUID-F33D37AF-D542-4D64-BFC3-0FB163B3463B">
+      <li>Compute SAF: Fabric connecting Compute dies, HBO, Memory switch, SCA and memory.
+      </li> 
+      <li>IOSAF: Fabric for all IO and accelerator devices power managed by Punit. These include GT, NPU, Media, Display engine, sVTU, sNCU, IAX, SCA and Punit. The IOC, iVTU and the TSE are also included in the same subnet. Compute SAF and IOSAF can be run at different Power/clock domain as the traffic profiles for compute and IO can be active/inactive at the same time Compute SAF need to run at least 2Ghz to support 128 GB/s of Desktop Memory BW. Running over this frequency will have no impact on the BW but the transactions would see a reduced latency. IOSAF runs at 1Gghz, IOSAF is chosen to run wider and slower for better power efficiency.
+      </li> 
+    </ul>
+    </p> 
+  </body> 
+</topic> 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-2BDE72F4-B17B-4016-B51B-2127FAE4FF9F" xml:lang="en-US"> 
+  <title>PAM Mode Restrictions</title> 
+  <body> 
+	 <p> PAM mode restrictions have been introduced for MTL/ARL: "01", and "10" settings inside PAM are NOT allowed to be set by BIOS. Those settings will not be able to take effect OR will not have the desired effect. When moving PAM from "00" (MMIO) to "11" (HOM), cache invalidation must be done by EVERY thread that might have cached a line in that range before being accessed by that thread. 
+	 </p> 
+	 <p> Customers should not program "01" and "10" values to PAM register. 
+	 </p> 
+  </body> 
+</topic> 

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-CD1C38F8-8C84-42B4-BE0B-201486091B3C" xml:lang="en-US"> 
+  <title>BIOS Requirements</title> 
+  <body> 
+	 <p> SAMedia IP houses the device logic (Gunit in prior projects which was in Display Engine) which has the PCIe Config space and is the MMIO target for Intel Graphics device (IGD). 
+	 </p> 
+	 <ol id="GUID-847DB361-56B5-4E91-849C-ABEB42B9626B"> 
+		<li id="LI_ABC77C57B5DC44008E6B82A856D72136">SAMedia/SGUnit Memory Map in MTL/ARL: 
+		  <ul id="GUID-1460A31B-DCC6-4B51-86EE-2063AB8FFBC8"> 
+			 <li id="LI_D00D56A832424A4EA5038EBA57270B9D"> GMADR (BAR1 - offset 0x18) replaced by LMEMBAR and deprecate the MSAC register (0:2:0:0x60)/Aperture size setup. 
+			 </li> 
+			 <li id="LI_DBDBA94BB30145108629CDF26913AD4C">LMEMBAR size: Resize-able BAR controlled by PF Resizable BAR Control register 0x428 
+				<ul id="UL_384204CB3A8A4FD0B4B41F9A4922A084"> 
+				  <li id="LI_96E82F2465CD4B55B2E1CBD7620F028E"> MTL/ARL has fixed PF size of 256 MB. There is no need of BIOS to configure.
+				  </li> 
+				</ul> 
+			 </li> 
+			 <li id="LI_2FFB3FC3B15D4F4199A54145E4878D21">GTTMMADR size: 16MB. 
+			 </li> 
+			 <li id="LI_670809E5E9E044EEA14B3578A5879FA5">GSM/DSM/WOPCM should be 1 MB aligned and would be accessed controlled via SOC IMR (details in 
+				<xref scope="local" format="dita" href="GUID-1042BA51-48AF-471C-9B4B-644D4BEC482F.dita">Section 4.7</xref>) apart from legacy DSM/GSM/WOPCM register. 
+			 </li> 
+			 <li id="LI_749619371B034E3F9C06A1C009CD261C">Stolen memory DSM + GSM would be mapped to LMEMBAR for IA access. (direct IA access to DSM/GSM not allowed) 
+			 </li> 
+			 <li id="LI_9E727785B70D421AB95AD6A6B59EEB1F">Max DSM allowed would be 128 MB only (GGC register encoding changed) 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li id="LI_31B9C3B2C09D413788245B8891D3406D">SAMedia Stolen memory Requirements: 
+		  <ul id="GUID-0196DA81-56BA-4AD6-9883-8173BCE94D70"> 
+			 <li id="LI_11A8E7203CFC4EBCAEAEDC8E6582D46C"> DSM size limited to 128 MB 
+			 </li> 
+			 <li id="LI_13356F47A05A44FB98354FFA9C374145">4MB WOPCM allocation for iGFX (2MB GCD + 2MB SAMedia)4MB WOPCM allocation for iGFX (2MB GCD + 2MB SAMedia)4MB WOPCM allocation for iGFX (2MB GCD + 2MB SAMedia) 
+			 </li> 
+			 <li id="LI_11EF9CCBA7F64E3B9BE4C24FBA211A0C">32KB SAMedia RC6 Context Base reservation in SAMedia WOPCM. 
+			 </li> 
+		  </ul> 
+		  <table id="GUID-4DF7047D-F47D-4E68-8E91-E480112AC31E"> 
+			 <tgroup cols="3"> 
+				<colspec colnum="1" colname="col1" colwidth="*" /> 
+				<colspec colnum="2" colname="col2" colwidth="*" /> 
+				<colspec colnum="3" colname="col3" colwidth="*" /> 
+				<thead> 
+				  <row> 
+					 <entry> Memory Region 
+					 </entry> 
+					 <entry> Size/Location 
+					 </entry> 
+					 <entry> Comments 
+					 </entry> 
+				  </row></thead> 
+				<tbody> 
+				  <row> 
+					 <entry> GSM/GTT 
+					 </entry> 
+					 <entry> 8 MB 
+					 </entry> 
+					 <entry> 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> GMS (DSM size) 
+					 </entry> 
+					 <entry> 64 MB 
+					 </entry> 
+					 <entry> Max can be 128MB, OEM/BWG change, since LMEM is hardwired to 256MB 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry>PAVPC/WOPCM Size (total) 
+					 </entry> 
+					 <entry> 4 MB 
+					 </entry> 
+					 <entry> Total for iGfx device, 2MB for SA-Media and 2MB for GCD. Additional bits [12:11] in PAVP Reg to indicate SA Media size 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> PAVPC/SA-Media WOPCM Size 
+					 </entry> 
+					 <entry> 2 MB 
+					 </entry> 
+					 <entry> 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> GSMBASE 
+					 </entry> 
+					 <entry> DSMBASE-8MB 
+					 </entry> 
+					 <entry> Must be contiguous with DSM thus it's just below DSM 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> GCD RC6 context size 
+					 </entry> 
+					 <entry> 32KB 
+					 </entry> 
+					 <entry> 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> GCD RC6CTXBASE 
+					 </entry> 
+					 <entry> PAVPC/WOPCM_BASE + PAVPC/WOPCM Size (total) - GCD RC6 context size 
+					 </entry> 
+					 <entry> 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> SA Media RC6 Context Size 
+					 </entry> 
+					 <entry> 64KB 
+					 </entry> 
+					 <entry> 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry>SA media RC6CTXBASE 
+					 </entry> 
+					 <entry>PAVPC/WOPCM_BASE + PAVPC/SA-Media WOPCM Size - SA Media RC6 Context Size 
+					 </entry> 
+					 <entry> 
+					 </entry> 
+				  </row> 
+				</tbody> 
+			 </tgroup> 
+		  </table> 
+		</li> 
+		<li id="LI_9D3E60202F7B458880B55A753F17918B">Gfx Device Logic Mirror register change: 
+		  <p> BIOS use to mirror TOULD/TSEG/TOUUD from SOC CFG space to Graphics Device Logic (GTTMMADR MMIO region). This is not required from MTL/ARL Gen13 onwards since SOC enforces these range register using IMR's and IP doesn't need mirror registers. BIOS can deprecate TOLUD, TOUUD, TSEG registers in Gfx Device logic 
+		  </p> 
+		  <table id="GUID-C8BDBEB0-D724-4E5C-AFE5-1ADBED9B55AF"> 
+			 <tgroup cols="3"> 
+				<colspec colnum="1" colname="col1" colwidth="*" /> 
+				<colspec colnum="2" colname="col2" colwidth="*" /> 
+				<colspec colnum="3" colname="col3" colwidth="*" /> 
+				<thead> 
+				  <row> 
+					 <entry> Register Name 
+					 </entry> 
+					 <entry> Offset 
+					 </entry> 
+					 <entry> Comments 
+					 </entry> 
+				  </row></thead> 
+				<tbody> 
+				  <row> 
+					 <entry> TSEG 
+					 </entry> 
+					 <entry> 108400h 
+					 </entry> 
+					 <entry> Removed 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> TOUUD 
+					 </entry> 
+					 <entry> 108080h 
+					 </entry> 
+					 <entry> Removed 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> TOULD 
+					 </entry> 
+					 <entry> 108000h 
+					 </entry> 
+					 <entry> Removed 
+					 </entry> 
+				  </row> 
+				</tbody> 
+			 </tgroup> 
+		  </table> 
+		</li> 
+	 </ol> 
+  </body> 
+</topic> 

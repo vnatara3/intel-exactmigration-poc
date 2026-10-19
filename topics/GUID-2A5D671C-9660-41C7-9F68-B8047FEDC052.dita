@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-2A5D671C-9660-41C7-9F68-B8047FEDC052" xml:lang="en-US"> 
+  <title>MTRR Configurations for 1TB Memory</title> 
+  <body> 
+	 <p>Nova Lake supports up to 1TB memory. With only 10 pairs of MTRRs available and other restrictions such as MTRR settings must be any power of 2 and various boot phases require different mappings, etc. The propose solutions are:
+	 <ul id="UL_177CB31EC7EF438A80D378C9B69C003C">
+		<li id="LI_B99B5D00913E42C4BF27F0774E5CD38A"> BIOS will only map up to 32GB as WB in BIOS phase (instead of 0-TOUUD)
+		</li>
+		<li id="LI_BBA45516518A427AB624C1AA3B6498D8"> BIOS must configure 0-TOUUD as WB during BIOS-OS handoff (boot loader code) 
+		</li>
+	 </ul>
+	 </p> 
+  </body> 
+</topic>
