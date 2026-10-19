@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-1FD2F320-2A8D-48C1-BB9D-6771BD324508" xml:lang="en-US"> 
+  <title>Cache Hierarchy Reporting</title> 
+  <body> 
+    <p> 
+    <ul id="UL_6A14F09F8B4D40B2A1E72297AB3E55C9"> 
+      <li id="LI_13B50C2D73404C449211C585D1E39AAF">CPU ID leaf 0x4 added a new sub-leaf to support 3-level cache hierarchy 
+      </li> 
+      <li id="LI_946ECF1F13454C7ABF84EE542F140C96">BIOS should dynamically identify the Max Level and query the data 
+      </li>
+       
+    </ul> 
+    </p> 
+    <fig id="GUID-6237D383-3EF3-45D0-BCF7-9249C4CD5A63"><image href="../images/GUID-6F12E53D-6886-47B8-B8DD-475860389939.png" placement="break" scalefit="yes" id="IMAGE_F6E7E0ED35424E6A9E30EFF63E327D01" /> 
+    </fig> 
+  </body> 
+</topic> 

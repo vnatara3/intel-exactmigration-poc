@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-6423997B-7C0B-4A77-A2F1-30232E345B4A" xml:lang="en-US"> 
+  <title>Introduction</title> 
+  <body> 
+	 <p> This document provides programming guidance for this generation processor BIOS enabling. The document is intended to discuss only the new features and enhancements introduced to this generation processor that have BIOS impacts and customization. BIOS programming guidance for legacy features can be obtained through the reference documents section below. 
+	 </p> 
+	 <p> There are many required registers programming for silicon initialization and each IPs to function properly that can not be fully listed in this document. Most of the programming is essential which Intel does not recommend 
+		<ph>customization.</ph>. Refer to the BIOS reference code for further study. 
+	 </p> 
+  </body> 
+</topic> 

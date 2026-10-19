@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-F884A038-F95B-46E7-B145-4EBBE736D5F0" xml:lang="en-US"> 
+  <title>BIOS Requirements</title> 
+  <body> 
+	 <p> NPU will be exposed to BIOS as Root Complex Integrated End point device: Bus 0 Device 11 Function 0. In phase 4 of reset, BIOS can enable/disable NPU IP using IOC DEVEN register. Once the device is disabled all CFG/MMIO accesses to the NPU IP will be UR'd/dropped. If the NPU enabled by Fuse and BIOS. 
+	 </p> 
+	 <ul id="GUID-A87A3DD3-8D8A-46EF-9BF4-DF20F24DDEF9"> 
+		<li id="LI_A3284976024C49589B29798E19A27BD2">BIOS will perform standard PCI device discovery/enumeration that includes scanning all buses and corresponding devices/functions underneath these buses. The PCI Cfg space registers are part of the buttress and can be accessed via downstream IOSF primary reads/writes. 
+		</li> 
+		<li id="LI_98CFF14701B7485BB77D7E3A31E0496C">During this process it reads MMIO BAR size requirements and programs the Base Address Registers. This is a standard code across all OEM's and Intel BIOS code. 
+		</li> 
+		<li id="LI_21F950A212734D77A638D7D4BABED7B5">NPU Buttress will have 3 BARS. All of these are 64 bit addressable. 
+		  <ul id="GUID-EFBE6D9D-B43C-47A2-8C0C-6FF46991CB78"> 
+			 <li id="LI_E3DEE77770F7463180B63D3692901F33">BAR0 -&gt; NPU IP registers only: 128MB 
+			 </li> 
+			 <li id="LI_9966006342104B739046BEA6EFD5F59E">BAR1 -&gt; ACPI BAR, 4KB, default disabled by HW 
+			 </li> 
+			 <li id="LI_0C4057B28D254F4681F4DDABEBC6BBBB">BAR2 -&gt; NPU Buttress registers: 4KB 
+			 </li> 
+		  </ul> 
+		</li> 
+	 </ul> 
+	 <ol id="GUID-8553C2FB-6927-4800-B707-57337FC55388"> 
+		<li id="LI_3EAC1934B30F46E5BCEF3E478BCCCE77"> BIOS need to expose PEP constraint for NPU device. 
+		</li> 
+		<li id="LI_5AADFA3B82444A6E9C76CF28621F0DCD">BIOS need to expose NPU enable/disable option in setup when NPU is fuse enabled, setup option to be greyed when NPU is fused OFF. 
+		</li> 
+		<li id="LI_68F3A5287A374F90A8F0147802AB28DF">BIOS should program the buttress private CR registers over IOSF sideband using CR opcodes. The register writes are issued using SoC REGBAR address BAR (P2SB Device BAR) and Sideband port ID 8'hE0. 
+		  <ol id="GUID-3ECAE56F-3DBB-4F99-AC3D-822C1BEA9A15"> 
+			 <li id="LI_3144E3EC3CB04A4BBA0DD01810DCDF36">PMCTL register offset 0x1D0h contains the low power clock gating controls of the Buttress and must be programmed to 0x001F.
+			 </li> 
+		  </ol> 
+		</li> 
+	 </ol> 
+  </body> 
+</topic> 
