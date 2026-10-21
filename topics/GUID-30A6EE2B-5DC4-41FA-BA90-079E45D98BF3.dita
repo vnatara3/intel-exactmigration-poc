@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-30A6EE2B-5DC4-41FA-BA90-079E45D98BF3" xml:lang="en-US"> 
+  <title>VR and Power Delivery</title> 
+  <body> 
+	 <section id="SECTION_3A59E4C35289486EB475A24FE8A70228"> 
+		<title> VR Feature:</title> 
+		<p> 
+		<ul id="UL_F8C09DAD0AEC4BEA9386318983DD7613"> 
+		   
+		  <li id="LI_622E518576E14AABAFBD419B30C1829F"> NVL Mobile Supports 4 VRs 
+		  </li> 
+		  <li id="LI_CDA6C618833648C5B7E681E3D5FE60EB"> NVL Desktop Supports 3 VRs 
+		  </li> 
+		  <li id="LI_0603ECB453DD4F4199969C1304FA1C54">BIOS updates the VR Topology to support new VR rails. 
+		  </li> 
+		  <li id="LI_DC5CE0FA7C744D42A227F4585FC96433">BIOS exposes each VR features per its domain 
+		  </li> 
+		  <li id="LI_24FFFDA59FC04DF39A4F630A800FA142"> BIOS configure VR parameters (Power Limits, AC/DC LoadLines, IccMax, Tdc Time and Limits) for all domains 
+		  </li> 
+		</ul> 
+		</p> 
+	 </section> 
+	 <section id="SECTION_BC96CADCB27A46368375247F5E9207D8"> 
+		<title> Power Delivery Configuration:</title> 
+		<p> 
+		<ul id="UL_4569EAA51C054E2799BF62F490B635DF"> 
+		  <li id="LI_C1E81CA8927741B8907B12541FAB3553">BIOS detects Board ID and set the correct Power Delivery 
+		  </li> 
+		</ul> 
+		</p> 
+	 </section> 
+	  
+	 <section id="SECTION_588DD216C36341CDA5163DADCD97D584"> 
+		<title> BIOS_MAILBOX_CMD :</title> 
+		<p> 
+		<ul id="UL_1877414E77A941379FCFECFFB611E9FF"> 
+		  <li id="LI_70084B1B336C486CA00ED397C5E0C574"> Added Platform VR Closed Loop Thermal Control (TMON) 
+			 <ul id="UL_724AA993B97D4F7B9617D3C328487125"> 
+				<li id="LI_E1ED5D5B442649059907D6E9CA76ACBF"> 0x18 SVID_VR_HANDLER, Subcommand 0x15 and 0x16 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li id="LI_45FE18E198214AF9B73BC3B014784689"> Added Vcc Shutdown Demotion for optimizing SOC/VR power consumption. 
+			 <ul id="UL_9E3C3A8AC5C34A1AA0924D1C045F7C9B"> 
+				<li id="LI_E426037E8C6341A8BAC4DF27121E9D0D"> 0x18 SVID_VR_HANDLER, Subcommand 0x1E and 0x1F. 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li id="LI_F139410469194B908F47E73FB2628403"> Added VnnAON (a low power always-on rail used to consumed by PCH South and now moved to the North C-die and GT) configurations 
+			 <ul id="UL_F2E11BB12BEF4D1CB90CD3258CD863C5"> 
+				<li id="LI_70EB978ABD124F5995833DDE0A327AF2"> 0x18 SVID_VR_HANDLER, Subcommand 0x2A/0x2B and 0x2C/0x2D 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li id="LI_9A2A4A4285294E528140A2C7D1719E7F"> Added PS1 / PS0. PS2/PS1 Dynamic Cutoff mechanism 
+			 <ul id="UL_168D3901E0004C8EBCB08F2FBB21704E"> 
+				<li id="LI_C9B1C1B45DF84FA3B7C78F57AEC6DB62">0x18 SVID_VR_HANDLER, Subcommand 0x2E and 0x2F 
+				</li> 
+			 </ul> 
+		  </li> 
+		</ul> 
+		</p> 
+	 </section> 
+	 <table id="TABLE_0F2EC0565D104A8C92016DC231E3A39E"> 
+  <title> SVID Address Table</title> 
+  <tgroup cols="2"><colspec colnum="1" colname="col1" colwidth="*" /><colspec colnum="2" colname="col2" colwidth="*" /><thead> 
+		<row> 
+		  <entry colname="col1">Rail Name 
+		  </entry> 
+		  <entry colname="col2">Address 
+		  </entry> 
+		</row></thead> 
+	 <tbody> 
+		<row> 
+		  <entry colname="col1"> VCCIA 
+		  </entry> 
+		  <entry colname="col2"> 00h 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry colname="col1"> VCCGT 
+		  </entry> 
+		  <entry colname="col2">01h 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry colname="col1"> VCCSA 
+		  </entry> 
+		  <entry colname="col2">02h 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry colname="col1"> 
+			 <ph> VCCLpCore (Mobile ONLY)</ph>
+		  </entry> 
+		  <entry colname="col2">03h 
+		  </entry> 
+		</row> 
+	 </tbody> 
+  </tgroup> 
+  </table> 
+  </body> 
+</topic> 

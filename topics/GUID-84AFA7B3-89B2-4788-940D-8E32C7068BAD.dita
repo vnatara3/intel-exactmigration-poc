@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-84AFA7B3-89B2-4788-940D-8E32C7068BAD" xml:lang="en-US"> 
+  <title>Address Translation Services</title> 
+  <body> 
+	 <p> No BIOS role for ATS enable/disable as IPU/NPU does not need any DMA support in pre-boot. 
+	 </p> 
+	 <p> For Graphics/display, details captured in BIOS requirement. 
+	 </p> 
+  </body> 
+</topic> 

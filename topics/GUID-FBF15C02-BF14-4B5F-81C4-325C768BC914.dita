@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-FBF15C02-BF14-4B5F-81C4-325C768BC914" xml:lang="en-US"> 
+  <title>Neural Processing Unit (NPU)</title> 
+  <shortdesc> NPU IP same in all ARL-S SKUs. 
+  </shortdesc> 
+  <body> 
+	 <p> The Neural Processing Unit (NPU) IP is targeted for Machine Vision and Deep Learning Inference applications in connected devices and edge serves. On Client SOC's NPU will be used for enabling AI inference use cases such as Athena Adhoc collaboration, Productivity Assistant, Gaming with Coaching, Video Collaboration/streaming, security, Video Capture. 
+	 </p> 
+	 <p>Intel<sup>®</sup> Movidius NPU is a soft IP developed to operate at scalable performance points to meet power and area considerations prevalent across a wide variety of market segments. It uses AMBA compliant interfaces to interact with external SoC. Hence a buttress/shim will be used around the NPU IP as a wrapper to provide SoC compliant interfaces for Reset, Power Management, Host/Memory accesses, IO Virtualization, Clocking and DFx. 
+	 </p> 
+	 <p> MTL/ARL will use NPU2.7 IP version that has 4K MAC compute capability with 4MB IP cache 
+	 </p> 
+  </body> 
+</topic> 

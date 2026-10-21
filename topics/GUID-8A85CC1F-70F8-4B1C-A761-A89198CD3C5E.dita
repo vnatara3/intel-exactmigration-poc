@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-8A85CC1F-70F8-4B1C-A761-A89198CD3C5E" xml:lang="en-US"> 
+  <title>Core Identification</title> 
+  <body> 
+    <draft-comment>Converted using FMHtml2Dita version: 2.1.0 
+    </draft-comment> 
+    <p>All logical processors within the CPU package have identical CPUID signature with unique family/model/stepping information. Refer to 
+      <xref scope="local" format="dita" href="GUID-E7A500C7-F18E-41EF-BBD3-AD332D264380.dita">Section 2.2</xref> for the encodings. 
+    </p> 
+    <p>The CPUID feature flag for identify Hetero Architecture and enumerate the core type are added to support Hybrid CPUs: 
+    </p> 
+    <p>IF CPUID.(EAX=07H, ECX=00H):EDX[15] = ‘1’, indicates the processor is a hybrid processor. 
+    </p> 
+    <p>IF CPUID.(EAX=1AH, ECX=00H):EAX[31:24] = ‘20H’, indicates it is an Atom core 
+    </p> 
+    <p>IF CPUID.(EAX=1AH, ECX=00H):EAX[31:24] = ‘40H’, indicates it is an 
+      <tm tmtype="reg">Intel</tm> core 
+    </p> 
+    <p>Refer to CPUID Feature Flag of the 
+      <xref href="http://www.intel.com/content/www/us/en/processors/architectures-software-developer-manuals.html" format="html" scope="external">Intel® 64 and IA-32 Architectures Software Developer’s Manual Vol. 2A</xref> for details. 
+    </p> 
+  </body> 
+</topic> 

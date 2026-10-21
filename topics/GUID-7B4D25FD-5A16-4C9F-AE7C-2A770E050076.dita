@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-7B4D25FD-5A16-4C9F-AE7C-2A770E050076" xml:lang="en-US"> 
+  <title>Display Link Rates and Port Availability</title> 
+  <body> 
+	 <table id="GUID-FCB13F89-A919-44B8-99C8-F68104ABE86C"> 
+		<tgroup cols="2"> 
+		  <colspec colnum="1" colname="col1" colwidth="*" align="center" /> 
+		  <colspec colnum="2" colname="col2" colwidth="*" align="center" /> 
+		  <thead> 
+			 <row> 
+				<entry> Port Type 
+				</entry> 
+				<entry> Speed GHz 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry> DDI 
+				</entry> 
+				<entry> HBR3 8.1 eDP HDMI 2.0b (5.94GHz link rate) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> USB TypeC 
+				</entry> 
+				<entry> UHBR20 DisplayPort (native DP on legacy connector) UHBR20 DisplayPort (DP ALT mode) HBR3 8.1 over TBT HDMI 2.1 (3/6/8/10GHz link rate) over legacy connector (a.k.a. native connector) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Port Type 
+				</entry> 
+				<entry> Speed GHz 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> DDI 
+				</entry> 
+				<entry> HBR3 8.1 eDP HDMI 2.0b (5.94GHz link rate) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> USB TypeC 
+				</entry> 
+				<entry> UHBR20 DisplayPort (native DP on legacy connector) UHBR20 DisplayPort (DP ALT mode) HBR3 8.1 over TBT HDMI 2.1 (3/6/8/10GHz link rate) over legacy connector (a.k.a. native connector) 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <table id="GUID-138019E7-2AA2-4D79-AB80-88E0A897772C"> 
+		<tgroup cols="4"> 
+		  <colspec colnum="1" colname="col1" colwidth="1.00*" align="center" /> 
+		  <colspec colnum="2" colname="col2" colwidth="1.36*" align="center" /> 
+		  <colspec colnum="3" colname="col3" colwidth="2.74*" /> 
+		  <colspec colnum="4" colname="col4" colwidth="1.54*" align="center" /> 
+		  <thead> 
+			 <row> 
+				<entry> Port 
+				</entry> 
+				<entry> Usage 
+				</entry> 
+				<entry align="center"> Capability 
+				</entry> 
+				<entry> Alternate Names 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry> DDI A 
+				</entry> 
+				<entry> Port A 
+				</entry> 
+				<entry> eDP, DP, HDMI 
+				</entry> 
+				<entry> DDIA, Port A 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> DDI B 
+				</entry> 
+				<entry> Port B 
+				</entry> 
+				<entry> eDP, DP, HDMI 
+				</entry> 
+				<entry> DDIB, Port B 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> TC 1 
+				</entry> 
+				<entry> Type C port 1 
+				</entry> 
+				<entry> DP alternate mode, TBT tunneling of Displayport, native/legacy DP, native/legacy HDMI 
+				</entry> 
+				<entry> Type C Port 1, TC1, USBC1 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> TC 2 
+				</entry> 
+				<entry> Type C port 2 
+				</entry> 
+				<entry> DP alternate mode, TBT tunneling of Displayport, native/legacy DP, native/legacy HDMI 
+				</entry> 
+				<entry> Type C Port 2, TC2, USBC2 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> TC 3 
+				</entry> 
+				<entry> Type C port 3 
+				</entry> 
+				<entry> DP alternate mode, TBT tunneling of Displayport, native/legacy DP, native/legacy HDMI 
+				</entry> 
+				<entry> Type C Port 3, TC3, USBC3 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> TC 4 
+				</entry> 
+				<entry> Type C port 4 
+				</entry> 
+				<entry> DP alternate mode, TBT tunneling of Displayport, native/legacy DP, native/legacy HDMI 
+				</entry> 
+				<entry> Type C Port 4, TC4, USBC4 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </body> 
+</topic> 
