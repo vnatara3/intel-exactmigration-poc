@@ -1,0 +1,11 @@
+﻿{
+    "PreparedAt":  "2026-10-29T23:10:48.4415384+05:30",
+    "PublicationGuid":  "GUID-28583781-F7EB-4F72-A734-AC8FA94C9D9C",
+    "Source":  "C:\\IPIX\\MigrationPOC\\tridion-export\\GUID-28583781-F7EB-4F72-A734-AC8FA94C9D9C\\conditioned-publication",
+    "RepositoryUrl":  "https://github.com/vnatara3/intel-exactmigration-poc.git",
+    "Branch":  "migration/GUID-28583781-NVL-20261029-230434",
+    "ValidationStatus":  "Passed",
+    "DitaOtPassed":  true,
+    "DitaOtExitCode":  0,
+    "FilesPrepared":  154
+}

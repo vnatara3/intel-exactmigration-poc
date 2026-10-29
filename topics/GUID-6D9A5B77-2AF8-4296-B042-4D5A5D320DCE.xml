@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN">
-<topic id="GUID-6D9A5B77-2AF8-4296-B042-4D5A5D320DCE" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.2" domains="(topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                             (topic intc-trackChanges-d)                            (topic equation-d)                            (topic mathml-d)   " class="- topic/topic "> 
-  <title class="- topic/title ">Cores</title> 
-  <body class="- topic/body "> 
-    <p class="- topic/p "> The platform uses Hybrid core architecture with Redwood Cove (RWC) cores and Crestmont (CMT) Atom cores. Both RWC and CMT are configured with 2MB Middle Level Cache (MLC) and 3MB LLC cache per core/module. Core (aka P-core) is the main processing engine of the SoC. The Atom core is a power efficient core with x86 ISA compatibility. Traditionally Atom cores have been used in the Entry PC segment in Client and now they are being used as E-cores in Hybrid configuration and SoC cores for lower power usages. 
-    </p> 
-  </body> 
-</topic> 

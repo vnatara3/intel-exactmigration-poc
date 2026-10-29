@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-1AEBD59D-722E-4AB9-8E67-339105FB0617" xml:lang="en-US"> 
+  <title>Detection Priority and Boot Flow</title> 
+  <body> 
+    <p> 
+    <ol id="GUID-5E1542DD-1AF6-4FA8-BD1F-530A1AB74E53"> 
+      <li>Read the hidden BIOS knobs to build the MoP FPF Configuration. If value is not 0x00000000, use it and pass it to MRC. Note that the BIOS knob is intended for validation testing and non-POR.
+        <note id="GUID-3D28E53A-CF10-427D-9150-88D5CD638EA7"> These BIOS knobs are hidden from the BIOS Setup menu and are available only through the BIOS modifier and xml.cli. The BIOS knobs are MopOverrideRank, MopOverrideDensity, MopOverrideVendor, MopOverrideDataRate, and MopOverrideEcc. Their default values are 0x0, which means "not set" and causes them to be ignored when the MOP FPF configuration is built.
+        </note>
+      </li>
+      <li>Read SPD Jumper. If set, read SPD from SPD device on board(non-POR).
+      </li> 
+      <li>Read EC GPIO. Query the EC via command SMCHOST_GET_BOARD_MEMORY_CONFIG(Opcode 0x08), which returns the 4-bit MOP_DETECT_ID[3:0]. If Value is not 0b0000, interpret according to the EC GPIO Decode Config table and pass it to MRC
+      </li> 
+      <li>Query CSME BUP-MKHI (Group 0xF0, Cmd 0x29) for MoP FPF Configuration, if return value is not 0x0000 then pass it to MRC
+      </li> 
+      <li>Update the scratch pad register to indicate the selected source: BIOS knob, SPD on board, GPIO on board, or CSME.
+      </li> 
+      <li>Error &amp; Fallback Handling: If no source yields a valid configuration, the BIOS displays an error message using the existing uGOP/SOL (Sign-of-Life) pre-memory display engine. If the configuration is valid but a defective DIMM/channel is detected, the MRC initiates limp-home mode as defined in the platform functional requirements.
+      </li> 
+    </ol> 
+    </p> 
+    <table id="GUID-71CE2D80-3B8A-4FF4-B667-622531F95A9F">
+  <title> ScratchPad Register Decoding</title>
+  <tgroup cols="2"><colspec colnum="1" colname="col1" colwidth="*" /><colspec colnum="2" colname="col2" colwidth="*" /><thead>
+      <row>
+        <entry colname="col1"> Scratchpad Register Value 
+        </entry>
+        <entry colname="col2"> Source of SPD value 
+        </entry>
+      </row></thead>
+    <tbody>
+      <row>
+        <entry colname="col1"> 0b0000 
+        </entry>
+        <entry colname="col2"> Not modified 
+        </entry>
+      </row>
+      <row>
+        <entry colname="col1"> 0b0001 
+        </entry>
+        <entry colname="col2"> BIOS Knob 
+        </entry>
+      </row>
+      <row>
+        <entry colname="col1"> 0b0010 
+        </entry>
+        <entry colname="col2"> SPD on board 
+        </entry>
+      </row>
+      <row>
+        <entry colname="col1"> 0b0011 
+        </entry>
+        <entry colname="col2"> GPIO on board 
+        </entry>
+      </row>
+      <row>
+        <entry colname="col1"> 0b0100 
+        </entry>
+        <entry colname="col2"> CSME (FPF) 
+        </entry>
+      </row>
+      <row>
+        <entry colname="col1"> 0b0101 to 0b1111 
+        </entry>
+        <entry colname="col2"> Reserve 
+        </entry>
+      </row>
+    </tbody>
+  </tgroup>
+  </table>
+  </body> 
+</topic>

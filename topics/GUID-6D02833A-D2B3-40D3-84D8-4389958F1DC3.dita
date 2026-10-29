@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-6D02833A-D2B3-40D3-84D8-4389958F1DC3" xml:lang="en-US"> 
+  <title>BIOS Requirements</title> 
+  <body> 
+    <p>BIOS does not have direct interface to change clock setting, usually there is intermediate agent that translate BIOS request to clock setting. The following shows the clock setting that may be changed by BIOS.
+    <ul id="GUID-85AABC59-2177-4545-979A-0586EF702727"> 
+      <li>BCLK config mode: BCLK config mode set the source of ocbclk, being either from PCD or from HUB OCPLL. The source of bclk can be changed for overclocking or RFI/SSC purpose. BIOS need to write into RTC backed register in PDC and trigger warm reset whenever there is change in bclk config mode. PMC will send the bclk config mode to HUB through EPOC2[SOC_BCLK_CFG] bit 20.
+      </li> 
+      <li>BCLKPLL frequency/RFI/SSC in HUB: PCODE receive the mailbox from BIOS for the frequency/RFI/SSC change request on bclk. For frequency change pcode will calculate the ratio required. Ratio must be overwritten in fuse register for ocpll to make sure the ratio value can be retain through warm reset or PKGC exit.
+      </li> 
+      <li>QCLK frequency point: BIOS is responsible to write the number of QCLK frequencies that it wants to support. MRC will handshake with BIOS and set the required ratio to bring up DDRPHY LCPLL that generate QCLK.
+      </li> 
+      <li>DLVR RFI/SSC in compute
+      </li> 
+    </ul>
+    </p> 
+  </body> 
+</topic> 

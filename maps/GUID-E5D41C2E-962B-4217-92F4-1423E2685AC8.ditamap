@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"[
+]>
+
+<map id="GUID-E5D41C2E-962B-4217-92F4-1423E2685AC8" xml:lang="en-US" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+	<title>Razor Lake AX Updates</title>
+<topicref href="../topics/GUID-5F685F96-7E93-4A5B-8BA9-7EA747A3FD76.dita" format="dita"><topicmeta><navtitle>Razor Lake-AX Updates</navtitle></topicmeta><topicref href="../topics/GUID-20A922B6-E7BC-46FB-B960-A51BFD0B01FC.dita" format="dita"><topicmeta><navtitle>Memory On Package (MoP)</navtitle></topicmeta><topicref href="../topics/GUID-92250AFC-BB37-44B6-8384-08372CED20B4.dita" format="dita"><topicmeta><navtitle>Memory on Package (Razor Lake-AX Only)</navtitle></topicmeta><topicref href="../topics/GUID-1AEBD59D-722E-4AB9-8E67-339105FB0617.dita" format="dita"><topicmeta><navtitle>Detection Priority and Boot Flow</navtitle></topicmeta></topicref><topicref href="../topics/GUID-34B4C53D-75AD-49B5-AE80-841A547E23E8.dita" format="dita"><topicmeta><navtitle>EC GPIO Decode Lookup Table</navtitle></topicmeta></topicref></topicref></topicref></topicref></map>

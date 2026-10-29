@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-4BDC383A-0086-45A4-AA92-5E5A156DC768" xml:lang="en-US">
+  <title>Overview</title>
+  <body>
+    <draft-comment>Converted using FMHtml2Dita version: 2.1.0
+    </draft-comment>
+    <p> The Processor BIOS specification discusses various ingredients and components inside the processor package that may have requirements of BIOS configurations.
+    </p> 
+    <p> For the Processor architecture overview, refer to the Processor PDG and EDS.
+    </p> 
+  </body>
+</topic>
