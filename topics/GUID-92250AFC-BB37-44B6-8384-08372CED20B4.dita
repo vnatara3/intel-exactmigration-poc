@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-92250AFC-BB37-44B6-8384-08372CED20B4" xml:lang="en-US"> 
+  <title>Introduction</title> 
+  <body> 
+    <p>RZL-AX requires the BIOS to provide the MRC with an accurate MoP memory configuration prior to DRAM training. The primary sources for the MoP configuration are a BIOS knob, an on-board SPD, a 4-bit GPIO from the EC IO expander, or a 32-bit FPF fuse via CSME BUP-MKHI. Only the GPIO and FPF fuses are POR. 
+    </p> 
+    <table id="GUID-D878F9E9-27C1-40F5-9B86-2C36BA3C3AAF"> 
+  <title> MoP FPF Configuration Format</title> 
+  <tgroup cols="3"><colspec colnum="1" colname="col1" colwidth="*" /><colspec colnum="2" colname="col2" colwidth="*" /><colspec colnum="3" colname="col3" colwidth="*" /><thead> 
+      <row> 
+        <entry colname="col1"> Field 
+        </entry> 
+        <entry colname="col2"> Bit Range 
+        </entry> 
+        <entry colname="col3"> Description 
+        </entry> 
+      </row></thead> 
+    <tbody> 
+      <row> 
+        <entry colname="col1"> Rank 
+        </entry> 
+        <entry colname="col2"> [0:0] 
+        </entry> 
+        <entry colname="col3"> 1R=0b; 2R=1b 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col1"> Die Density 
+        </entry> 
+        <entry colname="col2"> [3:1] 
+        </entry> 
+        <entry colname="col3"> 16Gb=010b; 24Gb=011b; 32Gb=100b 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col1"> Vendor 
+        </entry> 
+        <entry colname="col2"> [6:4] 
+        </entry> 
+        <entry colname="col3"> Micron*=001b; Samsung*=010b; SK Hynix*=011b 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col1"> Data Rate 
+        </entry> 
+        <entry colname="col2"> [9:7] 
+        </entry> 
+        <entry colname="col3"> 10.7 GT/s=001b; 9.6 GT/s=000b 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col1"> ECC 
+        </entry> 
+        <entry colname="col2"> [10:10] 
+        </entry> 
+        <entry colname="col3"> 0=Non-ECC; 1=OOBECC 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col1"> Reserved 
+        </entry> 
+        <entry colname="col2"> [31:11] 
+        </entry> 
+        <entry colname="col3"> 
+        </entry> 
+      </row> 
+    </tbody> 
+  </tgroup> 
+  </table> 
+  </body> 
+</topic> 

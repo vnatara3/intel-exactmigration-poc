@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-34B4C53D-75AD-49B5-AE80-841A547E23E8" xml:lang="en-US"> 
+  <title>EC GPIO Decode Lookup Table</title> 
+  <body> 
+    <p>When the EC I/O expander path is activated, the 4-bit MOP_DETECT_ID[3:0] maps to fixed DDR topology definitions and 32-bit MoP FPF Configuration values. 
+    </p> 
+    <table id="GUID-BF8A8EB6-2840-44C3-9556-48803A58D9AE"> 
+  <title> EC GPIO Decoding</title> 
+  <tgroup cols="7"><colspec colnum="1" colname="col1" colwidth="*" /><colspec colnum="2" colname="col2" colwidth="*" /><colspec colnum="3" colname="col3" colwidth="*" /><colspec colnum="4" colname="col4" colwidth="*" /><colspec colnum="5" colname="col5" colwidth="*" /><colspec colnum="6" colname="col6" colwidth="1.2*" /><colspec colnum="7" colname="col7" colwidth="1.2*" /><thead> 
+      <row> 
+        <entry colname="col1"> Decimal Number 
+        </entry> 
+        <entry colname="col2"> MOP_DETECT_ID3 
+        </entry> 
+        <entry colname="col3"> MOP_DETECT_ID2 
+        </entry> 
+        <entry colname="col4"> MOP_DETECT_ID1 
+        </entry> 
+        <entry colname="col5"> MOP_DETECT_ID0 
+        </entry> 
+        <entry colname="col6"> Resultant Memory Configuration 
+        </entry> 
+        <entry colname="col7"> 32 Bit value (Similar to FPF fuse) 
+        </entry> 
+      </row></thead> 
+    <tbody> 
+      <row> 
+        <entry colname="col1"> 0 
+        </entry> 
+        <entry colname="col2"> 0 
+        </entry> 
+        <entry colname="col3"> 0 
+        </entry> 
+        <entry colname="col4"> 0 
+        </entry> 
+        <entry colname="col5"> 0 
+        </entry> 
+        <entry colname="col6"> Read the FPF Fuses/Fuse emulation from xSE 
+        </entry> 
+        <entry colname="col7"> 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col1"> 1 
+        </entry> 
+        <entry colname="col2"> 0 
+        </entry> 
+        <entry colname="col3"> 0 
+        </entry> 
+        <entry colname="col4"> 0 
+        </entry> 
+        <entry colname="col5"> 1 
+        </entry> 
+        <entry colname="col6"> Rank = 1R, Die Density = 16Gb, Vendor = Micron, Data Rate =10.7GT/s, ECC= Non-ECC 
+        </entry> 
+        <entry colname="col7"> 0b0000_0000_0000_0000_0000_0000_1001_0100 (0x0000_0094) 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col1"> 2 
+        </entry> 
+        <entry colname="col2"> 0 
+        </entry> 
+        <entry colname="col3"> 0 
+        </entry> 
+        <entry colname="col4"> 1 
+        </entry> 
+        <entry colname="col5"> 0 
+        </entry> 
+        <entry colname="col6"> Rank = 2R, Die Density = 16Gb, Vendor = Micron, Data Rate =10.7GT/s, ECC= Non-ECC 
+        </entry> 
+        <entry colname="col7"> 0b0000_0000_0000_0000_0000_0000_1001_0101 (0x0000_0095) 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col1"> 3 
+        </entry> 
+        <entry colname="col2"> 0 
+        </entry> 
+        <entry colname="col3"> 0 
+        </entry> 
+        <entry colname="col4"> 1 
+        </entry> 
+        <entry colname="col5"> 1 
+        </entry> 
+        <entry colname="col6"> Rank = 2R, Die Density = 24Gb, Vendor = Micron, Data Rate =10.7GT/s, ECC= Non-ECC 
+        </entry> 
+        <entry colname="col7"> 0b0000_0000_0000_0000_0000_0000_1001_0111 (0x0000_0097) 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col1"> 4 
+        </entry> 
+        <entry colname="col2"> 0 
+        </entry> 
+        <entry colname="col3"> 1 
+        </entry> 
+        <entry colname="col4"> 0 
+        </entry> 
+        <entry colname="col5"> 0 
+        </entry> 
+        <entry colname="col6"> Rank = 1R, Die Density = 16Gb, Vendor = Micron, Data Rate =10.7GT/s, ECC= OOBECC 
+        </entry> 
+        <entry colname="col7"> 0b0000_0000_0000_0000_0000_0100_1001_0100 (0x0000_0494) 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col1"> 5 
+        </entry> 
+        <entry colname="col2"> 0 
+        </entry> 
+        <entry colname="col3"> 1 
+        </entry> 
+        <entry colname="col4"> 0 
+        </entry> 
+        <entry colname="col5"> 1 
+        </entry> 
+        <entry colname="col6"> Rank = 2R, Die Density = 16Gb, Vendor = Micron, Data Rate =10.7GT/s, ECC= OOBECC 
+        </entry> 
+        <entry colname="col7"> 0b0000_0000_0000_0000_0000_0100_1001_0101 (0x0000_0495) 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col1"> 6 
+        </entry> 
+        <entry colname="col2"> 0 
+        </entry> 
+        <entry colname="col3"> 1 
+        </entry> 
+        <entry colname="col4"> 1 
+        </entry> 
+        <entry colname="col5"> 0 
+        </entry> 
+        <entry colname="col6"> Rank = 1R, Die Density = 16Gb, Vendor = SKhynix, Data Rate =10.7GT/s, ECC= Non-ECC 
+        </entry> 
+        <entry colname="col7"> 0b0000_0000_0000_0000_0000_0000_1011_0100 (0x0000_00B4) 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col1"> 7 
+        </entry> 
+        <entry colname="col2"> 0 
+        </entry> 
+        <entry colname="col3"> 1 
+        </entry> 
+        <entry colname="col4"> 1 
+        </entry> 
+        <entry colname="col5"> 1 
+        </entry> 
+        <entry colname="col6"> Rank = 2R, Die Density = 16Gb, Vendor = SKhynix, Data Rate =10.7GT/s, ECC= Non-ECC 
+        </entry> 
+        <entry colname="col7"> 0b0000_0000_0000_0000_0000_0000_1011_0101 (0x0000_00B5) 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col1"> 8 
+        </entry> 
+        <entry colname="col2"> 1 
+        </entry> 
+        <entry colname="col3"> 0 
+        </entry> 
+        <entry colname="col4"> 0 
+        </entry> 
+        <entry colname="col5"> 0 
+        </entry> 
+        <entry colname="col6"> Rank = 2R, Die Density = 24Gb, Vendor = SKhynix, Data Rate =10.7GT/s, ECC= Non-ECC 
+        </entry> 
+        <entry colname="col7"> 0b0000_0000_0000_0000_0000_0000_1011_0111 (0x0000_00B7) 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col1"> 9 
+        </entry> 
+        <entry colname="col2"> 1 
+        </entry> 
+        <entry colname="col3"> 0 
+        </entry> 
+        <entry colname="col4"> 0 
+        </entry> 
+        <entry colname="col5"> 1 
+        </entry> 
+        <entry colname="col6"> Rank = 1R, Die Density = 16Gb, Vendor = SKhynix, Data Rate =10.7GT/s, ECC= OOBECC 
+        </entry> 
+        <entry colname="col7"> 0b0000_0000_0000_0000_0000_0100_1011_0100 (0x0000_04B4) 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col1"> 10 
+        </entry> 
+        <entry colname="col2"> 1 
+        </entry> 
+        <entry colname="col3"> 0 
+        </entry> 
+        <entry colname="col4"> 1 
+        </entry> 
+        <entry colname="col5"> 0 
+        </entry> 
+        <entry colname="col6"> Rank = 2R, Die Density = 16Gb, Vendor = SKhynix, Data Rate =10.7GT/s, ECC= OOBECC 
+        </entry> 
+        <entry colname="col7"> 0b0000_0000_0000_0000_0000_0100_1011_0101 (0x0000_04B5) 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col1"> 11 
+        </entry> 
+        <entry colname="col2"> 1 
+        </entry> 
+        <entry colname="col3"> 0 
+        </entry> 
+        <entry colname="col4"> 1 
+        </entry> 
+        <entry colname="col5"> 1 
+        </entry> 
+        <entry colname="col6"> Rank = 1R, Die Density = 16Gb, Vendor = Samsung, Data Rate =10.7GT/s, ECC= Non-ECC 
+        </entry> 
+        <entry colname="col7"> 0b0000_0000_0000_0000_0000_0000_1010_0100 (0x0000_00A4) 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col1"> 12 
+        </entry> 
+        <entry colname="col2"> 1 
+        </entry> 
+        <entry colname="col3"> 1 
+        </entry> 
+        <entry colname="col4"> 0 
+        </entry> 
+        <entry colname="col5"> 0 
+        </entry> 
+        <entry colname="col6"> Rank = 2R, Die Density = 16Gb, Vendor = Samsung, Data Rate =10.7GT/s, ECC= Non-ECC 
+        </entry> 
+        <entry colname="col7"> 0b0000_0000_0000_0000_0000_0000_1010_0101 (0x0000_00A5) 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col1"> 13 
+        </entry> 
+        <entry colname="col2"> 1 
+        </entry> 
+        <entry colname="col3"> 1 
+        </entry> 
+        <entry colname="col4"> 0 
+        </entry> 
+        <entry colname="col5"> 1 
+        </entry> 
+        <entry colname="col6"> Rank = 2R, Die Density = 24Gb, Vendor = Samsung, Data Rate =10.7GT/s, ECC= Non-ECC 
+        </entry> 
+        <entry colname="col7"> 0b0000_0000_0000_0000_0000_0000_1010_0111 (0x0000_00A7) 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col1"> 14 
+        </entry> 
+        <entry colname="col2"> 1 
+        </entry> 
+        <entry colname="col3"> 1 
+        </entry> 
+        <entry colname="col4"> 1 
+        </entry> 
+        <entry colname="col5"> 0 
+        </entry> 
+        <entry colname="col6"> Rank = 1R, Die Density = 16Gb, Vendor = Samsung, Data Rate =10.7GT/s, ECC= OOBECC 
+        </entry> 
+        <entry colname="col7"> 0b0000_0000_0000_0000_0000_0100_1010_0100 (0x0000_04A4) 
+        </entry> 
+      </row> 
+      <row> 
+        <entry colname="col1"> 15 
+        </entry> 
+        <entry colname="col2"> 1 
+        </entry> 
+        <entry colname="col3"> 1 
+        </entry> 
+        <entry colname="col4"> 1 
+        </entry> 
+        <entry colname="col5"> 1 
+        </entry> 
+        <entry colname="col6"> Rank = 2R, Die Density = 16Gb, Vendor = Samsung, Data Rate =10.7GT/s, ECC= OOBECC 
+        </entry> 
+        <entry colname="col7"> 0b0000_0000_0000_0000_0000_0100_1010_0101 (0x0000_04A5) 
+        </entry> 
+      </row> 
+    </tbody> 
+  </tgroup> 
+  </table> 
+  </body> 
+</topic> 
