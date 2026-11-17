@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-C00906BA-E6C7-4035-AD94-1FF7F7D43500" xml:lang="en-US"> 
+  <title>Cache Hierarchy Reporting</title> 
+  <body> 
+    <p>Arrow Lake Processor, CPUID processor signatures greater than 000C065xh, introduced a newer cache architecture with below features: 
+    </p> 
+    <ul id="GUID-EDCC5C28-0418-4191-A4CE-04760D7A96D6"> 
+      <li>CPUID leaf 0x4 added a new sub-leaf to support 3-level cache hierarchy (see Example 3.4.1) 
+      </li> 
+      <li>The CPUID leaf 0x4 will provide cache information below: 
+        <ul id="GUID-977B36E4-D8A3-4B21-B142-A2BAA259A345"> 
+          <li>DFU – L0 Data 
+          </li> 
+          <li>IFU – L1 Instruction 
+          </li> 
+          <li>MLC – L2 
+          </li> 
+          <li>LLC – L3 
+          </li> 
+        </ul> 
+      </li> 
+      <li>BIOS should dynamically identify the Max Level and query the data 
+      </li> 
+      <li>BIOS Shall report L0 Data Cache for DCU 
+      </li> 
+    </ul> 
+    <note id="GUID-17CF13EF-5AC6-4358-A93C-B60803C7C189">The actual L1 Data Cache will not be reported via CPUID instructions. Software may refer to Arrow Lake EDS Vol1 for cache size information in case of reporting. 
+    </note> 
+    <p><b>Example 3.4.1</b> 
+      <fig id="GUID-2E1A1249-D4CB-4CF0-BC56-F8481E00A180"><image href="../images/GUID-E49223A2-FE6F-41DE-AA13-974DFB7C15DB.png" scalefit="yes"> 
+          <alt> 
+          </alt></image> 
+      </fig> 
+      <fig id="GUID-054AEB40-71AE-4185-99C5-AAC200F73A48"><image href="../images/GUID-09E72AAF-E6AB-410E-9679-16CC138520CB.png" scalefit="yes"> 
+          <alt> 
+          </alt></image> 
+      </fig> 
+    </p> 
+  </body> 
+</topic> 

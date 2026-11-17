@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-A606C40D-E6C0-4993-8F5F-576414653BCE" xml:lang="en-US"> 
+  <title>BIOS Requirement for SAF</title> 
+  <body> 
+    <p>BIOS does not program any of the CFI registers. CFI registers are programmed by PCode or PMC FW. BIOS has been given R/W permissions only for survivability purposes. For LNL, PTL, NVL there is no request for BIOS to program the CFI registers.
+    </p> 
+    <p>Below are the registers to be programed by BIOS. Most of the Default registers in HW are expected to work. Configuration is needed for the cases we need to change the defaults.
+    </p> 
+    <p> 
+    <ol id="GUID-E088AA05-D3FB-4662-BD7A-3E431A6C6244"> 
+      <li>Netmap Configuration (only if defaults from HW need to be changed)
+      </li> 
+      <li>Network ID (only if defaults from HW need to be changed)
+      </li> 
+      <li>IMR range programing in protocol bridges
+      </li> 
+      <li>HBO Hash Register programming at 2 CCF(Desktop), MemSW and IDI Bridge
+      </li> 
+      <li>Memory Hash register programing in HBO
+      </li> 
+      <li>Remap range configuration at HBO.
+      </li> 
+      <li>Common CFI register programing (only if defaults from HW need to be changed)
+      </li> 
+      <li>Mem config: MEMSS_PMA_CR_BIOS_MEM_CONFIG TME and IBECC_enable.
+      </li> 
+      <li>IMR configuration through multicast
+      </li> 
+      <li>MRC (out of the scope of this document)
+      </li> 
+    </ol> 
+    </p> 
+  </body> 
+</topic> 

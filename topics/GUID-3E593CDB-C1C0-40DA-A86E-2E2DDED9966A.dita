@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-3E593CDB-C1C0-40DA-A86E-2E2DDED9966A" xml:lang="en-US"> 
+  <title> Reset Requirements</title> 
+  <body>
+    <p>In the Platform BIOS Firmware Architecture Specification, "Nova Lake Boot and Reset Flow" chapter describes SOC rest flow and multiple reset phases.
+    </p> 
+    <p>Due to hybrid architecture and various firmware handshake protocols, certain BIOS configurations require a cold reset for changes to take effect:
+    </p> 
+    <ul id="GUID-C557391E-122F-4074-8F38-534A43BD9431">
+      <li>CPU Early Power-On Configuration Register (EPOC/EPOC2)
+        <ul id="GUID-590D7F7F-0ADE-4C4F-96BB-4B76F465CBD2">
+          <li>CDie Enabled Mask
+          </li>
+          <li>GDie Enabled Mask
+          </li>
+        </ul>
+      </li>
+      <li>CPU Soft Strap Data
+        <ul id="GUID-76BAF999-1D6E-4B20-8212-B6B14EBE64E2">
+          <li>Number of active P-cores
+          </li>
+          <li>Number of active E-cores
+          </li>
+          <li>HT Enable/Disable
+          </li>
+        </ul>
+      </li>
+    </ul> 
+  </body> 
+</topic> 

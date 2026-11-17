@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-809C5B4B-0298-4779-8016-B7707A72AC1C" xml:lang="en-US"> 
+  <title>BIOS Requirements</title> 
+  <body> 
+    <ul id="GUID-95FBEF16-DD28-4E47-86A6-955DFE852DAE"> 
+      <li>DL1 Flush (Applies for SKUs where there is no LLC.):
+        <ul id="GUID-832267FE-B6AB-4EC4-9BD4-F53787D6E67A">
+          <li>An explicit DL1 flush is NOT needed if data is pulled through code fetches.
+          </li> 
+          <li>DL1 flush is needed, if the BIOS decides to copy data into CAR region.
+          </li> 
+          <li>DL1 flush can be achieved by programming MSR 0x10B[0]
+            <ul id="GUID-44B60E97-9E64-473B-B072-610090791D95">
+              <li>BIT0 = 0 //DL1 is not flushed.
+              </li> 
+              <li>BIT0 = 1 //DL1 is flushed.
+              </li> 
+            </ul>
+          </li> 
+        </ul>
+      </li> 
+      <li>Hub-Die E-cores can be disabled via BIOS based on the same core disable straps that exist today.
+      </li> 
+      <li>Boot from SoC core
+        <ul id="GUID-577E3225-F5EB-4B45-ADE9-0FCBF645F725">
+          <li>BIOS and ACM will be sharing MLC
+          </li> 
+          <li>BIOS needs to accommodate IBB size - code and data cache inside NEM for better performance and to ensure all security feature work as expected.
+          </li> 
+          <li>There are opens on determining effective NEM size programmatically instead of hardcoding a guard bad size of 512K.
+          </li> 
+        </ul>
+      </li> 
+      <li>MPInit for SoC cores
+      </li> 
+      <li>ACPI ID modification
+      </li> 
+      <li>Support for CPUID leaf #4.
+      </li> 
+      <li>ACPI support for Hub-Die cores - CPPT, P, T, C state table.
+      </li> 
+      <li>PPM support for Hub-Die cores.
+      </li> 
+      <li>HGS
+      </li> 
+    </ul> 
+  </body> 
+</topic> 

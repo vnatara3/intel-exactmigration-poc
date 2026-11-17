@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-35074026-C4F0-436A-BFE3-2DCECA29DC97" xml:lang="en-US">
+  <title>No-Eviction Mode (NEM) Considerations</title>
+  <body>
+    <draft-comment>Converted using FMHtml2Dita version: 2.1.0
+    </draft-comment>
+    <p>There are a few important considerations to take into account, when using Cache for Stack and Code:
+    </p>
+    <ul id="GUID-24165017-FF1A-457C-995D-75EB7A64F249">
+      <li>No special hardware protection is provided to suppress evictions due to snooping.
+      </li>
+      <li>Use of INVD results in loss of DataStack data. It may be used, when the cache contents need to be invalidated or during NEM tear down to flush the cache. 
+      </li>
+      <li>Use of WBINVD or CLFLUSH is not recommended.
+      </li>
+      <li>Software is responsible for ensuring that code and data use do not result in the DataStack being evicted.
+      </li>
+      <li>Software must not perform writes to the code region.
+      </li>
+      <li>Software must not be self modifying. 
+      </li>
+      <li id="XREF_63025_5_5_5_1">Allow GET-ENTERACCS to be executed as last instruction under NEM.
+      </li>
+      <li>At NEM Initialization, setting up No-Eviction mode before enabling the MTRRs to avoid the data potentially goes into cache before NEM is ready.
+      </li>
+      <li>At NEM tear down, clear any Machine Check errors for Machine Check banks 6 till the maximum number of banks (-1, if EDRAM enabled) which may have occurred due to large NEM code and data region sizes causing a write-back for the MLC to LLC eviction.
+      </li>
+      <li>The Maximum NEM Size in Bytes = Effective Cache size - Reserved size. If ACM takes a number of ways reduce size by - (ACM dedicated ways).
+      </li>
+    </ul>
+  </body>
+</topic>

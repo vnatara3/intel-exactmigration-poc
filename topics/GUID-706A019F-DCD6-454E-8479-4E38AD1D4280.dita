@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-706A019F-DCD6-454E-8479-4E38AD1D4280" xml:lang="en-US"> 
+  <title>Intel® Total Storage Encryption BIOS Programming Steps</title> 
+  <body> 
+    <p> BIOS enables the TSE capability before NVMe device communication during the BIOS boot process. 
+    </p> 
+    <p> 
+    <ol id="GUID-B5C1CB22-AEF6-499D-8A60-95A5503208E5"> 
+      <li> SW shall detect Intel® Total Storage Encryption existence of IA32_TSE_CAPABILITY MSR (9F1h) when CPUID.7.1.EBX.1 = 1. 
+        <p> SW shall skip TSE flow when CPUID.7.1.EBX.1 = 0. SW should not access any TSE MSRs otherwise GP# will occur. 
+        </p> 
+      </li> 
+      <li>SW shall detect PCONFIG existence when CPUID.7.0.EDX.18 = 1 and CPUID.7.1.EBX = 1. 
+        <p> SW shall skip TSE flow when PCONFIG detection fails. 
+        </p> 
+      </li> 
+      <li> SW shall detect TSE capability when MSR 9F1h IA32_TSE_CAPABILITY[BIT0] = 1. 
+        <p> SW shall skip TSE flow when MSR 9F1h IA32_TSE_CAPABILITY[BIT0] = 0. 
+        </p> 
+      </li> 
+      <li> SW must allocate Intel® Total Storage Encryption DRAM memory of 256KB size un-cacheable memory. The TSE DRAM address must be 256KB aligned address that must be programmed into IMRnBASE_0_0_0_MCHBAR_IMPH register (MCHBAR + 11570h) address. 
+        <p> In addition, the same TSE DRAM base address must be programmed into the TSE Table Offset register in the IOCCE MMIO range (MCHBAR + 12400h). 
+        </p> 
+        <note id="GUID-BD12D415-7BBC-4024-995C-C30AD6090F54">The Intel Inline Encryption for NVM Express Storage DRAM address must remain same across Sx boot to support OS resume flows. 
+        </note> 
+      </li> 
+      <li> BIOS must enable the Intel® Total Storage Encryption BDF registers all NVMe controller BDFs in the IOC MMIO range. This programming is needed so that the IOC IP can steer the NVMe traffic to the IOCCE IP. 
+      </li> 
+      <li>BIOS must publish a Intel® Total Storage Encryption ACPI Device Object to report the TSE Device as such: 
+        <fig id="GUID-6A36A2A9-B9C4-4CFE-8A48-E471CF01CD7B"> 
+          <image href="../images/GUID-8DC7003F-B928-40BD-A80B-E210CDD01492.png" scalefit="yes"> 
+            <alt> 
+            </alt></image> 
+        </fig> 
+      </li> 
+      <li> SW must publish Intel® Total Storage Encryption information via the TSE Range Reporting Structure as defined in the below section. 
+      </li> 
+      <li> SW must publish EFI_BLOCK_IO_CRYPTO_PROTOCOL for OS to consume . 
+      </li> 
+    </ol> 
+    </p> 
+    <p> For more details, please refer to Processor External Design Specifications. 
+    </p> 
+  </body> 
+</topic> 

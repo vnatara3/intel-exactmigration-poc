@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-10583160-F3BF-4E0E-A7FF-2DCC697DFEF7" xml:lang="en-US"> 
+  <title>BIOS Requirements</title> 
+  <body> 
+    <ul id="GUID-8C3B313F-677C-4285-A593-965C4D7254BA"> 
+      <li>BIOS need to program the Stolen memory region ( DSM, GSM, PAVP, GGC) and BDF register in DE.
+      </li> 
+      <li>BIOS should initialize the supported CDCLK and Power well flow.
+      </li> 
+      <li>The following are display registers that BIOS (or other boot software or firmware) programs. Refer to the register definitions for offsets and fields.
+        <ul id="GUID-D10EBF11-BED5-4776-80B0-8EF36E339564"> 
+          <li>BIOS can optionally read the ID to find the display version and stepping - DE_ID
+          </li> 
+          <li>Early BIOS programs memory range/base/size/limit to match graphics PCI registers and/or the settings used for 3D and media
+            <ul id="GUID-AACE3CE6-18C7-4697-8A86-9DBB628EBFD5">
+              <li>DISMLIMIT_MSB, DISMLIMIT_LSB, DISMBASE_MSB, DISMBASE_LSB, DEGSMBASE, DEDSMBASE, DE Graphics Control, DE_GGC, FlatCCSBaseandRange (upper and lower Dwords), DE Protected Audio Video Path Control Register, DEPAVPC_REG
+              </li>
+            </ul>
+          </li> 
+        </ul>
+      </li> 
+      <li>After other early BIOS programming, early BIOS programs SAI policy registers to remove BIOS from the WAC and then CP to lock itself out from further access
+        <ul id="GUID-CD4C37BC-C267-43B6-B660-B212DD23C9F2"> 
+          <li>WAC_DEBIOSEARLY_MSB
+          </li> 
+          <li>WAC_DEBIOSEARLY_LSB
+          </li> 
+          <li>CP_DEBIOSEARLY_MSB
+          </li> 
+          <li>CP_DEBIOSEARLY_LSB (LSB last since it contains the BIOS bit)
+          </li> 
+        </ul>
+      </li> 
+      <li>BIOS programs BDF for display and KVM
+        <ul id="GUID-9FBCCF26-BE3A-4858-BF58-4313BF277524"> 
+          <li>DE_BDF = 0/2/0 for integrated graphics, 0/0/0 for discrete graphics
+          </li> 
+          <li>VDMBDFBARKVM = CSME BDF (integrated graphics only)
+          </li> 
+        </ul>
+      </li> 
+      <li>BIOS programs memory configuration info for display memory bandwidth calculations
+        <ul id="GUID-EDE4E37F-140C-42CE-BEA6-06830B93A078"> 
+          <li>MEM_SS_INFO_QGV_POINT_* = Qclk GV point configuration, register instance per-GV point
+          </li> 
+          <li>MEM_SS_INFO_GLOBAL = Global memory configuration
+          </li> 
+        </ul>
+      </li> 
+      <li>If CSE is updated to use sideband for KVMR messaging, program DG_CNTL_PROTECTED 134110h KVMR RAVDM Enable = 0 to have display use sideband, instead of RAVDMs, to message CSE. Above for Xe3 Display Important Replaced with Strap for Xe3p Display
+      </li> 
+      <li>No BIOS implications for Xe3p Display for NVL.
+      </li> 
+      <li>BIOS programs panel power to speed up internal panel bring up
+        <ul id="GUID-C6F485FB-F90E-43B8-8AC2-60D1B8A5C0DD"> 
+          <li>NDE_RSTWRN_OPT RST PCH Handshake En = 1. This is required to allow reset prep to disable panel power gracefully.
+          </li> 
+          <li>PP_CONTROL = Vdd override (only if required for speedup of 1st panel power up)
+          </li> 
+          <li>PP_CONTROL_2 = Vdd override (only if required for speedup of 2nd panel power up)
+          </li> 
+        </ul>
+      </li> 
+      <li>BIOS programs PICA device ID based on the SoC device ID (only if requested as a workaround)
+        <ul id="GUID-E2741081-B96B-49CD-95AA-4226D8C42C61"> 
+          <li>PICA_DEVICE_ID = ID from the Configurations section
+          </li> 
+        </ul>
+      </li> 
+      <li>BIOS configures SoC GPIO registers for audio (if there are cross-die IOs), hotplug, panel power and backlight, DDC, genlock, etc.
+      </li> 
+    </ul> 
+  </body> 
+</topic>

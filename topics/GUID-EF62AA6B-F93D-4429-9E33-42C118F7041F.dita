@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-EF62AA6B-F93D-4429-9E33-42C118F7041F" xml:lang="en-US"> 
+  <title>I/O Cache (IOC)</title> 
+  <body> 
+	 <p> NGU solves the single bottleneck issue by moving away from the notion of a single Root complex. The IOC (IO-Cache) is one of the key components in Next Generation Uncore (NGU) based SoCs and each IOC can support a PCIe Hierarchy below it and is exposed as a Root-Bus to the software. Multiple IOCs and other coherent agents in the system and Memory Subsystem is all connected to a protocol agnostic NOC. The first version of IOC is built from existing client SoC components IOP and WRC. 
+	 </p> 
+	  
+	  
+  </body> 
+</topic> 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-FE011384-39CD-4AFF-8E50-F33297DD59AD" xml:lang="en-US"> 
+  <title>NPU FW Loading</title> 
+  <body> 
+	 <p> The FW loading procedure is following the SOC IP independent loading guidelines from Intel. The NPU FW will fall under the category of SoC Independent but not self-sufficient IPs. This scenario is described as an IP that doesn't have any cryptographic capability inside the IP to authenticate firmware and has a DMA engine to pull FW from memory. 
+	 </p> 
+	 <p> The location of the FW will be on the OS native file system and kept along with the NPU driver. The size of the Firmware is expected to be around 1-2MB. 
+	 </p> 
+	 <p> NPU FW will be part of the Kernel Mode NPU driver package. Windows requires that all kernel mode drivers are signed, and therefore the FW will be signed as well as part of this signing process. 
+	 </p> 
+	 <p> Driver copies the NPU FW into system memory. 
+	 </p> 
+  </body> 
+</topic> 

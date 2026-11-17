@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-9F17D944-EF08-447D-9052-66A289A263B6" xml:lang="en-US"> 
+  <title>Media</title> 
+  <body> 
+    <ul id="GUID-C21D8F4C-7DBF-4D38-B873-62433889510D">
+      <li>Media IP same for all NVL SKUs
+      </li>
+      <li>Refer to ED for information about Standalone Media IP (SAMedia) and Media IP, both part of Device2 (Intel Graphics Device)
+      </li>
+    </ul> 
+    <fig id="GUID-A3E1943C-9918-49F0-AC6A-3C02814B023E">
+      <title>Memory Map View for SAMedia</title><image href="../images/GUID-5DDAAD39-5DBB-4951-85A9-CE7C1C27AE1F.png" scalefit="yes">
+        <alt>
+        </alt></image>
+    </fig>
+  </body> 
+</topic>

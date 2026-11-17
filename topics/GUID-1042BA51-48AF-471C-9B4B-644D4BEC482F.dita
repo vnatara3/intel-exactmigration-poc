@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-1042BA51-48AF-471C-9B4B-644D4BEC482F" xml:lang="en-US"> 
+  <title>Isolated Memory Regions (IMRs)</title> 
+  <body> 
+	 <draft-comment>Converted using FMHtml2Dita version: 2.1.0 
+	 </draft-comment> 
+	 <p> IMRs (Isolated Memory Ranges) are generic stolen memory ranges that can be allocated to any agent. This is different from the legacy stolen memory ranges that are allocated for specific IA features. 
+	 </p> 
+	 <p> New MTL/ARL NGU and disaggregation architecture introduce many new direct data paths and require addition of new access control points. So , access control policies must be implemented at following points: 
+	 <ol id="OL_20734FFCF3954C9EA18B08CA56AC859D"> 
+		<li id="LI_5541ED30D035451F864685092E6F10C1">CCF on compute die - Before LLC 
+		</li> 
+		<li id="LI_299097278B18411593BBACFB87160B3F">HAC on SoC die for GRT cores - In the HAC CBO SAD 
+		</li> 
+		<li id="LI_6403EF7FF3B549E88A875E7CC8D7B6C1"> Upstream transactions in the NGU - In each UFI bridge. 
+		</li> 
+	 </ol> 
+	 </p> 
+	 <p> For that MTL/ARL introduce two modifications to the IMRs implementations - 
+	 </p> 
+	 <p> 1. 
+		<b>Simplified/Full IMR implementation</b> - IMRs will be implemented in each UFI bridge to the NGU. MTL/ARL is going to have ~15 UFI bridges. Each IMR requires 2 X 32 bit registers (BASE/MASK or BASE/LIMIT) and 3 X 64 bit registers (CP/RAC/WAC) and will have ~25 IMRs in the MTL/ARL. Implementing copy of all IMRs in each UFI bridge requires implementation of 15252=750 32 bit registers and 15253=1125 64 bit registers. Since we have single IP connected to many UFI bridges most of 64 bit (CP/RAC/WAC) registers will be initialized to "0" and will not be used. 
+	 </p> 
+	 <p> To save HW area in the MTL/ARL new definition of "Simplified IMR" is added. Simplified IMR is defined as BASE/MASK (or BASE/LIMIT) register. In each bridge full IMRs will be used only for the IPs that connected to that bridge. Simplified IMRs will be used to prevent IPs from accessing stolen regions allocated for IPs connected through different UFI bridge. If IMR is shared between two different IPs, connected through two different UFI bridges in both bridges will be implemented Full IMR. 
+	 </p> 
+	 <p> This implementation allows to save HW without reducing functionality. As side effect of this architecture IMR numbers must be allocated for specific usages at HW definition level. 
+	 </p> 
+	 <p> 2. 
+		<b>IMR with access control of 1MB resolution</b> - IMR location defined by Base and Mask saves HW implementation but applies significant restrictions on the SW that allocating IMRs. Having address aligned to power of 2 creates allocation problem is some cases. For example, it is not possible to allocate 3GB region in the low memory. To solve this issue MTL/ARL will implement 8 Special IMR regions (IMR1MAcc) that can be defined at any address/size with 1MB resolution. These ranges will be defined as BASE and LIMIT registers. In each registers bit 48:20 will define address. Access control definition to these registers will be identical to regular IMR definition through CP/WAC/RAC registers. All the legacy stolen memory regions mentioned would be accessed controlled through IMR's. IMR1M type of IMRs are allocated for the following usages: 
+	 </p> 
+	 <ul id="GUID-AFFC6242-0DAF-45CC-B3EB-CE2F63F83098"> 
+		<li id="LI_0AA06DBDB92E4C82A9298F9E5B1C74B3"> PMR (PLMR &amp; PHMR) 
+		</li> 
+		<li id="LI_66E0707F21B4469ABA4F31AE7E7DE01D">DPR 
+		</li> 
+		<li id="LI_B0B4D2E19F3F4CFF8BF82D7CF4002531"> TPR (TPRH and TPRL) 
+		</li> 
+		<li id="LI_A71BAC846FC44E04851132DFCC9CAB37">DSM 
+		</li> 
+		<li id="LI_2E8D334AA9964BAEB10C7A4E1D903521">GSM 
+		</li> 
+		<li id="LI_D391B4D6C8714EFF945B4FEE642D6069">TSEG 
+		</li> 
+		<li id="LI_6C307B60CB08408794BBE8A433DE9EEA">PCIe Low (TOLUD to 4G) 
+		</li> 
+		<li id="LI_2B64A35DCC434AA1A76DC237B7577BBB">PCIe High (TOUUD to Max Addressable Size) 
+		</li> 
+	 </ul> 
+  </body> 
+</topic> 
