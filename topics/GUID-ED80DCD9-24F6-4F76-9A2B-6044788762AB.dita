@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-ED80DCD9-24F6-4F76-9A2B-6044788762AB" xml:lang="en-US"> 
+  <title>Memory Map and Bar Initialization</title> 
+  <body> 
+	 <p> In 
+		<ph>Nova Lake</ph> platform, some of legacy Bar are getting changed /removed because of Die segregation. Bar configuration and source decode for SOC die is managed by sNCU and for compute die by cNCU. BIOS need to configure below bars in SOC NCU (accessible on Device 0 function 0). Register interface remains same as previous programs. 
+		 
+	 </p> 
+	 <ul id="GUID-3698FCDB-BBDF-4A92-9525-82A83A6BFA0F"> 
+		<li id="LI_0E1664E3BC084E67913C69D6AD165DE3">VTDPVC0BAR doubles in size 4kB-&gt;8kB (MTL/ARL exposes 2 IOMMUs, graphics takes first 4K, rest 4K for SOC IOMMU). After removal of IP based IOMMU, there are 2 IOMMU's in SOC die both located in IOC (1 for display/GFX need and other for overall SOC). Total 8K memory would be required for both IOMMU and would be exposed via single bar VTDPVC0BAR. 
+		</li> 
+		 
+		<li id="LI_D3B633CCB2744F31BFBD59D9DBA2B512">DMIBAR (BAR exists but no registers behind its BIOS must leave this disabled). 
+		</li> 
+		<li id="LI_2B483D8EE84E428AADE994AF1D427535">EDRAMBAR (BAR exists but no registers behind its BIOS must leave this disabled). 
+		</li> 
+		 
+		<li id="LI_BEF1456A827542F7AAE8DECF9F37E250">REGBAR doubles in size 16MB-&gt;256MB (covers all BASE die) -&gt; Used for SB transactions 
+		</li> 
+		<li id="LI_64BD4C23F0ED4C2B8106619309B461CF">PMBAR 4x in size (32kB-&gt;128kB) - Dev10 bar handled within PCI enumeration and for temporary PCI enumeration for telemetry 128KB size needed. 
+		</li> 
+		<li id="LI_AB1B9DA29B28413CAFCB5959638DC9EB">MCHBAR staty the same size (128KB) 
+		</li> 
+	 </ul> 
+  </body> 
+</topic> 

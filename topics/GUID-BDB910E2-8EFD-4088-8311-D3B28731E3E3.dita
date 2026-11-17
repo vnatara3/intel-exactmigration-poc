@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-BDB910E2-8EFD-4088-8311-D3B28731E3E3" xml:lang="en-US"> 
+  <title> Meteor Lake and Arrow Lake Devices</title> 
+  <body> 
+	 <p> Below is sample of devices and IDs. Do not use this list for BIOS development. Refer to EDS for the latest device ID updates. 
+	 </p> 
+	 <table id="GUID-55CE429D-6BF4-41E6-B6C0-922EF3954311"> 
+		<tgroup cols="5"> 
+		  <colspec colnum="1" colname="col1" colwidth="1.00*" /> 
+		  <colspec colnum="2" colname="col2" colwidth="2.13*" /> 
+		  <colspec colnum="3" colname="col3" colwidth="2.57*" /> 
+		  <colspec colnum="4" colname="col4" colwidth="2.92*" /> 
+		  <colspec colnum="5" colname="col5" colwidth="2.60*" /> 
+		  <thead> 
+			 <row> 
+				<entry> BDF 
+				</entry> 
+				<entry> Device Name 
+				</entry> 
+				<entry> Device ID (SoC-MP+ IOE-M) 
+				</entry> 
+				<entry> Device ID (SoC-MP + IOE-P) 
+				</entry> 
+				<entry> Device ID (SoC-S + IOE-S) 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry> 0.1.0 
+				</entry> 
+				<entry> PEG10 (only on S/P) (IOE) 
+				</entry> 
+				<entry> NA 
+				</entry> 
+				<entry> 0x7ECC 
+				</entry> 
+				<entry> 0x7ECC 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 0.2.0 
+				</entry> 
+				<entry> GT/DE 
+				</entry> 
+				<entry> 0x7D7D(Display only) 0x7D7E(Media only) 0x7D7F(GT only) 
+				</entry> 
+				<entry> 0x7D7D(Display only) 0x7D7E(Media only) 0x7D7F(GT only) 
+				</entry> 
+				<entry> 0x7D7D(Display only) 0x7D7E(Media only) 0x7D7F(GT only) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 0.4.0 
+				</entry> 
+				<entry> Camarillo 
+				</entry> 
+				<entry> 0x7D03 
+				</entry> 
+				<entry> 0x7D03 
+				</entry> 
+				<entry> 0xAD03 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 0.5.0 
+				</entry> 
+				<entry> IPU 
+				</entry> 
+				<entry> 0x7D19 
+				</entry> 
+				<entry> 0x7D19 
+				</entry> 
+				<entry> NA 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 0.6.0 
+				</entry> 
+				<entry> PCIe60 (SoC) 
+				</entry> 
+				<entry> 7E4D 
+				</entry> 
+				<entry> NA 
+				</entry> 
+				<entry> 0xAE4D 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 0.6.1 
+				</entry> 
+				<entry> PCIe61 (IOE) 
+				</entry> 
+				<entry> NA 
+				</entry> 
+				<entry> 0x7ECA 
+				</entry> 
+				<entry> 0x7ECA 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 0.6.2 
+				</entry> 
+				<entry> PCIe62(IOE) 
+				</entry> 
+				<entry> NA 
+				</entry> 
+				<entry> 0x7ECB 
+				</entry> 
+				<entry> 0x7ECB (always disabled) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 0.6.3 
+				</entry> 
+				<entry> PCIe63(SoC-S) 
+				</entry> 
+				<entry> NA 
+				</entry> 
+				<entry> NA 
+				</entry> 
+				<entry> 0xAE4E 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 0.6.4 
+				</entry> 
+				<entry> PCIe64(SoC-S) 
+				</entry> 
+				<entry> NA 
+				</entry> 
+				<entry> NA 
+				</entry> 
+				<entry> 0xAE4F 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 0.7.0 
+				</entry> 
+				<entry> TypeC PCIE 
+				</entry> 
+				<entry> 0x7EB4 
+				</entry> 
+				<entry> 0x7EC4 
+				</entry> 
+				<entry> 0x7EC4 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 0.7.1 
+				</entry> 
+				<entry> TypeC PCIE 
+				</entry> 
+				<entry> 0x7EB5 
+				</entry> 
+				<entry> 0x7EC5 
+				</entry> 
+				<entry> 0x7EC5 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 0.7.2 
+				</entry> 
+				<entry> TypeC PCIE 
+				</entry> 
+				<entry> NA 
+				</entry> 
+				<entry> 0x7EC6 
+				</entry> 
+				<entry> NA 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 0.7.3 
+				</entry> 
+				<entry> TypeC PCIE 
+				</entry> 
+				<entry> NA 
+				</entry> 
+				<entry> 0x7EC7 
+				</entry> 
+				<entry> NA 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 0.8.0 
+				</entry> 
+				<entry> GNA 
+				</entry> 
+				<entry> 0x7E4C 
+				</entry> 
+				<entry> 0x7E4C 
+				</entry> 
+				<entry> 0zAE4C 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 0.10.0 
+				</entry> 
+				<entry> Crashlog SRAM 
+				</entry> 
+				<entry> 0x7D0D 
+				</entry> 
+				<entry> 0x7D0D 
+				</entry> 
+				<entry> 0xAD0D 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 0.11.0 
+				</entry> 
+				<entry> NPU 
+				</entry> 
+				<entry> 0x7D1D 
+				</entry> 
+				<entry> 0x7D1D 
+				</entry> 
+				<entry> 0xAD1D 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 0.12.0 
+				</entry> 
+				<entry> Unused 
+				</entry> 
+				<entry> NA 
+				</entry> 
+				<entry> NA 
+				</entry> 
+				<entry> NA 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 0.13.0 
+				</entry> 
+				<entry> TCSS xHCI 
+				</entry> 
+				<entry> 0x7EB0 
+				</entry> 
+				<entry> 0x7EC0 
+				</entry> 
+				<entry> 0x7EC0 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 0.13.1 
+				</entry> 
+				<entry> TCSS xDCI 
+				</entry> 
+				<entry> 0x7EB1 
+				</entry> 
+				<entry> 0x7EC1 
+				</entry> 
+				<entry> 0x7EC1 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 0.13.2 
+				</entry> 
+				<entry> TBT DMA0 
+				</entry> 
+				<entry> 0x7EB2 
+				</entry> 
+				<entry> 0x7EC2 
+				</entry> 
+				<entry> 0x7EC2 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 0.13.3 
+				</entry> 
+				<entry> TBT DMA1 
+				</entry> 
+				<entry> NA 
+				</entry> 
+				<entry> 0x7EC3 
+				</entry> 
+				<entry> NA 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 0.14.0 
+				</entry> 
+				<entry> VMD 
+				</entry> 
+				<entry> 0x7D0B 
+				</entry> 
+				<entry> 0x7D0B 
+				</entry> 
+				<entry> 0xAD0B 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </body> 
+</topic> 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-420F0A0D-C867-4587-9D86-67B8BB375DFD" xml:lang="en-US"> 
+  <title>Other NEM BIOS Considerations</title> 
+  <body> 
+	 <ul id="UL_0A138E36B9DD42DE9929D70A9E6AB01D">
+		<li id="LI_40C3F66B4EB44FC5B59F70FA35A8CD83">BIOSmust not read/write to obsoleted MSRs. For example: MSR_UNC_CBO_CONFIG 0x396.
+		</li>
+		<li id="LI_9D57D5D1CBA5484FB2AE9BC1F281B6E9">BIOSis no longer required for clearingMCA banks after NEM exit. Instead, BIOS should print the MCA bank status in Debug logs while exiting NEM mode.
+		</li>
+		<li id="LI_64BE40F84D90424CA2397AD739200D92"> When boot from Hub-die E-core, NEM Setup need to alter due to lack of LLC.
+		</li>
+	 </ul> 
+  </body> 
+</topic>

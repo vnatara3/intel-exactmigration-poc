@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-D14CC11D-97E5-4451-9FEE-E70BFF877834" xml:lang="en-US"> 
+  <title>Image Processing Unit (IPU)</title> 
+  <body> 
+	 <p>No IPU on ARL-S SKU.
+	 </p>
+	 <p> IPU6 is the Image Processing Unit (IPU). MTL/ARL version of IPU6 is different from previous version of IPU6 in TGL, JSL+, ADL where IPU was connected to the uncore IOP using the PSF0 interface. In MTL/ARL IPU6 connects to The PSF fabric for configuration access, MSI, and for IOMMU services, while all access to DRAM is via UFI interface towards the SoC NoC. It maintains its buttress interface to the SB router network for connectivity to CCU, PS_PLL, CSE, GPIOs, and ITSS 
+	 </p> 
+	 <p> IPU6 integrates Synopsys DPHYs which are connected internally to the CSI logic (except for DFX). IPU6 also exposes one PPI/control interface towards the DPHY it shares with the ACE. 
+	 </p> 
+	 <ul id="GUID-D640FCAE-1D08-417E-A0D1-2A9CEB30C953"> 
+		<li id="LI_1B47F9CFF532479BB17F4FCE3B4F16A3">IPU6 MTL/ARL IOSF interface is 64 bit wide, and not 64 Byte wide as in previous IPU6 versions. 
+		</li> 
+		<li id="LI_2D0945C65F244884991121FFD5A87421">IPU6 MTL/ARL IOSF does not include traffic to DRAM which is moved off to UFI interfaces. 
+		</li> 
+		<li id="LI_A4329EEAA0C34A46BE295DF086450450">IPU6 in MTL/ARL integrates a DEVTLB instead of an IOMMU 1.5 and the IOSF interface is required to support ATS, ATS completions, Invalidation, and invalidation completions for DEVTLB. 
+		</li> 
+		<li id="LI_F7DE96C5725F4B98A9624F190EE0846C">IPU6 MTL/ARL implements two 32 Byte UFI interfaces that only support upstream read/writes to DRAM. This traffic was sent on IOSF in previous SoCs. 
+		</li> 
+		<li id="LI_37EE8E42E6844423804D5E60B37DD060"> IPU6 in MTL/ARL only implements the buttress IOSF Sideband Endpoint 
+		</li> 
+		<li id="LI_991FCC46C6C449BF937BD99CD3172CE9">The Synopsys DPHYs' control and reset interfaces are integrated into IPU control logic. The previous DPHY's IOSF interfaces are removed. 
+		</li> 
+		<li id="LI_9A9AE8CAB6D840648504756EF6DA305A">IPU supports legacy interrupts on IOSF SB (ASSERT_INTA and DEASSERT_INTA) as well as MSI on IOSF Primary. MSI is used by IPU SW driver. Both MSI and legacy interrupt are supported for PCIe compatibility. 
+		</li> 
+		<li id="LI_5B4D83FBC8614A91B616E4C314B1AD09">As MTL/ARL IPU6 integrates a DEVTLB, MSIs are passed to SoC IOSF interface without translation and are handled by the SoC IOMMU 
+		</li> 
+	 </ul> 
+  </body> 
+</topic> 

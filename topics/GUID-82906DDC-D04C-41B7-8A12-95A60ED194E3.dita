@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-82906DDC-D04C-41B7-8A12-95A60ED194E3" xml:lang="en-US"> 
+  <title>New BIOS Requirements</title> 
+  <body> 
+    <p>
+    <ul id="UL_5EB375404E3B4AC3B60370178BB7F7C8">
+      <li id="LI_9BD33463A65B43DD9C343B93624CFBA6">Removed MSR_UNC_CBO_CONFIG 0x396. BIOS must not read/write to unsupported MSRs. 
+      </li>
+      <li id="LI_AAA758A5A5A3414297C7102A0546B847">Removed BIOS requirement of clearing MCA banks after NEM exit. Instead, BIOS should print the MCA bank status in Debug logs while exiting NEM mode.
+      </li>
+    </ul>
+    </p>
+  </body> 
+</topic>

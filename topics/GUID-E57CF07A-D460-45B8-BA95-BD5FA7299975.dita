@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-E57CF07A-D460-45B8-BA95-BD5FA7299975" xml:lang="en-US"> 
+  <title>Boot Strap Processor (BSP)</title> 
+  <body> 
+	 <draft-comment>Converted using FMHtml2Dita version: 2.1.0 
+	 </draft-comment> 
+	 <p>The boot strap processor (BSP) is the first enabled core in a package. It will be default to the P-core on the compute die. 
+	 </p> 
+	 <p> Nova Lake family processors support boot from E-core in a C-die or the Hub-die. Refer to the 
+		<xref scope="local" format="dita" href="GUID-D1F7343D-33AB-43AA-A0D0-34D239A9B825.dita#GUID-D1F7343D-33AB-43AA-A0D0-34D239A9B825"><?xm-replace_text Boot From C-die E-Core?></xref>. 
+	 </p> 
+	 <p>The BIOS and OS should not have an assumption the BSP is the core 0. In case the OS is expecting the certain core to be the BSP, the BIOS can select the BSP by using IA32_APIC_BASE MSR (0x1B) Bit[8] to change BSP. 
+	 </p> 
+	 <p>It is important to note that the No-Eviction Mode can only establish on the BSP at-reset 
+		. 
+	 </p> 
+  </body> 
+</topic> 

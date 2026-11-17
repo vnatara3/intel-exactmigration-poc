@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-97D78C8C-9F8A-43F5-8FD7-8EC66AE8FBDE" xml:lang="en-US"> 
+  <title>Boot From C-die E-Core</title> 
+  <body> 
+	 <p> To boot from a C-die E-core, all big cores in C-dies need to be disabled through CPU Soft Strap High Register. For more details, refer to the 
+		<xref scope="local" format="dita" href="GUID-8A9082BB-35CE-46E1-9260-F5408CD5658C.dita#GUID-8A9082BB-35CE-46E1-9260-F5408CD5658C/TABLE_5491A5F35A4449B88648B4314271B1CF"><?xm-replace_text SOFT_STRAP_HIGH Register?></xref>.
+	 </p> 
+  </body> 
+</topic>

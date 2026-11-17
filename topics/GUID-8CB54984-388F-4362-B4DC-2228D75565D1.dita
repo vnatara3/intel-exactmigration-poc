@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-8CB54984-388F-4362-B4DC-2228D75565D1" xml:lang="en-US"> 
+  <title>CBO MC Bank Clearing on NEM Exit</title> 
+  <body> 
+	 <p> After NEM is disabled, BIOS must clear any Machine Check Bank errors for CBO/LLC's that may have occurred as the result of MLC to LLC Evictions. 
+	 </p> 
+	  
+  </body> 
+</topic> 

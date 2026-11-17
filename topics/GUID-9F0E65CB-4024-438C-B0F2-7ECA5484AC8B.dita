@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-9F0E65CB-4024-438C-B0F2-7ECA5484AC8B" xml:lang="en-US"> 
+  <title>No-Eviction Mode (NEM)</title> 
+  <body> 
+	 <p>Refer to Chapter 11 Memory Cache Control of the Software Developer Manual (SDM) Vol3A ( Section 1.1.2 Platform Reference), for programming guide on Cache Control, Memory Type Range Registers (MTRRs) and Page Attribute Table (PAT). 
+	 </p> 
+  </body> 
+</topic> 

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-2E6C8E83-7451-4B9E-85C6-3ABB568D59C1" xml:lang="en-US"> 
+  <title>Thermal Boot Protection</title> 
+  <body> 
+    <p>To avoid hitting thermal issues and protect the system from thermal situations during pre-memory phase, BIOS will honor Override Power limit 1 (lower than TDP) and set pre-memory ratio to fit cTDP down ratio and return back to nominal ratio during BIOS_CPL. 
+    </p> 
+    <section id="SECTION_F45BBCCFDFB548BFA953CE8A6C0C5497"> 
+      <title> Required Programming: </title> 
+      <p> Pre-Mem 
+      <ul id="UL_AD741797D0944913A3A70C2D6F9A0EE5"> 
+        <li id="LI_1C78295B020D4712A732222415DE76DF"> System may power up with cTDP unit running nominal ratio, which could hit thermal limitation during MRC 
+        </li> 
+        <li id="LI_E9F6863512F8429C90FAAC7A47B31CD2"> BIOS will override Pre Mem ratio from nominal to cTDP down ratio once it detects there is an override of PL1 to a lower value vs Nominal TDP. 
+        </li> 
+      </ul> 
+      </p> 
+      <p> Post-Mem to BIOS_CPL 
+      <ul id="UL_25F8F25C54DD41688CDB5B1CBD2C849B"> 
+        <li id="LI_10CC1F57B7BF46C49FA7505CA697B737"> BIOS return to customer selected ratio 
+        </li> 
+      </ul> 
+      </p> 
+      <p> 
+      </p> 
+    </section> 
+  </body> 
+</topic>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-0D5E1BA6-1868-4DFA-8E04-243029C8F55A" xml:lang="en-US"> 
+  <title>Media</title> 
+  <body> 
+	 <p> Media IP same for all MTL/ARL SKUs 
+	 </p> 
+	 <p> Gen13 media IP is integrated in MTL/ARL. Standalone Media IP (aka SAMedia) is part of Device2 (Intel Graphics Device) and provides hardware acceleration for image/video encoding, decoding and transcoding workloads. Media fixed function hardware was traditionally part of GT in prior client products which was connected to Ring (client coherent fabric). From an SoC perspective, making Media a standalone IP enables power and performance optimization opportunities at SoC for video workloads. At the same time, it enables VTT (Visual technologies team) to provide Media only configurations to other SoC's/segments. 
+	 </p> 
+	 <p> In MTL/ARL, Gunit which handles all Software interactions to Device2 IPs (GT, Media, Display) will be part of Media IP block (SAMedia). Also, a dedicated Graphics Security controller (GSc) is part of Media IP which provides security services for all Device2 IPs. Together, Media fixed function hardware along with Gunit and GSc will appear as a single IP to SoC. 
+	 </p> 
+	 <p> Media configuration contains 2VDBOX, 2VEBOX and 2 SFCs. Intel Graphics Device (Device2), Media's MMIO register space is exposed via GTTMMADR (Dev2 BAR) 
+	 </p> 
+  </body> 
+</topic> 

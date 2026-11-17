@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-2AA83BF5-9ECB-434A-BB33-4F02E4756656" xml:lang="en-US"> 
+  <title>BIOS Requirements</title> 
+  <body> 
+    <p> 
+    </p> 
+    <p> 
+    <ul id="GUID-FED74930-6BCC-476A-9D00-15F04195FC38"> 
+      <li> DMIBAR, PXPEPBAR, EDRAMBAR, GTXVTBAR, DFDBAR registers are removed. 
+      </li> 
+      <li>Memory Map and Bar Initialization: 
+        <ul id="GUID-4DEA3CA5-5418-4C75-B0D6-E275BB45E43E"> 
+          <li>BIOS need to configure below bars in NCU (accessible on Device 0 function 0). Register interface remains same as previous programs. Refer to section System Memory Map for overall memory map. 
+          </li> 
+          <li>VTDBAR(MCHBAR+0x5410) size:512KB 
+          </li> 
+          <li>NVL expose the 2 IOMMUs on compute i.e. graphics and non-gfx each of 64KB size. 
+          </li> 
+          <li>Separate 64KB IOMMU bar for IOC0 hosted VTd engine. 
+          </li> 
+          <li>Legacy DMIBAR (BAR exists but no registers behind its BIOS must leave this disabled) 
+          </li> 
+          <li> SAFBAR(B0D0F0+0x68) size:32MB (only need pre-BIOS done NOT needed after BIOS done) 
+          </li> 
+          <li> REGBAR 128MB -&gt; Used for SB transactions. 
+          </li> 
+          <li>PMBAR 4x in size (32kB-&gt;128kB) - Dev10 bar handled within PCI enumeration and for temporary PCI enumeration for telemetry 128KB size needed. 
+          </li> 
+        </ul> 
+      </li> 
+      <li>MCHBAR doubles in size to 256KB. 
+      </li> 
+      <li>NoHom range introduction: 
+        <ul id="GUID-343DAD81-B246-45E3-8897-E028A5DEF28B"> 
+          <li> BIOS must program NoHOM.BASE and NoHOM.LIMIT above 4GB range in offset 0x90 and 0x98 in Hostbridge 
+          </li> 
+          <li>BIOS must ensure MCHBAR, REGBAR and SAFBAR are mapped within the NoHOM range - Mcheck checks if this range includes (MCHBAR, SAFBAR, REGBAR) 
+          </li> 
+          <li>BIOS must calculate the size of the range by reading registers to determine the end of C-Die BAR (SNCU_NCDECS_CR_CDIEBAREND_0_0_0_MCHBAR) 
+          </li> 
+          <li>MCHBAR, REGBAR, SAFBAR must not overlap and all must be after CdieBARend 
+          </li> 
+          <li>BIOS must program TOLUD, TOM, TOUUD based on correct amount of memory 
+          </li> 
+          <li>BIOS should not program PCIEXBAR, NOHOME between 0-TOLUD, or 4G-TOM 
+          </li> 
+        </ul> 
+      </li> 
+      <li>CBO MC Bank clearing on NEM exit - 
+        <ul id="GUID-A9677686-28D0-490F-9DCF-F6FF32BD14E3"> 
+          <li>No need for BIOS to clear MCA banks after NEM exit. CCF will block logging and triggering of WbtoMMIO MCA during NEM. 
+          </li> 
+        </ul> 
+      </li> 
+      <li>PAM range registers are removed: 
+        <ul id="GUID-16F3098F-969D-4441-9A0B-485A8705E804"> 
+          <li>BIOS must remove the PAM register programming to configure it to DRAM vs MMIO 
+          </li> 
+          <li>BIOS must remove the PAM lock programming 
+          </li> 
+          <li>PAM registers are set to harcoded registers to '11'(HOM) and the lock bits are set to '1'. No other value of PAM will be supported. 
+          </li> 
+        </ul> 
+      </li> 
+      <li>Dev0 CFG Initialization: 
+        <ul id="GUID-919A7C28-6350-4583-B60F-B1E370C27F26"> 
+          <li>All the Device0 Cfg programing ( GSM, DSM, TOLUD, TOUUD, TOM) will be done in NCU. From SW perspective, there is no impact or change as these still remains in BDF- 0/0/0 with same offset. 
+          </li> 
+        </ul> 
+      </li> 
+      <li>IMR programming: 
+        <ul id="GUID-F0A59085-F8EA-472C-99F8-F72B138E4181"> 
+          <li>When BIOS programs the IMR registers using MCHBAR + MCAST_IMR, sNCU claims the cycle and does HW-multicast to all protocol bridges and relevant IPs including IOC. 
+          </li> 
+        </ul> 
+      </li> 
+      <li>Device Enable/Disable: 
+        <ul id="GUID-24DF81A2-A9AE-4373-8D23-FCD6DE168BB4"> 
+          <li>There is new CAPID/DEVEN/BDF_ALLOC register mapping added starting LNL/PTL in C-die to map IP's 1:1 in CAPID, DEVEN and BDF_ALLOC. BIOS need to use new CAPID/DEVEN register for all IP enable/disable configuration and reading IP fuse status through CAPID i.e. IGD, NPU, IAX, IPU, PMT/Telemetry, Camarillo, VMD IP's. 
+            <note id="GUID-1727E78A-D417-4A07-B31E-19615540C78E"> BDF_ALLOC not required to be programmed by BIOS , since device BDF's on MH are fixed and doesn't support function remapping. However, for PCIe root ports, BIOS need to use BDF_ALLOC for function remapping when F0 is disabled. 
+            </note> 
+          </li> 
+        </ul> 
+      </li> 
+    </ul> 
+    </p> 
+    <ul id="GUID-BC76EB29-E4B3-4136-A434-9C9DE8A46B73"> 
+      <li>sNCU has 4 different 4 byte scratchpads accessible to all threads in the system exposed through MCHBAR: 
+        <ul id="GUID-DD1A2170-90B1-4BA6-A895-9DA35F874E78"> 
+          <li> scratchpad_0_0_0_mchbar_ncu0 
+          </li> 
+          <li>scratchpad_0_0_0_mchbar_ncu1 
+          </li> 
+          <li>scratchpad_0_0_0_mchbar_ncu2 
+          </li> 
+          <li>scratchpad_0_0_0_mchbar_ncu3 
+          </li> 
+        </ul> 
+      </li> 
+      <li>PLAT_CONFIG - This register is not used and can be removed at designs convenience. 
+      </li> 
+      <li>Mcheck Summary: 
+        <ul id="GUID-5B85FC7F-42B5-4D88-9512-B430492C8D1A"> 
+          <li>None of the following ranges can overlap or overlap with memory: 
+            <ul id="GUID-E2FA7B96-5524-4D94-863D-DCB0C66A94B2"> 
+              <li> PCIEXBAR 
+              </li> 
+              <li> NoHOMEBASE - CDIEBAREND 
+              </li> 
+              <li> MCHBAR - MCHBAR+256KB-1 
+              </li> 
+              <li> VTDBAR - VTDBAR+512KB-1 
+              </li> 
+              <li>SAFBAR - SAFBAR+32MB-1 
+              </li> 
+            </ul> 
+          </li> 
+        </ul> 
+      </li> 
+      <li>MCHBAR and SAFBAR must overlap (CIDEBAREND+1 - NoHOMELIMIT) but not each other. 
+      </li> 
+      <li>MCHBAR regs duplicated into Cdiebar 
+        <ul id="GUID-5D768E17-29FC-4108-8B75-D4FE7C2DC3B0"> 
+          <li>6800h - 6BFFh (1KB) Registers in this range of MCHBAR programmed by BIOS will now need to be programed in MCHBAR AND in each CDIEBAR (unless instructed otherwise). 
+          </li> 
+        </ul> 
+      </li> 
+    </ul> 
+  </body> 
+</topic> 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-510EF15F-743E-4A90-8A5C-247BEC31A60F" xml:lang="en-US"> 
+  <title>Power Management</title> 
+  <body> 
+    <p> The processors allow early power parameter configurations for reducing power at reset. Early BIOS VR topology and electrical configurations, such as cTDP enabling, can be done as early as pre-MRC environment. 
+    </p> 
+  </body> 
+</topic> 
