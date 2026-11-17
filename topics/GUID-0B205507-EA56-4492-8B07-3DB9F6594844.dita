@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-0B205507-EA56-4492-8B07-3DB9F6594844" xml:lang="en-US"> 
+  <title>System Agent Fabric (SAF)</title> 
+  <body> 
+    <p> System agent Fabric (SAF) connects I/O, Compute, Home agent and memory. Its main function is to support coherent and non-coherent flows. SAF includes several functional blocks, bundled together as chassis compliant fabric IP for SoC integration. 
+    </p> 
+  </body> 
+</topic> 

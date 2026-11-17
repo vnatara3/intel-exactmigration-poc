@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-BD35AE2F-D1E6-41ED-B445-F56346450BAE" xml:lang="en-US"> 
+  <title>Display</title> 
+  <body> 
+	 <p> Display IP is same for all the Meteor Lake and Arrow Lake SKUs. 
+	 </p> 
+	 <p> Meteor Lake and Arrow Lake integrates Display14 into SOC Die which supports max four Type-C (DDI 1-4) and five combo ports (DDI A-E). 
+	 </p> 
+	 <p> MTL/ARL die sets number of display capable Type C ports as 2 for MTL-M and 4 for MTL-P and 2 combo DDI ports supporting eDP, DP and HDMI; No MIPI support 
+	 </p> 
+  </body> 
+</topic> 

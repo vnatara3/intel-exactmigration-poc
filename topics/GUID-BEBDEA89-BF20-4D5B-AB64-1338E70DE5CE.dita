@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-BEBDEA89-BF20-4D5B-AB64-1338E70DE5CE" xml:lang="en-US"> 
+  <title>BIOS Requirements</title> 
+  <body> 
+    <ul id="GUID-A6DC162E-A176-4705-87AC-19008976AEDF"> 
+      <li>BIOS should modify the APIC ID to 9 bits 
+      </li> 
+      <li>BIOS should provide setup option to enable/disable CD cores and SoC-Cores and modify the CPU straps accordingly. 
+      </li> 
+      <li>BIOS must enable x2APIC by default 
+      </li> 
+      <li>Enable SMT2 for RWC 
+      </li> 
+    </ul> 
+  </body> 
+</topic> 

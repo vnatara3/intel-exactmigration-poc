@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-86F58946-9C9C-443E-A5B3-730927BD121B" xml:lang="en-US"> 
+  <title>BIOS Requirements</title> 
+  <body> 
+    <ol id="GUID-8C448B4D-64E8-4EFE-BBEA-231EE48A8F10"> 
+      <li id="LI_1EC91339676C44D8BF6B101FD8C00960">VT-d has 2 IOMMU for Gfx/non-Gfx IOMMU. Both IOMMU registers are exposed to SW as a Root complex BAR (0/0/0 BAR): 
+         
+        <ol id="GUID-292ADB74-4378-4095-BE56-7FC1E6BD5003"> 
+          <li id="LI_771753C49DA24C85955C88B82FF7CC83">First 4KB is for Gfx IOMMU 
+             
+          </li> 
+          <li id="LI_16FDF1602A75444E99C7B34E56A209FA">Second 4KB is for non-Gfx IOMMU 
+             
+          </li> 
+        </ol> 
+      </li> 
+      <li id="LI_455F60520F0D4BE8986FD9F0B7BB3BDD">Removal of GFX IOMMU configuration. 
+        <note id="GUID-45F7D3D2-0FD4-4BE3-B283-B233C9763BF0">When iGFx device is disabled, BIOS should still allocate 8KB region for the VTDPVC0BAR. Hardware would abort any transactions towards Gfx IOMMU in this case. 
+        </note> 
+      </li> 
+      <li id="LI_E2C4A867E0264AF9B2AEDC2262F0FDBD">BIOS is responsible to expose the IOMMU as Remapping Hardware unit through DMAR (DMA remapping) ACPI tables to the Operating system 
+        <ol id="GUID-BD30309B-5560-4B2A-8A2D-B5C20ADAA163"> 
+          <li id="LI_E6FD20DF8C714AC0846342E3E2087041">For Gfx IOMMU 
+          </li> 
+          <li id="LI_2BAAA03E5E634BF59E774A1E99315319">Non-Gfx IOMMU 
+          </li> 
+        </ol> 
+      </li> 
+      <li id="LI_104DFA8A6D7648A8B03B22472F8ACB4A">Pre-boot DMA support same as earlier platform. 
+      </li> 
+      <li id="LI_47C0AC96687B4C95ABF7C8D6FE1E5229">RMRR for Graphics Stolen memory. 
+      </li> 
+      <li id="LI_0E8357D53DA941DA9EB86D1C2AF2BF58">BIOS to Enlighted OS handoff - Gfx is a special device, as the display engine needs to be able to access DRAM before OS has chance to configure IOMMU for early boot display functionality to display content on the screen. To avoid display glitches during boot process, Display must run out of stolen memory till OS enables ATS_Control.E. Before disabling ATS_Control.E, Display must switch back to using stolen memory. Expected flow for the Gfx device for this handoff is as below: 
+        <ol id="GUID-10F2AB4B-F894-410C-A3D6-39A4759D81AE"> 
+          <li id="LI_EAED7A1FAEB5472384598436DE399394">At boot-up - GFX operates in Stolen memory space only 
+          </li> 
+          <li id="LI_112CBC20FED548DB9A659A30DFEEF68D">BIOS turns on GFX IOMMU (TE=1) with legacy mode 
+          </li> 
+          <li id="LI_6259EB50547A4847BA5C3DA4DE9B8056">HM-ATS is on (Managed by HW) 
+          </li> 
+          <li id="LI_EA4478829A494D3A92EF12F315F8D630">BIOS to OS handoff 
+          </li> 
+          <li id="LI_076E6ECEA052460D84003EC2C3C05A0D">OS will momentarily set TE=0 as part of IOMMU INIT 
+          </li> 
+        </ol> 
+      </li> 
+    </ol> 
+  </body> 
+</topic> 

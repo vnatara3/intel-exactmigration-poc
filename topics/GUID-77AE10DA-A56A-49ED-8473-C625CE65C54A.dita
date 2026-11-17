@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-77AE10DA-A56A-49ED-8473-C625CE65C54A" xml:lang="en-US"> 
+  <title>Hardware Assisted – Address Translation Service (HW-ATS)</title> 
+  <body> 
+	 <p> When VTd is enabled, on Integrated IPs that are directly connected to NoC must rely on ATS to get virtual address to physical address mappings and before any sending memory transactions to the NoC. However, ATS is an PCIe spec defined optional capability (henceforth referred to as Architectural ATS) and requires PCI bus driver software (OS or Hypervisor) to explicitly enable ATS capability in integrated devices and also setup the VTd pagetable contexts accordingly to allow ATS transactions from integrated devices. 
+	 </p> 
+	 <p> All new OS/VMMs (referred to as Enlightened OSs) that are expected to be released during the MTL/ARL PRQ timeline will have support to enable Architectural ATS. Legacy OS/VMM software might not have the support to enable this when running on MTL/ARL SoC. Without Architectural ATS, integrated devices that have memory path through NoC will not be functional when VTd is enabled. Because of backward compatibility requirement, MTL/ARL SoCs must support legacy software as well for these integrated devices. To support Legacy software, MTL/ARL SoC implements Hardware Managed ATS(HMATS) feature. HMATS feature enables integrated devices with direct path to memory to function when VTd is enabled in the system. Until ATS is adopted by all Operating systems, HMATS is needed as a solution in client platforms. 
+	 </p> 
+	 <p> IOMMU will expose N set of straps to identify devices that require HM-ATS support. Each set will have {SBPortID of Device, BDF of Device, Enable} bits: 
+	 <ul id="GUID-7BB262CC-605B-44E3-8798-0DFCF2180EEF"> 
+		<li id="LI_F4E2079C313D4E309090DA62A312E83B">Non-Gfx IOMMU will provide 2 sets of such straps for IPU and NPU. 
+		</li> 
+		<li id="LI_2618634F3FF84FF1A94BAAD545113F22">Gfx IOMMU will provide 8 sets of straps. This is for 1 PhysicalFunction and 7 VirtualFunctions implemented by Graphics device. 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p> Enable bits are driven by IOC based on corresponding Device Enable bits in DEVEN register in Dev0 Cfg space. For Graphics device, PF (dev2 func0) is driven based on corresponding DEVEN register. 
+	 </p> 
+	 <table id="GUID-709F6399-45CD-419F-8350-92A9BD733681"> 
+		<tgroup cols="3"> 
+		  <colspec colnum="1" colname="col1" colwidth="*" /> 
+		  <colspec colnum="2" colname="col2" colwidth="*" /> 
+		  <colspec colnum="3" colname="col3" colwidth="*" /> 
+		  <thead> 
+			 <row> 
+				<entry> IOMMU Modes 
+				</entry> 
+				<entry> Legacy OS (non-ATS) 
+				</entry> 
+				<entry> New OS (ATS aware) 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry> Legacy-mode (HM-ATS enabled) 
+				</entry> 
+				<entry> HM-ATS 
+				</entry> 
+				<entry> Not Applicable 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Scalable-mode (HM-ATS disabled) 
+				</entry> 
+				<entry> Not Applicable 
+				</entry> 
+				<entry> OSM-ATS (inform all OSs they must enable ATS for Gfx, NPU, IPU with Scalable-mode) 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </body> 
+</topic> 

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-FC10E1AF-018A-438C-81FB-F59BB8D36114" xml:lang="en-US"> 
+  <title>Hyper-Threading and Core Disabling</title> 
+  <body> 
+	 <draft-comment>Converted using FMHtml2Dita version: 2.1.0 
+	 </draft-comment> 
+	 <p>For logical processor enumeration, BIOS uses CPUID leaf 0xB to get the number of logical processor at each level: 
+	 </p> 
+	 <p>CPUID (EAX=B, ECX=0/1/2) -&gt; EBX[15:0] = Number of logical processor at specify levels. For example: 
+	 </p> 
+	 <p>CPUID (EAX=B, ECX=0) -&gt; EBX[15:0] = 2, 2 logical processors at thread level 
+	 </p> 
+	 <p>CPUID (EAX=B, ECX=1) -&gt; EBX[15:0] = 4, 4 logical processors at core level 
+	 </p> 
+	 <p>CPUID (EAX=B, ECX=2) -&gt; EBX[15:0] = 0, end of level type 
+	 </p> 
+	 <p>The HT disabling will be on P-cores where the feature are supported. No impact on E-cores which don’t have HT feature implemented. 
+	 </p> 
+	 <p>The core disabling via BIOS starts with E-cores, and only after all E-cores are disabled, the P-cores can be disabled. The core or thread disabling does not affect the share last level cache size. 
+	 </p> 
+	 <p>The BIOS configure the number of P-cores using SOFT_STRAP_HIGH register: 
+	 </p> 
+	  
+	  
+	  
+	  
+	 <p>Bit [4:1] for number of disabled P-cores 
+	 </p> 
+	 <p>Bit [22:17] for number of disabled E-cores 
+	 </p> 
+	 <p>The processor will look at both bit fields together and determine whether the BIOS requests are valid. When both fields are all ‘0’, indicates all P-cores and E-cores are enabled. This is the default value at power-on. 
+	 </p> 
+	 <p>When BIOS wants to disable core of one type, it has to specify the number of the enabled cores of the other type, which should not be ‘0’. Although when a request for number of P-cores to be ‘0’ can be written to the register, it is not a supported configuration and the BIOS should forbid this request type. 
+	 </p> 
+	 <p>The enabled cores will always start from the lowest APIC ID to the highest APIC ID and the BIOS should always use CPUID instructions to query number of enabled cores and APIC IDs. 
+	 </p> 
+	  
+   
+  <p> 
+  <table id="TABLE_307B38C0511643CCB48155DA6574E1C8"> 
+  <title> SOFT_STRAP_HIGH Register</title> 
+  <tgroup cols="3"> 
+	 <colspec colnum="1" colname="col1" colwidth="1.00*" /> 
+	 <colspec colnum="2" colname="col2" colwidth="2.62*" /> 
+	 <colspec colnum="3" colname="col3" colwidth="3.82*" /> 
+	 <thead> 
+		<row> 
+		  <entry> Bits 
+		  </entry> 
+		  <entry> Field 
+		  </entry> 
+		  <entry> Description 
+		  </entry> 
+		</row></thead> 
+	 <tbody> 
+		<row> 
+		  <entry> 0:00 
+		  </entry> 
+		  <entry> SMT_DIS 
+		  </entry> 
+		  <entry> SMT Disable 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 4:01 
+		  </entry> 
+		  <entry> NUM_OF_DISABLED_BIG_CORES 
+		  </entry> 
+		  <entry> Number of disabled big cores (0=All big cores enabled) 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 5:05 
+		  </entry> 
+		  <entry> BIST 
+		  </entry> 
+		  <entry> BIST (unclear whether used) 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 11:06 
+		  </entry> 
+		  <entry> FLEX_RATIO 
+		  </entry> 
+		  <entry> "Guaranteed ratio" (P1) override request 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 12:12 
+		  </entry> 
+		  <entry> BOOT_IA_AT_P1 
+		  </entry> 
+		  <entry> Request to boot at P1 ratio instead of Pn 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 13:13 
+		  </entry> 
+		  <entry> JTAG_PG_DIS 
+		  </entry> 
+		  <entry> Disable vccstg power off 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 14:14 
+		  </entry> 
+		  <entry> CORE_HIGH_VOLTAGE_MODE 
+		  </entry> 
+		  <entry> Enable all IA FIVR domains voltage higher than 1.85v 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 15:15 
+		  </entry> 
+		  <entry> NON_CORE_HIGH_VOLTAGE_MODE 
+		  </entry> 
+		  <entry> Enable all GT and CLR FIVR domains voltage higher than 1.85v 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 16:16 
+		  </entry> 
+		  <entry> ENDEBUG_DISABLE 
+		  </entry> 
+		  <entry> Encrypted debug disable 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 22:17 
+		  </entry> 
+		  <entry> NUM_OF_DISABLED_ATOM_CORES 
+		  </entry> 
+		  <entry> Number of disabled Atom cores (0=All Atom cores enabled) 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 29:23:00 
+		  </entry> 
+		  <entry> RESERVED 
+		  </entry> 
+		  <entry> RESERVED 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 30:30:00 
+		  </entry> 
+		  <entry> KVMR_CAPTURE_DIS 
+		  </entry> 
+		  <entry> Disable CSME VDM messages by OEM 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry> 31:31:00 
+		  </entry> 
+		  <entry> KVMR_SPRITE_DIS 
+		  </entry> 
+		  <entry> Disable CSME VDM messages by OEM 
+		  </entry> 
+		</row> 
+	 </tbody> 
+  </tgroup> 
+  </table> 
+  <table id="TABLE_9E94B7015D654795BA0F0B5747EE1857"> 
+  <title> Valid Configurations</title> 
+  <tgroup cols="3"><colspec colnum="1" colname="col1" colwidth="1.13*" /><colspec colnum="2" colname="col2" colwidth="1.00*" /><colspec colnum="3" colname="col3" colwidth="1.27*" /><thead> 
+		<row> 
+		  <entry colname="col1"> NUM_OF_BIG_CORES 
+		  </entry> 
+		  <entry colname="col2"> NUM_OF_ATOM_CORES 
+		  </entry> 
+		  <entry colname="col3">Meaning 
+		  </entry> 
+		</row></thead> 
+	 <tbody> 
+		<row> 
+		  <entry colname="col1"> 
+			 <p>0 
+			 </p> 
+		  </entry> 
+		  <entry colname="col2">0 
+		  </entry> 
+		  <entry colname="col3"> 
+			 <p> Enable all cores. Default value. 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry colname="col1">0 
+		  </entry> 
+		  <entry colname="col2">M&gt;0 
+		  </entry> 
+		  <entry colname="col3"> 
+			 <p> Disable all Big cores, enable M Atom cores 
+			 </p> 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry colname="col1">N&gt;0 
+		  </entry> 
+		  <entry colname="col2">0 
+		  </entry> 
+		  <entry colname="col3"> Enable N Big cores, disable all Atom cores 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry colname="col1">N&gt;0 
+		  </entry> 
+		  <entry colname="col2">M&gt;0 
+		  </entry> 
+		  <entry colname="col3"> Enable N Big cores, enable M Atom cores 
+		  </entry> 
+		</row> 
+	 </tbody> 
+  </tgroup> 
+  </table> 
+  </p> 
+  </body> 
+</topic> 

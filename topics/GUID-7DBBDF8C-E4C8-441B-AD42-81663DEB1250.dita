@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-7DBBDF8C-E4C8-441B-AD42-81663DEB1250" xml:lang="en-US"> 
+  <title>BIOS Requirements</title> 
+  <body> 
+	 <ol id="GUID-83A3722A-92E6-4C1F-A6CE-D499695B33F8"> 
+		<li id="LI_C2629BF8C5694BBB8CF4DE42CA9870BB"><b>Memory Map Initialization at Root Complex:</b> 
+		  <p> IOC is the home of Device0 configuration space. Memory map registers in Device0 configuration space should be programmed and locked appropriately by BIOS. In HW, these registers are duplicated in multiple locations (IOC/CCF). BIOS will program these registers in IOC ( column 2) for Root complex and NGU is handled by IMR1M programming. HW handles updating all the copies by multicast mechanism. 
+		  </p> 
+		  <table id="GUID-23E5396F-C158-47CA-9E35-27040CE673F8"> 
+			 <tgroup cols="4"> 
+				<colspec colnum="1" colname="col1" colwidth="*" align="center" /> 
+				<colspec colnum="2" colname="col2" colwidth="*" align="center" /> 
+				<colspec colnum="3" colname="col3" colwidth="*" align="center" /> 
+				<colspec colnum="4" colname="col4" colwidth="*" align="center" /> 
+				<thead> 
+				  <row> 
+					 <entry> Registers 
+					 </entry> 
+					 <entry> IOC Housed (multicast to CCF) 
+					 </entry> 
+					 <entry> NGU SAI Block 
+					 </entry> 
+					 <entry> NOC CMI 
+					 </entry> 
+				  </row></thead> 
+				<tbody> 
+				  <row> 
+					 <entry> BDSM 
+					 </entry> 
+					 <entry> Dev0 CFG 
+					 </entry> 
+					 <entry> IMR1M in MCHBAR 
+					 </entry> 
+					 <entry> NA 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> BGSM 
+					 </entry> 
+					 <entry> Dev0 CFG 
+					 </entry> 
+					 <entry> IMR1M in MCHBAR 
+					 </entry> 
+					 <entry> NA 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> PAVP 
+					 </entry> 
+					 <entry> NA (removed) 
+					 </entry> 
+					 <entry> NA 
+					 </entry> 
+					 <entry> NA 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> TSEG 
+					 </entry> 
+					 <entry> Dev0 CFG 
+					 </entry> 
+					 <entry> IMR1M in MCHBAR 
+					 </entry> 
+					 <entry> NA 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> TOLUD 
+					 </entry> 
+					 <entry> Dev0 CFG 
+					 </entry> 
+					 <entry> IMR1M in MCHBAR 
+					 </entry> 
+					 <entry> NA 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> TOUUD 
+					 </entry> 
+					 <entry> Dev0 CFG 
+					 </entry> 
+					 <entry> IMR1M in MCHBAR 
+					 </entry> 
+					 <entry> NA 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> TOM 
+					 </entry> 
+					 <entry> Dev0 CFG 
+					 </entry> 
+					 <entry> MCHBAR 
+					 </entry> 
+					 <entry> NA 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> DPR 
+					 </entry> 
+					 <entry> Dev0 CFG (not needed anymore) 
+					 </entry> 
+					 <entry> IMR1M in MCHBAR 
+					 </entry> 
+					 <entry> NA 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> REMAP Base 
+					 </entry> 
+					 <entry> NA 
+					 </entry> 
+					 <entry> NA 
+					 </entry> 
+					 <entry> MCHBAR 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> Remap Limit 
+					 </entry> 
+					 <entry> NA 
+					 </entry> 
+					 <entry> NA 
+					 </entry> 
+					 <entry> MCHBAR 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> DEVEN 
+					 </entry> 
+					 <entry> Dev0 CFG 
+					 </entry> 
+					 <entry> NA 
+					 </entry> 
+					 <entry> NA 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> ALL IMR and IMR1M regions 
+					 </entry> 
+					 <entry> NA 
+					 </entry> 
+					 <entry> MCHBAR 
+					 </entry> 
+					 <entry> NA 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> CCF IMR0 and IMR1 
+					 </entry> 
+					 <entry> MCHBAR 
+					 </entry> 
+					 <entry> NA 
+					 </entry> 
+					 <entry> NA 
+					 </entry> 
+				  </row> 
+				</tbody> 
+			 </tgroup> 
+		  </table> 
+		</li> 
+		<li id="LI_FF0D8BA2B5EF4569B5E21DE6C80C1460"><b>Configuration of Downstream Source Decoder:</b> 
+		  <p> 
+			 <ph>Nova Lake</ph> platform removes the OPI controller connecting SOC-North &lt;-&gt; SOC- South and connects them directly via PSF hierarchy. IO range and MMIO range decoding which was handled by DMI in PCH is now moved to IOC. Previously BIOS was programming DMI registers through P2SB mechanism in PCH. Decode related registers are now part of Device0 Configuration space in IOC. 
+			 <note id="GUID-002513D0-402E-42CB-88B3-691DDCA48AE8">BIOS must program these registers and lock them down as part of boot flow. 
+			 </note> 
+		  </p> 
+		  <table id="GUID-3118238C-9834-49A0-B7FD-9BFBA1CF2947"> 
+			 <tgroup cols="2"> 
+				<colspec colnum="1" colname="col3" colwidth="1.43*" /> 
+				<colspec colnum="2" colname="col4" colwidth="3.60*" /> 
+				<thead> 
+				  <row> 
+					 <entry><b> Symbol 
+						</b> 
+					 </entry> 
+					 <entry><b> Register Name 
+						</b> 
+					 </entry> 
+				  </row> 
+				</thead> 
+				<tbody> 
+				  <row> 
+					 <entry> PCIEPAR1E 
+					 </entry> 
+					 <entry> PCIE Port I/OxAPIC Range 1 Enable 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> PCIEPAR2E 
+					 </entry> 
+					 <entry> PCIE Port I/OxAPIC Range 2 Enable 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> PCIEPAR3E 
+					 </entry> 
+					 <entry> PCIE Port I/OxAPIC Range 3 Enable 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> PCIEPAR4E 
+					 </entry> 
+					 <entry> PCIE Port I/OxAPIC Range 4 Enable 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> PCIEPAR1DID 
+					 </entry> 
+					 <entry> PCIE Port I/OxAPIC Range 1 Destination ID 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> PCIEPAR2DID 
+					 </entry> 
+					 <entry> PCIE Port I/OxAPIC Range 2 Destination ID 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> PCIEPAR3DID 
+					 </entry> 
+					 <entry> PCIE Port I/OxAPIC Range 3 Destination ID 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> PCIEPAR4DID 
+					 </entry> 
+					 <entry> PCIE Port I/OxAPIC Range 4 Destination ID 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> P2SBIOR 
+					 </entry> 
+					 <entry> P2SB I/O Range 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> LPCLGIR1 
+					 </entry> 
+					 <entry> LPC Generic I/O Range 1 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> LPCLGIR2 
+					 </entry> 
+					 <entry> LPC Generic I/O Range 2 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> LPCLGIR3 
+					 </entry> 
+					 <entry> LPC Generic I/O Range 3 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> LPCLGIR4 
+					 </entry> 
+					 <entry> LPC Generic I/O Range 4 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> LPCGMR 
+					 </entry> 
+					 <entry> LPC Generic Memory Range 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> LPCBDE 
+					 </entry> 
+					 <entry> LPC BIOS Decode Enable 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> UCPR 
+					 </entry> 
+					 <entry> uCode Patch Region 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> GCS 
+					 </entry> 
+					 <entry> Generic Control and Status 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> IOT1 
+					 </entry> 
+					 <entry> I/O Trap Register 1 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> IOT2 
+					 </entry> 
+					 <entry> I/O Trap Register 2 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> IOT3 
+					 </entry> 
+					 <entry> I/O Trap Register 3 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> IOT4 
+					 </entry> 
+					 <entry> I/O Trap Register 4 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> LPCIOD 
+					 </entry> 
+					 <entry> LPC I/O Decode Ranges 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> LPCIOE 
+					 </entry> 
+					 <entry> LPC I/O Enables 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> TCOBASE 
+					 </entry> 
+					 <entry> TCO Base Address. 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> GPMR1k 
+					 </entry> 
+					 <entry> General Purpose Memory Range 1 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> GPMR1DID 
+					 </entry> 
+					 <entry> General Purpose Memory Range 1 Destination ID 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> GPMR2 
+					 </entry> 
+					 <entry> General Purpose Memory Range 2 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> GPMR2DID 
+					 </entry> 
+					 <entry> General Purpose Memory Range 2 Destination ID 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> GPMR3 
+					 </entry> 
+					 <entry> General Purpose Memory Range 3 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> GPMR3DID 
+					 </entry> 
+					 <entry> General Purpose Memory Range 3 Destination ID 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> GPIOR1 
+					 </entry> 
+					 <entry> General Purpose I/O Range 1 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> GPIOR1DID 
+					 </entry> 
+					 <entry> General Purpose I/O Range 1 Destination ID 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> GPIOR2 
+					 </entry> 
+					 <entry> General Purpose I/O Range 2 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> GPIOR2DID 
+					 </entry> 
+					 <entry> General Purpose I/O Range 2 Destination ID 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> GPIOR3 
+					 </entry> 
+					 <entry> General Purpose I/O Range 3 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> GPIOR3DID 
+					 </entry> 
+					 <entry> General Purpose I/O Range 3 Destination ID 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> SEGIR 
+					 </entry> 
+					 <entry> Second eSPI Generic I/O Range(SPT-H Only) 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> SEGMR 
+					 </entry> 
+					 <entry> Second eSPI Generic Memory Range (SPT-H Only) 
+					 </entry> 
+				  </row> 
+				  <row> 
+					 <entry> ISHIOE 
+					 </entry> 
+					 <entry> ISH I/O Enables 
+					 </entry> 
+				  </row> 
+				</tbody> 
+			 </tgroup> 
+		  </table> 
+		</li> 
+		<li id="LI_2BFDC774493B4AFBBD68801AB4DB3800"><b>IOMMU and VTD Configuration:</b> 
+		  <p> Device IOMMUs like GFX IOMMU, IPU IOMMU are removed and IOMMUs are only present in IOC. 
+			  
+		  </p> 
+		  <ol id="GUID-266ACBAE-91F0-4CD9-A7CF-CB6A8FA00498"> 
+			 <li id="LI_A5E4B9718F79431B83A50224EBDD0F58">Gfx IOMMU - Only used by Device2 IPs (GT, Media, Display) 
+			 </li> 
+			 <li id="LI_7DA990ACD16548A4835F7A7FC4FEA493">Non-Gfx IOMMU - Used by all other devices 
+			 </li> 
+		  </ol> 
+		  <p> Refer to 
+			 <xref scope="local" format="dita" href="GUID-2CAFA02C-9B6D-40A3-81F9-699F83791D5D.dita#GUID-2CAFA02C-9B6D-40A3-81F9-699F83791D5D"><?xm-replace_text VT-d/IOMMU (ATS)?></xref> for BIOS requirement. 
+		  </p> 
+		</li> 
+		<li id="LI_18D5C472106A4FF8891E207118529DD8"><b>Deprecate WRC Programming:</b> 
+		  <p> Unlike previous programs, WRC module is now merged with IOC and is always enabled. BIOS had an option to enable/disable WRC feature using CAPID register and does initialization for VC Enable, Allocate, CLOS register (IOTG). This can be deprecated, and BIOS should remove any WRC specific programming code. 
+		  </p> 
+		</li> 
+		 
+   
+  </ol> 
+  </body> 
+</topic> 

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-A88AF4F6-59F1-401E-8441-29E023121E82" xml:lang="en-US"> 
+  <title>Terminology</title> 
+  <body> 
+	 <draft-comment>Converted using FMHtml2Dita version: 2.1.0 
+	 </draft-comment> 
+	 <table id="XREF_12392_TABLE_1_1_ACRONYMS" pgwide="1"> 
+  <title>Acronyms and Terms (Used in Document)</title> 
+  <tgroup cols="2" align="center"><colspec colname="1" colnum="1" colwidth="1.0*" align="center" /><colspec colname="2" colnum="2" colwidth="1.715*" align="center" /><thead> 
+		<row> 
+		  <entry align="center" valign="middle">Acronym 
+		  </entry> 
+		  <entry align="center" valign="middle">Definition 
+		  </entry> 
+		</row></thead> 
+	 <tbody> 
+		<row> 
+		  <entry align="center" valign="top">AP 
+		  </entry> 
+		  <entry valign="top" align="center">Application Processor 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">APIC 
+		  </entry> 
+		  <entry valign="top" align="center">Advanced Programmable Interrupt Controller 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">BSP 
+		  </entry> 
+		  <entry valign="top" align="center">Boot Strap Processor 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">CTDP 
+		  </entry> 
+		  <entry valign="top" align="center">Configurable TDP 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">DVMT 
+		  </entry> 
+		  <entry valign="top" align="center">Dynamic Video Memory Technology 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">EPOC 
+		  </entry> 
+		  <entry valign="top" align="center">Early Power On Configuration 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">FIT 
+		  </entry> 
+		  <entry valign="top" align="center">Firmware Interface Table 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">CMP 
+		  </entry> 
+		  <entry valign="top" align="center">Core Multi-Processing 
+		  </entry> 
+		</row> 
+		 
+		<row> 
+		  <entry align="center" valign="top">HWP 
+		  </entry> 
+		  <entry valign="top" align="center">Hardware P states 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">IBB 
+		  </entry> 
+		  <entry valign="top" align="center">Initial Boot Block 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">IBBL 
+		  </entry> 
+		  <entry valign="top" align="center">IBB Loader 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">LLC 
+		  </entry> 
+		  <entry valign="top" align="center">Last Level Cache 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">MCA 
+		  </entry> 
+		  <entry valign="top" align="center">Machine Check Architecture 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">MLC 
+		  </entry> 
+		  <entry valign="top" align="center">Middle-Level Cache 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">MTRR 
+		  </entry> 
+		  <entry valign="top" align="center">Memory Type Range Register 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">NEM 
+		  </entry> 
+		  <entry valign="top" align="center">No Eviction Mode 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">PAVP 
+		  </entry> 
+		  <entry valign="top" align="center">Protected Audio Video Playback 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">RAPL 
+		  </entry> 
+		  <entry valign="top" align="center">Running Average Power Limit 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">RATL 
+		  </entry> 
+		  <entry valign="top" align="center">Running Average Temperature Limit 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">SGX 
+		  </entry> 
+		  <entry valign="top" align="center">Software Guard Extensions 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">PRMRR 
+		  </entry> 
+		  <entry valign="top" align="center">Processor Memory Range Register 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">SMM 
+		  </entry> 
+		  <entry valign="top" align="center">System Management Mode 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">SVID 
+		  </entry> 
+		  <entry valign="top" align="center">Serial Voltage ID 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">TDP 
+		  </entry> 
+		  <entry valign="top" align="center">Base Power 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">cTDP Down Power 
+		  </entry> 
+		  <entry valign="top" align="center">Minimum Assured Power 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">cTDP Down Frequency 
+		  </entry> 
+		  <entry valign="top" align="center">Minimum Assured Frequency 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">cTDP Up Power 
+		  </entry> 
+		  <entry valign="top" align="center">Maximum Assured Power 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">cTDP Up Frequency 
+		  </entry> 
+		  <entry valign="top" align="center">Maximum Assured Frequency 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">P1 Freqency 
+		  </entry> 
+		  <entry valign="top" align="center">Base Frequency 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">Single Core Turbo Frequency 
+		  </entry> 
+		  <entry valign="top" align="center">Maximum Turbo Frequency 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">All Cores Turbo Frequency 
+		  </entry> 
+		  <entry valign="top" align="center">All Cores Turbo Maximum Frequency 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">PL2 
+		  </entry> 
+		  <entry valign="top" align="center">Maximum Turbo Power 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">VMM 
+		  </entry> 
+		  <entry valign="top" align="center">Virtual Machine Manager 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">VR 
+		  </entry> 
+		  <entry align="center" valign="top">Voltage Regulator 
+		  </entry> 
+		</row> 
+		<row> 
+		  <entry align="center" valign="top">MKTME 
+		  </entry> 
+		  <entry align="center" valign="top">Multi-key TME 
+		  </entry> 
+		</row> 
+	 </tbody> 
+  </tgroup> 
+  </table> 
+  </body> 
+</topic> 

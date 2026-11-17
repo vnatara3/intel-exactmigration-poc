@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-71DD26B7-F0A1-4F23-963B-9AB85B53D5B4" xml:lang="en-US"> 
+  <title>Package C-States</title> 
+  <body> 
+    <p> The processors continue support C1, C6, C10 package C-states. The C7/C8/C9 package C-states are deprecated. BIOS should use CPUID leaf 0x5 to enumerate supported C-states. 
+    </p> 
+  </body> 
+</topic> 

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"[]>
+<topic id="GUID-EE3180E3-2741-4024-95A5-E070B520274F" xml:lang="en-US"> 
+  <title>CPU Core Identification</title> 
+  <body> 
+    <draft-comment>Converted using FMHtml2Dita version: 2.1.0 
+    </draft-comment> 
+    <p>The CPUID instruction can be used to obtain the processor signatures for CPU core identification. The BIOS must always use the full 32-bit values returned from the CPUID instruction for parsing the processor information. 
+    </p> 
+    <p><ph>Nova Lake</ph> family processors have Processor Signatures: 
+    </p> 
+     
+    <table id="TABLE_3690B266299640B098ABDA5071615F36"> 
+      <tgroup cols="3"> 
+        <colspec colnum="1" colname="col1" colwidth="1.00*" /> 
+        <colspec colnum="2" colname="col2" colwidth="1.43*" /> 
+        <colspec colnum="3" colname="col3" colwidth="1.07*" /> 
+        <thead> 
+          <row> 
+            <entry align="center"> 
+              <b> Processor Code Name</b> 
+            </entry> 
+            <entry align="center"> 
+              <b> Processor Signature CPUID.(EAX=01h):EAX</b> 
+            </entry> 
+            <entry align="center"> 
+              <b> FMS Encoding</b> 
+            </entry> 
+          </row></thead> 
+        <tbody> 
+          <row> 
+            <entry> Nova Lake -S/Sx (Desktop) 
+            </entry> 
+            <entry align="center"> 
+              <b> 0x00300F1n</b> 
+            </entry> 
+            <entry> Processor Family 0x3F, Model 0x01, Stepping n 
+            </entry> 
+          </row> 
+          <row> 
+            <entry> Nova Lake -U/P/H/Hx (Mobile) 
+            </entry> 
+            <entry align="center"> 
+              <b> 0x00300F3n</b> 
+            </entry> 
+            <entry>Processor Family 0x3F, Model 0x03, Stepping n
+            </entry> 
+          </row> 
+        </tbody> 
+      </tgroup> 
+    </table> 
+     
+     
+     
+     
+    <fig id="FIG_0F2198BA7C4C4716BC00F4F8E90ED823"><image placement="break" align="center" href="../images/GUID-54CFEE29-BAD9-4C87-88B0-2972ECEBFCC5.png" scalefit="yes"></image> 
+    </fig> 
+  </body> 
+</topic> 
