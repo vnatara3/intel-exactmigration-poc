@@ -14,7 +14,7 @@ on:
         default: "migration/GUID-28583781-NVL-20261117-081840"
         type: string
       root_map:
-        description: "Root .ditamap relative to the publication root; leave blank for auto-detection"
+        description: "Root .ditamap relative to publication root; blank means auto-detect"
         required: false
         default: ""
         type: string
@@ -29,44 +29,27 @@ concurrency:
 jobs:
   publish-intel-pdf:
     name: Publish IntelBasePDF
-    runs-on:
-      - self-hosted
-      - Windows
-      - X64
-      - ipix-publishing
-      - intelbasepdf
+    runs-on: [self-hosted, Windows, X64, ipix-publishing, intelbasepdf]
     timeout-minutes: 45
 
     env:
       PUBLISHING_APP: E:\IPIX\Publishing\App
       PYTHON_EXE: E:\IPIX\Publishing\App\.venv\Scripts\python.exe
       PUBLISHING_JOBS: E:\IPIX\Publishing\Jobs
+      PIPELINE_SOURCES: E:\IPIX\Publishing\PipelineSources
+      PIPELINE_RUN_ID: ${{ github.run_id }}-${{ github.run_attempt }}
 
     steps:
       - name: Validate workflow inputs
         shell: powershell
         run: |
-          $ErrorActionPreference = 'Stop'
-
           $guid = '${{ inputs.publication_guid }}'.Trim()
-          $ref = '${{ inputs.publication_ref }}'.Trim()
-          $rootMap = '${{ inputs.root_map }}'.Trim()
-
           if ($guid -notmatch '^GUID-[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$') {
             throw "Invalid publication GUID: $guid"
           }
-
-          if ([string]::IsNullOrWhiteSpace($ref)) {
+          if ([string]::IsNullOrWhiteSpace('${{ inputs.publication_ref }}')) {
             throw 'publication_ref cannot be empty.'
           }
-
-          if ($rootMap -and -not $rootMap.EndsWith('.ditamap', [System.StringComparison]::OrdinalIgnoreCase)) {
-            throw "root_map must reference a .ditamap file: $rootMap"
-          }
-
-          Write-Host "Publication GUID: $guid"
-          Write-Host "Publication ref : $ref"
-          Write-Host "Root map        : $(if ($rootMap) { $rootMap } else { '<auto-detect>' })"
 
       - name: Checkout publication content
         uses: actions/checkout@v4
@@ -76,30 +59,24 @@ jobs:
           clean: true
           persist-credentials: false
 
-      - name: Verify checked-out publication
+      - name: Prune expired pipeline sources
         shell: powershell
         run: |
           $ErrorActionPreference = 'Stop'
-
-          Write-Host "Commit: $env:GITHUB_SHA"
-          Write-Host "Workspace: $env:GITHUB_WORKSPACE"
-
-          $maps = Get-ChildItem $env:GITHUB_WORKSPACE -Recurse -File -Filter '*.ditamap'
-          if (-not $maps) {
-            throw "No .ditamap files were found in $env:GITHUB_WORKSPACE"
-          }
-
-          Write-Host "DITA maps found: $($maps.Count)"
-          $maps | ForEach-Object {
-            Write-Host " - $($_.FullName.Substring($env:GITHUB_WORKSPACE.Length + 1))"
-          }
+          New-Item -ItemType Directory -Force -Path $env:PIPELINE_SOURCES | Out-Null
+          $cutoff = (Get-Date).AddDays(-7)
+          Get-ChildItem $env:PIPELINE_SOURCES -Directory |
+            Where-Object { $_.LastWriteTime -lt $cutoff } |
+            ForEach-Object {
+              Write-Host "Removing expired pipeline source: $($_.FullName)"
+              Remove-Item $_.FullName -Recurse -Force
+            }
 
       - name: Publish IntelBasePDF
         id: publish
         shell: powershell
         run: |
           $ErrorActionPreference = 'Stop'
-
           $guid = '${{ inputs.publication_guid }}'.Trim()
           $rootMap = '${{ inputs.root_map }}'.Trim()
           $publicationRef = '${{ inputs.publication_ref }}'.Trim()
@@ -107,76 +84,51 @@ jobs:
 
           $existingRuns = @{}
           if (Test-Path $jobRoot) {
-            Get-ChildItem $jobRoot -Directory | ForEach-Object {
-              $existingRuns[$_.FullName] = $true
-            }
+            Get-ChildItem $jobRoot -Directory | ForEach-Object { $existingRuns[$_.FullName] = $true }
           }
 
           $arguments = @(
             (Join-Path $env:PUBLISHING_APP 'publish_cli.py'),
             '--guid', $guid,
             '--source', $env:GITHUB_WORKSPACE,
+            '--run-id', $env:PIPELINE_RUN_ID,
+            '--pipeline-root', $env:PIPELINE_SOURCES,
             '--branch', $publicationRef,
-            '--replace-source',
             '--format', 'intelBasePDF'
           )
+          if ($rootMap) { $arguments += @('--root-map', $rootMap) }
 
-          if ($rootMap) {
-            $arguments += @('--root-map', $rootMap)
-          }
-
-          Write-Host "Running standalone IntelBasePDF publisher..."
           & $env:PYTHON_EXE @arguments
-          if ($LASTEXITCODE -ne 0) {
-            throw "publish_cli.py failed with exit code $LASTEXITCODE"
-          }
+          if ($LASTEXITCODE -ne 0) { throw "publish_cli.py failed with exit code $LASTEXITCODE" }
 
           $newRun = Get-ChildItem $jobRoot -Directory |
             Where-Object { -not $existingRuns.ContainsKey($_.FullName) } |
             Sort-Object LastWriteTime -Descending |
             Select-Object -First 1
-
-          if (-not $newRun) {
-            throw "Publishing succeeded but no new run directory was found under $jobRoot"
-          }
+          if (-not $newRun) { throw "No new publishing run was found under $jobRoot" }
 
           $pdfs = Get-ChildItem (Join-Path $newRun.FullName 'output') -Recurse -File -Filter '*.pdf'
-          if (-not $pdfs) {
-            throw "No PDF was generated under $($newRun.FullName)\output"
-          }
+          if (-not $pdfs) { throw "No PDF was generated under $($newRun.FullName)\output" }
 
           $artifactStage = Join-Path $env:RUNNER_TEMP "intelBasePDF-$guid"
-          if (Test-Path $artifactStage) {
-            Remove-Item $artifactStage -Recurse -Force
-          }
           New-Item -ItemType Directory -Path $artifactStage -Force | Out-Null
-
-          foreach ($pdf in $pdfs) {
-            Copy-Item $pdf.FullName -Destination $artifactStage -Force
-            Write-Host "Generated PDF: $($pdf.FullName)"
-          }
-
-          $summaryFile = Join-Path $newRun.FullName 'publish-summary.json'
-          if (Test-Path $summaryFile) {
-            Copy-Item $summaryFile -Destination $artifactStage -Force
-          }
-
-          $logFile = Join-Path $newRun.FullName 'publish.log'
-          if (Test-Path $logFile) {
-            Copy-Item $logFile -Destination $artifactStage -Force
+          $pdfs | Copy-Item -Destination $artifactStage -Force
+          foreach ($name in 'publish-summary.json','publish.log') {
+            $path = Join-Path $newRun.FullName $name
+            if (Test-Path $path) { Copy-Item $path -Destination $artifactStage -Force }
           }
 
           "run_directory=$($newRun.FullName)" >> $env:GITHUB_OUTPUT
+          "source_directory=$(Join-Path (Join-Path $env:PIPELINE_SOURCES $env:PIPELINE_RUN_ID) $guid)" >> $env:GITHUB_OUTPUT
           "artifact_path=$artifactStage" >> $env:GITHUB_OUTPUT
           "pdf_count=$($pdfs.Count)" >> $env:GITHUB_OUTPUT
 
           "## IntelBasePDF publishing succeeded" >> $env:GITHUB_STEP_SUMMARY
-          "" >> $env:GITHUB_STEP_SUMMARY
-          "- Publication GUID: ``$guid``" >> $env:GITHUB_STEP_SUMMARY
+          "- Publication: ``$guid``" >> $env:GITHUB_STEP_SUMMARY
           "- Source ref: ``$publicationRef``" >> $env:GITHUB_STEP_SUMMARY
           "- Commit: ``$env:GITHUB_SHA``" >> $env:GITHUB_STEP_SUMMARY
+          "- Pipeline source: ``$(Join-Path (Join-Path $env:PIPELINE_SOURCES $env:PIPELINE_RUN_ID) $guid)``" >> $env:GITHUB_STEP_SUMMARY
           "- PDF files: ``$($pdfs.Count)``" >> $env:GITHUB_STEP_SUMMARY
-          "- Publishing run: ``$($newRun.FullName)``" >> $env:GITHUB_STEP_SUMMARY
 
       - name: Upload IntelBasePDF artifact
         uses: actions/upload-artifact@v4
@@ -189,6 +141,6 @@ jobs:
       - name: Publish completion summary
         shell: powershell
         run: |
-          Write-Host "IntelBasePDF publishing completed successfully."
           Write-Host "PDF count: ${{ steps.publish.outputs.pdf_count }}"
-          Write-Host "Run directory: ${{ steps.publish.outputs.run_directory }}"
+          Write-Host "Pipeline source: ${{ steps.publish.outputs.source_directory }}"
+          Write-Host "Publishing run: ${{ steps.publish.outputs.run_directory }}"
