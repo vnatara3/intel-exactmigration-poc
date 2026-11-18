@@ -1,0 +1,98 @@
+name: IPIX Publishing Runner Smoke Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  verify-publishing-runner:
+    runs-on:
+      - self-hosted
+      - Windows
+      - X64
+      - ipix-publishing
+      - intelbasepdf
+
+    steps:
+      - name: Runner information
+        shell: powershell
+        run: |
+          Write-Host "=========================================="
+          Write-Host " IPIX Publishing Runner"
+          Write-Host "=========================================="
+          Write-Host "Computer : $env:COMPUTERNAME"
+          Write-Host "User     : $env:USERDOMAIN\$env:USERNAME"
+          Write-Host "Workspace: $env:GITHUB_WORKSPACE"
+          Write-Host "Repository: $env:GITHUB_REPOSITORY"
+          Write-Host "Ref       : $env:GITHUB_REF"
+
+      - name: Verify Java
+        shell: cmd
+        run: |
+          java -version
+
+      - name: Verify Git
+        shell: cmd
+        run: |
+          git --version
+
+      - name: Verify Python
+        shell: cmd
+        run: |
+          "E:\IPIX\Publishing\App\.venv\Scripts\python.exe" --version
+
+      - name: Verify Ant
+        shell: cmd
+        run: |
+          "E:\IPIX\Publishing\Runtime\InfoShare_Intel\bin\ant.bat" -version
+
+      - name: Verify Antenna House Formatter
+        shell: cmd
+        run: |
+          "C:\Program Files\Antenna House\FormatterV75\AHFCmd.exe" -v
+
+      - name: Verify IntelBasePDF runtime
+        shell: powershell
+        run: |
+          $required = @(
+            "E:\IPIX\Publishing\App\publish_cli.py",
+            "E:\IPIX\Publishing\App\publishing_manager.py",
+            "E:\IPIX\Publishing\App\migration_runner.py",
+            "E:\IPIX\Publishing\App\config.json",
+            "E:\IPIX\Publishing\Runtime\InfoShare_Intel\bin\ant.bat",
+            "E:\IPIX\Publishing\Runtime\InfoShare_Intel\lib\saxon\saxon9.jar",
+            "E:\IPIX\Publishing\Runtime\InfoShare_Intel\lib\saxon\saxon9-dom.jar",
+            "C:\Program Files\Antenna House\FormatterV75\AHFCmd.exe"
+          )
+
+          foreach ($path in $required) {
+              if (-not (Test-Path $path)) {
+                  throw "MISSING: $path"
+              }
+
+              Write-Host "FOUND: $path"
+          }
+
+          Write-Host ""
+          Write-Host "IntelBasePDF publishing runtime validation PASSED."
+
+      - name: Verify publishing workspace access
+        shell: powershell
+        run: |
+          $testDirectory = "E:\IPIX\Publishing\Jobs\github-runner-test"
+
+          New-Item -ItemType Directory `
+              -Force `
+              -Path $testDirectory | Out-Null
+
+          $testFile = Join-Path $testDirectory "runner-test.txt"
+
+          "GitHub Actions runner write test" |
+              Set-Content $testFile
+
+          if (-not (Test-Path $testFile)) {
+              throw "Runner cannot write to publishing Jobs directory."
+          }
+
+          Write-Host "Publishing workspace write access PASSED."
+
+          Remove-Item $testDirectory -Recurse -Force
